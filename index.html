@@ -3,147 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bloom — An AI marketing team that doesn't bill you by the token</title>
-<meta name="description" content="Bloom runs a full AI marketing team on hardware in your office. Cloud-only AI meters every token, so the bill climbs with usage. Bloom's cost is flat. Research, content, SEO/AEO and analytics agents draft; you approve; nothing publishes blind.">
-<meta name="theme-color" content="#F4EFE3">
-<meta property="og:title" content="Bloom — An AI marketing team that doesn't bill you by the token">
-<meta property="og:description" content="A full AI marketing team running on hardware in your office. Flat cost, not metered tokens. You approve everything before it ships.">
+<title>Bloom — Organic inbound leads, built from your own sales calls</title>
+<meta name="description" content="Bloom turns the sales calls you already record into SEO/AEO content that drives organic inbound leads. We mine real buyer language, write to your ICP, and publish under your CEO's name — you approve every piece.">
+<meta name="theme-color" content="#FAF4EC">
+<meta property="og:title" content="Bloom — Organic inbound leads, built from your own sales calls">
+<meta property="og:description" content="Your buyers already told you what they care about — on your calls. Bloom turns that into content that ranks and converts.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://runbloom.ai">
 <link rel="canonical" href="https://runbloom.ai">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><rect width=%2240%22 height=%2240%22 rx=%228%22 fill=%22%2312C4B4%22/><circle cx=%2220%22 cy=%2220%22 r=%228%22 fill=%22%23F4EFE3%22/></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><rect width=%2240%22 height=%2240%22 rx=%229%22 fill=%22%234E7F58%22/><circle cx=%2220%22 cy=%2220%22 r=%228%22 fill=%22%23FAF4EC%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-/* ============================================================
-   Design tokens — lifted verbatim from the 90-day rollout
-   timeline artifact so the site and the client-facing timeline
-   read as one system.
-   ============================================================ */
+/* ==========================================================
+   Palette extracted from the Bloom AI Quick Pitch deck.
+   Roles match how each colour is used across its 3 slides.
+   ========================================================== */
 :root{
-  --turquoise:#12C4B4;
-  --turquoise-dark:#0B948A;
-  --sand:#F4EFE3;
-  --sand-deep:#E9E1CE;
-  --ink:#16231F;
-  --ink-soft:#4A5B55;
-  --line:rgba(22,35,31,0.14);
-  --paper:#FFFFFF;
-  --tint:rgba(18,196,180,0.12);
-  --tint-soft:rgba(18,196,180,0.04);
+  --green:#4E7F58;        /* accent: eyebrows, numerals, arrows */
+  --green-deep:#3D6446;   /* hover / gradient end */
+  --clay:#A87158;         /* secondary accent */
+  --mint:#DAEEDE;         /* pale tint */
+  --ink:#221C12;          /* headings, dark sections */
+  --ink-soft:#544C41;     /* body copy */
+  --cream:#FAF4EC;        /* page ground */
+  --paper:#FEFBF7;        /* cards */
+  --line:#DDD6CD;         /* rules, rails, arrows */
+  --on-dark:#D2CDC7;      /* body text on ink */
+  --on-dark-dim:#BBB7B0;  /* secondary text on ink */
+  --tint:rgba(78,127,88,.10);
+  --tint-soft:rgba(78,127,88,.04);
   --maxw:1140px;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;scroll-padding-top:78px;}
 body{
   font-family:'Hanken Grotesk',system-ui,sans-serif;
-  color:var(--ink);
-  background:var(--sand);
-  width:100%;
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
+  color:var(--ink);background:var(--cream);
+  width:100%;overflow-x:hidden;-webkit-font-smoothing:antialiased;
 }
 a{color:inherit;text-decoration:none;}
 img{max-width:100%;display:block;}
 p{margin:0;text-wrap:pretty;}
 
 h1,h2,h3,.display{
-  font-family:'Anton',Impact,system-ui,sans-serif;
-  font-weight:400;
-  text-transform:uppercase;
-  line-height:.96;
-  letter-spacing:.005em;
-  margin:0;
-  text-wrap:balance;
+  font-family:'Lora',Georgia,'Times New Roman',serif;
+  font-weight:600;line-height:1.08;letter-spacing:-.015em;margin:0;text-wrap:balance;
 }
-h1{font-size:clamp(34px,6vw,62px);}
-h2{font-size:clamp(26px,4.2vw,44px);}
-h3{font-size:clamp(17px,2vw,21px);}
+h1{font-size:clamp(33px,5vw,55px);line-height:1.05;}
+h2{font-size:clamp(25px,3.6vw,40px);}
+h3{font-size:clamp(17px,1.9vw,21px);}
 
 .eyebrow{
   font-size:12px;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--turquoise-dark);font-weight:700;margin-bottom:10px;
+  color:var(--green);font-weight:700;margin-bottom:12px;
 }
 .wrap{max-width:var(--maxw);margin:0 auto;padding-left:32px;padding-right:32px;}
 .card{background:var(--paper);border:1px solid var(--line);border-radius:14px;}
-.pill{border-radius:20px;}
 .btn{
   display:inline-block;font-weight:700;font-size:15.5px;
-  padding:13px 24px;border-radius:20px;border:1px solid transparent;
+  padding:14px 25px;border-radius:20px;border:1px solid transparent;
   transition:background .2s ease,color .2s ease,border-color .2s ease;
 }
-.btn-primary{background:var(--ink);color:var(--sand);}
-.btn-primary:hover{background:var(--turquoise-dark);}
-.btn-ghost{border-color:var(--line);color:var(--ink);}
-.btn-ghost:hover{background:var(--tint-soft);border-color:var(--turquoise);}
-.btn-invert{background:var(--turquoise);color:var(--ink);}
-.btn-invert:hover{background:var(--paper);}
+.btn-primary{background:var(--green);color:var(--paper);}
+.btn-primary:hover{background:var(--green-deep);}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:var(--paper);}
+.btn-ghost:hover{border-color:var(--green);background:var(--tint-soft);}
 
-/* ---------- animation ---------- */
+/* numerals in circles — straight from the deck */
+.num{
+  width:44px;height:44px;border-radius:50%;background:var(--green);color:var(--paper);
+  font-family:'Lora',Georgia,serif;font-weight:600;font-size:18px;
+  display:flex;align-items:center;justify-content:center;flex:none;
+}
+
 @keyframes blpulse{0%,100%{opacity:1}50%{opacity:.3}}
 @keyframes bltype{0%,70%,100%{transform:translateY(0);opacity:.3}35%{transform:translateY(-3px);opacity:1}}
 @keyframes blsweep{0%{transform:translateX(-110%)}100%{transform:translateX(320%)}}
 @keyframes blflow{0%{top:0;opacity:0}15%{opacity:1}85%{opacity:1}100%{top:100%;opacity:0}}
-@keyframes blslide{0%{background-position:200% 0}100%{background-position:-200% 0}}
-
-.agent-row{transition:background .3s ease;border-radius:10px;}
-.agent-row.active{background:var(--tint);}
-.agent-row .dots span{animation-play-state:paused;}
-.agent-row.active .dots span{animation-play-state:running;}
 
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
 .reveal.in{opacity:1;transform:none;}
 
-/* ---------- engine loop ---------- */
+.qrow{transition:background .3s ease;border-radius:10px;}
+.qrow.active{background:var(--tint);}
+.qrow .dots span{animation-play-state:paused;}
+.qrow.active .dots span{animation-play-state:running;}
+
+/* ---------- 5-step journey ---------- */
 .step{
-  background:var(--paper);border:1px solid var(--line);border-radius:14px;
-  padding:20px 18px;transition:border-color .35s ease,box-shadow .35s ease,transform .35s ease;
+  background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 20px;
+  transition:border-color .35s ease,box-shadow .35s ease,transform .35s ease;
   cursor:pointer;position:relative;overflow:hidden;
 }
-.step .step-n{
-  font-family:'Anton',sans-serif;font-size:13px;letter-spacing:.08em;
-  color:var(--ink-soft);transition:color .35s ease;
+.step.on{border-color:var(--green);box-shadow:0 12px 30px -20px rgba(34,28,18,.55);transform:translateY(-3px);}
+.step .stage-tag{
+  font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 9px;border-radius:20px;display:inline-block;
 }
-.step.on{border-color:var(--turquoise);box-shadow:0 10px 28px -18px rgba(11,148,138,.7);transform:translateY(-3px);}
-.step.on .step-n{color:var(--turquoise-dark);}
-.step .step-bar{
-  position:absolute;left:0;bottom:0;height:3px;width:0;
-  background:linear-gradient(90deg,var(--turquoise-dark),var(--turquoise));
-}
-.step.on .step-bar{width:100%;transition:width 2.4s linear;}
+.tag-pre{background:var(--mint);color:var(--green-deep);}
+.tag-post{background:var(--line);color:var(--ink-soft);}
+.step .step-bar{position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--green);}
+.step.on .step-bar{width:100%;transition:width 2.6s linear;}
 
-/* ---------- 90-day rollout timeline ---------- */
+/* ---------- rollout timeline ---------- */
 #rollout .rail-track{
   position:absolute;left:27px;top:6px;bottom:6px;width:3px;
   background:repeating-linear-gradient(180deg,var(--line) 0 10px,transparent 10px 18px);
 }
 #rollout .rail-fill{
   position:absolute;left:27px;top:6px;width:3px;height:0%;
-  background:linear-gradient(180deg,var(--turquoise-dark),var(--turquoise));
+  background:linear-gradient(180deg,var(--green-deep),var(--green));
   border-radius:2px;transition:height .6s ease;
 }
 .section-label{
-  font-family:'Anton',sans-serif;font-size:13px;letter-spacing:.08em;
-  color:var(--ink-soft);text-transform:uppercase;margin:26px 0 14px 68px;
+  font-family:'Lora',Georgia,serif;font-size:14px;letter-spacing:.04em;font-weight:600;
+  color:var(--ink-soft);margin:26px 0 14px 68px;
 }
 .section-label:first-of-type{margin-top:0;}
 .stage{position:relative;display:grid;grid-template-columns:56px 1fr;gap:0 24px;}
 .stage .dot{
   width:56px;height:56px;border-radius:50%;background:var(--paper);
   border:3px solid var(--ink);display:flex;align-items:center;justify-content:center;
-  font-family:'Anton',sans-serif;font-size:20px;color:var(--ink);
+  font-family:'Lora',Georgia,serif;font-weight:600;font-size:19px;color:var(--ink);
   transition:background .3s ease,border-color .3s ease,color .3s ease;position:relative;z-index:2;
 }
-.stage.reached .dot{background:var(--turquoise);border-color:var(--turquoise-dark);}
-.stage.final.reached .dot{background:var(--ink);border-color:var(--ink);color:var(--turquoise);font-size:24px;}
+.stage.reached .dot{background:var(--green);border-color:var(--green-deep);color:var(--paper);}
+.stage.final.reached .dot{background:var(--ink);border-color:var(--ink);color:var(--green);}
 .wk{background:var(--paper);border:1px solid var(--line);border-radius:14px;margin-bottom:22px;overflow:hidden;}
 .wk-head{padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;cursor:pointer;user-select:none;}
 .wk-head:hover{background:var(--tint-soft);}
-.wk-tag{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--turquoise-dark);text-transform:uppercase;}
-.wk-title{font-family:'Anton',sans-serif;font-size:18px;text-transform:uppercase;}
-.count-pill{font-size:12px;font-weight:700;color:var(--ink-soft);background:var(--sand);padding:4px 10px;border-radius:20px;}
-.stage.reached .count-pill{color:var(--turquoise-dark);background:var(--tint);}
+.wk-tag{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--green);text-transform:uppercase;}
+.wk-title{font-family:'Lora',Georgia,serif;font-size:18px;font-weight:600;}
+.count-pill{font-size:12px;font-weight:700;color:var(--ink-soft);background:var(--cream);padding:4px 10px;border-radius:20px;}
+.stage.reached .count-pill{color:var(--green-deep);background:var(--mint);}
 .chev{width:10px;height:10px;border-right:2px solid var(--ink-soft);border-bottom:2px solid var(--ink-soft);transform:rotate(45deg);transition:transform .25s ease;}
 .wk.open .chev{transform:rotate(-135deg);}
 .wk-body{max-height:0;overflow:hidden;transition:max-height .35s ease;}
@@ -151,18 +145,24 @@ h3{font-size:clamp(17px,2vw,21px);}
 .wk-items{padding:2px 22px 18px;border-top:1px solid var(--line);}
 .wk-item{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14.5px;line-height:1.45;}
 .wk-item:last-child{border-bottom:none;}
-.wk-item::before{
-  content:"";width:7px;height:7px;border-radius:50%;background:var(--turquoise);
-  flex:none;margin-top:7px;
-}
+.wk-item::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);flex:none;margin-top:7px;}
 .phase-chip{
   font-size:12.5px;font-weight:700;padding:8px 15px;border-radius:20px;
   border:1px solid var(--line);background:var(--paper);color:var(--ink-soft);
   cursor:pointer;font-family:inherit;transition:all .2s ease;white-space:nowrap;
 }
-.phase-chip:hover,.phase-chip.on{background:var(--ink);color:var(--sand);border-color:var(--ink);}
+.phase-chip:hover,.phase-chip.on{background:var(--ink);color:var(--cream);border-color:var(--ink);}
 
-/* ---------- responsive ---------- */
+/* ---------- fit checklist ---------- */
+.fit{display:flex;align-items:flex-start;gap:12px;padding:15px 0;border-bottom:1px dashed var(--line);}
+.fit:last-child{border-bottom:none;}
+.fit .mark{
+  width:22px;height:22px;border-radius:50%;flex:none;margin-top:1px;
+  display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;
+}
+.fit.yes .mark{background:var(--green);color:var(--paper);}
+.fit.no  .mark{background:var(--line);color:var(--ink-soft);}
+
 @media (max-width:960px){
   header.hero{grid-template-columns:1fr !important;}
   .g-4{grid-template-columns:repeat(2,1fr) !important;}
@@ -189,237 +189,241 @@ h3{font-size:clamp(17px,2vw,21px);}
 <body>
 
 <!-- ===================== NAV ===================== -->
-<nav style="border-bottom:2px solid var(--ink);position:sticky;top:0;background:var(--sand);z-index:60">
+<nav style="border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--cream);z-index:60">
   <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px">
     <a href="#top" style="display:flex;align-items:center;gap:10px">
-      <span style="width:24px;height:24px;border-radius:50%;background:var(--turquoise);border:2px solid var(--ink);display:block;position:relative">
-        <span style="position:absolute;inset:5px;border-radius:50%;background:var(--sand)"></span>
+      <span style="width:24px;height:24px;border-radius:50%;background:var(--green);display:block;position:relative">
+        <span style="position:absolute;inset:6px;border-radius:50%;background:var(--cream)"></span>
       </span>
-      <span class="display" style="font-size:24px">Bloom</span>
+      <span class="display" style="font-size:23px;font-weight:600">Bloom</span>
     </a>
-    <div class="nav-links" style="display:flex;align-items:center;gap:30px;font-size:14.5px;font-weight:600">
-      <a href="#engine">How it works</a>
-      <a href="#team">The team</a>
-      <a href="#rollout">90-day rollout</a>
-      <a href="#deliverables">What you get</a>
+    <div class="nav-links" style="display:flex;align-items:center;gap:28px;font-size:14.5px;font-weight:600">
+      <a href="#how">How it works</a>
+      <a href="#different">Why it's different</a>
+      <a href="#output">What you get</a>
+      <a href="#fit">Who it's for</a>
+      <a href="#rollout">Rollout</a>
     </div>
-    <a href="mailto:hello@runbloom.ai" class="btn btn-primary" style="padding:11px 20px;font-size:14.5px">Book a call</a>
+    <a href="mailto:hello@runbloom.ai" class="btn btn-primary" style="padding:11px 19px;font-size:14.5px">Get your findings report</a>
   </div>
 </nav>
 
 <!-- ===================== HERO ===================== -->
 <span id="top"></span>
-<header class="hero wrap" style="padding-top:72px;padding-bottom:60px;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center">
+<header class="hero wrap" style="padding-top:70px;padding-bottom:58px;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center">
   <div>
-    <div style="display:inline-flex;align-items:center;gap:9px;padding:7px 15px;border:1px solid var(--line);background:var(--paper);border-radius:20px;font-size:12.5px;font-weight:700;letter-spacing:.04em;margin-bottom:24px">
-      <span style="width:8px;height:8px;border-radius:50%;background:var(--turquoise);animation:blpulse 2.2s infinite"></span>
-      Your AI marketing team
+    <div style="display:inline-flex;align-items:center;gap:9px;padding:7px 15px;border:1px solid var(--line);background:var(--paper);border-radius:20px;font-size:12.5px;font-weight:700;letter-spacing:.03em;margin-bottom:24px">
+      <span style="width:8px;height:8px;border-radius:50%;background:var(--green);animation:blpulse 2.2s infinite"></span>
+      SEO &amp; AEO content, built from real call data
     </div>
-    <h1>A whole marketing team.<br><span style="color:var(--turquoise-dark)">None of the token bill.</span></h1>
-    <p style="font-size:18px;line-height:1.55;color:var(--ink-soft);margin-top:24px;max-width:520px">
-      Cloud-only AI meters every word your agents read and write — so the bill climbs the moment the work does.
-      Bloom runs your agents on hardware in your office. The cost is <b style="color:var(--ink)">flat</b>, the data
-      stays yours, and nobody throttles the work to save money.
+    <h1>Turn your sales calls into <span style="color:var(--green)">organic inbound leads</span>.</h1>
+    <p style="font-size:18px;line-height:1.6;color:var(--ink-soft);margin-top:24px;max-width:530px">
+      Your buyers already told you what they care about — on the calls you're recording right now.
+      Bloom mines that language and turns it into curated, high-quality content aimed straight at your
+      ICP, published under your CEO's name. Content that ranks, gets cited in AI answers, and brings
+      qualified buyers to you.
     </p>
     <div style="display:flex;align-items:center;gap:12px;margin-top:30px;flex-wrap:wrap">
-      <a href="mailto:hello@runbloom.ai" class="btn btn-primary">Book a call</a>
-      <a href="#rollout" class="btn btn-ghost">See the 90-day rollout →</a>
+      <a href="mailto:hello@runbloom.ai" class="btn btn-primary">Get your findings report</a>
+      <a href="#how" class="btn btn-ghost">See how it works →</a>
     </div>
-    <p style="font-size:13px;color:var(--ink-soft);margin-top:18px">Flat monthly cost · No metered tokens · You own the hardware and the output</p>
+    <p style="font-size:13px;color:var(--ink-soft);margin-top:18px">
+      The findings report comes first — before any contract. If you don't move forward, it's yours to keep.
+    </p>
   </div>
 
-  <!-- live digest -->
-  <div class="card" style="background:var(--sand-deep);padding:18px;box-shadow:0 30px 60px -34px rgba(22,35,31,.45)">
-    <div style="display:flex;align-items:center;gap:9px;padding:2px 4px 12px">
-      <span style="width:20px;height:20px;border-radius:50%;background:var(--turquoise);border:2px solid var(--ink);display:block;position:relative"><span style="position:absolute;inset:4px;border-radius:50%;background:var(--sand)"></span></span>
-      <span style="font-size:13px;font-weight:700">Bloom · Daily digest</span>
-      <span style="margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--ink-soft)"><span style="width:7px;height:7px;border-radius:50%;background:var(--turquoise-dark);animation:blpulse 1.8s infinite"></span>Live in Slack</span>
+  <!-- live: call transcript -> theme extraction -->
+  <div class="card" style="padding:18px;box-shadow:0 30px 60px -36px rgba(34,28,18,.5)">
+    <div style="display:flex;align-items:center;gap:9px;padding:2px 4px 14px;border-bottom:1px solid var(--line);margin-bottom:12px">
+      <span style="width:20px;height:20px;border-radius:50%;background:var(--green);display:block;position:relative"><span style="position:absolute;inset:5px;border-radius:50%;background:var(--paper)"></span></span>
+      <span style="font-size:13px;font-weight:700">Call analysis · 41 recordings</span>
+      <span style="margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--green)"><span style="width:7px;height:7px;border-radius:50%;background:var(--green);animation:blpulse 1.8s infinite"></span>Running</span>
     </div>
-    <div id="agentBody" style="background:var(--paper);border-radius:12px;padding:6px;display:flex;flex-direction:column"></div>
-    <div style="background:var(--paper);border-radius:12px;padding:15px 16px;margin-top:8px">
+    <div style="font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px">Themes your buyers keep raising</div>
+    <div id="themeBody" style="display:flex;flex-direction:column"></div>
+    <div style="background:var(--cream);border-radius:12px;padding:15px 16px;margin-top:12px">
       <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
-        <span style="width:26px;height:26px;border-radius:50%;background:var(--turquoise);border:2px solid var(--ink);display:block;position:relative"><span style="position:absolute;inset:6px;border-radius:50%;background:var(--sand)"></span></span>
-        <span style="font-size:13px;font-weight:700">Content Agent</span>
-        <span style="font-size:9.5px;font-weight:800;color:var(--turquoise-dark);border:1px solid var(--turquoise);padding:1px 5px;border-radius:20px;letter-spacing:.06em">AI</span>
-        <span style="margin-left:auto;font-size:11.5px;color:var(--ink-soft)">needs approval</span>
+        <span style="font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--green)">Drafted from theme 1</span>
+        <span style="margin-left:auto;font-size:11.5px;color:var(--ink-soft)">awaiting your approval</span>
       </div>
-      <div style="font-size:13.5px;line-height:1.5;margin-top:10px">Drafted a LinkedIn post from Tuesday's discovery call — built on the words the buyer actually used, not generic copy.</div>
+      <div class="display" style="font-size:16px;margin-top:9px;line-height:1.3">“What happens when your RevOps person leaves?”</div>
+      <div style="font-size:12.5px;color:var(--ink-soft);line-height:1.5;margin-top:7px">How-To Guide · for the CEO byline · targets <i>inherited CRM black box</i></div>
       <div style="display:flex;align-items:center;gap:10px;margin-top:13px">
-        <span style="font-size:11.5px;color:var(--ink-soft);white-space:nowrap">Grounded in call data</span>
-        <span style="flex:1;position:relative;height:8px;border-radius:8px;background:var(--sand-deep);overflow:hidden;display:block">
-          <span style="position:absolute;top:0;left:0;height:100%;width:82%;background:linear-gradient(90deg,var(--turquoise-dark),var(--turquoise));border-radius:8px;display:block"></span>
-          <span style="position:absolute;top:0;left:0;height:100%;width:38%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.85),transparent);animation:blsweep 2.4s infinite;display:block"></span>
+        <span style="font-size:11.5px;color:var(--ink-soft);white-space:nowrap">Cited from calls</span>
+        <span style="flex:1;position:relative;height:8px;border-radius:8px;background:var(--line);overflow:hidden;display:block">
+          <span style="position:absolute;top:0;left:0;height:100%;width:86%;background:var(--green);border-radius:8px;display:block"></span>
+          <span style="position:absolute;top:0;left:0;height:100%;width:38%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.9),transparent);animation:blsweep 2.4s infinite;display:block"></span>
         </span>
       </div>
       <div style="display:flex;gap:8px;margin-top:14px">
-        <span style="font-size:12.5px;background:var(--turquoise);color:var(--ink);border-radius:20px;padding:8px 15px;font-weight:700">Approve &amp; publish</span>
-        <span style="font-size:12.5px;border:1px solid var(--line);border-radius:20px;padding:8px 14px;font-weight:700;color:var(--ink-soft)">Edit</span>
+        <span style="font-size:12.5px;background:var(--green);color:var(--paper);border-radius:20px;padding:8px 15px;font-weight:700">Approve</span>
+        <span style="font-size:12.5px;border:1px solid var(--line);border-radius:20px;padding:8px 14px;font-weight:700;color:var(--ink-soft)">Send back</span>
       </div>
     </div>
   </div>
 </header>
 
-<!-- ===================== TOKEN ECONOMICS ===================== -->
-<section style="background:var(--ink);color:var(--sand)">
-  <div class="wrap g-2" style="padding-top:76px;padding-bottom:76px;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center">
-    <div>
-      <div class="eyebrow" style="color:var(--turquoise)">Token economics</div>
-      <h2 style="color:var(--sand)">Why the bill<br>doesn't move.</h2>
-      <p style="font-size:16.5px;line-height:1.6;color:rgba(244,239,227,.72);margin-top:20px;max-width:460px">
-        Every cloud-only AI tool charges per token. Ten agents reading your call transcripts, your site,
-        and your CRM all day is a lot of tokens — and that spend scales in a straight line with how much
-        work you ask for. Bloom does its inference locally, on a machine that sits in your office.
+<!-- ===================== THE PROBLEM ===================== -->
+<section style="background:var(--ink);color:var(--cream)">
+  <div class="wrap" style="padding-top:76px;padding-bottom:76px">
+    <div class="reveal" style="text-align:center;max-width:720px;margin:0 auto 46px">
+      <div class="eyebrow" style="color:var(--green)">The problem</div>
+      <h2 style="color:var(--cream)">Most B2B content is a guess.</h2>
+      <p style="font-size:16.5px;color:var(--on-dark);margin-top:18px;line-height:1.6">
+        It gets written by someone imagining what buyers care about, then tuned to a keyword tool. So it
+        reads like everyone else's, ranks for nothing that converts, and never gets cited when a buyer
+        asks an AI assistant for a recommendation.
       </p>
-      <div style="display:flex;flex-direction:column;gap:14px;margin-top:26px">
-        <div style="display:flex;gap:11px;align-items:flex-start"><span style="width:20px;height:20px;border-radius:50%;background:var(--turquoise);color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex:none;margin-top:2px">✓</span><span style="font-size:15px;line-height:1.5">Local inference — <b>your agents aren't billed by the token</b>.</span></div>
-        <div style="display:flex;gap:11px;align-items:flex-start"><span style="width:20px;height:20px;border-radius:50%;background:var(--turquoise);color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex:none;margin-top:2px">✓</span><span style="font-size:15px;line-height:1.5">A <b>flat monthly cost</b> — no metered surprise at month end.</span></div>
-        <div style="display:flex;gap:11px;align-items:flex-start"><span style="width:20px;height:20px;border-radius:50%;background:var(--turquoise);color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex:none;margin-top:2px">✓</span><span style="font-size:15px;line-height:1.5">Run the agents as often as you want — <b>no throttling to save money</b>.</span></div>
-        <div style="display:flex;gap:11px;align-items:flex-start"><span style="width:20px;height:20px;border-radius:50%;background:var(--turquoise);color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex:none;margin-top:2px">✓</span><span style="font-size:15px;line-height:1.5">The hardware is yours, and <b>your call data never leaves it</b>.</span></div>
-      </div>
     </div>
-    <div style="background:rgba(244,239,227,.06);border:1px solid rgba(244,239,227,.16);border-radius:14px;padding:32px 30px">
-      <div style="font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,239,227,.6);margin-bottom:26px">AI cost as usage grows</div>
-      <div style="margin-bottom:24px">
-        <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:9px"><span style="font-weight:700">Per-token cloud AI</span><span style="color:rgba(244,239,227,.6)">metered · scales up</span></div>
-        <div style="height:26px;border-radius:8px;background:var(--sand);width:100%;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;color:var(--ink);font-family:'Anton',sans-serif;font-size:15px;letter-spacing:.08em">$ $ $ $ $</div>
+    <div class="g-3 reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+      <div style="background:rgba(250,244,236,.05);border:1px solid rgba(250,244,236,.14);border-radius:14px;padding:26px 24px">
+        <h3 style="color:var(--cream)">No one to write it</h3>
+        <p style="font-size:14.5px;color:var(--on-dark-dim);line-height:1.6;margin-top:10px">A one-to-five person marketing team is already running campaigns, events and the site. Long-form content is the first thing to slip and the last thing to get picked back up.</p>
       </div>
-      <div>
-        <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:9px"><span style="font-weight:700">Bloom · local inference</span><span style="color:rgba(244,239,227,.6)">flat · predictable</span></div>
-        <div style="height:26px;border-radius:8px;background:linear-gradient(90deg,var(--turquoise-dark),var(--turquoise));width:26%;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;color:var(--ink);font-family:'Anton',sans-serif;font-size:15px">$</div>
+      <div style="background:rgba(250,244,236,.05);border:1px solid rgba(250,244,236,.14);border-radius:14px;padding:26px 24px">
+        <h3 style="color:var(--cream)">Generic AI output</h3>
+        <p style="font-size:14.5px;color:var(--on-dark-dim);line-height:1.6;margin-top:10px">Pointing a chatbot at a keyword produces filler — nothing grounded in your buyers, your deals, or your actual point of view. Readers can tell, and so can search.</p>
       </div>
-      <p style="font-size:12.5px;color:rgba(244,239,227,.6);margin-top:26px;line-height:1.55">Illustrative — the shape, not a quote. The point: your cost doesn't balloon just because your agents got busy.</p>
+      <div style="background:rgba(250,244,236,.05);border:1px solid rgba(250,244,236,.14);border-radius:14px;padding:26px 24px">
+        <h3 style="color:var(--cream)">The evidence goes unused</h3>
+        <p style="font-size:14.5px;color:var(--on-dark-dim);line-height:1.6;margin-top:10px">You have hundreds of recorded calls in Granola, Circleback, Fathom or Gong — the clearest record anywhere of what buyers ask and worry about. Almost nobody mines it for content.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== INTEGRATION STRIP ===================== -->
-<section style="border-bottom:1px solid var(--line);background:var(--paper)">
-  <div class="wrap" style="padding-top:24px;padding-bottom:24px;display:flex;align-items:center;gap:36px;flex-wrap:wrap;justify-content:space-between">
-    <span style="font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)">Works where your team already works</span>
-    <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap">
-      <span class="display" style="font-size:19px;color:var(--ink-soft)">Slack</span>
-      <span class="display" style="font-size:19px;color:var(--ink-soft)">Teams</span>
-      <span class="display" style="font-size:19px;color:var(--ink-soft)">Gmail</span>
-      <span class="display" style="font-size:19px;color:var(--ink-soft)">HubSpot</span>
-      <span class="display" style="font-size:19px;color:var(--ink-soft)">Webflow</span>
-      <span class="display" style="font-size:19px;color:var(--ink-soft)">Ahrefs</span>
-    </div>
+<!-- ===================== HOW IT WORKS ===================== -->
+<section id="how" class="wrap" style="padding-top:84px;padding-bottom:20px">
+  <div class="reveal" style="text-align:center;margin-bottom:20px">
+    <div class="eyebrow">How it works</div>
+    <h2 style="max-width:700px;margin:0 auto">Five steps. The first two happen before you sign anything.</h2>
+    <p style="font-size:16.5px;color:var(--ink-soft);margin-top:16px;max-width:620px;margin-left:auto;margin-right:auto;line-height:1.6">
+      We start by analysing your calls and handing you a findings report. If you stop there, you keep it —
+      it's built to stand on its own.
+    </p>
   </div>
+  <div class="g-3 reveal" id="stepGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px"></div>
+  <p style="text-align:center;font-size:13.5px;color:var(--ink-soft);margin-top:22px">Step 5 loops back into step 4 — performance decides what gets written next.</p>
 </section>
 
-<!-- ===================== THE ENGINE (6-step loop) ===================== -->
-<section id="engine" class="wrap" style="padding-top:84px;padding-bottom:20px">
+<!-- ===================== WHY IT'S DIFFERENT ===================== -->
+<section id="different" class="wrap" style="padding-top:84px;padding-bottom:20px">
   <div class="reveal" style="text-align:center;margin-bottom:42px">
-    <div class="eyebrow">How Bloom works</div>
-    <h2 style="max-width:720px;margin:0 auto">A closed loop, not a one-time report.</h2>
-    <p style="font-size:16.5px;color:var(--ink-soft);margin-top:16px;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.55">
-      Bloom turns your own sales calls into content that ranks — then watches how it performs and feeds
-      that back in, so each piece beats the last.
-    </p>
+    <div class="eyebrow">Why it's different</div>
+    <h2>Evidence, not assumptions.</h2>
   </div>
-  <div class="g-3 reveal" id="engineGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px"></div>
-  <p style="text-align:center;font-size:13.5px;color:var(--ink-soft);margin-top:22px">Every step runs continuously — no piece of this is a one-off deliverable.</p>
-</section>
-
-<!-- ===================== THE TEAM ===================== -->
-<section id="team" class="wrap" style="padding-top:84px;padding-bottom:20px">
-  <div class="reveal" style="text-align:center;margin-bottom:44px">
-    <div class="eyebrow">The team</div>
-    <h2>Meet your AI marketing team.</h2>
-    <p style="font-size:16.5px;color:var(--ink-soft);margin-top:16px;max-width:580px;margin-left:auto;margin-right:auto;line-height:1.55">
-      Your VP briefs a team of specialists, a QA agent checks their work, and nothing publishes without your sign-off.
-    </p>
-  </div>
-  <div class="reveal" style="display:flex;flex-direction:column;align-items:center">
-    <div style="position:relative;background:var(--ink);color:var(--sand);border-radius:14px;padding:16px 22px;display:flex;align-items:center;gap:14px;max-width:420px">
-      <span style="width:40px;height:40px;border-radius:50%;background:var(--turquoise);border:2px solid var(--sand);flex:none;display:block;position:relative"><span style="position:absolute;inset:10px;border-radius:50%;background:var(--ink)"></span></span>
-      <span>
-        <span class="display" style="font-size:17px;display:block">AI VP of Marketing</span>
-        <span style="font-size:12.5px;color:rgba(244,239,227,.62);line-height:1.4;display:block;margin-top:3px">Orchestrator — briefs the team, never sends anything itself</span>
-      </span>
-      <span style="position:absolute;top:12px;right:14px;display:inline-flex;align-items:center;gap:5px;font-size:9.5px;font-weight:800;letter-spacing:.1em;color:rgba(244,239,227,.6)"><span style="width:6px;height:6px;border-radius:50%;background:var(--turquoise);animation:blpulse 1.6s infinite"></span>LIVE</span>
+  <div class="g-2 reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:22px">
+    <div class="card" style="padding:30px 28px">
+      <div class="num" style="margin-bottom:16px">01</div>
+      <h3>Two-pass analysis</h3>
+      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.65;margin-top:10px">
+        We analyse your calls <b style="color:var(--ink)">first, on their own</b>, and derive themes from the raw
+        data. Only then do we load your stated ICP and positioning — and report the delta. Feeding both in
+        together would just bias the model toward confirming what you already believe. So we don't.
+      </p>
     </div>
-    <div style="position:relative;width:3px;height:26px;background:var(--sand-deep)"><span style="position:absolute;top:0;left:-2px;width:7px;height:7px;border-radius:50%;background:var(--turquoise);animation:blflow 2.2s linear infinite;display:block"></span></div>
-    <div style="position:relative;background:var(--paper);border:2px solid var(--turquoise);border-radius:14px;padding:16px 22px;display:flex;align-items:center;gap:14px;max-width:460px">
-      <span style="width:40px;height:40px;border-radius:50%;background:var(--turquoise);color:var(--ink);font-family:'Anton',sans-serif;font-size:13px;display:flex;align-items:center;justify-content:center;flex:none">QA</span>
-      <span>
-        <span class="display" style="font-size:17px;display:block">Quality Assurance Agent</span>
-        <span style="font-size:12.5px;color:var(--ink-soft);line-height:1.4;display:block;margin-top:3px">Checks every draft, finding, and report before it reaches your digest</span>
-      </span>
+    <div class="card" style="padding:30px 28px">
+      <div class="num" style="margin-bottom:16px">02</div>
+      <h3>Published under a real name</h3>
+      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.65;margin-top:10px">
+        Never a faceless company account. Every piece goes out under your CEO or a genuine in-house expert,
+        because attributed content performs materially better and reads as human. LinkedIn posts are always
+        copy-paste by that person — we never post to anyone's personal account.
+      </p>
     </div>
-    <div style="position:relative;width:3px;height:26px;background:var(--sand-deep)"><span style="position:absolute;top:0;left:-2px;width:7px;height:7px;border-radius:50%;background:var(--turquoise);animation:blflow 2.2s linear infinite .5s;display:block"></span></div>
-    <div style="width:100%">
-      <div style="height:3px;margin:0 12.5%;background:linear-gradient(90deg,var(--sand-deep) 0%,var(--sand-deep) 42%,var(--turquoise) 50%,var(--sand-deep) 58%,var(--sand-deep) 100%);background-size:220% 100%;animation:blslide 3s linear infinite"></div>
-      <div class="g-4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
-        <div style="display:flex;flex-direction:column;align-items:center">
-          <div style="width:3px;height:22px;background:var(--sand-deep)"></div>
-          <div class="card" style="padding:18px 12px;text-align:center;width:100%">
-            <div style="width:36px;height:36px;border-radius:50%;background:var(--sand-deep);color:var(--ink);font-family:'Anton',sans-serif;font-size:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">RE</div>
-            <div style="font-size:14.5px;font-weight:700">Research Agent</div>
-            <div style="font-size:11.5px;color:var(--ink-soft);margin-top:5px;line-height:1.45">Mines your calls &amp; public data for what buyers actually say</div>
-          </div>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:center">
-          <div style="width:3px;height:22px;background:var(--sand-deep)"></div>
-          <div class="card" style="padding:18px 12px;text-align:center;width:100%">
-            <div style="width:36px;height:36px;border-radius:50%;background:var(--sand-deep);color:var(--ink);font-family:'Anton',sans-serif;font-size:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">CO</div>
-            <div style="font-size:14.5px;font-weight:700">Content Agent</div>
-            <div style="font-size:11.5px;color:var(--ink-soft);margin-top:5px;line-height:1.45">Drafts articles, guides, playbooks &amp; LinkedIn posts</div>
-          </div>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:center">
-          <div style="width:3px;height:22px;background:var(--sand-deep)"></div>
-          <div class="card" style="padding:18px 12px;text-align:center;width:100%">
-            <div style="width:36px;height:36px;border-radius:50%;background:var(--sand-deep);color:var(--ink);font-family:'Anton',sans-serif;font-size:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">SEO</div>
-            <div style="font-size:14.5px;font-weight:700">SEO / AEO Agent</div>
-            <div style="font-size:11.5px;color:var(--ink-soft);margin-top:5px;line-height:1.45">Watches search rankings and AI-answer visibility</div>
-          </div>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:center">
-          <div style="width:3px;height:22px;background:var(--sand-deep)"></div>
-          <div class="card" style="padding:18px 12px;text-align:center;width:100%">
-            <div style="width:36px;height:36px;border-radius:50%;background:var(--sand-deep);color:var(--ink);font-family:'Anton',sans-serif;font-size:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">AN</div>
-            <div style="font-size:14.5px;font-weight:700">Analytics Agent</div>
-            <div style="font-size:11.5px;color:var(--ink-soft);margin-top:5px;line-height:1.45">Plain-English weekly traffic &amp; deal reporting</div>
-          </div>
-        </div>
-      </div>
+    <div class="card" style="padding:30px 28px">
+      <div class="num" style="margin-bottom:16px">03</div>
+      <h3>A human gate on everything</h3>
+      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.65;margin-top:10px">
+        Drafts clear a shared QA and brand-voice check, then go to you in Slack or Teams. Approval schedules
+        a piece — it never publishes it instantly. Revisions are capped at two rounds before a human is
+        pulled in, so nothing loops forever unattended.
+      </p>
     </div>
-  </div>
-  <div class="reveal" style="margin-top:34px;border:2px dashed var(--line);border-radius:14px;padding:26px 30px;display:flex;align-items:center;gap:22px;flex-wrap:wrap">
-    <span style="width:52px;height:52px;border-radius:50%;background:var(--turquoise);color:var(--ink);display:flex;align-items:center;justify-content:center;font-family:'Anton',sans-serif;font-size:30px;flex:none">+</span>
-    <div style="flex:1;min-width:260px">
-      <div class="display" style="font-size:19px">This is just your starter team.</div>
-      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.55;margin-top:6px;max-width:760px">A base setup to get you running fast. From there we add agents as you need them — each one reporting up to your VP and pointed at the same outcome: steady, qualified growth.</p>
+    <div class="card" style="padding:30px 28px">
+      <div class="num" style="margin-bottom:16px">04</div>
+      <h3>Judgment where it counts</h3>
+      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.65;margin-top:10px">
+        Mechanical work — fetching, scanning, scheduling — runs on dedicated hardware we install in your
+        office. Anything you'll actually read, or that reasons from evidence to a conclusion, runs on
+        frontier models. That split is a deliberate quality and cost decision, not a slogan.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- ===================== COWORKER DEMO ===================== -->
-<section id="coworker" style="background:var(--ink);color:var(--sand);margin-top:76px">
-  <div class="wrap" style="padding-top:84px;padding-bottom:84px">
-    <div class="reveal" style="text-align:center;margin-bottom:48px">
-      <div class="eyebrow" style="color:var(--turquoise)">A coworker, not a chatbot</div>
-      <h2 style="color:var(--sand)">You message Bloom. Bloom does the work.</h2>
-      <p style="font-size:16.5px;color:rgba(244,239,227,.62);margin-top:16px;max-width:580px;margin-left:auto;margin-right:auto;line-height:1.55">No dashboard to log into, no prompts to master. Talk to it like a teammate — in the tools you already have open.</p>
+<!-- ===================== WHAT YOU GET ===================== -->
+<section id="output" class="wrap" style="padding-top:84px;padding-bottom:20px">
+  <div class="reveal" style="text-align:center;margin-bottom:42px">
+    <div class="eyebrow">What you get</div>
+    <h2>Four formats, produced continuously.</h2>
+  </div>
+  <div class="g-4 reveal" style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px">
+    <div class="card" style="padding:26px 22px">
+      <div class="display" style="font-size:15px;color:var(--green);margin-bottom:12px">01</div>
+      <h3>How-To Guides</h3>
+      <p style="font-size:14px;color:var(--ink-soft);line-height:1.6;margin-top:9px">Long-form instructional pieces answering the questions buyers actually ask on calls.</p>
     </div>
-    <div class="g-2 reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:22px">
-      <div style="background:rgba(244,239,227,.05);border:1px solid rgba(244,239,227,.14);border-radius:14px;padding:22px">
-        <div style="font-size:11px;font-weight:800;letter-spacing:.14em;color:rgba(244,239,227,.5);margin-bottom:18px">SLACK · #content-review</div>
-        <div style="display:flex;flex-direction:column;gap:16px">
-          <div style="display:flex;gap:11px"><span style="width:32px;height:32px;border-radius:50%;background:rgba(244,239,227,.16);flex:none;display:block"></span><span style="font-size:14px;line-height:1.5"><b>Marcus</b> <span style="color:rgba(244,239,227,.4);font-size:12px">now</span><br>@Bloom which pages should we refresh first to win more demos?</span></div>
-          <div style="display:flex;gap:11px"><span style="width:32px;height:32px;border-radius:50%;background:var(--turquoise);flex:none;display:block;position:relative"><span style="position:absolute;inset:8px;border-radius:50%;background:var(--ink)"></span></span><span style="font-size:14px;line-height:1.5"><b>Bloom</b> <span style="font-size:9.5px;font-weight:800;color:var(--turquoise);border:1px solid var(--turquoise);padding:1px 5px;border-radius:20px">AI</span><br><span style="color:rgba(244,239,227,.82)">Your pricing and comparison pages get the most buyer traffic but haven't been touched in months. Six discovery calls last quarter raised objections neither page answers. Drafts are ready — publish?</span></span></div>
-        </div>
+    <div class="card" style="padding:26px 22px">
+      <div class="display" style="font-size:15px;color:var(--green);margin-bottom:12px">02</div>
+      <h3>Articles</h3>
+      <p style="font-size:14px;color:var(--ink-soft);line-height:1.6;margin-top:9px">Standard blog and article formats mapped to your keyword and topic clusters.</p>
+    </div>
+    <div class="card" style="padding:26px 22px">
+      <div class="display" style="font-size:15px;color:var(--green);margin-bottom:12px">03</div>
+      <h3>Playbooks</h3>
+      <p style="font-size:14px;color:var(--ink-soft);line-height:1.6;margin-top:9px">Productized and sales-oriented — each one tied to a service you actually sell.</p>
+    </div>
+    <div class="card" style="padding:26px 22px">
+      <div class="display" style="font-size:15px;color:var(--green);margin-bottom:12px">04</div>
+      <h3>CEO LinkedIn posts</h3>
+      <p style="font-size:14px;color:var(--ink-soft);line-height:1.6;margin-top:9px">Quote-pulls from published pieces, linking back — for your CEO to post in their own voice.</p>
+    </div>
+  </div>
+
+  <!-- publishing flow (from the deck) -->
+  <div class="reveal card" style="margin-top:22px;padding:28px 30px">
+    <div style="display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;font-size:14.5px;font-weight:700">
+      <span>Agent drafts</span>
+      <span style="color:var(--green);font-size:18px">→</span>
+      <span>QA &amp; brand-voice gate</span>
+      <span style="color:var(--green);font-size:18px">→</span>
+      <span>Your approval in Slack / Teams</span>
+      <span style="color:var(--green);font-size:18px">→</span>
+      <span>Scheduled &amp; published</span>
+      <span style="color:var(--green);font-size:18px">→</span>
+      <span>Performance monitored</span>
+    </div>
+    <p style="text-align:center;font-size:13.5px;color:var(--ink-soft);margin-top:16px">
+      Human-approved, brand-aligned, never published blind. Runs on a Mac mini installed in your office.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== WHO IT'S FOR ===================== -->
+<section id="fit" class="wrap" style="padding-top:84px;padding-bottom:20px">
+  <div class="g-2 reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start">
+    <div>
+      <div class="eyebrow">Who it's for</div>
+      <h2>Built for a specific company.</h2>
+      <p style="font-size:16.5px;color:var(--ink-soft);margin-top:18px;line-height:1.6">
+        Bloom does one job extremely well rather than everything adequately. If the list on the right
+        doesn't describe you, we'll say so on the first call rather than sell you a bad fit.
+      </p>
+      <div style="margin-top:26px;padding:22px 24px;background:var(--mint);border-radius:14px">
+        <div style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);margin-bottom:8px">The non-negotiable</div>
+        <p style="font-size:15px;line-height:1.6;color:var(--ink)">
+          You have to be recording your calls. That archive is the fuel for the entire engine — without it,
+          there's nothing to mine and we're just guessing like everyone else.
+        </p>
       </div>
-      <div style="background:rgba(244,239,227,.05);border:1px solid rgba(244,239,227,.14);border-radius:14px;padding:22px">
-        <div style="font-size:11px;font-weight:800;letter-spacing:.14em;color:rgba(244,239,227,.5);margin-bottom:18px">EMAIL · Inbox</div>
-        <div style="background:var(--ink);border:1px solid rgba(244,239,227,.12);border-radius:12px;padding:16px 17px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px"><span style="width:30px;height:30px;border-radius:50%;background:var(--turquoise);display:block;position:relative"><span style="position:absolute;inset:7px;border-radius:50%;background:var(--ink)"></span></span><span style="font-size:13.5px"><b>Bloom</b> <span style="color:rgba(244,239,227,.4)">&lt;hello@runbloom.ai&gt;</span></span></div>
-          <div style="font-size:15px;font-weight:700;margin-bottom:8px">Weekly report — 3 things need you</div>
-          <div style="font-size:13.5px;line-height:1.6;color:rgba(244,239,227,.7)">Two articles cleared QA and are queued for Thursday. The SEO agent found a competitor now outranking you on your #3 cluster. One LinkedIn draft is waiting on your byline.</div>
-          <div style="display:flex;gap:8px;margin-top:14px"><span style="font-size:12.5px;background:var(--turquoise);color:var(--ink);border-radius:20px;padding:7px 14px;font-weight:700">Approve all</span><span style="font-size:12.5px;border:1px solid rgba(244,239,227,.2);border-radius:20px;padding:7px 14px;font-weight:700;color:rgba(244,239,227,.75)">Review</span></div>
-        </div>
-      </div>
+    </div>
+    <div class="card" style="padding:12px 26px 18px">
+      <div class="fit yes"><span class="mark">✓</span><span style="font-size:15px;line-height:1.5"><b>A B2B tech company with a real sales motion</b> — roughly 15–250 people.</span></div>
+      <div class="fit yes"><span class="mark">✓</span><span style="font-size:15px;line-height:1.5"><b>Call recordings you already have</b> — Granola, Circleback, Fathom, Gong or similar, ideally 6–12 months' worth.</span></div>
+      <div class="fit yes"><span class="mark">✓</span><span style="font-size:15px;line-height:1.5"><b>A marketing team of one to five</b>, looking to scale output without adding headcount.</span></div>
+      <div class="fit yes"><span class="mark">✓</span><span style="font-size:15px;line-height:1.5"><b>A CEO or in-house expert willing to be the byline</b> — content goes out under their name.</span></div>
+      <div class="fit no"><span class="mark">–</span><span style="font-size:15px;line-height:1.5;color:var(--ink-soft)">Not a fit if you have a full in-house content team, or no recorded calls to work from.</span></div>
     </div>
   </div>
 </section>
@@ -427,83 +431,52 @@ h3{font-size:clamp(17px,2vw,21px);}
 <!-- ===================== 90-DAY ROLLOUT ===================== -->
 <section id="rollout" class="wrap" style="padding-top:84px;padding-bottom:20px;max-width:960px">
   <div class="reveal" style="border-bottom:2px solid var(--ink);padding-bottom:24px;margin-bottom:34px">
-    <div class="eyebrow">Bloom AI · Your 90-day rollout</div>
+    <div class="eyebrow">Bloom AI · your 90-day rollout</div>
     <h2>Rollout timeline</h2>
-    <p style="font-size:16.5px;color:var(--ink-soft);margin-top:16px;max-width:640px;line-height:1.55">
-      Twelve weeks from kickoff to a content engine that runs on its own. Every client gets this same
-      plan, and their own live copy of it to track against.
+    <p style="font-size:16.5px;color:var(--ink-soft);margin-top:16px;max-width:640px;line-height:1.6">
+      Twelve weeks from kickoff to an engine that drafts, reviews and publishes on a cadence. Every client
+      gets this same plan — and their own live copy to track against.
     </p>
     <div style="display:flex;align-items:center;gap:16px;margin-top:24px">
-      <span style="flex:1;height:14px;border-radius:8px;background:var(--sand-deep);border:1px solid var(--line);overflow:hidden;position:relative;display:block">
-        <span id="rolloutBar" style="display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--turquoise-dark),var(--turquoise));border-radius:8px;transition:width .6s ease"></span>
+      <span style="flex:1;height:14px;border-radius:8px;background:var(--line);overflow:hidden;position:relative;display:block">
+        <span id="rolloutBar" style="display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--green-deep),var(--green));border-radius:8px;transition:width .6s ease"></span>
       </span>
-      <span class="display" id="rolloutPct" style="font-size:20px;min-width:104px;text-align:right">Week 1 / 12</span>
+      <span class="display" id="rolloutPct" style="font-size:19px;min-width:104px;text-align:right">Week 1 / 12</span>
     </div>
     <div style="display:flex;gap:8px;margin-top:18px;flex-wrap:wrap" id="phaseChips"></div>
   </div>
-
   <div id="timeline" style="position:relative;padding-left:2px">
     <div class="rail-track"></div>
     <div class="rail-fill" id="railFill"></div>
   </div>
 </section>
 
-<!-- ===================== WHAT YOU GET ===================== -->
-<section id="deliverables" class="wrap" style="padding-top:84px;padding-bottom:20px">
-  <div class="reveal" style="text-align:center;margin-bottom:42px">
-    <div class="eyebrow">What you get</div>
-    <h2>Three things, delivered continuously.</h2>
-  </div>
-  <div class="g-3 reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
-    <div class="card" style="padding:30px 26px">
-      <div class="display" style="font-size:40px;color:var(--turquoise-dark);line-height:1;margin-bottom:16px">01</div>
-      <h3>Website improvements</h3>
-      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.6;margin-top:10px">A document of specific changes that close the gap between what your customers are asking on calls and what your site currently says.</p>
-    </div>
-    <div class="card" style="padding:30px 26px">
-      <div class="display" style="font-size:40px;color:var(--turquoise-dark);line-height:1;margin-bottom:16px">02</div>
-      <h3>SEO / AEO article template</h3>
-      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.6;margin-top:10px">A repeatable structure — titles, title tags, formatting — built for both search rankings and visibility inside AI answers.</p>
-    </div>
-    <div class="card" style="padding:30px 26px">
-      <div class="display" style="font-size:40px;color:var(--turquoise-dark);line-height:1;margin-bottom:16px">03</div>
-      <h3>Ongoing content</h3>
-      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.6;margin-top:10px">Articles, how-to guides, playbooks and executive LinkedIn posts — drafted continuously and tied to real customer language.</p>
-    </div>
-  </div>
-  <div class="reveal card" style="margin-top:22px;padding:26px 30px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:center;text-align:center">
-    <span style="font-size:14.5px;color:var(--ink-soft);line-height:1.6;max-width:820px">
-      <b style="color:var(--ink)">Nothing publishes blind.</b> Every piece clears an internal QA pass, then goes to you for approval in
-      Slack, Teams, or a shared doc. Content written for a person's byline is delivered to that person to post
-      themselves — Bloom never posts to anyone's personal account.
-    </span>
-  </div>
-</section>
-
 <!-- ===================== FINAL CTA ===================== -->
 <section class="wrap" style="padding-top:74px;padding-bottom:90px">
-  <div class="reveal" style="background:var(--turquoise);border:2px solid var(--ink);border-radius:14px;padding:68px 48px;text-align:center;color:var(--ink)">
-    <h2 style="max-width:760px;margin:0 auto">Give your marketing team room to grow.</h2>
-    <p style="font-size:17px;color:rgba(22,35,31,.78);margin-top:18px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.55">
-      Ninety days from kickoff to an engine that drafts, reviews and publishes on its own — running on your
-      hardware, at a cost that doesn't move when the work does.
+  <div class="reveal" style="background:var(--ink);border-radius:14px;padding:66px 48px;text-align:center;color:var(--cream)">
+    <div class="eyebrow" style="color:var(--green)">Start here</div>
+    <h2 style="max-width:760px;margin:0 auto;color:var(--cream)">Start with the findings report.</h2>
+    <p style="font-size:17px;color:var(--on-dark);margin-top:18px;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.6">
+      Send us your call recordings and a list of your best-fit accounts. You'll get back a designed report
+      of the questions, pains and language your buyers actually use — plus the gap between how you talk and
+      how they do. No contract required, and the report is yours either way.
     </p>
     <div style="display:flex;gap:12px;justify-content:center;margin-top:30px;flex-wrap:wrap">
-      <a href="mailto:hello@runbloom.ai" class="btn" style="background:var(--ink);color:var(--sand)">Book a call</a>
-      <a href="#rollout" class="btn" style="background:var(--paper);color:var(--ink)">Walk the 90-day plan</a>
+      <a href="mailto:hello@runbloom.ai" class="btn btn-primary">Get your findings report</a>
+      <a href="#how" class="btn" style="background:transparent;color:var(--cream);border-color:rgba(250,244,236,.3)">See the five steps</a>
     </div>
   </div>
 </section>
 
 <!-- ===================== FOOTER ===================== -->
-<footer style="border-top:2px solid var(--ink)">
+<footer style="border-top:1px solid var(--line)">
   <div class="wrap" style="padding-top:36px;padding-bottom:36px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px">
     <div style="display:flex;align-items:center;gap:10px">
-      <span style="width:22px;height:22px;border-radius:50%;background:var(--turquoise);border:2px solid var(--ink);display:block;position:relative"><span style="position:absolute;inset:5px;border-radius:50%;background:var(--sand)"></span></span>
-      <span class="display" style="font-size:21px">Bloom</span>
+      <span style="width:22px;height:22px;border-radius:50%;background:var(--green);display:block;position:relative"><span style="position:absolute;inset:5px;border-radius:50%;background:var(--cream)"></span></span>
+      <span class="display" style="font-size:20px">Bloom</span>
     </div>
-    <div style="display:flex;gap:26px;font-size:14px;font-weight:600;color:var(--ink-soft);flex-wrap:wrap">
-      <a href="#engine">How it works</a><a href="#team">The team</a><a href="#rollout">90-day rollout</a><a href="#deliverables">What you get</a><a href="mailto:hello@runbloom.ai">Contact</a>
+    <div style="display:flex;gap:24px;font-size:14px;font-weight:600;color:var(--ink-soft);flex-wrap:wrap">
+      <a href="#how">How it works</a><a href="#different">Why it's different</a><a href="#output">What you get</a><a href="#fit">Who it's for</a><a href="mailto:hello@runbloom.ai">Contact</a>
     </div>
     <span style="font-size:13px;color:var(--ink-soft)">© 2026 Bloom AI, LLC</span>
   </div>
@@ -514,39 +487,34 @@ h3{font-size:clamp(17px,2vw,21px);}
   "use strict";
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- hero digest ---------- */
-  var agents = [
-    { name:'AI VP of Marketing', state:'briefing the team', working:true,  vp:true },
-    { name:'Research Agent',     state:'3 calls mined',     working:false },
-    { name:'Content Agent',      state:'drafting',          working:true },
-    { name:'SEO / AEO Agent',    state:'scanning rivals',   working:true },
-    { name:'Analytics Agent',    state:'report ready',      working:false }
+  /* ---------- hero: themes surfacing from call data ---------- */
+  var THEMES = [
+    { t:'“What happens when our RevOps person leaves?”', m:'raised on 14 calls', working:false },
+    { t:'Attribution nobody trusts',                      m:'raised on 11 calls', working:false },
+    { t:'Inherited a CRM nobody documented',              m:'raised on 9 calls',  working:false },
+    { t:'Scanning transcripts for theme 4…',              m:'',                   working:true  }
   ];
-  var body = document.getElementById('agentBody');
-  agents.forEach(function(a){
+  var tb = document.getElementById('themeBody');
+  THEMES.forEach(function(x){
     var row = document.createElement('div');
-    row.className = 'agent-row';
-    row.style.cssText = 'display:flex;align-items:center;gap:11px;padding:9px;';
-    var avatar = a.vp
-      ? '<span style="width:30px;height:30px;border-radius:50%;background:var(--turquoise);border:2px solid var(--ink);flex:none;display:block;position:relative"><span style="position:absolute;inset:7px;border-radius:50%;background:var(--sand)"></span></span>'
-      : '<span style="width:30px;height:30px;border-radius:50%;background:var(--sand-deep);flex:none;display:block"></span>';
-    var state = a.working
-      ? '<span style="display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--turquoise-dark)">'
+    row.className = 'qrow';
+    row.style.cssText = 'display:flex;align-items:center;gap:10px;padding:9px;';
+    var right = x.working
+      ? '<span style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--green)">'
         + '<span class="dots" style="display:inline-flex;gap:3px">'
-        + '<span style="width:4px;height:4px;border-radius:50%;background:var(--turquoise-dark);display:inline-block;animation:bltype 1.2s infinite 0s"></span>'
-        + '<span style="width:4px;height:4px;border-radius:50%;background:var(--turquoise-dark);display:inline-block;animation:bltype 1.2s infinite .15s"></span>'
-        + '<span style="width:4px;height:4px;border-radius:50%;background:var(--turquoise-dark);display:inline-block;animation:bltype 1.2s infinite .3s"></span>'
-        + '</span>' + a.state + '</span>'
-      : '<span style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--ink-soft)">'
-        + '<span style="width:14px;height:14px;border-radius:50%;background:var(--turquoise);color:var(--ink);display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:800">&#10003;</span>'
-        + a.state + '</span>';
-    row.innerHTML = avatar
-      + '<span style="flex:1;min-width:0"><span style="font-size:13px;font-weight:700;display:block">' + a.name + '</span></span>'
-      + state;
-    body.appendChild(row);
+        + '<span style="width:4px;height:4px;border-radius:50%;background:var(--green);display:inline-block;animation:bltype 1.2s infinite 0s"></span>'
+        + '<span style="width:4px;height:4px;border-radius:50%;background:var(--green);display:inline-block;animation:bltype 1.2s infinite .15s"></span>'
+        + '<span style="width:4px;height:4px;border-radius:50%;background:var(--green);display:inline-block;animation:bltype 1.2s infinite .3s"></span>'
+        + '</span></span>'
+      : '<span style="font-size:11px;font-weight:700;color:var(--ink-soft);white-space:nowrap">' + x.m + '</span>';
+    row.innerHTML = '<span style="width:8px;height:8px;border-radius:50%;background:'
+      + (x.working ? 'var(--line)' : 'var(--green)') + ';flex:none;display:block"></span>'
+      + '<span style="flex:1;min-width:0;font-size:13px;font-weight:600;line-height:1.35">' + x.t + '</span>'
+      + right;
+    tb.appendChild(row);
   });
   if (!reduced) {
-    var rows = body.querySelectorAll('.agent-row'), ri = 0;
+    var rows = tb.querySelectorAll('.qrow'), ri = 0;
     setInterval(function(){
       rows.forEach(function(r){ r.classList.remove('active'); });
       rows[ri].classList.add('active');
@@ -554,32 +522,35 @@ h3{font-size:clamp(17px,2vw,21px);}
     }, 2000);
   }
 
-  /* ---------- 6-step engine loop ---------- */
+  /* ---------- 5-step journey ---------- */
   var STEPS = [
-    { n:'1', t:'Mine call data',    d:'Sales, demo and onboarding calls — filtered to your ICP.' },
-    { n:'2', t:'Surface findings',  d:'The pains, language and themes your customers actually use.' },
-    { n:'3', t:'Audit your content',d:'Your website and existing articles, checked against those themes.' },
-    { n:'4', t:'Build the library', d:'On-brand content mapped to real pain points, not keyword guesses.' },
-    { n:'5', t:'Approve & publish', d:'Reviewed by you in Slack or Teams, then pushed live.' },
-    { n:'6', t:'Monitor & improve', d:'Performance feeds back so the next piece beats the last.' }
+    { n:'01', pre:true,  t:'Call harvest & analysis',
+      d:'You hand over 6–12 months of recordings, filtered to your best-fit accounts. We extract the questions buyers ask, their pains in their own words, and the recurring themes.' },
+    { n:'02', pre:true,  t:'Findings report',
+      d:'A designed report with verbatim customer quotes, clear themes, and the language gap between how you talk and how buyers do. Yours to keep whether or not you continue.' },
+    { n:'03', pre:false, t:'Content audit',
+      d:'We audit your existing site and articles against those themes — where the critical gaps are, and where your vocabulary is misaligned with your buyers’.' },
+    { n:'04', pre:false, t:'Roadmap & production',
+      d:'Brand voice locked, SEO/AEO standards set, and new content produced against the roadmap on a steady cadence — each piece approved by you before it schedules.' },
+    { n:'05', pre:false, t:'Optimization loop',
+      d:'Performance data feeds back into what gets written next, so the library compounds instead of going stale.' }
   ];
-  var grid = document.getElementById('engineGrid');
+  var sg = document.getElementById('stepGrid');
   STEPS.forEach(function(s, i){
     var el = document.createElement('div');
     el.className = 'step' + (i === 0 ? ' on' : '');
-    el.innerHTML = '<div class="step-n">STEP ' + s.n + (i === STEPS.length - 1 ? ' &#8635;' : '') + '</div>'
-      + '<h3 style="margin-top:8px">' + s.t + '</h3>'
-      + '<p style="font-size:14px;color:var(--ink-soft);line-height:1.55;margin-top:8px">' + s.d + '</p>'
+    el.innerHTML = '<div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">'
+      + '<span class="num">' + s.n + '</span>'
+      + '<span class="stage-tag ' + (s.pre ? 'tag-pre">Before contract' : 'tag-post">After contract') + '</span>'
+      + '</div>'
+      + '<h3>' + s.t + '</h3>'
+      + '<p style="font-size:14px;color:var(--ink-soft);line-height:1.6;margin-top:9px">' + s.d + '</p>'
       + '<span class="step-bar"></span>';
-    grid.appendChild(el);
+    sg.appendChild(el);
   });
-  var steps = grid.querySelectorAll('.step'), si = 0, timer = null;
-  function setStep(i){
-    steps.forEach(function(s){ s.classList.remove('on'); });
-    steps[i].classList.add('on');
-    si = i;
-  }
-  function play(){ timer = setInterval(function(){ setStep((si + 1) % steps.length); }, 2400); }
+  var steps = sg.querySelectorAll('.step'), si = 0, timer = null;
+  function setStep(i){ steps.forEach(function(s){ s.classList.remove('on'); }); steps[i].classList.add('on'); si = i; }
+  function play(){ timer = setInterval(function(){ setStep((si + 1) % steps.length); }, 2600); }
   function stop(){ clearInterval(timer); timer = null; }
   steps.forEach(function(s, i){
     s.addEventListener('mouseenter', function(){ stop(); setStep(i); });
@@ -704,7 +675,6 @@ h3{font-size:clamp(17px,2vw,21px);}
       var isFinal = week.n === '12';
       var stage = document.createElement('div');
       stage.className = 'stage' + (isFinal ? ' final' : '');
-      stage.dataset.week = week.n;
 
       var node = document.createElement('div');
       node.innerHTML = '<div class="dot">' + week.n + '</div>';
@@ -761,13 +731,11 @@ h3{font-size:clamp(17px,2vw,21px);}
     });
   });
 
-  /* rail + progress driven by how far you have scrolled the timeline */
   function updateRail(){
     var mid = window.innerHeight * 0.62;
     var reached = 0;
     stageEls.forEach(function(st){
-      var top = st.getBoundingClientRect().top;
-      if (top < mid) { st.classList.add('reached'); reached++; }
+      if (st.getBoundingClientRect().top < mid) { st.classList.add('reached'); reached++; }
       else { st.classList.remove('reached'); }
     });
     var p = stageEls.length ? (reached / stageEls.length) * 100 : 0;
