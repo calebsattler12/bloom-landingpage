@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bloom — Upskill your marketing team without increasing payroll</title>
-<meta name="description" content="Bloom is an AI marketing team that lives in Slack and email. Research, content, SEO, and analytics agents do the work; you approve, edit, or reject. Runs on local AI, so the cost doesn't scale with usage.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><rect width=%2240%22 height=%2240%22 rx=%228%22 fill=%22%2312C4B4%22/></svg>">
+<title>Bloom · Sales calls into organic, inbound deals</title>
+<meta name="description" content="Bloom is the AI agent team that turns your sales calls into organic, inbound deals. It mines buyer language and turns it into SEO/AEO content that gets your business found, ranked, and chosen.">
+<link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,8 @@
   --line:rgba(11,11,12,.10);
   --paper:#F4EFE3;
   --accent:#12C4B4;
-  --accent-ink:#fff;
+  --soft:#EEE7DA;
+  --white:#fff;
 }
 html{scroll-behavior:smooth;}
 body{
@@ -30,318 +31,351 @@ body{
 }
 a{color:var(--ink);text-decoration:none;}
 a:hover{color:var(--accent);}
-img{max-width:100%;display:block;}
-h1,h2,h3{font-family:'Schibsted Grotesk',system-ui,sans-serif;margin:0;letter-spacing:-.03em;line-height:.96;text-wrap:balance;}
+h1,h2,h3{font-family:'Schibsted Grotesk',system-ui,sans-serif;margin:0;letter-spacing:-.03em;line-height:.98;text-wrap:balance;}
 p{margin:0;text-wrap:pretty;}
-
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-size:15px;font-weight:600;padding:13px 24px;border-radius:999px;
+  transition:filter .15s ease;
+}
+.btn:hover{filter:brightness(.96);color:inherit;}
+.btn-accent{background:var(--accent);color:#fff;}
+.btn-accent:hover{color:#fff;}
+.btn-ink{background:var(--ink);color:#fff;}
+.btn-ink:hover{color:#fff;}
+.btn-ghost{border:1px solid var(--line);background:transparent;color:var(--ink);}
+.btn-white{background:#fff;color:var(--ink);}
+.btn-white:hover{color:var(--ink);}
+.eyebrow{
+  font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:14px;
+}
+.wrap{max-width:1180px;margin:0 auto;padding-left:48px;padding-right:48px;}
+.section{padding:88px 0;}
+.section-sm{padding:64px 0;}
+.logo-img{display:block;height:36px;width:auto;}
+.logo-img.sm{height:28px;}
 @keyframes blpulse{0%,100%{opacity:1}50%{opacity:.35}}
 @keyframes bltype{0%,70%,100%{transform:translateY(0);opacity:.3}35%{transform:translateY(-3px);opacity:1}}
-@keyframes blsweep{0%{transform:translateX(-110%)}100%{transform:translateX(320%)}}
 @keyframes blflow{0%{top:0;opacity:0}15%{opacity:1}85%{opacity:1}100%{top:100%;opacity:0}}
-@keyframes blslide{0%{background-position:200% 0}100%{background-position:-200% 0}}
-
+.loop-node{
+  background:var(--white);border:1px solid var(--line);border-radius:12px;
+  padding:14px 16px;font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:14px;
+  text-align:center;
+}
+.loop-arrow{color:var(--accent);font-weight:700;font-size:18px;flex:none;}
 .agent-row{transition:background .3s ease;}
 .agent-row.active{background:color-mix(in oklab, var(--accent) 9%, transparent);}
 .agent-row .dots span{animation-play-state:paused;}
 .agent-row.active .dots span{animation-play-state:running;}
-
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
 @media (max-width:900px){
-  header.hero{grid-template-columns:1fr !important;}
-  .use-team-grid{grid-template-columns:repeat(2,1fr) !important;}
-  .cw-grid{grid-template-columns:1fr !important;}
-  .token-grid{grid-template-columns:1fr !important;}
-  nav .nav-links{display:none !important;}
+  .wrap{padding-left:24px;padding-right:24px;}
+  header.hero{grid-template-columns:1fr !important;gap:40px !important;}
+  .grid-2,.grid-3,.improve-grid,.cost-grid,.after-grid{grid-template-columns:1fr !important;}
+  .nav-links{display:none !important;}
+  .hero h1{font-size:40px !important;}
+  .loop-row{flex-direction:column !important;align-items:stretch !important;}
+  .loop-arrow{transform:rotate(90deg);align-self:center;}
+  nav{padding-left:24px !important;padding-right:24px !important;}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+    scroll-behavior:auto !important;
+  }
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav style="display:flex;align-items:center;justify-content:space-between;padding:22px 48px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--paper);z-index:50;">
-  <div style="display:flex;align-items:center;gap:9px">
-    <div style="width:22px;height:22px;border-radius:7px;background:var(--accent);position:relative">
-      <div style="position:absolute;inset:6px;border-radius:50%;background:#fff"></div>
-    </div>
-    <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:21px;letter-spacing:-.03em">Bloom</span>
+<nav style="display:flex;align-items:center;justify-content:space-between;padding:18px 48px;border-bottom:1px solid var(--line);position:sticky;top:0;background:color-mix(in oklab, var(--paper) 92%, transparent);backdrop-filter:blur(10px);z-index:50;">
+  <a href="#"><img class="logo-img" src="logo-nav.png" srcset="logo-nav.png 1x, logo-nav@2x.png 2x" alt="Bloom"></a>
+  <div class="nav-links" style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500">
+    <a href="#why">Why organic</a>
+    <a href="#days">90 days</a>
+    <a href="#team">The team</a>
+    <a href="#how">How it runs</a>
   </div>
-  <div class="nav-links" style="display:flex;align-items:center;gap:34px;font-size:15px;font-weight:500">
-    <a href="#team">Product</a>
-    <a href="#team">Use cases</a>
-    <a href="#coworker">Integrations</a>
-    <a href="#proof">Company</a>
-  </div>
-  <div style="display:flex;align-items:center;gap:16px">
-    <a href="mailto:hello@runbloom.ai" style="font-size:15px;font-weight:600">Sign in</a>
-    <a href="mailto:hello@runbloom.ai" style="font-size:15px;font-weight:600;background:var(--accent);color:#fff;padding:11px 20px;border-radius:999px">Learn more</a>
-  </div>
+  <a class="btn btn-accent" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call</a>
 </nav>
 
-<!-- HERO -->
-<header class="hero" style="padding:80px 48px 64px;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center">
+<header class="hero wrap" style="padding-top:72px;padding-bottom:56px;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center">
   <div>
     <div style="display:inline-flex;align-items:center;gap:9px;padding:7px 14px 7px 10px;border:1px solid var(--line);border-radius:999px;font-size:13.5px;font-weight:600;margin-bottom:26px">
       <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);animation:blpulse 2.2s infinite"></span>
-      Your AI marketing team
+      Content engine from your sales calls
     </div>
-    <h1 style="font-size:58px;font-weight:600">Upskill your marketing team <span style="color:var(--accent)">without increasing payroll</span>.</h1>
-    <div style="display:flex;align-items:center;gap:14px;margin-top:34px">
-      <a href="mailto:hello@runbloom.ai" style="font-size:16px;font-weight:600;background:var(--ink);color:#fff;padding:15px 26px;border-radius:999px">Learn more</a>
-      <a href="#coworker" style="font-size:16px;font-weight:600;padding:15px 22px;border-radius:999px;border:1px solid var(--line)">See it in Slack →</a>
+    <h1 style="font-size:52px;font-weight:600">The AI agent team that turns your sales calls into <span style="color:var(--accent)">organic, inbound deals</span>.</h1>
+    <p style="font-size:18px;line-height:1.55;color:var(--muted);margin-top:22px;max-width:520px">It mines what your buyers actually say and turns it into the SEO/AEO content that gets your business found, ranked, and chosen.</p>
+    <div style="display:flex;align-items:center;gap:12px;margin-top:32px;flex-wrap:wrap">
+      <a class="btn btn-ink" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call</a>
+      <a class="btn btn-ghost" href="#days">See the first 90 days →</a>
     </div>
-    <p style="font-size:13.5px;color:var(--muted);margin-top:20px">No new tools to learn · No dashboards to check · You own everything</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px">
+      <span style="font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--white)">Findings report first</span>
+      <span style="font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--white)">You own the hardware</span>
+      <span style="font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--white)">Month to month</span>
+    </div>
   </div>
 
-  <!-- Hero visual: live AI team digest -->
-  <div style="background:#EEE7DA;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 30px 60px -30px rgba(11,11,12,.25)">
-    <div style="display:flex;align-items:center;gap:9px;padding:2px 4px 12px">
-      <div style="width:20px;height:20px;border-radius:6px;background:var(--accent);position:relative"><div style="position:absolute;inset:5.5px;border-radius:50%;background:#fff"></div></div>
-      <span style="font-size:13.5px;font-weight:600">Bloom · Daily digest</span>
-      <span style="margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:var(--muted)"><span style="width:7px;height:7px;border-radius:50%;background:#22C55E;animation:blpulse 1.8s infinite"></span>Live in Slack</span>
+  <div style="background:var(--soft);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:0 30px 60px -30px rgba(11,11,12,.25)">
+    <div style="display:flex;align-items:center;gap:10px;padding:2px 4px 14px">
+      <img src="logo-nav.png" alt="" height="28" style="height:28px;width:auto">
+      <span style="font-size:13.5px;font-weight:600">The loop</span>
+      <span style="margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:var(--muted)"><span style="width:7px;height:7px;border-radius:50%;background:#22C55E;animation:blpulse 1.8s infinite"></span>Always on</span>
     </div>
     <div id="agentBody" style="background:#fff;border-radius:14px;padding:6px;display:flex;flex-direction:column"></div>
-    <div style="background:#fff;border-radius:14px;padding:15px 16px;margin-top:8px">
-      <div style="display:flex;align-items:center;gap:9px"><div style="width:26px;height:26px;border-radius:7px;background:var(--accent);position:relative"><div style="position:absolute;inset:7.5px;border-radius:50%;background:#fff"></div></div><span style="font-size:13.5px;font-weight:600">Content Agent</span><span style="font-size:9.5px;font-weight:600;color:var(--accent);border:1px solid var(--accent);padding:0 5px;border-radius:4px">AI</span><span style="margin-left:auto;font-size:11.5px;color:var(--muted)">needs approval</span></div>
-      <div style="font-size:13.5px;line-height:1.5;margin-top:10px">Drafted a LinkedIn post from your sales call — projected to move qualified deals, not just impressions.</div>
-      <div style="display:flex;align-items:center;gap:10px;margin-top:13px"><span style="font-size:11.5px;color:var(--muted);white-space:nowrap">Deal impact</span><div style="flex:1;position:relative;height:8px;border-radius:5px;background:#EEE;overflow:hidden"><div style="position:absolute;top:0;left:0;height:100%;width:74%;background:var(--accent);border-radius:5px"></div><div style="position:absolute;top:0;left:0;height:100%;width:38%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.8),transparent);animation:blsweep 2.4s infinite"></div></div></div>
-      <div style="display:flex;gap:8px;margin-top:14px"><div style="font-size:12.5px;background:var(--accent);color:#fff;border-radius:8px;padding:8px 15px;font-weight:600">Approve &amp; publish</div><div style="font-size:12.5px;border:1px solid var(--line);border-radius:8px;padding:8px 13px;font-weight:600;color:var(--muted)">Edit</div></div>
+    <div style="background:#fff;border-radius:14px;padding:16px;margin-top:8px">
+      <div style="font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">Calls → content → inbound</div>
+      <div class="loop-row" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <div class="loop-node" style="flex:1;min-width:90px">Sales calls</div>
+        <div class="loop-arrow">→</div>
+        <div class="loop-node" style="flex:1;min-width:90px">Buyer language</div>
+        <div class="loop-arrow">→</div>
+        <div class="loop-node" style="flex:1;min-width:90px">SEO / AEO</div>
+        <div class="loop-arrow">→</div>
+        <div class="loop-node" style="flex:1;min-width:90px;border-color:var(--accent)">Inbound deals</div>
+      </div>
+      <p style="font-size:12.5px;color:var(--muted);margin-top:14px;line-height:1.45">Approval-gated drafts. LinkedIn is paste-ready, never auto-posted.</p>
     </div>
   </div>
 </header>
 
-<!-- ONE GOAL -->
-<section style="background:var(--ink);color:#fff">
-  <div style="max-width:1180px;margin:0 auto;padding:72px 48px;text-align:center">
-    <h2 style="font-size:42px;font-weight:600;color:#fff;max-width:780px;margin:0 auto">A whole team, <span style="color:var(--accent)">unified under one goal.</span></h2>
-    <p style="font-size:17px;color:rgba(255,255,255,.62);margin-top:18px;max-width:580px;margin-left:auto;margin-right:auto;line-height:1.5">Every Bloom agent is briefed by your VP and pointed at the same outcome — steady, qualified growth. No silos, no busywork for its own sake.</p>
-  </div>
-</section>
-
-<!-- INTEGRATION STRIP -->
-<section style="border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#FFFFFF">
-  <div style="max-width:1180px;margin:0 auto;padding:26px 48px;display:flex;align-items:center;gap:40px;flex-wrap:wrap;justify-content:space-between">
-    <span style="font-size:13.5px;font-weight:600;color:var(--muted);white-space:nowrap">Works where your team already works</span>
-    <div style="display:flex;align-items:center;gap:38px;flex-wrap:wrap;opacity:.8">
-      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:18px;letter-spacing:-.02em">Slack</span>
-      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:18px;letter-spacing:-.02em">Gmail</span>
-      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:18px;letter-spacing:-.02em">HubSpot</span>
-      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:18px;letter-spacing:-.02em">Salesforce</span>
-      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:18px;letter-spacing:-.02em">Notion</span>
-      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:18px;letter-spacing:-.02em">Outlook</span>
-    </div>
-  </div>
-</section>
-
-<!-- THE TEAM -->
-<section id="team" style="max-width:1180px;margin:0 auto;padding:96px 48px 40px">
-  <div style="text-align:center;margin-bottom:46px">
-    <div style="font-size:13.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:14px">The team</div>
-    <h2 style="font-size:44px;font-weight:600">Meet your AI marketing team.</h2>
-    <p style="font-size:16px;color:var(--muted);margin-top:16px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.5">Your VP briefs a team of specialists, a QA agent checks their work, and nothing publishes without your sign-off.</p>
-  </div>
-  <div style="display:flex;flex-direction:column;align-items:center">
-    <div style="position:relative;background:var(--ink);color:#fff;border-radius:14px;padding:16px 22px;display:flex;align-items:center;gap:14px;max-width:400px">
-      <div style="width:40px;height:40px;border-radius:10px;background:var(--accent);position:relative;flex:none"><div style="position:absolute;inset:12px;border-radius:50%;background:#fff"></div></div>
-      <div><div style="font-size:16px;font-weight:600;font-family:'Schibsted Grotesk',sans-serif">AI VP of Marketing</div><div style="font-size:12.5px;color:rgba(255,255,255,.6);line-height:1.4;margin-top:2px">Orchestrator — briefs the team, never sends anything itself</div></div>
-      <span style="position:absolute;top:12px;right:12px;display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:600;color:rgba(255,255,255,.6)"><span style="width:6px;height:6px;border-radius:50%;background:#22C55E;animation:blpulse 1.6s infinite"></span>LIVE</span>
-    </div>
-    <div style="position:relative;width:2px;height:26px;background:#DBDBD6"><div style="position:absolute;top:0;left:-2px;width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);animation:blflow 2.2s linear infinite 0s"></div></div>
-    <div style="position:relative;background:#fff;border:1.5px solid var(--accent);border-radius:14px;padding:16px 22px;display:flex;align-items:center;gap:14px;max-width:440px">
-      <div style="width:40px;height:40px;border-radius:10px;background:var(--accent);color:#fff;font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:13px;display:flex;align-items:center;justify-content:center;flex:none">QA</div>
-      <div><div style="font-size:16px;font-weight:600;font-family:'Schibsted Grotesk',sans-serif">Quality Assurance Agent</div><div style="font-size:12.5px;color:var(--muted);line-height:1.4;margin-top:2px">Checks every draft, finding, and report for quality before it reaches the team's output</div></div>
-    </div>
-    <div style="position:relative;width:2px;height:26px;background:#DBDBD6"><div style="position:absolute;top:0;left:-2px;width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);animation:blflow 2.2s linear infinite .5s"></div></div>
-    <div style="width:100%">
-      <div style="height:2px;margin:0 12.5%;background:linear-gradient(90deg,#DBDBD6 0%,#DBDBD6 42%,var(--accent) 50%,#DBDBD6 58%,#DBDBD6 100%);background-size:220% 100%;animation:blslide 3s linear infinite"></div>
-      <div class="use-team-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
-        <div style="display:flex;flex-direction:column;align-items:center">
-          <div style="width:2px;height:22px;background:#DBDBD6"></div>
-          <div style="background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 12px;text-align:center;width:100%">
-            <div style="width:34px;height:34px;border-radius:9px;background:#EDE6D7;color:var(--ink);font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:12.5px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">RE</div>
-            <div style="font-size:14px;font-weight:600">Research Agent</div>
-            <div style="font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.4">Mines calls &amp; data for insight</div>
-          </div>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:center">
-          <div style="width:2px;height:22px;background:#DBDBD6"></div>
-          <div style="background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 12px;text-align:center;width:100%">
-            <div style="width:34px;height:34px;border-radius:9px;background:#EDE6D7;color:var(--ink);font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:12.5px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">CO</div>
-            <div style="font-size:14px;font-weight:600">Content Agent</div>
-            <div style="font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.4">Drafts posts, pages &amp; email</div>
-          </div>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:center">
-          <div style="width:2px;height:22px;background:#DBDBD6"></div>
-          <div style="background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 12px;text-align:center;width:100%">
-            <div style="width:34px;height:34px;border-radius:9px;background:#EDE6D7;color:var(--ink);font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:12.5px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">AEO</div>
-            <div style="font-size:14px;font-weight:600">SEO / AEO Agent</div>
-            <div style="font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.4">Watches search &amp; AI visibility</div>
-          </div>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:center">
-          <div style="width:2px;height:22px;background:#DBDBD6"></div>
-          <div style="background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 12px;text-align:center;width:100%">
-            <div style="width:34px;height:34px;border-radius:9px;background:#EDE6D7;color:var(--ink);font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:12.5px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">AN</div>
-            <div style="font-size:14px;font-weight:600">Analytics Agent</div>
-            <div style="font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.4">Plain-English weekly reporting</div>
-          </div>
-        </div>
+<section id="why" style="background:var(--ink);color:#fff">
+  <div class="wrap section">
+    <div class="eyebrow">Why organic</div>
+    <h2 style="font-size:42px;font-weight:600;color:#fff;max-width:780px">Paid deals stop the moment spending stops.</h2>
+    <p style="font-size:18px;color:rgba(255,255,255,.62);margin-top:18px;max-width:640px;line-height:1.55">Organic compounds. It becomes the cheapest, highest-intent source of pipeline your business has, and it keeps producing long after the work that built it is done.</p>
+    <div class="grid-2" style="margin-top:40px;max-width:860px">
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:24px">
+        <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:10px">Paid</div>
+        <h3 style="font-size:22px;font-weight:600;color:#fff;margin-bottom:8px">Rent attention</h3>
+        <p style="font-size:15px;color:rgba(255,255,255,.62);line-height:1.5">When the budget pauses, pipeline pauses. Every month starts at zero.</p>
       </div>
-    </div>
-  </div>
-  <div style="margin-top:36px;border:1.5px dashed rgba(11,11,12,.18);border-radius:16px;padding:26px 30px;display:flex;align-items:center;gap:22px;flex-wrap:wrap">
-    <div style="width:52px;height:52px;border-radius:13px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:30px;flex:none">+</div>
-    <div style="flex:1;min-width:260px">
-      <div style="font-size:18px;font-weight:600;font-family:'Schibsted Grotesk',sans-serif">This is just your starter team.</div>
-      <p style="font-size:14.5px;color:var(--muted);line-height:1.5;margin-top:6px;max-width:760px">It's a base setup to get you running fast. From here we build out unlimited agents with unlimited capabilities — each one reporting up to your VP and unified under a single goal: your growth.</p>
-    </div>
-  </div>
-</section>
-
-<!-- COWORKER DEMO (dark) -->
-<section id="coworker" style="background:var(--ink);color:#fff;margin-top:64px">
-  <div style="max-width:1180px;margin:0 auto;padding:96px 48px">
-    <div style="text-align:center;margin-bottom:52px">
-      <div style="font-size:13.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:14px">A coworker, not a chatbot</div>
-      <h2 style="font-size:44px;font-weight:600;color:#fff">You message Bloom. Bloom does the work.</h2>
-      <p style="font-size:17px;color:rgba(255,255,255,.6);margin-top:16px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.5">No dashboard to log into, no prompts to master. Talk to it like you'd talk to a teammate — in the tools you already have open.</p>
-    </div>
-    <div class="cw-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
-      <!-- Slack -->
-      <div style="background:#151517;border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:22px">
-        <div style="font-size:12.5px;font-weight:600;color:rgba(255,255,255,.5);letter-spacing:.04em;margin-bottom:16px">SLACK · #campaign-launch</div>
-        <div style="display:flex;flex-direction:column;gap:16px">
-          <div style="display:flex;gap:11px"><div style="width:32px;height:32px;border-radius:9px;background:#2E2E33;flex:none"></div><div style="font-size:14px;line-height:1.5"><b>Marcus</b> <span style="color:rgba(255,255,255,.4);font-size:12px">now</span><br>@Bloom which of our pages should we refresh first to win more demos?</div></div>
-          <div style="display:flex;gap:11px"><div style="width:32px;height:32px;border-radius:9px;background:var(--accent);flex:none;position:relative"><div style="position:absolute;inset:9px;border-radius:50%;background:#fff"></div></div><div style="font-size:14px;line-height:1.5"><b>Bloom</b> <span style="font-size:10px;font-weight:600;color:var(--accent);border:1px solid var(--accent);padding:0 5px;border-radius:4px">AI</span><br><span style="color:rgba(255,255,255,.82)">Your pricing and comparison pages get the most buyer traffic but haven't been touched in months. I drafted refreshed versions aimed at your ICP. Publish?</span></div></div>
-        </div>
-      </div>
-      <!-- Email -->
-      <div style="background:#151517;border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:22px">
-        <div style="font-size:12.5px;font-weight:600;color:rgba(255,255,255,.5);letter-spacing:.04em;margin-bottom:16px">EMAIL · Inbox</div>
-        <div style="background:#0B0B0C;border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:16px 17px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px"><div style="width:30px;height:30px;border-radius:8px;background:var(--accent);position:relative"><div style="position:absolute;inset:8px;border-radius:50%;background:#fff"></div></div><div style="font-size:13.5px"><b>Bloom</b> <span style="color:rgba(255,255,255,.4)">&lt;hello@runbloom.ai&gt;</span></div></div>
-          <div style="font-size:15px;font-weight:600;margin-bottom:8px">Weekly pipeline digest — 3 things need you</div>
-          <div style="font-size:13.5px;line-height:1.6;color:rgba(255,255,255,.7)">Hi team — pipeline is up <b style="color:var(--accent)">18%</b> WoW. I drafted nurture emails for 42 stalled leads and flagged 3 accounts going cold. Approvals are one click away 👇</div>
-          <div style="display:flex;gap:8px;margin-top:14px"><div style="font-size:12.5px;background:var(--accent);color:#fff;border-radius:8px;padding:7px 13px;font-weight:600">Approve all</div><div style="font-size:12.5px;border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:7px 13px;font-weight:600;color:rgba(255,255,255,.75)">Review</div></div>
-        </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(18,196,180,.45);border-radius:16px;padding:24px">
+        <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">Organic</div>
+        <h3 style="font-size:22px;font-weight:600;color:#fff;margin-bottom:8px">Own the asset</h3>
+        <p style="font-size:15px;color:rgba(255,255,255,.62);line-height:1.5">Content that ranks and gets cited keeps working, and gets sharper as new calls feed it.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section style="max-width:1180px;margin:0 auto;padding:96px 48px 40px">
-  <div style="text-align:center;margin-bottom:56px">
-    <div style="font-size:13.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:14px">How it works</div>
-    <h2 style="font-size:44px;font-weight:600">You approve. Bloom publishes.</h2>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:36px" class="use-team-grid">
-    <div style="border-top:2px solid var(--ink);padding-top:22px">
-      <div style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:52px;color:var(--accent);line-height:1;margin-bottom:16px">1</div>
-      <h3 style="font-size:22px;font-weight:600">Connect your stack</h3>
-      <p style="font-size:15px;color:var(--muted);line-height:1.55;margin-top:10px">Add Bloom to Slack, then point it at your CRM, site, and sales-call transcripts. Setup takes about a day.</p>
-    </div>
-    <div style="border-top:2px solid var(--ink);padding-top:22px">
-      <div style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:52px;color:var(--accent);line-height:1;margin-bottom:16px">2</div>
-      <h3 style="font-size:22px;font-weight:600">Everything routes to one digest</h3>
-      <p style="font-size:15px;color:var(--muted);line-height:1.55;margin-top:10px">Every draft, finding, and report lands in a single Slack digest — nothing scattered across tools or dashboards.</p>
-    </div>
-    <div style="border-top:2px solid var(--ink);padding-top:22px">
-      <div style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:52px;color:var(--accent);line-height:1;margin-bottom:16px">3</div>
-      <h3 style="font-size:22px;font-weight:600">Nothing ships without you</h3>
-      <p style="font-size:15px;color:var(--muted);line-height:1.55;margin-top:10px">You approve, reject, or edit. You are the sole approver — reassign it once your marketing hire is on board.</p>
+<section style="border-bottom:1px solid var(--line);background:var(--white)">
+  <div class="wrap" style="padding:26px 48px;display:flex;align-items:center;gap:36px;flex-wrap:wrap;justify-content:space-between">
+    <span style="font-size:13.5px;font-weight:600;color:var(--muted);white-space:nowrap">Works with the tools you already use</span>
+    <div style="display:flex;align-items:center;gap:34px;flex-wrap:wrap;opacity:.85">
+      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">Slack</span>
+      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">Your CMS</span>
+      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">Fathom</span>
+      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">Circleback</span>
+      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">Granola</span>
     </div>
   </div>
 </section>
 
-<!-- TOKEN OPTIMIZATION -->
-<section style="max-width:1180px;margin:0 auto;padding:88px 48px 40px">
-  <div class="token-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
+<section id="days" class="wrap section">
+  <div style="text-align:center;margin-bottom:48px">
+    <div class="eyebrow">Your first 90 days</div>
+    <h2 style="font-size:42px;font-weight:600;max-width:720px;margin:0 auto">From call language to a live content engine.</h2>
+    <p style="font-size:16px;color:var(--muted);margin-top:16px;max-width:640px;margin-left:auto;margin-right:auto;line-height:1.55">Your rollout starts with a full audit of your sales calls, then agents, library, and wiring so you are producing from day one.</p>
+  </div>
+  <div class="grid-3">
+    <div style="border-top:2px solid var(--ink);padding-top:22px">
+      <div style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:48px;color:var(--accent);line-height:1;margin-bottom:14px">1</div>
+      <h3 style="font-size:22px;font-weight:600">Audit the calls</h3>
+      <p style="font-size:15px;color:var(--muted);line-height:1.55;margin-top:10px">The exact language your buyers use, the questions that come up right before they say yes, and where your current content is leaving leads on the table.</p>
+    </div>
+    <div style="border-top:2px solid var(--ink);padding-top:22px">
+      <div style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:48px;color:var(--accent);line-height:1;margin-bottom:14px">2</div>
+      <h3 style="font-size:22px;font-weight:600">Build and tune the team</h3>
+      <p style="font-size:15px;color:var(--muted);line-height:1.55;margin-top:10px">Agents tuned to your voice, a library stocked with real publishable pieces, wired into your CMS, CRM, and Slack.</p>
+    </div>
+    <div style="border-top:2px solid var(--ink);padding-top:22px">
+      <div style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:48px;color:var(--accent);line-height:1;margin-bottom:14px">3</div>
+      <h3 style="font-size:22px;font-weight:600">Pipeline in motion</h3>
+      <p style="font-size:15px;color:var(--muted);line-height:1.55;margin-top:10px">A working content engine, live content, and organic deals already moving. Recommendations decks stay on the shelf.</p>
+    </div>
+  </div>
+</section>
+
+<section id="audit" style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap section-sm grid-2" style="display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center">
     <div>
-      <div style="font-size:13.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:14px">Token economics</div>
-      <h2 style="font-size:42px;font-weight:600;max-width:460px">All the agents. Without the token bill.</h2>
-      <div style="display:flex;flex-direction:column;gap:15px;margin-top:28px">
-        <div style="display:flex;gap:11px;align-items:flex-start"><div style="width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;flex:none;margin-top:2px">✓</div><span style="font-size:15px;line-height:1.5">Runs on <b>local AI</b> — your agents aren't billed by the token.</span></div>
-        <div style="display:flex;gap:11px;align-items:flex-start"><div style="width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;flex:none;margin-top:2px">✓</div><span style="font-size:15px;line-height:1.5"><b>Flat, predictable cost</b> — no metered surprises at month-end.</span></div>
-        <div style="display:flex;gap:11px;align-items:flex-start"><div style="width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;flex:none;margin-top:2px">✓</div><span style="font-size:15px;line-height:1.5">Run agents as often as you want — <b>no throttling</b> to save money.</span></div>
-      </div>
+      <div class="eyebrow">How it starts</div>
+      <h2 style="font-size:38px;font-weight:600;max-width:520px">A findings report you keep either way.</h2>
+      <p style="font-size:17px;color:var(--muted);margin-top:18px;max-width:520px;line-height:1.55">Before anything gets built, your sales calls get analyzed: the language, the questions, the gaps. That report is the foundation everything else is built on, and it is yours whether you install Bloom or not.</p>
+      <a class="btn btn-accent" style="margin-top:28px" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call</a>
     </div>
-    <div style="background:#FFFFFF;border:1px solid var(--line);border-radius:20px;padding:34px 32px">
-      <div style="font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:24px">Est. monthly AI cost</div>
-      <div style="margin-bottom:22px">
-        <div style="display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:8px"><span style="font-weight:600">Per-token cloud AI</span><span style="color:var(--muted)">metered · unpredictable</span></div>
-        <div style="height:26px;border-radius:8px;background:var(--ink);width:100%;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;color:#fff;font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:15px;letter-spacing:.05em">$ $ $ $ $</div>
-      </div>
-      <div>
-        <div style="display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:8px"><span style="font-weight:600">Bloom · local AI</span><span style="color:var(--muted)">flat · predictable</span></div>
-        <div style="height:26px;border-radius:8px;background:var(--accent);width:26%;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;color:#fff;font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:15px">$</div>
-      </div>
-      <p style="font-size:12.5px;color:var(--muted);margin-top:24px;line-height:1.5">Illustrative. The point: your cost doesn't balloon just because your agents got busy.</p>
+    <div style="background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px">
+      <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:16px">What's in the report</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:14px">
+        <li style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45">How buyers actually talk on your calls</span></li>
+        <li style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45">ICP derived from real conversations</span></li>
+        <li style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45">Content and SEO/AEO gaps</span></li>
+        <li style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45">A roadmap you can use with or without us</span></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- SOCIAL PROOF -->
-<section id="proof" style="max-width:1180px;margin:0 auto;padding:80px 48px">
-  <div style="background:#FFFFFF;border:1px solid var(--line);border-radius:24px;padding:60px 56px;display:grid;grid-template-columns:1fr;gap:34px">
-    <div style="display:flex;align-items:center;gap:14px">
-      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:26px;letter-spacing:-.02em">RevBlack</span>
-      <span style="font-size:13px;color:var(--muted);border-left:1px solid var(--line);padding-left:14px">HubSpot + Salesforce partner</span>
+<section class="wrap section-sm" style="padding-top:72px;padding-bottom:40px">
+  <div class="after-grid" style="background:var(--ink);color:#fff;border-radius:24px;padding:56px 48px;display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center">
+    <div>
+      <div class="eyebrow">What runs after rollout</div>
+      <h2 style="font-size:36px;font-weight:600;color:#fff;max-width:560px">Your agent team keeps running in the background.</h2>
+      <p style="font-size:17px;color:rgba(255,255,255,.62);margin-top:16px;max-width:520px;line-height:1.55">Fully integrated into your business. New calls become new content and new deals. You own the hardware. Month to month from there.</p>
     </div>
-    <blockquote style="font-family:'Schibsted Grotesk',sans-serif;font-weight:500;font-size:32px;line-height:1.25;letter-spacing:-.02em;max-width:900px">"Bloom took over the reporting and lead follow-up that used to eat two days a week. It feels like we <span style="color:var(--accent)">added a marketer</span> — one that never drops the ball."</blockquote>
-    <div style="display:flex;align-items:center;gap:14px;margin-top:4px;flex-wrap:wrap">
-      <div style="width:44px;height:44px;border-radius:50%;background:#E9E9E6"></div>
-      <div style="font-size:14.5px"><b>Head of Marketing</b><br><span style="color:var(--muted)">RevBlack</span></div>
-      <div style="margin-left:auto;display:flex;gap:44px">
-        <div><div style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:34px;color:var(--accent)">12 hrs</div><div style="font-size:13px;color:var(--muted)">saved every week</div></div>
-        <div><div style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:34px;color:var(--accent)">100%</div><div style="font-size:13px;color:var(--muted)">approval-gated</div></div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px 18px;font-size:14.5px;font-weight:600">New calls → fresher language</div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px 18px;font-size:14.5px;font-weight:600">New content → more discovery</div>
+      <div style="background:rgba(18,196,180,.18);border:1px solid rgba(18,196,180,.45);border-radius:12px;padding:16px 18px;font-size:14.5px;font-weight:600;color:var(--accent)">New inbound → more conversations</div>
+    </div>
+  </div>
+</section>
+
+<section id="improves" class="wrap section">
+  <div style="text-align:center;margin-bottom:46px">
+    <div class="eyebrow">Continuously improves</div>
+    <h2 style="font-size:40px;font-weight:600;max-width:780px;margin:0 auto">Just like your best employee, your agent team is always learning.</h2>
+  </div>
+  <div class="improve-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:960px;margin:0 auto">
+    <div style="background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px">
+      <h3 style="font-size:18px;font-weight:600;margin-bottom:8px">Performance feeds the next draft</h3>
+      <p style="font-size:14.5px;color:var(--muted);line-height:1.5">What ranks and converts sharpens what gets written next. The calendar is not static.</p>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px">
+      <h3 style="font-size:18px;font-weight:600;margin-bottom:8px">New calls keep language current</h3>
+      <p style="font-size:14.5px;color:var(--muted);line-height:1.5">Buyer phrasing stays fresh instead of drifting into last quarter's assumptions.</p>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px">
+      <h3 style="font-size:18px;font-weight:600;margin-bottom:8px">Per-format memory</h3>
+      <p style="font-size:14.5px;color:var(--muted);line-height:1.5">Feedback compounds inside each writer's revision memory instead of resetting every piece.</p>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px">
+      <h3 style="font-size:18px;font-weight:600;margin-bottom:8px">SEO/AEO standard re-baselines</h3>
+      <p style="font-size:14.5px;color:var(--muted);line-height:1.5">The doctrine updates as what actually earns citations keeps shifting.</p>
+    </div>
+  </div>
+</section>
+
+<section id="team" style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap section">
+    <div style="text-align:center;margin-bottom:46px">
+      <div class="eyebrow">The team</div>
+      <h2 style="font-size:42px;font-weight:600">A narrow content engine, on purpose.</h2>
+      <p style="font-size:16px;color:var(--muted);margin-top:16px;max-width:580px;margin-left:auto;margin-right:auto;line-height:1.5">One job: turn call language into SEO/AEO content that earns inbound. Outreach stays out of scope. So does a menu of marketing services.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;align-items:center;margin-bottom:28px">
+      <div style="position:relative;background:var(--ink);color:#fff;border-radius:14px;padding:16px 22px;display:flex;align-items:center;gap:14px;max-width:440px;width:100%">
+        <div style="width:40px;height:40px;border-radius:10px;background:var(--accent);color:#fff;font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:12px;display:flex;align-items:center;justify-content:center;flex:none">CD</div>
+        <div><div style="font-size:16px;font-weight:600;font-family:'Schibsted Grotesk',sans-serif">Content Director</div><div style="font-size:12.5px;color:rgba(255,255,255,.6);line-height:1.4;margin-top:2px">Routes work to the right writer. Never drafts itself.</div></div>
+      </div>
+      <div style="position:relative;width:2px;height:22px;background:#DBDBD6"><div style="position:absolute;top:0;left:-2px;width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);animation:blflow 2.2s linear infinite"></div></div>
+      <div style="position:relative;background:#fff;border:1.5px solid var(--accent);border-radius:14px;padding:16px 22px;display:flex;align-items:center;gap:14px;max-width:480px;width:100%">
+        <div style="width:40px;height:40px;border-radius:10px;background:var(--accent);color:#fff;font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:12px;display:flex;align-items:center;justify-content:center;flex:none">QA</div>
+        <div><div style="font-size:16px;font-weight:600;font-family:'Schibsted Grotesk',sans-serif">Quality &amp; Voice Gate</div><div style="font-size:12.5px;color:var(--muted);line-height:1.4;margin-top:2px">Every draft passes voice and quality before a human sees it</div></div>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px">
+        <div style="width:34px;height:34px;border-radius:9px;background:#EDE6D7;font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:12px;display:flex;align-items:center;justify-content:center;margin-bottom:12px">RE</div>
+        <div style="font-size:16px;font-weight:600;font-family:'Schibsted Grotesk',sans-serif">Research</div>
+        <p style="font-size:13.5px;color:var(--muted);margin-top:6px;line-height:1.45">Mines sales calls for buyer language and insight.</p>
+      </div>
+      <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px">
+        <div style="width:34px;height:34px;border-radius:9px;background:#EDE6D7;font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:12px;display:flex;align-items:center;justify-content:center;margin-bottom:12px">WR</div>
+        <div style="font-size:16px;font-weight:600;font-family:'Schibsted Grotesk',sans-serif">Content writers</div>
+        <p style="font-size:13.5px;color:var(--muted);margin-top:6px;line-height:1.45">How-to, article, playbook, and LinkedIn. Paste-ready.</p>
+      </div>
+      <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px">
+        <div style="width:34px;height:34px;border-radius:9px;background:#EDE6D7;font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:12px;display:flex;align-items:center;justify-content:center;margin-bottom:12px">SEO</div>
+        <div style="font-size:16px;font-weight:600;font-family:'Schibsted Grotesk',sans-serif">SEO / AEO</div>
+        <p style="font-size:13.5px;color:var(--muted);margin-top:6px;line-height:1.45">Targets queries and answer-engine citability.</p>
+      </div>
+      <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;grid-column:2">
+        <div style="width:34px;height:34px;border-radius:9px;background:#EDE6D7;font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:12px;display:flex;align-items:center;justify-content:center;margin-bottom:12px">SC</div>
+        <div style="font-size:16px;font-weight:600;font-family:'Schibsted Grotesk',sans-serif">Scheduler</div>
+        <p style="font-size:13.5px;color:var(--muted);margin-top:6px;line-height:1.45">Approved pieces drip to your CMS on cadence. Approval is never auto-publish.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section style="max-width:1180px;margin:0 auto;padding:20px 48px 96px">
-  <div style="background:var(--accent);border-radius:26px;padding:76px 56px;text-align:center;color:#fff;position:relative;overflow:hidden">
-    <h2 style="font-size:48px;font-weight:600;color:#fff;max-width:720px;margin:0 auto">Give your marketing team room to grow.</h2>
-    <p style="font-size:18px;color:rgba(255,255,255,.85);margin-top:18px;max-width:540px;margin-left:auto;margin-right:auto;line-height:1.5">See how Bloom fits into the tools you already use — no rip-and-replace, no long onboarding, and no dashboards to check. The work comes to you.</p>
-    <div style="display:flex;gap:14px;justify-content:center;margin-top:32px;flex-wrap:wrap">
-      <a href="mailto:hello@runbloom.ai" style="font-size:16px;font-weight:600;background:#fff;color:var(--ink);padding:15px 30px;border-radius:999px">Learn more</a>
-      <a href="mailto:hello@runbloom.ai" style="font-size:16px;font-weight:600;background:rgba(0,0,0,.18);color:#fff;padding:15px 26px;border-radius:999px">Book a demo</a>
+<section id="proof" class="wrap section-sm" style="padding-top:72px">
+  <div style="background:var(--white);border:1px solid var(--line);border-radius:24px;padding:48px 44px">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:22px;flex-wrap:wrap">
+      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:24px;letter-spacing:-.02em">RevBlack</span>
+      <span style="font-size:13px;color:var(--muted);border-left:1px solid var(--line);padding-left:14px">First customer</span>
     </div>
+    <p style="font-family:'Schibsted Grotesk',sans-serif;font-weight:500;font-size:28px;line-height:1.3;letter-spacing:-.02em;max-width:860px">Goal: grow qualified inbound deals from <span style="color:var(--accent)">1–4 per month</span> to a consistent <span style="color:var(--accent)">8–15 per month</span> by turning sales conversations into organic content that gets found.</p>
+    <p style="font-size:14.5px;color:var(--muted);margin-top:18px;max-width:640px;line-height:1.5">Stated as the engagement goal, not a claimed result. Bloom is built to run that loop: calls in, inbound out.</p>
   </div>
 </section>
 
-<!-- FOOTER -->
+<section id="how" class="wrap section">
+  <div style="text-align:center;margin-bottom:40px">
+    <div class="eyebrow">How it runs</div>
+    <h2 style="font-size:40px;font-weight:600;max-width:680px;margin:0 auto">A fraction of a content team, with more capability on the loop.</h2>
+  </div>
+  <div class="cost-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:820px;margin:0 auto">
+    <div style="background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px">
+      <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">Ownership</div>
+      <h3 style="font-size:22px;font-weight:600;margin-bottom:10px">You own the hardware</h3>
+      <p style="font-size:15px;color:var(--muted);line-height:1.5">The agent team runs on gear that stays with your business, wired into the stack you already use.</p>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px">
+      <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">Ongoing</div>
+      <h3 style="font-size:22px;font-weight:600;margin-bottom:10px">Keep the loop live</h3>
+      <p style="font-size:15px;color:var(--muted);line-height:1.5">Month to month after rollout. Built to cost less than staffing a content team for the same SEO/AEO cadence.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:36px">
+    <a class="btn btn-ink" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call</a>
+  </div>
+</section>
+
+<section class="wrap" style="padding-bottom:96px">
+  <div style="background:var(--accent);border-radius:26px;padding:68px 48px;text-align:center;color:#fff">
+    <h2 style="font-size:44px;font-weight:600;color:#fff;max-width:700px;margin:0 auto">Start with the calls. Keep the findings.</h2>
+    <p style="font-size:18px;color:rgba(255,255,255,.88);margin-top:16px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.5">Book a call. We will map the fit and run the diagnostic that becomes the foundation of the engine.</p>
+    <a class="btn btn-white" style="margin-top:28px" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call →</a>
+  </div>
+</section>
+
 <footer style="border-top:1px solid var(--line)">
-  <div style="max-width:1180px;margin:0 auto;padding:44px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px">
-    <div style="display:flex;align-items:center;gap:9px">
-      <div style="width:20px;height:20px;border-radius:6px;background:var(--accent);position:relative"><div style="position:absolute;inset:5.5px;border-radius:50%;background:#fff"></div></div>
-      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:19px;letter-spacing:-.03em">Bloom</span>
+  <div class="wrap" style="padding:40px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px">
+    <a href="#"><img class="logo-img sm" src="logo-nav.png" srcset="logo-nav.png 1x, logo-nav@2x.png 2x" alt="Bloom"></a>
+    <div style="display:flex;gap:28px;font-size:14px;font-weight:500;color:var(--muted);flex-wrap:wrap">
+      <a href="#why">Why organic</a>
+      <a href="#days">90 days</a>
+      <a href="#team">The team</a>
+      <a href="#how">How it runs</a>
     </div>
-    <div style="display:flex;gap:30px;font-size:14px;font-weight:500;color:var(--muted);flex-wrap:wrap">
-      <a href="#team">Product</a><a href="#team">Use cases</a><a href="#coworker">Integrations</a><a href="#">Pricing</a><a href="#proof">Company</a>
-    </div>
-    <span style="font-size:13.5px;color:var(--muted)">© 2026 Bloom, Inc.</span>
+    <span style="font-size:13.5px;color:var(--muted)">© 2026 Bloom · Syncro Labs</span>
   </div>
 </footer>
 
 <script>
+(function(){
   const agents = [
-    { code:'', name:'AI VP of Marketing', state:'briefing the team', working:true, avatarBg:'var(--accent)', avatarDot:true },
-    { code:'', name:'Research Agent', state:'3 calls mined', working:false, avatarBg:'#E7E0D1' },
-    { code:'', name:'Content Agent', state:'drafting', working:true, avatarBg:'#E7E0D1' },
-    { code:'', name:'SEO / AEO Agent', state:'scanning rivals', working:true, avatarBg:'#E7E0D1' },
-    { code:'', name:'Analytics Agent', state:'report ready', working:false, avatarBg:'#E7E0D1' },
+    { name:'Research', state:'mining buyer language', working:true, avatarBg:'#E7E0D1' },
+    { name:'Content writers', state:'drafting how-to', working:true, avatarBg:'#E7E0D1' },
+    { name:'Quality & Voice Gate', state:'checking voice', working:true, avatarBg:'#E7E0D1' },
+    { name:'SEO / AEO', state:'query map ready', working:false, avatarBg:'#E7E0D1' },
+    { name:'Scheduler', state:'awaiting approval', working:false, avatarBg:'#E7E0D1' },
   ];
-
   const body = document.getElementById('agentBody');
   agents.forEach((a) => {
     const row = document.createElement('div');
-    row.className = 'agent-row';
+    row.className = 'agent-row' + (a.working ? ' active' : '');
     row.style.cssText = 'display:flex;align-items:center;gap:11px;padding:9px;border-radius:10px;';
-    const avatarInner = a.avatarDot
-      ? `<div style="position:absolute;inset:8.5px;border-radius:50%;background:#fff"></div>`
-      : '';
     const stateHtml = a.working
       ? `<span style="display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;color:var(--accent)">
            <span class="dots" style="display:inline-flex;gap:3px">
@@ -352,17 +386,21 @@ p{margin:0;text-wrap:pretty;}
       : `<span style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:var(--muted)">
            <span style="width:14px;height:14px;border-radius:50%;background:#22C55E;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:9px">✓</span>${a.state}</span>`;
     row.innerHTML = `
-      <div style="width:30px;height:30px;border-radius:8px;background:${a.avatarBg};flex:none;position:relative">${avatarInner}</div>
+      <div style="width:30px;height:30px;border-radius:8px;background:${a.avatarBg};flex:none"></div>
       <div style="flex:1;min-width:0"><div style="font-size:13px;font-weight:600">${a.name}</div></div>
       ${stateHtml}
     `;
     body.appendChild(row);
   });
-
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.querySelectorAll('*').forEach(el => { el.style.animation = 'none'; });
-  }
+  let i = 0;
+  setInterval(() => {
+    const rows = [...body.querySelectorAll('.agent-row')];
+    if (!rows.length) return;
+    rows.forEach(r => r.classList.remove('active'));
+    rows[[0,1,2][i % 3]].classList.add('active');
+    i++;
+  }, 2800);
+})();
 </script>
-
 </body>
 </html>

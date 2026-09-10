@@ -1,101 +1,88 @@
 # Bloom Website — Context for Claude Code
 
-This file is read automatically by Claude Code. It exists so edits, SEO work,
-and link fixes don't require re-deriving context (and re-burning tokens)
-every session.
+This file is read automatically by Claude Code / Cursor agents so edits, SEO
+work, and link fixes do not require re-deriving context every session.
 
 ## What this is
 
-The marketing site for **Bloom** (formerly Verity), an AI VP of Marketing
-product by Syncro Labs. Single static page, deployed to Vercel at
-**runbloom.ai**. No build step — `index.html` is the entire site (inline CSS
-and JS, Google Fonts loaded via CDN).
+Marketing site for **Bloom** (Syncro Labs) at **runbloom.ai**. Static HTML,
+no build step.
+
+- `index.html` — public site
+- `pitch-deck.html` — sales deck (keyboard nav)
+- `linkedin-content.md` — paste-ready LinkedIn drafts
+- `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
+- `logo.png` / `logo-transparent.png` / `logo-nav.png` / `favicon.png` — contour + BLOOM mark (no tagline)
 
 ## Deployment
 
-- Hosted on Vercel, project name `bloom-landing`.
-- Once this repo is connected via Vercel's Git integration (Project Settings →
-  Git → Connect Repository), every push to `main` auto-deploys. Do not use
-  one-off file-upload deploys once this is connected — just edit, commit, push.
-- Domain `runbloom.ai` is attached in the Vercel dashboard already.
+- Vercel project `bloom-landing`, repo `calebsattler12/bloom-landingpage`
+- Push to `main` auto-deploys when Git is connected
+- Domain `runbloom.ai`
 
-## Brand facts (use these, don't re-invent them)
+## Brand
 
-- **Palette:** accent `#12C4B4` (turquoise), background `#F4EFE3` (sand),
-  ink `#0B0B0C`. This is the "5a — bright turquoise on sand" variant chosen
-  from the original design exploration, deliberately kept "whisper-light"
-  tropical, not beachy — should read as a credible B2B site.
-- **Fonts:** Schibsted Grotesk (display/headings), Hanken Grotesk (body).
-  These are the fonts from the *original* Claude Design source file — match
-  them exactly, don't substitute.
-- **Brand personality goal:** Bloom should read light, approachable, friendly,
-  easy, fun — a deliberate contrast to the old "Verity" brand system (navy
-  #0F2A3F, cream #F4F1E6, Jost all-caps, octagon motif), which was serious/
-  authoritative. Do not pull the old Verity system back in.
-- **No formal written brand voice guide exists yet.** If asked to brand-review
-  content, treat the facts in this file as the closest thing to guidelines,
-  plus general clarity/professionalism/compliance checks.
+- **Palette:** accent `#12C4B4`, background `#F4EFE3`, ink `#0B0B0C`
+- **Fonts:** Schibsted Grotesk (headings), Hanken Grotesk (body)
+- **Logo:** contour rings + BLOOM wordmark. Never include
+  "INSIGHTS. LANDSCAPES. GROWTH."
+- **CTA:** Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
+- Personality: light, approachable, friendly. Do not revive old Verity navy/Jost.
 
-## Standing content mandate (important — currently NOT fully satisfied)
+## Positioning (locked)
 
-**All Bloom marketing materials, including this website, must lead hard with
-token-cost optimization as the primary value proposition.** The pitch: local
-inference eliminates the linear-scaling cloud API spend that cloud-only
-competitors incur as usage grows. Data privacy/sovereignty is secondary,
-supporting messaging — not the lead. (Exception: law firm outreach leads with
-data sovereignty instead — not relevant to this site's current audience.)
+**Thesis:** The AI agent team that turns sales calls into organic, inbound
+**deals**. Mines buyer language → SEO/AEO content that gets found, ranked,
+chosen.
 
-As of the last review, the homepage hero leads with a "payroll" framing, not
-the mandated token-cost framing, and the token-economics section is buried
-mid-page. **This is a known open issue, not a design choice — fix it when
-next doing meaningful copy work**, unless directed otherwise.
+Lead with calls → organic inbound. Token-cost / privacy are supporting only.
+Product is deliberately narrow (content engine). Nurture may appear as a
+future phase in the pitch deck only. Approval ≠ auto-publish. LinkedIn is
+paste-only.
 
-## Product facts (for copy accuracy)
+## Voice
 
-Bloom is an 8-agent system:
-1. AI VP of Marketing (orchestrator — briefs the team, never sends anything itself)
-2. QA Gate (Quality Assurance Agent — checks every draft/finding/report before it reaches the digest)
-3. Research Agent (mines sales calls + public data)
-4. Content Agent (drafts LinkedIn/website/email copy — routes to Claude/cloud even in production, since output is public-facing)
-5. SEO/AEO Agent (competitive query + AI-search visibility monitoring)
-6. Analytics Agent (weekly plain-English traffic + deal report)
-7. Forms QA Agent (Phase 2 — tests site forms on a schedule)
-8. Outreach Specialist Agent (Phase 2)
+Follow `brand-voice.md`: zero em dashes; no "it's not X, it's Y"; banned AI
+diction; no fabricated proof. Craft source is RevBlack's 2026-08-17 locked
+`brand-voice.md` (anti-AI-tell rules only).
 
-**The current site's "Meet the team" section only shows 6 of these 8 — Forms
-QA and Outreach Specialist are missing.** Known gap, flagged in the last
-brand review, not yet fixed per explicit instruction not to touch it further
-for now.
+## Pricing (public drafts)
 
-## RevBlack (proof point) — be careful here
+**Do not publish dollar amounts, install fees, or retainer figures** in
+`index.html`, `pitch-deck.html`, or `linkedin-content.md`. Qualitative only:
+own the hardware, month to month, fraction of a content team. Prefer Book a
+Call over a price list.
 
-RevBlack is Bloom's first customer (a $15,000 POC, Tate Stone). Real,
-documented facts:
-- Goal: grow qualified inbound deals from 1–4/month to a consistent 8–15/month.
-- RevBlack's own site (revblack.com) runs on Webflow, with HubSpot embedded
-  for forms only — **not** a confirmed "HubSpot + Salesforce partner."
+## Site section map
 
-**The current site's testimonial quote ("It feels like we added a marketer...
-12 hrs saved every week / 100% approval-gated") attributed to RevBlack's
-"Head of Marketing" is fabricated / illustrative, not a real quote on file.**
-Same for the "HubSpot + Salesforce partner" tag. This was flagged in the last
-brand review as a high-severity issue and intentionally left unfixed for now
-per explicit instruction — **do not remove this flag or treat it as resolved
-without an explicit go-ahead.** If asked to do further copy work on the site,
-surface this again rather than silently leaving it or silently fixing it.
+1. Hero (locked line + sub)
+2. Why organic
+3. First 90 days
+4. How it starts (findings you keep)
+5. After rollout
+6. Continuously improves ("Just like your best employee…")
+7. Team (content-engine roster)
+8. RevBlack goal (goal, not claimed result)
+9. How it runs (qualitative cost/ownership)
+10. Final CTA
 
-## SEO / AEO
+## Roster (site truth)
 
-No tracking doc exists yet. When one is created (Google Drive or a file in
-this repo, e.g. `SEO-NOTES.md`), read it for current keyword targets,
-competitor gaps, and audit history instead of re-researching positioning from
-scratch each session. Prefer periodic audits (e.g. monthly, using the
-`marketing:seo-audit` skill) over continuous ad-hoc checking.
+Content Director, Quality & Voice Gate, Research, Content writers, SEO/AEO,
+Scheduler. Not the old "AI VP of everything / unlimited agents" framing.
 
-## Editing conventions
+## Integrations (confirmed only)
 
-- This is a single-file static site. Make targeted edits (specific lines/
-  sections), not full-file rewrites, to keep changes reviewable and cheap.
-- Keep animations respecting `prefers-reduced-motion` (already implemented —
-  don't regress this).
-- Test locally by opening `index.html` directly in a browser before pushing.
+Slack, CMS, Fathom, Circleback, Granola.
+
+## RevBlack proof
+
+Documented goal only: grow qualified inbound deals from 1–4/month to
+8–15/month. Fabricated testimonial and "12 hrs saved" stats were removed.
+Do not reintroduce them.
+
+## Editing
+
+- Prefer targeted edits unless repositioning the whole narrative
+- Respect `prefers-reduced-motion`
+- Preview `index.html` and `pitch-deck.html` locally before pushing
