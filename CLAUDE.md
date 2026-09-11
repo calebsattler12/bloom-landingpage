@@ -10,6 +10,7 @@ no build step.
 
 - `index.html` — public site
 - `pitch-deck.html` — sales deck (keyboard nav)
+- `90-day-timeline.html` — shared 90-day checklist (core engine only)
 - `linkedin-content.md` — paste-ready LinkedIn drafts
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
 - `logo.png` / `logo-transparent.png` — tight transparent contour + BLOOM (no plate, no tagline)
@@ -52,7 +53,8 @@ diction; no fabricated proof. Craft source is RevBlack's 2026-08-17 locked
 ## Pricing (public drafts)
 
 **Do not publish dollar amounts, install fees, or retainer figures** in
-`index.html`, `pitch-deck.html`, or `linkedin-content.md`. Qualitative only:
+`index.html`, `pitch-deck.html`, `90-day-timeline.html`, or
+`linkedin-content.md`. Qualitative only:
 own the hardware, month to month, fraction of a content team. Prefer Book a
 Call over a price list.
 
@@ -61,7 +63,7 @@ Call over a price list.
 1. Hero (locked line + sub)
 2. Why organic
 3. How it starts (findings you keep)
-4. First 90 days (core engine + team roster)
+4. First 90 days (core engine + team roster; link to 90-day-timeline.html)
 5. What you can add next (scroll-driven contour rings: publishing, SEO/AEO, digest, query bot)
 6. Continuously improves ("Just like your best employee…")
 7. How it runs (qualitative cost/ownership)
@@ -87,4 +89,7 @@ Do not reintroduce them.
 
 - Prefer targeted edits unless repositioning the whole narrative
 - Respect `prefers-reduced-motion`
-- Preview `index.html` and `pitch-deck.html` locally before pushing
+- Preview `index.html`, `pitch-deck.html`, and `90-day-timeline.html`
+  locally before pushing
+- 90-day live means generation → QA → human approval (pool). CMS
+  publishing is a later layer, not the install finish line.

@@ -11,6 +11,7 @@ See `CLAUDE.md` and `brand-voice.md` for locked copy and craft rules.
 
 - `index.html` — public marketing site
 - `pitch-deck.html` — sales deck (keyboard nav)
+- `90-day-timeline.html` — 90-day core-engine checklist
 - `linkedin-content.md` — paste-ready LinkedIn drafts (manual post only)
 - `brand-voice.md` — voice rules for marketing copy
 - `logo.png` / `logo-transparent.png` / `logo-nav.png` / `favicon.png` — tight transparent contour + BLOOM (no plate, no tagline)
@@ -21,6 +22,7 @@ See `CLAUDE.md` and `brand-voice.md` for locked copy and craft rules.
 
 - `/Users/caleb.sattler/bloom-landingpage/index.html`
 - `/Users/caleb.sattler/bloom-landingpage/pitch-deck.html`
+- `/Users/caleb.sattler/bloom-landingpage/90-day-timeline.html`
 
 ## Deploy
 

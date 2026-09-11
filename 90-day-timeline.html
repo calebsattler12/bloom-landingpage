@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom · 90-day core engine rollout</title>
+<meta name="description" content="Shared 90-day checklist for installing Bloom's core content engine: sales calls to SEO/AEO-ready drafts, through QA and human approval.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent:#12C4B4;
+  --accent-deep:#0B948A;
+  --paper:#F4EFE3;
+  --sand-deep:#E9E1CE;
+  --ink:#0B0B0C;
+  --muted:#6C6C72;
+  --line:rgba(11,11,12,.10);
+  --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  background:var(--paper);
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--ink);text-decoration:none;}
+a:hover{color:var(--accent);}
+.topnav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 28px;border-bottom:1px solid var(--line);
+  background:color-mix(in oklab, var(--paper) 92%, transparent);
+  backdrop-filter:blur(10px);position:sticky;top:0;z-index:20;
+}
+.topnav img{display:block;height:40px;width:auto;background:transparent;}
+.topnav-links{display:flex;align-items:center;gap:22px;font-size:14.5px;font-weight:500;}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  font-size:14px;font-weight:600;padding:10px 18px;border-radius:999px;
+  background:var(--accent);color:#fff;
+}
+.btn:hover{color:#fff;filter:brightness(.96);}
+.wrap{max-width:900px;margin:0 auto;padding:44px 28px 90px;}
+header.page{border-bottom:2px solid var(--ink);padding-bottom:22px;margin-bottom:38px;}
+.eyebrow{
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent-deep);font-weight:700;margin-bottom:10px;
+}
+h1{
+  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;
+  font-size:clamp(30px,5vw,44px);letter-spacing:-.03em;line-height:.98;margin:0 0 12px;
+}
+.lede{font-size:16px;line-height:1.5;color:var(--muted);max-width:640px;margin-bottom:22px;}
+.progress-row{display:flex;align-items:center;gap:16px;}
+.progress-track{
+  flex:1;height:14px;border-radius:8px;background:var(--sand-deep);
+  border:1px solid var(--line);overflow:hidden;
+}
+.progress-fill{
+  height:100%;width:0%;background:linear-gradient(90deg,var(--accent-deep),var(--accent));
+  border-radius:8px 0 0 8px;transition:width .5s ease;
+}
+.progress-pct{
+  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:20px;min-width:58px;text-align:right;
+}
+.progress-sub{font-size:12.5px;color:var(--muted);margin-top:8px;display:flex;justify-content:space-between;align-items:center;}
+.reset-btn{background:none;border:none;color:var(--muted);font-size:12px;text-decoration:underline;cursor:pointer;font-family:inherit;padding:0;}
+.reset-btn:hover{color:var(--ink);}
+.shared-note{margin-top:10px;font-size:12px;font-weight:600;color:var(--accent-deep);display:flex;align-items:center;gap:6px;}
+.shared-note::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none;}
+.timeline{position:relative;padding-left:2px;}
+.rail-track{position:absolute;left:27px;top:6px;bottom:6px;width:3px;background:repeating-linear-gradient(180deg,var(--line) 0 10px,transparent 10px 18px);}
+.rail-fill{position:absolute;left:27px;top:6px;width:3px;height:0%;background:var(--accent);transition:height .5s ease;border-radius:2px;}
+.section-label{
+  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:13px;
+  letter-spacing:.06em;color:var(--muted);text-transform:uppercase;
+  margin:0 0 14px 68px;padding-top:6px;
+}
+.section-label:first-of-type{padding-top:0;}
+.stage{position:relative;display:grid;grid-template-columns:56px 1fr;gap:0 24px;}
+.node{position:relative;z-index:2;}
+.node .dot{
+  width:56px;height:56px;border-radius:50%;background:var(--white);border:3px solid var(--ink);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:16px;
+  transition:background .3s ease,border-color .3s ease,color .3s ease;cursor:pointer;
+}
+.stage.done .node .dot{background:var(--accent);border-color:var(--accent-deep);color:var(--ink);}
+.stage.final .node .dot{font-size:18px;}
+.stage.final.done .node .dot{background:var(--ink);border-color:var(--ink);color:var(--accent);}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;margin-bottom:28px;overflow:hidden;}
+.card-head{padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;cursor:pointer;user-select:none;}
+.card-head:hover{background:color-mix(in oklab, var(--accent) 6%, transparent);}
+.head-left{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
+.week-tag{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--accent-deep);text-transform:uppercase;}
+.week-title{font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:18px;letter-spacing:-.02em;}
+.head-right{display:flex;align-items:center;gap:10px;white-space:nowrap;}
+.count-pill{font-size:12px;font-weight:700;color:var(--muted);background:var(--paper);padding:4px 10px;border-radius:20px;}
+.stage.done .count-pill{color:var(--accent-deep);background:rgba(18,196,180,.12);}
+.chevron{width:10px;height:10px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .25s ease;margin-right:2px;}
+.card.open .chevron{transform:rotate(-135deg);}
+.card-body{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.card.open .card-body{max-height:720px;}
+.items{padding:2px 22px 18px;border-top:1px solid var(--line);}
+.item{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14.5px;cursor:pointer;}
+.item:last-child{border-bottom:none;}
+.item input{margin-top:3px;width:17px;height:17px;accent-color:var(--accent-deep);cursor:pointer;flex:none;}
+.item span{line-height:1.4;}
+.item.checked span{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--accent-deep);}
+.final-note{padding:14px 22px 18px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);}
+.after{
+  margin-top:12px;background:var(--ink);color:#fff;border-radius:18px;padding:28px 26px;
+}
+.after h2{font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:24px;letter-spacing:-.03em;margin-bottom:10px;}
+.after p{font-size:14.5px;line-height:1.5;color:rgba(255,255,255,.62);margin-bottom:16px;}
+.after ul{list-style:none;display:grid;gap:10px;}
+.after li{font-size:14.5px;font-weight:600;padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);}
+.after li span{display:block;font-weight:500;color:rgba(255,255,255,.58);margin-top:4px;font-size:13.5px;}
+@media (max-width:600px){
+  .topnav-links a:not(.btn){display:none;}
+  .node .dot{width:44px;height:44px;font-size:14px;}
+  .stage{grid-template-columns:44px 1fr;}
+  .rail-track,.rail-fill{left:21px;}
+  .section-label{margin-left:56px;}
+  .week-title{font-size:16px;}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+  }
+}
+</style>
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html"><img src="logo-nav.png" srcset="logo-nav.png 1x, logo-nav@2x.png 2x" alt="Bloom"></a>
+  <div class="topnav-links">
+    <a href="index.html">Site</a>
+    <a href="pitch-deck.html">Deck</a>
+    <a class="btn" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="page">
+    <div class="eyebrow">Core content engine rollout</div>
+    <h1>First 90 days: install the engine.</h1>
+    <p class="lede">This checklist is the foundation install only. We build the agent team around one job: sales calls into SEO/AEO-ready drafts, through QA and human approval. Publishing, deeper SEO/AEO ops, the weekly digest, and the query bot come after.</p>
+    <div class="progress-row">
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="progress-pct" id="progressPct">0%</div>
+    </div>
+    <div class="progress-sub">
+      <span id="progressCount">0 of 0 steps complete</span>
+      <button class="reset-btn" id="resetBtn" type="button">Reset progress</button>
+    </div>
+    <div class="shared-note" id="sharedNote">Progress saves in this browser.</div>
+  </header>
+
+  <div class="timeline" id="timeline">
+    <div class="rail-track"></div>
+    <div class="rail-fill" id="railFill"></div>
+  </div>
+
+  <aside class="after">
+    <h2>After the core is running</h2>
+    <p>These are later projects. They are not part of the 90-day finish line.</p>
+    <ul>
+      <li>Publishing and distribution<span>Slack approval, then a scheduled drip to your CMS.</span></li>
+      <li>SEO / AEO ops<span>Deeper query targeting that feeds the queue.</span></li>
+      <li>Weekly digest<span>A weekly note on what shipped and what is getting found.</span></li>
+      <li>Circleback query bot<span>Ask your call history from Slack. Works as a standalone add-on.</span></li>
+    </ul>
+  </aside>
+</div>
+
+<script>
+const DATA = [
+  { section: "Findings you keep", weeks: [
+    { n: "01", title: "Kickoff and call access", items: [
+      "Grant access to call recordings (Fathom, Circleback, or Granola). Findings are built from this data, so this comes first.",
+      "Name who owns voice feedback on your side.",
+      "Kickoff: confirm the 90 days install the core engine only. Later layers stay off the finish line.",
+      "Findings work starts from real sales calls."
+    ]},
+    { n: "02", title: "Findings report and writing manual", items: [
+      "Buyer language pulled from the calls: how people talk, and the questions before they say yes.",
+      "ICP derived from real conversations.",
+      "Content and SEO/AEO gaps mapped.",
+      "Writing manual drafted: voice and editorial standard for every draft.",
+      "Roadmap presented. The report is yours whether you install Bloom or not."
+    ]}
+  ]},
+  { section: "Install the team", weeks: [
+    { n: "03", title: "Stand up the agent team", items: [
+      "Hardware and setup installed. You own the gear.",
+      "Content Director, Research, writers, Quality and Voice Gate, SEO/AEO, and Scheduler stood up.",
+      "Call sources connected to the generation queue.",
+      "Slack opened as the review channel.",
+      "Confirm live means generation to QA to human approval. CMS go-live is a later project."
+    ]}
+  ]},
+  { section: "Content generation", weeks: [
+    { n: "04", title: "Load sources and test drafts", items: [
+      "Source materials loaded into the engine.",
+      "First internal test drafts generated from call language.",
+      "Drafts checked against the writing manual."
+    ]},
+    { n: "05", title: "Voice calibration", items: [
+      "First batch of test content run through the engine.",
+      "You review early drafts and mark tone and style.",
+      "Writing manual updated from that feedback.",
+      "Re-test until the voice consistently sounds like you.",
+      "Calibrated writing manual locked as the standard."
+    ]},
+    { n: "06", title: "Format writers", items: [
+      "How-to, article, and playbook writers tuned to the manual.",
+      "Intake cadence set: interview, notes, or chat.",
+      "First how-to drafted from the intake and the calls."
+    ]},
+    { n: "07", title: "LinkedIn, paste only", items: [
+      "LinkedIn writer stood up on the same intake.",
+      "First posts drafted as paste-ready copy. Never auto-posted.",
+      "Confirm this track does not slow the main generation queue."
+    ]}
+  ]},
+  { section: "QA and approval", weeks: [
+    { n: "08", title: "Quality and Voice Gate", items: [
+      "Reviewer(s) assigned on your side.",
+      "Slack review flow live.",
+      "First batch of drafts run through the Quality and Voice Gate.",
+      "Feedback patterns captured to sharpen the next draft."
+    ]},
+    { n: "09", title: "Review refinement", items: [
+      "Feedback loop with your reviewer tightened.",
+      "Writing manual and templates updated from notes.",
+      "Review turnaround shortened.",
+      "How-to, article, playbook, and LinkedIn tracks re-tested against the refined voice."
+    ]}
+  ]},
+  { section: "Approval pool", weeks: [
+    { n: "10", title: "Human approval, not auto-publish", items: [
+      "Approved drafts land in a review pool.",
+      "Generation cadence set (what gets drafted each week).",
+      "Humans approve every piece. Nothing auto-publishes.",
+      "Scheduler holds approved drafts. CMS drip stays a later layer."
+    ]},
+    { n: "11", title: "Engine dry run", items: [
+      "One full cycle: generation to QA to human approval.",
+      "Pool checked against the writing manual.",
+      "Handoff gaps between research, writers, and QA fixed.",
+      "LinkedIn remains paste-only."
+    ]},
+    { n: "12", title: "Full run-through", items: [
+      "A second cycle run with less oversight.",
+      "Remaining bottlenecks identified and fixed.",
+      "Review turnaround confirmed to fit the generation cadence.",
+      "You are briefed on steady-state for the core engine."
+    ]}
+  ]},
+  { section: "Live, day ~90", weeks: [
+    { n: "13", title: "Core engine live", items: [
+      "Engine runs generation to QA to human approval on cadence.",
+      "Drafts sit in the approval pool, ready for a human.",
+      "You are confirmed on cadence, voice, and review flow.",
+      "Handoff from rollout to steady-state of the core.",
+      "First post-launch check-in scheduled.",
+      "Later projects named, not started: publishing, SEO/AEO ops, weekly digest, query bot."
+    ]}
+  ]}
+];
+
+const STORAGE_KEY = "bloom-core-engine-90d-v1";
+let state = {};
+let openWeek = "01";
+const hasShared = !!(window.storage && window.storage.get && window.storage.set);
+
+function itemKey(weekN, idx){ return weekN + "-" + idx; }
+
+async function loadState(){
+  if (hasShared){
+    try {
+      const res = await window.storage.get(STORAGE_KEY, true);
+      if (res && res.value) { state = JSON.parse(res.value); return; }
+    } catch (e) { /* fall through */ }
+  }
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) state = JSON.parse(raw);
+  } catch (e) { state = {}; }
+}
+
+async function saveState(){
+  const payload = JSON.stringify(state);
+  if (hasShared){
+    try { await window.storage.set(STORAGE_KEY, payload, true); return; }
+    catch (e) { console.error("Could not save shared progress", e); }
+  }
+  try { localStorage.setItem(STORAGE_KEY, payload); }
+  catch (e) { console.error("Could not save progress", e); }
+}
+
+function weekComplete(week){ return week.items.every((_, idx) => state[itemKey(week.n, idx)]); }
+function weekCheckedCount(week){ return week.items.filter((_, idx) => state[itemKey(week.n, idx)]).length; }
+function totalCounts(){
+  let total = 0, done = 0;
+  DATA.forEach(sec => sec.weeks.forEach(w => { total += w.items.length; done += weekCheckedCount(w); }));
+  return { total, done };
+}
+
+function render(){
+  const timeline = document.getElementById('timeline');
+  timeline.querySelectorAll('.section-label, .stage').forEach(el => el.remove());
+  const allWeeks = [];
+  DATA.forEach(sec => sec.weeks.forEach(w => allWeeks.push(w)));
+  const totalWeeks = allWeeks.length;
+  let doneWeeksInOrder = 0;
+  for (const w of allWeeks){ if (weekComplete(w)) doneWeeksInOrder++; else break; }
+
+  DATA.forEach(sec => {
+    const label = document.createElement('div');
+    label.className = 'section-label';
+    label.textContent = sec.section;
+    timeline.appendChild(label);
+
+    sec.weeks.forEach(week => {
+      const isFinal = week.n === "13";
+      const complete = weekComplete(week);
+      const checkedCount = weekCheckedCount(week);
+
+      const stage = document.createElement('div');
+      stage.className = 'stage' + (complete ? ' done' : '') + (isFinal ? ' final' : '');
+
+      const node = document.createElement('div');
+      node.className = 'node';
+      node.innerHTML = `<div class="dot">${complete ? (isFinal ? '★' : '✓') : week.n}</div>`;
+
+      const card = document.createElement('div');
+      card.className = 'card' + (openWeek === week.n ? ' open' : '');
+
+      const head = document.createElement('div');
+      head.className = 'card-head';
+      head.innerHTML = `
+        <div class="head-left">
+          <span class="week-tag">Week ${week.n}</span>
+          <span class="week-title">${week.title}</span>
+        </div>
+        <div class="head-right">
+          <span class="count-pill">${checkedCount}/${week.items.length}</span>
+          <span class="chevron"></span>
+        </div>`;
+      head.addEventListener('click', () => { openWeek = (openWeek === week.n) ? null : week.n; render(); });
+
+      const body = document.createElement('div');
+      body.className = 'card-body';
+      const itemsWrap = document.createElement('div');
+      itemsWrap.className = 'items';
+      week.items.forEach((text, idx) => {
+        const key = itemKey(week.n, idx);
+        const checked = !!state[key];
+        const row = document.createElement('label');
+        row.className = 'item' + (checked ? ' checked' : '');
+        row.innerHTML = `<input type="checkbox" ${checked ? 'checked' : ''}/><span>${text}</span>`;
+        row.querySelector('input').addEventListener('change', (e) => {
+          state[key] = e.target.checked;
+          saveState();
+          render();
+        });
+        itemsWrap.appendChild(row);
+      });
+      body.appendChild(itemsWrap);
+
+      if (isFinal){
+        const note = document.createElement('div');
+        note.className = 'final-note';
+        note.textContent = complete
+          ? "The core engine is live. Generation, QA, and human approval are running on cadence."
+          : "Finish line: the core engine running generation to QA to human approval. Publishing is a later project.";
+        body.appendChild(note);
+      }
+
+      card.appendChild(head);
+      card.appendChild(body);
+      stage.appendChild(node);
+      stage.appendChild(card);
+      timeline.appendChild(stage);
+    });
+  });
+
+  const { total, done } = totalCounts();
+  const pct = total ? Math.round((done/total)*100) : 0;
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressPct').textContent = pct + '%';
+  document.getElementById('progressCount').textContent = `${done} of ${total} steps complete`;
+  const railPct = totalWeeks ? (doneWeeksInOrder/totalWeeks)*100 : 0;
+  document.getElementById('railFill').style.height = railPct + '%';
+}
+
+document.getElementById('resetBtn').addEventListener('click', () => {
+  const msg = hasShared
+    ? 'Reset progress for everyone viewing this link?'
+    : 'Reset progress on this device?';
+  if (confirm(msg)) {
+    state = {};
+    saveState();
+    render();
+  }
+});
+
+if (hasShared){
+  document.getElementById('sharedNote').textContent = 'Shared progress. Anyone with this link sees the same checklist.';
+}
+
+(async () => { await loadState(); render(); })();
+</script>
+</body>
+</html>

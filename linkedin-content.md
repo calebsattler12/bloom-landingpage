@@ -56,13 +56,13 @@ You are buying the loop staying live, and getting tighter every month.
 
 ## 4. First 90 days
 
-What actually gets built:
+What the first 90 days actually install:
 
-1. Audit the calls: language, questions before "yes," content gaps.
-2. Install the agent team: tuned to voice, library stocked, wired into CMS, Slack, and your call tools.
-3. Run: working engine, live content, organic deals already in motion.
+1. Findings from your calls. You keep the report either way.
+2. The agent team around the core content engine: writers, QA, a queue from your calls.
+3. A live generation loop: drafts, voice gate, human approval.
 
-A content engine producing from day one.
+Publishing, deeper SEO/AEO, the weekly digest, and the query bot get added after the core is running.
 
 Curious whether your calls hold enough signal? Start there.
 https://calendar.app.google/kY3NqzNsspgzzw1F9
