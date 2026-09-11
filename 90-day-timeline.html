@@ -152,7 +152,7 @@ h1{
   <header class="page">
     <div class="eyebrow">Core content engine rollout</div>
     <h1>First 90 days: install the engine.</h1>
-    <p class="lede">This checklist is the foundation install only. We build the agent team around one job: sales calls into SEO/AEO-ready drafts, through QA and human approval. Publishing, deeper SEO/AEO ops, the weekly digest, and the query bot come after.</p>
+    <p class="lede">This checklist is the foundation install only. We build the agent team around one job: sales calls into SEO/AEO-ready drafts, through QA and human approval. Publishing, deeper SEO/AEO ops, LinkedIn content, weekly email updates, and the query agent come after.</p>
     <div class="progress-row">
       <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
       <div class="progress-pct" id="progressPct">0%</div>
@@ -175,8 +175,9 @@ h1{
     <ul>
       <li>Publishing and distribution<span>Slack approval, then a scheduled drip to your CMS.</span></li>
       <li>SEO / AEO ops<span>Deeper query targeting that feeds the queue.</span></li>
-      <li>Weekly digest<span>A weekly note on what shipped and what is getting found.</span></li>
-      <li>Circleback query bot<span>Ask your call history from Slack. Works as a standalone add-on.</span></li>
+      <li>LinkedIn content<span>Paste-ready posts from the same call language. Never auto-posted.</span></li>
+      <li>Weekly email updates<span>A weekly email on agent progress, what shipped, and what is getting found.</span></li>
+      <li>Circleback query agent<span>Ask your call history from Slack. Works as a standalone add-on.</span></li>
     </ul>
   </aside>
 </div>
@@ -187,7 +188,7 @@ const DATA = [
     { n: "01", title: "Kickoff and call access", items: [
       "Grant access to call recordings (Fathom, Circleback, or Granola). Findings are built from this data, so this comes first.",
       "Name who owns voice feedback on your side.",
-      "Kickoff: confirm the 90 days install the core engine only. Later layers stay off the finish line.",
+      "Kickoff: confirm the 90 days install the core engine only. Later projects stay off the finish line.",
       "Findings work starts from real sales calls."
     ]},
     { n: "02", title: "Findings report and writing manual", items: [
@@ -225,10 +226,10 @@ const DATA = [
       "Intake cadence set: interview, notes, or chat.",
       "First how-to drafted from the intake and the calls."
     ]},
-    { n: "07", title: "LinkedIn, paste only", items: [
-      "LinkedIn writer stood up on the same intake.",
-      "First posts drafted as paste-ready copy. Never auto-posted.",
-      "Confirm this track does not slow the main generation queue."
+    { n: "07", title: "LinkedIn starter, paste only", items: [
+      "Optional LinkedIn drafts stood up on the same intake (paste-ready, never auto-posted).",
+      "Confirm this does not slow the main generation queue.",
+      "Full LinkedIn content project stays a later expansion after the core."
     ]}
   ]},
   { section: "QA and approval", weeks: [
@@ -242,7 +243,7 @@ const DATA = [
       "Feedback loop with your reviewer tightened.",
       "Writing manual and templates updated from notes.",
       "Review turnaround shortened.",
-      "How-to, article, playbook, and LinkedIn tracks re-tested against the refined voice."
+      "How-to, article, and playbook tracks re-tested against the refined voice."
     ]}
   ]},
   { section: "Approval pool", weeks: [
@@ -250,13 +251,13 @@ const DATA = [
       "Approved drafts land in a review pool.",
       "Generation cadence set (what gets drafted each week).",
       "Humans approve every piece. Nothing auto-publishes.",
-      "Scheduler holds approved drafts. CMS drip stays a later layer."
+      "Scheduler holds approved drafts. CMS drip stays a later project."
     ]},
     { n: "11", title: "Engine dry run", items: [
       "One full cycle: generation to QA to human approval.",
       "Pool checked against the writing manual.",
       "Handoff gaps between research, writers, and QA fixed.",
-      "LinkedIn remains paste-only."
+      "Any LinkedIn starter drafts stay paste-only."
     ]},
     { n: "12", title: "Full run-through", items: [
       "A second cycle run with less oversight.",
@@ -272,7 +273,7 @@ const DATA = [
       "You are confirmed on cadence, voice, and review flow.",
       "Handoff from rollout to steady-state of the core.",
       "First post-launch check-in scheduled.",
-      "Later projects named, not started: publishing, SEO/AEO ops, weekly digest, query bot."
+      "Later projects named, not started: publishing, SEO/AEO ops, LinkedIn content, weekly email updates, query agent."
     ]}
   ]}
 ];

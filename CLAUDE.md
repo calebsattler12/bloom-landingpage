@@ -43,8 +43,9 @@ chosen.
 
 Lead with calls → organic inbound. Token-cost / privacy are supporting only.
 Product is deliberately narrow (content engine). Nurture may appear as a
-future phase in the pitch deck only. Approval ≠ auto-publish. LinkedIn is
-paste-only.
+future phase in the pitch deck only. Approval ≠ auto-publish. LinkedIn
+content is its own paste-only project after the core (never auto-post). Prefer
+**projects** (not layers) for product expansion; **use case** for entry points.
 
 ## Voice
 
@@ -66,10 +67,11 @@ Call over a price list.
 2. Why organic
 3. How it starts (findings you keep)
 4. First 90 days (core engine + team roster; link to 90-day-timeline.html)
-5. What you can add next (scroll-driven contour rings: publishing, SEO/AEO, digest, query bot)
+5. What you can add next (scroll-driven contour rings: publishing, SEO/AEO,
+   LinkedIn content, weekly email updates, query agent)
 6. Continuously improves ("Just like your best employee…")
-7. How it runs (qualitative cost/ownership)
-8. RevBlack goal (goal, not claimed result)
+7. How it runs (qualitative cost/ownership; weekly email updates)
+8. RevBlack client example (projects built out; link to revblack.com; no goal numbers)
 9. Final CTA
 
 ## Roster (site truth)
@@ -83,9 +85,11 @@ Slack, CMS, Fathom, Circleback, Granola.
 
 ## RevBlack proof
 
-Documented goal only: grow qualified inbound deals from 1–4/month to
-8–15/month. Fabricated testimonial and "12 hrs saved" stats were removed.
-Do not reintroduce them.
+Client example only: core content engine from sales calls, plus expanded
+projects (LinkedIn paste-only, SEO/AEO, publishing/approval, weekly email
+updates, call query agent). Link to https://www.revblack.com. Do not use
+"first customer," inbound goal numbers (1–4 → 8–15), fabricated testimonials,
+or "12 hrs saved" stats.
 
 ## Editing
 
@@ -94,4 +98,5 @@ Do not reintroduce them.
 - Preview `index.html`, `pitch-deck.html`, and `90-day-timeline.html`
   locally before pushing
 - 90-day live means generation → QA → human approval (pool). CMS
-  publishing is a later layer, not the install finish line.
+  publishing is a later project, not the install finish line.
+- Say **agent** not **bot** in user-facing copy (query agent, Slack agent).

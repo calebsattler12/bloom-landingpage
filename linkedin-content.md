@@ -62,7 +62,7 @@ What the first 90 days actually install:
 2. The agent team around the core content engine: writers, QA, a queue from your calls.
 3. A live generation loop: drafts, voice gate, human approval.
 
-Publishing, deeper SEO/AEO, the weekly digest, and the query bot get added after the core is running.
+After the core is running, add projects: publishing, deeper SEO/AEO, LinkedIn content (paste-only), weekly email updates to monitor agent progress, and the call query agent.
 
 Curious whether your calls hold enough signal? Start there.
 https://calendar.app.google/kY3NqzNsspgzzw1F9
@@ -77,6 +77,8 @@ What ranks and converts sharpens the next draft.
 New calls keep language current.
 Each format builds its own memory, so feedback compounds instead of resetting.
 The SEO/AEO standard re-baselines as what earns citations shifts.
+
+Weekly email updates keep you on top of what the agents shipped and what is getting found.
 
 A running loop does that. A static content calendar does not.
 
@@ -102,7 +104,7 @@ Bloom is a content engine, deliberately scoped:
 Content Director → Quality & Voice Gate → Research → writers → SEO/AEO → Scheduler.
 
 Approval-gated.
-LinkedIn is paste-ready, never auto-posted.
+LinkedIn content is its own project after the core: paste-ready, never auto-posted.
 You own the hardware. Month to month after rollout.
 
 One outcome: organic inbound from your own conversations.
