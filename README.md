@@ -4,7 +4,7 @@ Marketing site for Bloom at [runbloom.ai](https://runbloom.ai).
 
 ## Positioning
 
-Bloom is the AI agent team that turns sales calls into organic, inbound deals.
+Bloom is the AI agent team that turns sales calls and email conversations into organic, inbound deals.
 See `CLAUDE.md` and `brand-voice.md` for locked copy and craft rules.
 
 ## Files

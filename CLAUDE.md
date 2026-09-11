@@ -66,9 +66,9 @@ Call over a price list.
 
 1. Hero (locked line + sub)
 2. Why organic
-3. How it starts (findings you keep)
+3. How it starts (ICP report you keep)
 4. First 90 days (core engine + team roster; link to 90-day-timeline.html)
-5. What you can add next (scroll-driven contour rings: publishing, SEO/AEO,
+5. Services (scroll-driven contour rings / projects: publishing, SEO/AEO,
    LinkedIn content, weekly email updates, query agent)
 6. Continuously improves ("Just like your best employee…")
 7. How it runs (qualitative cost/ownership; weekly email updates)
