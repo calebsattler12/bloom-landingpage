@@ -14,7 +14,8 @@ See `CLAUDE.md` and `brand-voice.md` for locked copy and craft rules.
 - `90-day-timeline.html` — 90-day core-engine checklist
 - `linkedin-content.md` — paste-ready LinkedIn drafts (manual post only)
 - `brand-voice.md` — voice rules for marketing copy
-- `logo.png` / `logo-transparent.png` / `logo-nav.png` / `favicon.png` — tight transparent contour + BLOOM (no plate, no tagline)
+- `logo-contour.png` / `logo-contour@2x.png` — rings-only mark; pages typeset BLOOM beside it
+- `favicon.png` — contour only (no word, no tagline)
 - `CLAUDE.md` — agent context
 - `SEO-NOTES.md` — SEO/AEO tracking stub
 

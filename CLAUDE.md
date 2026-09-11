@@ -13,10 +13,12 @@ no build step.
 - `90-day-timeline.html` — shared 90-day checklist (core engine only)
 - `linkedin-content.md` — paste-ready LinkedIn drafts
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
-- `logo.png` / `logo-transparent.png` — tight transparent contour + BLOOM (no plate, no tagline)
-- `logo-nav.png` / `logo-nav@2x.png` — same mark for sand backgrounds
-- `logo-nav-on-ink.png` / `logo-nav-on-ink@2x.png` — sand wordmark for dark slides
-- `favicon.png` — tight transparent mark
+- `logo-contour.png` / `logo-contour@2x.png` — rings-only topographic mark (transparent, no letters, no plate, no tagline)
+- `logo.png` / `logo-transparent.png` — same contour mark (aliases)
+- Nav/footer/deck lockup: `[contour img] [gap] BLOOM` typeset in Schibsted Grotesk
+- `favicon.png` — contour only
+- Do not use the old combined PNG lockup or the tagline "INSIGHTS. LANDSCAPES. GROWTH."
+- `logo-nav.png` / `logo-nav@2x.png` / `logo-nav-on-ink*.png` — contour-only fallbacks (prefer the HTML split lockup)
 
 ## Deployment
 
@@ -28,8 +30,8 @@ no build step.
 
 - **Palette:** accent `#12C4B4`, background `#F4EFE3`, ink `#0B0B0C`
 - **Fonts:** Schibsted Grotesk (headings), Hanken Grotesk (body)
-- **Logo:** tight transparent contour rings + BLOOM wordmark. No sand/white
-  plate, no boxed lockup. Never include "INSIGHTS. LANDSCAPES. GROWTH."
+- **Logo:** rings-only contour mark beside typeset BLOOM (Schibsted Grotesk). No sand/white
+  plate, no boxed lockup, no combined PNG with letters over the rings. Never include "INSIGHTS. LANDSCAPES. GROWTH."
 - **CTA:** Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
 - Personality: light, approachable, friendly. Do not revive old Verity navy/Jost.
 

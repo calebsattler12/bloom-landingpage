@@ -35,7 +35,9 @@ a:hover{color:var(--accent);}
   background:color-mix(in oklab, var(--paper) 92%, transparent);
   backdrop-filter:blur(10px);position:sticky;top:0;z-index:20;
 }
-.logo{display:inline-flex;align-items:center;gap:10px}.logo-contour{height:28px;width:auto;display:block}.logo-word{font-family:'Schibsted Grotesk',sans-serif;font-weight:700;letter-spacing:-.03em;font-size:18px;color:inherit}
+.logo{display:inline-flex;align-items:center;gap:10px;color:inherit;text-decoration:none}
+.logo-contour{height:36px;width:auto;display:block;background:transparent}
+.logo-word{font-family:'Schibsted Grotesk',system-ui,sans-serif;font-weight:700;letter-spacing:-.03em;font-size:22px;line-height:1;color:var(--ink)}
 .topnav-links{display:flex;align-items:center;gap:22px;font-size:14.5px;font-weight:500;}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;
@@ -138,7 +140,7 @@ h1{
 </head>
 <body>
 <nav class="topnav">
-  <a href="index.html"><span class="logo"><img class="logo-contour" src="logo-contour.svg" alt=""><span class="logo-word">BLOOM</span></span></a>
+  <a href="index.html" aria-label="Bloom"><span class="logo"><img class="logo-contour" src="logo-contour.png" srcset="logo-contour.png 1x, logo-contour@2x.png 2x" alt=""><span class="logo-word">BLOOM</span></span></a>
   <div class="topnav-links">
     <a href="index.html">Site</a>
     <a href="pitch-deck.html">Deck</a>
