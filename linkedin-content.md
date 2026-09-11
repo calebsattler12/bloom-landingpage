@@ -48,7 +48,7 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 Bloom sells one loop:
 
-Your conversations → buyer language → content that ranks and gets cited → inbound deals → more conversations.
+Analyze Client Calls → Propose Content → Generate Content → Quality Assurance and Voice Gates → Review and Publish → Measure Performance and Iterate.
 
 You are buying the loop staying live, and getting tighter every month.
 

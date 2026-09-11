@@ -13,9 +13,10 @@ no build step.
 - `90-day-timeline.html` — shared 90-day checklist (core engine only)
 - `linkedin-content.md` — paste-ready LinkedIn drafts
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
-- `logo-contour.png` / `logo-contour@2x.png` — rings-only topographic mark (transparent, no letters, no plate, no tagline)
+- `logo-contour.svg` — source-of-truth rings-only topographic mark (transparent, no letters, no plate, no tagline)
+- `logo-contour.png` / `logo-contour@2x.png` — raster fallbacks of the SVG
 - `logo.png` / `logo-transparent.png` — same contour mark (aliases)
-- Nav/footer/deck lockup: `[contour img] [gap] BLOOM` typeset in Schibsted Grotesk
+- Nav/footer/deck lockup: `[contour img src=logo-contour.svg] [gap] BLOOM` typeset in Schibsted Grotesk
 - `favicon.png` — contour only
 - Do not use the old combined PNG lockup or the tagline "INSIGHTS. LANDSCAPES. GROWTH."
 - `logo-nav.png` / `logo-nav@2x.png` / `logo-nav-on-ink*.png` — contour-only fallbacks (prefer the HTML split lockup)
