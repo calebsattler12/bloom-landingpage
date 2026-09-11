@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Generate Bloom contour mark from a multi-peak topographic height field.
 
-Continuous lowland island + sharp summits → marching-squares isolines.
-Tuned to avoid peanut/hourglass midsection pinch while keeping irregular
-multi-peak topo (variable spacing, index contours). SVG (#12C4B4) + PNG aliases.
+Irregular elongated island + sharp summits → marching-squares isolines.
+Fewer levels, asymmetric shoreline (not a round blob). Teal #12C4B4,
+transparent, no text/plate. Avoids peanut/hourglass midsection pinch.
 """
 
 from __future__ import annotations
@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw
 
 STROKE = "#12C4B4"
 STROKE_RGBA = (18, 196, 180, 255)
-SEED = 20260920
+SEED = 20260922
 
 
 def fade(t: np.ndarray) -> np.ndarray:
@@ -76,63 +76,70 @@ def build_heightfield(n: int = 560, seed: int = SEED) -> np.ndarray:
     xn = xx / (n - 1)
     yn = yy / (n - 1)
 
-    # --- Continuous lowland island (keeps outer rings from hourglass-pinching) ---
-    mask_noise = fbm((n, n), np.random.default_rng(seed + 31), base=n / 4.5, octaves=4)
-    ang = np.arctan2(yn - 0.48, xn - 0.50)
-    # Odd harmonics + noise only — avoid strong cos(2θ) peanut waist
+    # --- Irregular lowland island (asymmetric shoreline, not a round blob) ---
+    mask_noise = fbm((n, n), np.random.default_rng(seed + 31), base=n / 3.2, octaves=5)
+    fine_noise = fbm((n, n), np.random.default_rng(seed + 47), base=n / 11.0, octaves=4)
+    ang = np.arctan2(yn - 0.46, xn - 0.53)
+    # Strong odd harmonics + noise; keep even terms weak to avoid peanut waist
     lobe = (
-        0.82
-        + 0.02 * np.cos(2 * ang + 0.55)
-        + 0.09 * np.sin(3 * ang - 0.85)
-        + 0.07 * np.cos(5 * ang + 1.2)
-        + 0.05 * np.sin(7 * ang - 0.3)
-        + 0.12 * mask_noise
+        0.68
+        + 0.01 * np.cos(2 * ang + 0.3)
+        + 0.18 * np.sin(3 * ang - 1.1)
+        + 0.13 * np.cos(5 * ang + 1.5)
+        + 0.10 * np.sin(7 * ang - 0.55)
+        + 0.06 * np.cos(9 * ang + 0.8)
+        + 0.04 * np.sin(4 * ang + 0.15)
+        + 0.22 * mask_noise
+        + 0.08 * fine_noise
     )
-    rr = np.hypot(xn - 0.50, yn - 0.48) / np.clip(lobe, 0.40, 1.25)
-    island = np.clip(1.18 - rr, 0.0, 1.0) ** 1.05
-    island *= 0.55 + 0.45 * (0.5 + 0.5 * fbm((n, n), rng, base=n / 3.2, octaves=4))
+    # Clearly elongated / offset so outer rings aren't circular
+    dx = (xn - 0.53) / 1.18
+    dy = (yn - 0.46) / 0.88
+    rr = np.hypot(dx, dy) / np.clip(lobe, 0.36, 1.40)
+    island = np.clip(1.25 - rr, 0.0, 1.0) ** 0.85
+    island *= 0.42 + 0.58 * (0.5 + 0.5 * fbm((n, n), rng, base=n / 2.4, octaves=5))
 
-    # Soft midsection fill so shoreline stays continuous (no peanut waist)
-    island += 0.28 * gaussian_peak(yn, xn, 0.50, 0.48, 0.32, 0.26, 1.0)
-    island += 0.18 * gaussian_peak(yn, xn, 0.50, 0.38, 0.34, 0.14, 1.0)
-    island += 0.22 * gaussian_peak(yn, xn, 0.50, 0.58, 0.34, 0.16, 1.0)
-    island += 0.16 * gaussian_peak(yn, xn, 0.38, 0.48, 0.14, 0.28, 1.0)
-    island += 0.16 * gaussian_peak(yn, xn, 0.62, 0.48, 0.14, 0.28, 1.0)
+    # Soft midsection fill — asymmetric pads only (avoid circularizing)
+    island += 0.20 * gaussian_peak(yn, xn, 0.52, 0.46, 0.28, 0.22, 1.0)
+    island += 0.22 * gaussian_peak(yn, xn, 0.44, 0.34, 0.26, 0.12, 1.0)
+    island += 0.16 * gaussian_peak(yn, xn, 0.58, 0.58, 0.28, 0.14, 1.0)
+    island += 0.22 * gaussian_peak(yn, xn, 0.34, 0.48, 0.13, 0.22, 1.0)  # kill left waist
+    island += 0.20 * gaussian_peak(yn, xn, 0.66, 0.42, 0.12, 0.22, 1.0)
     island = np.clip(island, 0.0, None)
 
     # --- Sharp multi-peak summits on top of the lowland ---
     peaks = np.zeros((n, n), dtype=np.float64)
-    # Peaks closer together so mid rings don't cinch into an hourglass
+    # Spread / offset summits for irregular interior rings (still bridged)
     summit_specs = [
-        (0.38, 0.40, 0.085, 0.075, 1.18),
-        (0.54, 0.34, 0.08, 0.07, 1.12),
-        (0.62, 0.48, 0.08, 0.085, 1.05),
-        (0.44, 0.56, 0.09, 0.08, 1.10),
-        (0.32, 0.52, 0.07, 0.07, 0.80),
-        (0.56, 0.54, 0.07, 0.06, 0.76),
-        (0.48, 0.44, 0.06, 0.055, 0.72),  # saddle summit keeps mid rings open
+        (0.34, 0.36, 0.095, 0.07, 1.22),
+        (0.58, 0.30, 0.07, 0.06, 1.16),
+        (0.66, 0.52, 0.07, 0.095, 1.10),
+        (0.40, 0.60, 0.09, 0.07, 1.14),
+        (0.28, 0.50, 0.06, 0.07, 0.76),
+        (0.60, 0.58, 0.065, 0.05, 0.72),
+        (0.50, 0.44, 0.05, 0.045, 0.68),
     ]
     for cx, cy, sx, sy, amp in summit_specs:
         peaks += gaussian_peak(yn, xn, cx, cy, sx, sy, amp)
 
-    # Ridges between summits — strong enough to kill the waist on mid isolines
-    peaks += gaussian_peak(yn, xn, 0.46, 0.38, 0.16, 0.08, 0.48)
-    peaks += gaussian_peak(yn, xn, 0.50, 0.48, 0.10, 0.16, 0.52)
-    peaks += gaussian_peak(yn, xn, 0.40, 0.50, 0.14, 0.08, 0.40)
-    peaks += gaussian_peak(yn, xn, 0.52, 0.42, 0.12, 0.10, 0.44)
+    # Ridges between summits — enough to avoid waist, not enough to round everything
+    peaks += gaussian_peak(yn, xn, 0.44, 0.34, 0.14, 0.07, 0.42)
+    peaks += gaussian_peak(yn, xn, 0.52, 0.46, 0.12, 0.16, 0.58)  # open mid rings
+    peaks += gaussian_peak(yn, xn, 0.36, 0.48, 0.14, 0.09, 0.42)
+    peaks += gaussian_peak(yn, xn, 0.56, 0.40, 0.10, 0.085, 0.38)
+    peaks += gaussian_peak(yn, xn, 0.48, 0.50, 0.11, 0.10, 0.40)
 
-    peaks += 0.20 * fbm((n, n), np.random.default_rng(seed + 7), base=n / 9.0, octaves=5)
-    peaks += 0.08 * fbm((n, n), np.random.default_rng(seed + 19), base=n / 26.0, octaves=4)
+    peaks += 0.28 * fbm((n, n), np.random.default_rng(seed + 7), base=n / 7.0, octaves=5)
+    peaks += 0.12 * fbm((n, n), np.random.default_rng(seed + 19), base=n / 18.0, octaves=4)
 
     # Lowland owns the shoreline; peaks own the interior isolines
-    z = 0.48 * island + 0.85 * peaks * (0.40 + 0.60 * island)
+    z = 0.44 * island + 0.90 * peaks * (0.36 + 0.64 * island)
 
     z -= z.min()
     z /= z.max() + 1e-12
-    # Soft floor lift across the massif reduces residual saddle on mid rings
-    # without flattening distinct summits into one plateau
-    core = np.clip(1.0 - np.hypot(xn - 0.50, yn - 0.48) / 0.42, 0.0, 1.0) ** 1.45
-    z = np.maximum(z, 0.16 * core)
+    # Soft floor lift — elliptical, offset — reduces saddle without circularizing
+    core = np.clip(1.0 - np.hypot((xn - 0.52) / 1.12, (yn - 0.46) / 0.90) / 0.38, 0.0, 1.0) ** 1.15
+    z = np.maximum(z, 0.18 * core)
     z -= z.min()
     z /= z.max() + 1e-12
     return z
@@ -155,7 +162,9 @@ def extract_closed_contours(z: np.ndarray, levels: np.ndarray) -> list[tuple[int
                     continue
                 closed.append(p)
         if closed:
-            out.append((i, closed))
+            # Keep only the largest ring per level for a simpler mark
+            closed.sort(key=lambda p: np.ptp(p[:, 0]) * np.ptp(p[:, 1]), reverse=True)
+            out.append((i, closed[:1]))
     plt.close(fig)
     return out
 
@@ -201,9 +210,9 @@ def path_d(pts: np.ndarray) -> str:
 def write_svg(mapped, vb_w, vb_h, n_levels, out_path: Path) -> None:
     elems = []
     for level_i, paths in mapped:
-        is_index = (level_i % 4) == 0
-        taper = 1.0 - 0.22 * (level_i / max(1, n_levels - 1))
-        sw = round((1.65 if is_index else 1.05) * taper, 2)
+        is_index = (level_i % 3) == 0
+        taper = 1.0 - 0.20 * (level_i / max(1, n_levels - 1))
+        sw = round((1.7 if is_index else 1.1) * taper, 2)
         for pts in paths:
             d = path_d(pts)
             if not d:
@@ -233,9 +242,9 @@ def render_png(mapped, vb_w, vb_h, height_px: int, out_path: Path) -> None:
     n_levels = max(1, max(i for i, _ in mapped) + 1)
 
     for level_i, paths in mapped:
-        is_index = (level_i % 4) == 0
-        taper = 1.0 - 0.22 * (level_i / max(1, n_levels - 1))
-        sw = (1.65 if is_index else 1.05) * taper
+        is_index = (level_i % 3) == 0
+        taper = 1.0 - 0.20 * (level_i / max(1, n_levels - 1))
+        sw = (1.7 if is_index else 1.1) * taper
         stroke_w = max(2, int(round(sw * s)))
         for pts in paths:
             pix = [(float(x) * s, float(y) * s) for x, y in pts]
@@ -251,10 +260,10 @@ def main() -> None:
     print("Building multi-peak height field…")
     z = build_heightfield(n=560, seed=SEED)
 
-    n_levels = 15
+    n_levels = 7
     t = np.linspace(0.0, 1.0, n_levels + 2)[1:-1]
     # Lower floor keeps continuous shoreline; power bias opens separate summits
-    levels = 0.16 + 0.80 * (t**0.72)
+    levels = 0.14 + 0.84 * (t**0.65)
 
     print("Extracting isolines…")
     contours = extract_closed_contours(z, levels)
