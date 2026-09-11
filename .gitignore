@@ -1,0 +1,7 @@
+.venv-logo/
+.imgvenv/
+.mplconfig/
+scripts/contour-preview*.png
+scripts/contour-preview*.jpg
+__pycache__/
+*.pyc
