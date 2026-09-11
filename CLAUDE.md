@@ -37,7 +37,7 @@ no build step.
 
 ## Positioning (locked)
 
-**Thesis:** The AI agent team that turns sales calls into organic, inbound
+**Thesis:** The AI agent team that turns sales calls and email conversations into organic, inbound
 **deals**. Mines buyer language → SEO/AEO content that gets found, ranked,
 chosen.
 
@@ -81,7 +81,7 @@ Scheduler. Not the old "AI VP of everything / unlimited agents" framing.
 
 ## Integrations (confirmed only)
 
-Slack, CMS, Fathom, Circleback, Granola.
+Slack, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback, Granola.
 
 ## RevBlack proof
 

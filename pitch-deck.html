@@ -55,7 +55,8 @@ a{color:inherit;}
   display:flex;align-items:center;
 }
 .logo{display:inline-flex;align-items:center;gap:10px;color:inherit}
-.logo-contour{height:36px;width:auto;display:block;background:transparent}
+.logo{overflow:visible}
+.logo-contour{height:40px;width:auto;max-width:none;display:block;background:transparent;object-fit:contain;object-position:center}
 .logo-word{font-family:'Schibsted Grotesk',system-ui,sans-serif;font-weight:700;letter-spacing:-.03em;font-size:22px;line-height:1;color:var(--ink)}
 .slide.dark .logo-word{color:var(--paper);}
 .footer-bar{
@@ -118,8 +119,8 @@ a{color:inherit;}
   <section class="slide on" data-title="Title">
     <div class="brand"><span class="logo"><img class="logo-contour" src="logo-contour.png" srcset="logo-contour.png 1x, logo-contour@2x.png 2x" alt=""><span class="logo-word">BLOOM</span></span></div>
     <div class="eyebrow">Sales deck</div>
-    <h1 style="font-size:56px;font-weight:600;max-width:900px">The AI agent team that turns your sales calls into <span class="accent">organic, inbound deals</span>.</h1>
-    <p class="lead muted">It mines what your buyers actually say and turns it into the SEO/AEO content that gets your business found, ranked, and chosen.</p>
+    <h1 style="font-size:56px;font-weight:600;max-width:900px">The AI agent team that turns your sales calls and email conversations into <span class="accent">organic, inbound deals</span>.</h1>
+    <p class="lead muted">Mines what your best clients actually say and uses it to get your business found, ranked, and chosen.</p>
     <div class="footer-bar"><span>runbloom.ai</span><div class="progress"></div></div>
   </section>
 
@@ -137,7 +138,7 @@ a{color:inherit;}
       <div class="card">
         <div class="tag">Organic</div>
         <h3>Own the asset</h3>
-        <p>Content that ranks and gets cited keeps working, and gets sharper as new calls feed it.</p>
+        <p>Content that ranks and gets cited keeps working. Prospects are not dependent on a software subscription to run their business: they own the hardware, and the engine stays with them.</p>
       </div>
     </div>
     <div class="footer-bar"><span>The problem with renting pipeline</span><div class="progress"></div></div>
@@ -147,11 +148,12 @@ a{color:inherit;}
     <div class="brand"><span class="logo"><img class="logo-contour" src="logo-contour.png" srcset="logo-contour.png 1x, logo-contour@2x.png 2x" alt=""><span class="logo-word">BLOOM</span></span></div>
     <div class="eyebrow">The product</div>
     <h2 style="font-size:44px;font-weight:600;max-width:860px">One outcome: organic, inbound deals.</h2>
-    <p class="lead muted">Organic inbound deals generated from your own client conversations.</p>
+    <p class="lead muted">Organic inbound deals generated from your own sales calls and email conversations.</p>
     <div class="loop">
-      <div class="node">Your conversations</div><div class="arrow">→</div>
+      <div class="node">Calls / email</div><div class="arrow">→</div>
       <div class="node">Buyer language</div><div class="arrow">→</div>
-      <div class="node">Content that ranks &amp; gets cited</div><div class="arrow">→</div>
+      <div class="node">SEO / AEO content</div><div class="arrow">→</div>
+      <div class="node">Found, ranked, chosen</div><div class="arrow">→</div>
       <div class="node">Inbound deals</div><div class="arrow">→</div>
       <div class="node">More conversations</div>
     </div>
@@ -168,12 +170,12 @@ a{color:inherit;}
       <div class="card">
         <div class="tag">1</div>
         <h3>Diagnostic</h3>
-        <p>Not sure the calls hold enough signal. Audit and findings report. Keep it either way.</p>
+        <p>Not sure the calls and email hold enough signal. Audit and ICP findings report. Keep it either way.</p>
       </div>
       <div class="card">
         <div class="tag">2</div>
         <h3>Buildout</h3>
-        <p>Have the calls, no content function. Install the agent team and stock the library.</p>
+        <p>Have the conversations, no content function. Install the agent team and stock the library.</p>
       </div>
       <div class="card">
         <div class="tag">3</div>
@@ -188,7 +190,7 @@ a{color:inherit;}
       <div class="card">
         <div class="tag">5</div>
         <h3>Query agent</h3>
-        <p>Want call intelligence without marketing. Standalone Slack agent, outside the inbound thesis.</p>
+        <p>Want conversation intelligence without marketing. Slack query agent that helps sales close more deals.</p>
       </div>
     </div>
     <div class="footer-bar"><span>Say yes to the use case they need</span><div class="progress"></div></div>
@@ -202,7 +204,7 @@ a{color:inherit;}
       <div class="card">
         <div class="tag">Audit</div>
         <h3>Findings report</h3>
-        <p>ICP, content gaps, SEO/AEO exposure from their own call data. One roadmap, sellable standalone.</p>
+        <p>Most profitable ICP to target, buyer language, and a roadmap from their own call and email data. Yours either way.</p>
       </div>
       <div class="card">
         <div class="tag">Generate</div>
@@ -212,7 +214,7 @@ a{color:inherit;}
       <div class="card">
         <div class="tag">Ship</div>
         <h3>Publishing and distribution</h3>
-        <p>Slack approval → scheduled drip to CMS. Governance for getting work live safely.</p>
+        <p>Slack approval → scheduled drip to Webflow CMS. Governance for getting work live safely.</p>
       </div>
       <div class="card">
         <div class="tag">Aim</div>
@@ -232,7 +234,7 @@ a{color:inherit;}
       <div class="card">
         <div class="tag">Ops</div>
         <h3>Call query agent</h3>
-        <p>On-demand meeting intelligence in Slack. Decoupled add-on.</p>
+        <p>On-demand meeting intelligence in Slack to help your sales team close more deals.</p>
       </div>
     </div>
     <div class="footer-bar"><span>Content generation is the 90-day install · projects are added after</span><div class="progress"></div></div>
@@ -242,7 +244,7 @@ a{color:inherit;}
     <div class="brand"><span class="logo"><img class="logo-contour" src="logo-contour.png" srcset="logo-contour.png 1x, logo-contour@2x.png 2x" alt=""><span class="logo-word">BLOOM</span></span></div>
     <div class="eyebrow">How it starts</div>
     <h2 style="font-size:44px;font-weight:600;max-width:780px">A findings report you keep either way.</h2>
-    <p class="lead muted">Before the engine gets built, your sales calls get analyzed: the language, the questions, the gaps. That is the foundation everything else is built on, and it is yours whether you install Bloom or not.</p>
+    <p class="lead muted">Before the engine gets built, your sales calls and email conversations get analyzed: the language, the questions, the gaps. That is the foundation everything else is built on, and it is yours whether you install Bloom or not.</p>
     <p class="small muted" style="margin-top:28px;max-width:640px">On the call: lead with the diagnostic when volume or fit is uncertain.</p>
     <div class="footer-bar"><span>Low-risk entry · real artifact</span><div class="progress"></div></div>
   </section>
@@ -260,7 +262,7 @@ a{color:inherit;}
       <div class="card">
         <div class="tag">Stock</div>
         <h3>Fill the library</h3>
-        <p>Publishable pieces written from the language already sitting on their calls.</p>
+        <p>Publishable pieces written from the language already sitting in their sales calls and email conversations.</p>
       </div>
       <div class="card">
         <div class="tag">Run</div>
@@ -282,8 +284,8 @@ a{color:inherit;}
         <p>What ranks and converts sharpens what gets written next.</p>
       </div>
       <div class="card">
-        <h3>New calls keep language current</h3>
-        <p>Buyer phrasing stays fresh instead of drifting into last quarter's assumptions.</p>
+        <h3>New conversations keep language current</h3>
+        <p>Buyer phrasing from new calls and email stays fresh instead of drifting into last quarter's assumptions.</p>
       </div>
       <div class="card">
         <h3>Per-format memory</h3>
@@ -305,7 +307,7 @@ a{color:inherit;}
       <div class="card">
         <div class="tag">Project 1</div>
         <h3>Publishing and distribution</h3>
-        <p>Slack approval, then a scheduled drip to the CMS.</p>
+        <p>Slack approval, then a scheduled drip to Webflow CMS.</p>
       </div>
       <div class="card">
         <div class="tag">Project 2</div>
@@ -325,7 +327,7 @@ a{color:inherit;}
       <div class="card">
         <div class="tag">Project 5</div>
         <h3>Circleback query agent</h3>
-        <p>Ask call history from Slack. Works as a standalone add-on.</p>
+        <p>Ask call history from Slack to help your sales team close more deals.</p>
       </div>
     </div>
     <div class="footer-bar"><span>Rings around the core · nurture stays a later phase</span><div class="progress"></div></div>
@@ -334,17 +336,17 @@ a{color:inherit;}
   <section class="slide" data-title="How it runs">
     <div class="brand"><span class="logo"><img class="logo-contour" src="logo-contour.png" srcset="logo-contour.png 1x, logo-contour@2x.png 2x" alt=""><span class="logo-word">BLOOM</span></span></div>
     <div class="eyebrow">How it runs</div>
-    <h2 style="font-size:42px;font-weight:600;max-width:780px">A fraction of a content team, with more capability on the loop.</h2>
+    <h2 style="font-size:42px;font-weight:600;max-width:780px">A fraction of the price of hiring a content team, with exponentially more capability.</h2>
     <div class="grid-2" style="max-width:860px">
       <div class="card">
         <div class="tag">Ownership</div>
         <h3>You own the hardware</h3>
-        <p>The team runs on gear that stays with the business, wired into their stack.</p>
+        <p>The team runs on gear that stays with the business. They are not dependent on a rented software subscription to keep the engine running.</p>
       </div>
       <div class="card">
         <div class="tag">Ongoing</div>
         <h3>Month to month</h3>
-        <p>Keep the loop live after the 90-day rollout. Weekly email updates so they can monitor agent progress. Details on the call.</p>
+        <p>Month to month after the 90-day core install. Weekly email updates so they can monitor agent progress. Details on the call.</p>
       </div>
     </div>
     <div class="footer-bar"><span>No public price list</span><div class="progress"></div></div>
@@ -354,7 +356,7 @@ a{color:inherit;}
     <div class="brand"><span class="logo"><img class="logo-contour" src="logo-contour.png" srcset="logo-contour.png 1x, logo-contour@2x.png 2x" alt=""><span class="logo-word">BLOOM</span></span></div>
     <div class="eyebrow">Client example</div>
     <h2 style="font-size:42px;font-weight:600;max-width:860px">RevBlack: core engine plus projects built out around it.</h2>
-    <p class="lead muted" style="max-width:760px">A live client example of calls into content, then expanded projects. No fabricated results.</p>
+    <p class="lead muted" style="max-width:760px">A live client example of calls and email into content, then expanded projects. No fabricated results.</p>
     <div class="grid-2" style="max-width:960px">
       <div class="card">
         <h3>Core</h3>
@@ -365,14 +367,14 @@ a{color:inherit;}
         <p>LinkedIn content (paste-only), SEO/AEO, publishing and approval, weekly email updates, call query agent.</p>
       </div>
     </div>
-    <p class="small muted" style="margin-top:28px"><a href="https://www.revblack.com" target="_blank" rel="noopener">Visit RevBlack →</a></p>
+    <p class="small muted" style="margin-top:28px"><a href="https://www.revblack.com" target="_blank" rel="noopener">Visit RevBlack site</a></p>
     <div class="footer-bar"><span>revblack.com</span><div class="progress"></div></div>
   </section>
 
   <section class="slide dark" data-title="Next step">
     <div class="brand"><span class="logo"><img class="logo-contour" src="logo-contour.png" srcset="logo-contour.png 1x, logo-contour@2x.png 2x" alt=""><span class="logo-word">BLOOM</span></span></div>
     <div class="eyebrow">Next step</div>
-    <h2 style="font-size:48px;font-weight:600;max-width:780px">Start with the calls. Keep the findings.</h2>
+    <h2 style="font-size:48px;font-weight:600;max-width:780px">Start with the conversations. Keep the findings.</h2>
     <p class="lead muted">Book a call. We will map which use case fits and run the diagnostic that becomes the foundation of the engine.</p>
     <a class="cta" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call →</a>
     <div class="footer-bar"><span>runbloom.ai</span><div class="progress"></div></div>

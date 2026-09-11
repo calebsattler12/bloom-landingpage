@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bloom · Sales calls into organic, inbound deals</title>
-<meta name="description" content="Bloom is the AI agent team that turns your sales calls into organic, inbound deals. It mines buyer language and turns it into SEO/AEO content that gets your business found, ranked, and chosen.">
+<title>Bloom · Sales calls and email into organic, inbound deals</title>
+<meta name="description" content="Bloom is the AI agent team that turns your sales calls and email conversations into organic, inbound deals. Mines what your best clients actually say and uses it to get your business found, ranked, and chosen.">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,11 +53,15 @@ p{margin:0;text-wrap:pretty;}
 .wrap{max-width:1180px;margin:0 auto;padding-left:48px;padding-right:48px;}
 .section{padding:88px 0;}
 .section-sm{padding:64px 0;}
-.logo{display:inline-flex;align-items:center;gap:10px;color:inherit;text-decoration:none}
-.logo-contour{height:36px;width:auto;display:block;background:transparent}
-.logo.sm .logo-contour{height:28px}
+.logo{display:inline-flex;align-items:center;gap:10px;color:inherit;text-decoration:none;overflow:visible}
+.logo-contour{height:40px;width:auto;max-width:none;display:block;background:transparent;object-fit:contain;object-position:center;overflow:visible}
+.logo.sm .logo-contour{height:32px}
 .logo-word{font-family:'Schibsted Grotesk',system-ui,sans-serif;font-weight:700;letter-spacing:-.03em;font-size:22px;line-height:1;color:var(--ink)}
 .logo.sm .logo-word{font-size:17px}
+.hero-chip{display:inline-flex;align-items:center;font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--white);color:var(--ink)}
+.hero-chip:hover{color:var(--accent);border-color:color-mix(in oklab,var(--accent) 40%, var(--line))}
+.loop-flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.loop-node{flex:1 1 110px;min-width:100px}
 @keyframes blpulse{0%,100%{opacity:1}50%{opacity:.35}}
 @keyframes bltype{0%,70%,100%{transform:translateY(0);opacity:.3}35%{transform:translateY(-3px);opacity:1}}
 .loop-node{
@@ -142,9 +146,8 @@ p{margin:0;text-wrap:pretty;}
   <div class="nav-links" style="display:flex;align-items:center;gap:28px;font-size:15px;font-weight:500">
     <a href="#why">Why organic</a>
     <a href="#start">How it starts</a>
-    <a href="#days">90 days</a>
-    <a href="90-day-timeline.html">90-day plan</a>
-    <a href="#next">Add next</a>
+    <a href="90-day-timeline.html">90 days</a>
+    <a href="#projects">Services</a>
     <a href="#how">How it runs</a>
   </div>
   <a class="btn btn-accent" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call</a>
@@ -152,20 +155,16 @@ p{margin:0;text-wrap:pretty;}
 
 <header class="hero wrap" style="padding-top:72px;padding-bottom:56px;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center">
   <div>
-    <div style="display:inline-flex;align-items:center;gap:9px;padding:7px 14px 7px 10px;border:1px solid var(--line);border-radius:999px;font-size:13.5px;font-weight:600;margin-bottom:26px">
-      <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);animation:blpulse 2.2s infinite"></span>
-      Content engine from your sales calls
-    </div>
-    <h1 style="font-size:52px;font-weight:600">The AI agent team that turns your sales calls into <span style="color:var(--accent)">organic, inbound deals</span>.</h1>
-    <p style="font-size:18px;line-height:1.55;color:var(--muted);margin-top:22px;max-width:520px">It mines what your buyers actually say and turns it into the SEO/AEO content that gets your business found, ranked, and chosen.</p>
+    <h1 style="font-size:52px;font-weight:600">The AI agent team that turns your sales calls and email conversations into <span style="color:var(--accent)">organic, inbound deals</span>.</h1>
+    <p style="font-size:18px;line-height:1.55;color:var(--muted);margin-top:22px;max-width:520px">Mines what your best clients actually say and uses it to get your business found, ranked, and chosen.</p>
     <div style="display:flex;align-items:center;gap:12px;margin-top:32px;flex-wrap:wrap">
       <a class="btn btn-ink" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call</a>
       <a class="btn btn-ghost" href="#start">See how it starts →</a>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px">
-      <span style="font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--white)">Findings report first</span>
-      <span style="font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--white)">You own the hardware</span>
-      <span style="font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--white)">Month to month</span>
+      <a class="hero-chip" href="#start">ICP report</a>
+      <a class="hero-chip" href="#projects">Built on a core content engine</a>
+      <span class="hero-chip" style="cursor:default">You own the hardware</span>
     </div>
   </div>
 
@@ -177,15 +176,19 @@ p{margin:0;text-wrap:pretty;}
     </div>
     <div id="agentBody" style="background:#fff;border-radius:14px;padding:6px;display:flex;flex-direction:column"></div>
     <div style="background:#fff;border-radius:14px;padding:16px;margin-top:8px">
-      <div style="font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">Calls → content → inbound</div>
-      <div class="loop-row" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-        <div class="loop-node" style="flex:1;min-width:90px">Sales calls</div>
+      <div style="font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">The real loop</div>
+      <div class="loop-row loop-flow">
+        <div class="loop-node">Calls / email</div>
         <div class="loop-arrow">→</div>
-        <div class="loop-node" style="flex:1;min-width:90px">Buyer language</div>
+        <div class="loop-node">Buyer language</div>
         <div class="loop-arrow">→</div>
-        <div class="loop-node" style="flex:1;min-width:90px">SEO / AEO</div>
+        <div class="loop-node">SEO / AEO content</div>
         <div class="loop-arrow">→</div>
-        <div class="loop-node" style="flex:1;min-width:90px;border-color:var(--accent)">Inbound deals</div>
+        <div class="loop-node">Found, ranked, chosen</div>
+        <div class="loop-arrow">→</div>
+        <div class="loop-node" style="border-color:var(--accent)">Inbound deals</div>
+        <div class="loop-arrow">→</div>
+        <div class="loop-node">More conversations</div>
       </div>
       <p style="font-size:12.5px;color:var(--muted);margin-top:14px;line-height:1.45">Approval-gated drafts. LinkedIn is paste-ready, never auto-posted.</p>
     </div>
@@ -206,7 +209,7 @@ p{margin:0;text-wrap:pretty;}
       <div style="background:rgba(255,255,255,.06);border:1px solid rgba(18,196,180,.45);border-radius:16px;padding:24px">
         <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">Organic</div>
         <h3 style="font-size:22px;font-weight:600;color:#fff;margin-bottom:8px">Own the asset</h3>
-        <p style="font-size:15px;color:rgba(255,255,255,.62);line-height:1.5">Content that ranks and gets cited keeps working, and gets sharper as new calls feed it.</p>
+        <p style="font-size:15px;color:rgba(255,255,255,.62);line-height:1.5">Content that ranks and gets cited keeps working. You are not dependent on a software subscription to run your business: you own the hardware, and the engine stays with you.</p>
       </div>
     </div>
   </div>
@@ -214,10 +217,12 @@ p{margin:0;text-wrap:pretty;}
 
 <section style="border-bottom:1px solid var(--line);background:var(--white)">
   <div class="wrap" style="padding:26px 48px;display:flex;align-items:center;gap:36px;flex-wrap:wrap;justify-content:space-between">
-    <span style="font-size:13.5px;font-weight:600;color:var(--muted);white-space:nowrap">Works with the tools you already use</span>
-    <div style="display:flex;align-items:center;gap:34px;flex-wrap:wrap;opacity:.85">
+    <span style="font-size:13.5px;font-weight:600;color:var(--muted);white-space:nowrap">Tool-agnostic</span>
+    <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;opacity:.85">
       <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">Slack</span>
-      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">Your CMS</span>
+      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">Webflow CMS</span>
+      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">HubSpot</span>
+      <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">Salesforce</span>
       <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">Fathom</span>
       <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">Circleback</span>
       <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.02em">Granola</span>
@@ -230,15 +235,15 @@ p{margin:0;text-wrap:pretty;}
     <div>
       <div class="eyebrow">How it starts</div>
       <h2 style="font-size:38px;font-weight:600;max-width:520px">A findings report you keep either way.</h2>
-      <p style="font-size:17px;color:var(--muted);margin-top:18px;max-width:520px;line-height:1.55">Before the engine gets built, we read your sales calls: the language, the questions, the gaps. That report is yours whether you install Bloom or not.</p>
+      <p style="font-size:17px;color:var(--muted);margin-top:18px;max-width:520px;line-height:1.55">Before the engine gets built, we read your sales calls and email conversations: the language, the questions, the gaps. That report is yours whether you install Bloom or not.</p>
       <a class="btn btn-accent" style="margin-top:28px" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call</a>
     </div>
     <div style="background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px">
       <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:16px">What's in the report</div>
       <ul style="list-style:none;display:flex;flex-direction:column;gap:14px">
-        <li style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45">How buyers actually talk on your calls</span></li>
+        <li style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45">How buyers actually talk on your calls and email</span></li>
         <li style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45">ICP derived from real conversations</span></li>
-        <li style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45">Content and SEO/AEO gaps</span></li>
+        <li style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45">Most profitable ICP to target</span></li>
         <li style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45">A roadmap you can use with or without us</span></li>
       </ul>
     </div>
@@ -249,7 +254,7 @@ p{margin:0;text-wrap:pretty;}
   <div style="text-align:center;margin-bottom:48px">
     <div class="eyebrow">Your first 90 days</div>
     <h2 style="font-size:42px;font-weight:600;max-width:740px;margin:0 auto">The first 90 days install the core engine.</h2>
-    <p style="font-size:16px;color:var(--muted);margin-top:16px;max-width:620px;margin-left:auto;margin-right:auto;line-height:1.55">We build the agent team around one job: turn sales calls into SEO/AEO content that earns organic, inbound deals.</p>
+    <p style="font-size:16px;color:var(--muted);margin-top:16px;max-width:620px;margin-left:auto;margin-right:auto;line-height:1.55">We build the agent team around one job: turn sales calls and email conversations into SEO/AEO content that earns organic, inbound deals.</p>
   </div>
   <div class="grid-3" style="margin-bottom:48px">
     <div style="border-top:2px solid var(--ink);padding-top:22px">
@@ -260,7 +265,7 @@ p{margin:0;text-wrap:pretty;}
     <div style="border-top:2px solid var(--ink);padding-top:22px">
       <div style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:48px;color:var(--accent);line-height:1;margin-bottom:14px">2</div>
       <h3 style="font-size:22px;font-weight:600">Stock the library</h3>
-      <p style="font-size:15px;color:var(--muted);line-height:1.55;margin-top:10px">Publishable pieces written from the language already sitting on your calls.</p>
+      <p style="font-size:15px;color:var(--muted);line-height:1.55;margin-top:10px">Publishable pieces written from the language already sitting in your sales calls and email conversations.</p>
     </div>
     <div style="border-top:2px solid var(--ink);padding-top:22px">
       <div style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:48px;color:var(--accent);line-height:1;margin-bottom:14px">3</div>
@@ -279,11 +284,11 @@ p{margin:0;text-wrap:pretty;}
     </div>
     <div style="background:var(--white);border:1px solid var(--line);border-radius:14px;padding:20px">
       <div style="font-size:16px;font-weight:600;font-family:'Schibsted Grotesk',sans-serif">Research</div>
-      <p style="font-size:13.5px;color:var(--muted);margin-top:6px;line-height:1.45">Mines sales calls for buyer language and insight.</p>
+      <p style="font-size:13.5px;color:var(--muted);margin-top:6px;line-height:1.45">Mines sales calls and email conversations for buyer language and insight.</p>
     </div>
     <div style="background:var(--white);border:1px solid var(--line);border-radius:14px;padding:20px">
       <div style="font-size:16px;font-weight:600;font-family:'Schibsted Grotesk',sans-serif">Content writers</div>
-      <p style="font-size:13.5px;color:var(--muted);margin-top:6px;line-height:1.45">How-to, article, and playbook from your calls.</p>
+      <p style="font-size:13.5px;color:var(--muted);margin-top:6px;line-height:1.45">How-to, article, and playbook from your calls and email.</p>
     </div>
     <div style="background:var(--white);border:1px solid var(--line);border-radius:14px;padding:20px">
       <div style="font-size:16px;font-weight:600;font-family:'Schibsted Grotesk',sans-serif">SEO / AEO</div>
@@ -299,7 +304,7 @@ p{margin:0;text-wrap:pretty;}
   </div>
 </section>
 
-<section id="next" class="rings-pin" style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<section id="projects" class="rings-pin" style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap rings-sticky">
     <div>
       <div class="eyebrow">What you can add next</div>
@@ -309,12 +314,12 @@ p{margin:0;text-wrap:pretty;}
         <article class="proj-item on" data-step="0">
           <div class="kicker">Core · first 90 days</div>
           <h3 style="font-size:18px;font-weight:600">Content engine</h3>
-          <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Writers, QA, and a queue from your sales calls.</p>
+          <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Writers, QA, and a queue from your sales calls and email conversations.</p>
         </article>
         <article class="proj-item" data-step="1">
           <div class="kicker">Project 1</div>
           <h3 style="font-size:18px;font-weight:600">Publishing &amp; distribution</h3>
-          <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Slack approval, then a scheduled drip to your CMS.</p>
+          <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Slack approval, then a scheduled drip to Webflow CMS.</p>
         </article>
         <article class="proj-item" data-step="2">
           <div class="kicker">Project 2</div>
@@ -332,9 +337,9 @@ p{margin:0;text-wrap:pretty;}
           <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">A weekly email on agent progress, what shipped, and what is getting found.</p>
         </article>
         <article class="proj-item" data-step="5">
-          <div class="kicker">Project 5 · standalone</div>
+          <div class="kicker">Project 5</div>
           <h3 style="font-size:18px;font-weight:600">Circleback query agent</h3>
-          <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Ask your call history from Slack. Works as an add-on on its own.</p>
+          <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Ask your call history from Slack to help your sales team close more deals.</p>
         </article>
       </div>
     </div>
@@ -365,8 +370,8 @@ p{margin:0;text-wrap:pretty;}
       <p style="font-size:14.5px;color:var(--muted);line-height:1.5">What ranks and converts sharpens what gets written next.</p>
     </div>
     <div style="background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px">
-      <h3 style="font-size:18px;font-weight:600;margin-bottom:8px">New calls keep language current</h3>
-      <p style="font-size:14.5px;color:var(--muted);line-height:1.5">Buyer phrasing stays fresh instead of drifting into last quarter's assumptions.</p>
+      <h3 style="font-size:18px;font-weight:600;margin-bottom:8px">New conversations keep language current</h3>
+      <p style="font-size:14.5px;color:var(--muted);line-height:1.5">Buyer phrasing from new calls and email stays fresh instead of drifting into last quarter's assumptions.</p>
     </div>
     <div style="background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px">
       <h3 style="font-size:18px;font-weight:600;margin-bottom:8px">Per-format memory</h3>
@@ -382,18 +387,18 @@ p{margin:0;text-wrap:pretty;}
 <section id="how" class="wrap section" style="padding-top:24px">
   <div style="text-align:center;margin-bottom:40px">
     <div class="eyebrow">How it runs</div>
-    <h2 style="font-size:40px;font-weight:600;max-width:680px;margin:0 auto">You own the hardware. Month to month after that.</h2>
+    <h2 style="font-size:40px;font-weight:600;max-width:680px;margin:0 auto">You own the hardware. Month to month after the 90-day core install.</h2>
   </div>
   <div class="cost-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:820px;margin:0 auto">
     <div style="background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px">
       <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">Ownership</div>
       <h3 style="font-size:22px;font-weight:600;margin-bottom:10px">The gear stays with you</h3>
-      <p style="font-size:15px;color:var(--muted);line-height:1.5">The agent team runs on hardware that stays with your business, wired into the stack you already use.</p>
+      <p style="font-size:15px;color:var(--muted);line-height:1.5">The agent team runs on hardware that stays with your business. You are not dependent on a rented software subscription to keep the engine running.</p>
     </div>
     <div style="background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px">
       <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">Ongoing</div>
       <h3 style="font-size:22px;font-weight:600;margin-bottom:10px">Keep the loop live</h3>
-      <p style="font-size:15px;color:var(--muted);line-height:1.5">Month to month after the 90-day install. Weekly email updates so you can monitor what the agents are working on. A fraction of a content team, with more capability on the loop.</p>
+      <p style="font-size:15px;color:var(--muted);line-height:1.5">Month to month after the 90-day core install. Weekly email updates so you can monitor what the agents are working on. A fraction of the price of hiring a content team, with exponentially more capability.</p>
     </div>
   </div>
 </section>
@@ -405,19 +410,19 @@ p{margin:0;text-wrap:pretty;}
         <span style="font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:24px;letter-spacing:-.02em">RevBlack</span>
         <span style="font-size:13px;color:var(--muted);border-left:1px solid var(--line);padding-left:14px">Client · core engine + projects</span>
       </div>
-      <a class="btn btn-ghost" href="https://www.revblack.com" target="_blank" rel="noopener">Visit RevBlack →</a>
+      <a class="btn btn-ghost" href="https://www.revblack.com" target="_blank" rel="noopener">Visit RevBlack site</a>
     </div>
-    <p style="font-family:'Schibsted Grotesk',sans-serif;font-weight:500;font-size:26px;line-height:1.35;letter-spacing:-.02em;max-width:860px">Bloom runs for RevBlack as a live client example: the core content engine from their sales calls, then projects built out around it.</p>
+    <p style="font-family:'Schibsted Grotesk',sans-serif;font-weight:500;font-size:26px;line-height:1.35;letter-spacing:-.02em;max-width:860px">Bloom runs for RevBlack as a live client example: the core content engine from their sales calls and email conversations, then projects built out around it.</p>
     <ul class="proof-list" style="margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;max-width:860px;list-style:none;padding:0">
       <li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45;color:var(--muted)">Findings and call-derived ICP language</span></li>
       <li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45;color:var(--muted)">Core content generation: how-to, article, playbook</span></li>
       <li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45;color:var(--muted)">LinkedIn content as its own paste-only project</span></li>
       <li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45;color:var(--muted)">SEO/AEO targeting that feeds the queue</span></li>
-      <li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45;color:var(--muted)">Publishing and approval: Slack → pool → CMS</span></li>
+      <li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45;color:var(--muted)">Publishing and approval: Slack → pool → Webflow CMS</span></li>
       <li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45;color:var(--muted)">Weekly email updates to monitor agent progress</span></li>
       <li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--accent);font-weight:700">→</span><span style="font-size:15px;line-height:1.45;color:var(--muted)">Circleback call query agent</span></li>
     </ul>
-    <p style="font-size:14.5px;color:var(--muted);margin-top:20px;max-width:640px;line-height:1.5">Calls in, content out, projects added as the loop stays live.</p>
+    <p style="font-size:14.5px;color:var(--muted);margin-top:20px;max-width:640px;line-height:1.5">Calls and email in, content out, projects added as the loop stays live.</p>
   </div>
 </section>
 
@@ -435,12 +440,16 @@ p{margin:0;text-wrap:pretty;}
     <div style="display:flex;gap:28px;font-size:14px;font-weight:500;color:var(--muted);flex-wrap:wrap">
       <a href="#why">Why organic</a>
       <a href="#start">How it starts</a>
-      <a href="#days">90 days</a>
-      <a href="90-day-timeline.html">90-day plan</a>
-      <a href="#next">Add next</a>
+      <a href="90-day-timeline.html">90 days</a>
+      <a href="#projects">Services</a>
       <a href="#how">How it runs</a>
     </div>
-    <span style="font-size:13.5px;color:var(--muted)">© 2026 Bloom · Syncro Labs</span>
+    <div style="font-size:13.5px;color:var(--muted);line-height:1.55;text-align:right">
+      <div style="font-weight:600;color:var(--ink)">Bloom AI LLC</div>
+      <div><a href="mailto:hello@runbloom.ai">hello@runbloom.ai</a></div>
+      <div>Orem, UT</div>
+      <div style="margin-top:6px">© 2026 Bloom AI LLC</div>
+    </div>
   </div>
 </footer>
 
@@ -485,7 +494,7 @@ p{margin:0;text-wrap:pretty;}
 })();
 
 (function(){
-  const pin = document.getElementById('next');
+  const pin = document.getElementById('projects');
   if (!pin) return;
   const items = [...pin.querySelectorAll('.proj-item')];
   const rings = [...pin.querySelectorAll('.topo-ring')];
