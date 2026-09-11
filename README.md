@@ -13,7 +13,7 @@ See `CLAUDE.md` and `brand-voice.md` for locked copy and craft rules.
 - `pitch-deck.html` — sales deck (keyboard nav)
 - `linkedin-content.md` — paste-ready LinkedIn drafts (manual post only)
 - `brand-voice.md` — voice rules for marketing copy
-- `logo.png` / `logo-nav.png` / `favicon.png` — contour + BLOOM (no tagline)
+- `logo.png` / `logo-transparent.png` / `logo-nav.png` / `favicon.png` — tight transparent contour + BLOOM (no plate, no tagline)
 - `CLAUDE.md` — agent context
 - `SEO-NOTES.md` — SEO/AEO tracking stub
 

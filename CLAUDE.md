@@ -12,7 +12,10 @@ no build step.
 - `pitch-deck.html` — sales deck (keyboard nav)
 - `linkedin-content.md` — paste-ready LinkedIn drafts
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
-- `logo.png` / `logo-transparent.png` / `logo-nav.png` / `favicon.png` — contour + BLOOM mark (no tagline)
+- `logo.png` / `logo-transparent.png` — tight transparent contour + BLOOM (no plate, no tagline)
+- `logo-nav.png` / `logo-nav@2x.png` — same mark for sand backgrounds
+- `logo-nav-on-ink.png` / `logo-nav-on-ink@2x.png` — sand wordmark for dark slides
+- `favicon.png` — tight transparent mark
 
 ## Deployment
 
@@ -24,8 +27,8 @@ no build step.
 
 - **Palette:** accent `#12C4B4`, background `#F4EFE3`, ink `#0B0B0C`
 - **Fonts:** Schibsted Grotesk (headings), Hanken Grotesk (body)
-- **Logo:** contour rings + BLOOM wordmark. Never include
-  "INSIGHTS. LANDSCAPES. GROWTH."
+- **Logo:** tight transparent contour rings + BLOOM wordmark. No sand/white
+  plate, no boxed lockup. Never include "INSIGHTS. LANDSCAPES. GROWTH."
 - **CTA:** Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
 - Personality: light, approachable, friendly. Do not revive old Verity navy/Jost.
 
@@ -57,14 +60,13 @@ Call over a price list.
 
 1. Hero (locked line + sub)
 2. Why organic
-3. First 90 days
-4. How it starts (findings you keep)
-5. After rollout
+3. How it starts (findings you keep)
+4. First 90 days (core engine + team roster)
+5. What you can add next (scroll-driven contour rings: publishing, SEO/AEO, digest, query bot)
 6. Continuously improves ("Just like your best employee…")
-7. Team (content-engine roster)
+7. How it runs (qualitative cost/ownership)
 8. RevBlack goal (goal, not claimed result)
-9. How it runs (qualitative cost/ownership)
-10. Final CTA
+9. Final CTA
 
 ## Roster (site truth)
 
