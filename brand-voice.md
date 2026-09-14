@@ -37,21 +37,21 @@ the point. End on the result or the next step, not hype.
 
 ## Product framing (locked)
 
-1. **Outcome first, implied.** Public copy shows buyer language at work
-   (found, ranked, chosen). Do not paste the full internal thesis on every
-   section. One proof point per section.
-2. **Do not boil down to "AI content."** Content is one capability cluster
-   inside the agent-team offer.
-3. **Say agent, not bot.** Query agent, Slack agent, email agent.
+1. **Outcome first.** Hero leads with teams of AI agents that drive organic,
+   inbound deals. Supporting frame: hiring AI employees (plural) / starter pods.
+2. **Do not boil down to "AI content" or SEO alone.** Content, SEO, and Sales
+   are three starter-pod paths. Projects add more employees later.
+3. **Say agent, not bot.** Query agent, Slack agent, email agent. "AI employees"
+   is OK as the hiring metaphor.
 4. **Show the human partner.** Install, monitor, improve on hardware they
-   own. Prefer concrete language over repeating "white glove."
-5. **Roster growth.** New teams ship as projects; agents compound on the
-   starter pod. On the **pitch deck**, you may say this continues while they
-   stay a client. On the **website**, prefer "as you grow" / "as the work
-   expands" without the retainer frame.
-6. Prefer **projects** for expansion and **use case** for entry points.
-   The first install is a **starter pod** (team of agents). Later projects
-   compound more agents onto it. Do not say "content core" or "content engine."
+   own. Prefer concrete language over repeating "white glove." Keep the Mac mini
+   vs self-serve contrast on the site.
+5. **Roster growth.** Starter pods are level one (Content, SEO, Sales). Projects
+   hire more agents onto the team. On the **pitch deck**, you may say this
+   continues while they stay a client. On the **website**, prefer "as you grow"
+   without the retainer frame.
+6. Prefer **projects** for expansion and **use case** / **pod** for entry.
+   Do not say "content core" or "content engine."
 7. **No compulsive restating.** If the hero said it, later sections should
    advance the story, not echo the same sentence.
 

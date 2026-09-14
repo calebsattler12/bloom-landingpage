@@ -53,9 +53,13 @@ Do **not** boil down to "AI content" or "10k for content."
 improve the team(s). Client owns the hardware (Mac mini). Prefer "How we show
 up" / "Your hardware" over repeating "white glove."
 
-**Starter pod:** The first 90 days install a starter team of agents (content
-is the usual entry). While retained, projects compound more agents onto that
-pod. Prefer **starter pod** over "content core" or "content engine."
+**Starter pods (level one):** Clients choose a path: **Content**, **SEO**, or
+**Sales** (nurture). Each is a team of AI employees / agents built around an
+output. Projects hire more agents onto the team later (specs TBD). Prefer
+**starter pod** over "content core" or "content engine."
+
+**Public framing:** Lead with teams of AI agents → organic inbound deals.
+Hiring AI employees (plural) is the supporting metaphor across the site.
 
 **Retention language:** Phrases like "while you stay a client" / "while
 retained" belong on the **pitch deck**, not on `index.html`. On the site,
@@ -82,23 +86,22 @@ roster grows with projects, fraction of a content team. Prefer Book a Call.
 
 ## Site section map
 
-1. Hero (buyer language at work + chips: ICP report · Your hardware · Keeps growing)
-2. Why this (own the asset vs rent attention; human partner)
-3. How we show up / partner (install, monitor, improve; own hardware)
-4. Meet the starter pod (job cards; placeholders OK)
-5. Projects / services (scroll org chart; each project adds agents to the roster)
+1. Hero (teams of AI agents → organic inbound deals; chips Content · SEO · Sales)
+2. Why this (hire AI employees; own the asset vs rent attention)
+3. How we show up / partner (install, monitor, improve; Mac mini; keep contrast)
+4. Meet the starter pods (choose Content, SEO, or Sales by output)
+5. Projects / services (scroll org: three starter pods, then project add-ons TBD)
 6. Samples (ICP teaser + link to `icp-findings-example.html`, Slack query, LinkedIn paste-only)
-7. First 90 days (starter pod → then projects; link 90-day-timeline.html)
+7. First 90 days (install chosen starter pod → then projects; link 90-day-timeline.html)
 8. How it runs (month to month; weekly email; tool-agnostic)
 9. RevBlack (live multi-team client; logo + Visit RevBlack site)
 10. Final CTA
 
 ## Roster (placeholders OK until scrubbed)
 
-Starter pod: Content Director, Research / ICP, format writers (how-to,
-article, playbook), LinkedIn writer (paste-only), Quality & Voice Gate,
-SEO/AEO, Scheduler. Other teams as `[Placeholder]` project cards (query /
-close pipeline, weekly email reporter, website recommendations, etc.).
+Starter pods: Content, SEO, Sales (nurture). Content roles still include
+Director, Research / ICP, writers, LinkedIn paste-only, QA, Scheduler.
+SEO and Sales employee lists are directional until scrubbed. Project add-ons TBD.
 
 ## Integrations (confirmed only)
 
