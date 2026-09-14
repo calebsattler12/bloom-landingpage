@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom · Example ICP findings report</title>
+<meta name="description" content="Example ICP findings report from Bloom. Placeholder until a scrubbed sample is added.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --ink:#0B0B0C;
+  --muted:#6C6C72;
+  --line:rgba(11,11,12,.10);
+  --paper:#F4EFE3;
+  --accent:#12C4B4;
+  --soft:#EEE7DA;
+}
+body{
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+a{color:var(--ink);text-decoration:none;}
+a:hover{color:var(--accent);}
+h1,h2{font-family:'Schibsted Grotesk',system-ui,sans-serif;letter-spacing:-.03em;line-height:1.05;}
+.logo{display:inline-flex;align-items:center;gap:10px;}
+.logo-mark{height:36px;width:36px;display:block;border-radius:9px;}
+.logo-word{font-family:'Schibsted Grotesk',system-ui,sans-serif;font-weight:700;letter-spacing:-.03em;font-size:22px;line-height:1;}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-size:15px;font-weight:600;padding:13px 24px;border-radius:999px;
+}
+.btn-accent{background:var(--accent);color:#fff;}
+.btn-accent:hover{color:#fff;filter:brightness(.96);}
+.btn-ghost{border:1px solid var(--line);background:transparent;}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px;}
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 48px;border-bottom:1px solid var(--line);
+  background:color-mix(in oklab, var(--paper) 92%, transparent);
+}
+.eyebrow{
+  font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:14px;
+}
+.placeholder{
+  margin-top:28px;padding:40px 32px;border:1px dashed color-mix(in oklab, var(--accent) 45%, var(--line));
+  border-radius:18px;background:var(--soft);
+}
+.placeholder p{font-size:16px;color:var(--muted);line-height:1.55;}
+@media (max-width:700px){
+  nav{padding:16px 24px;}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" aria-label="Bloom"><span class="logo"><img class="logo-mark" src="logo-mark.svg" alt=""><span class="logo-word">BLOOM</span></span></a>
+  <a class="btn btn-ghost" href="index.html#samples">← Back</a>
+</nav>
+
+<main class="wrap" style="padding:72px 24px 96px">
+  <div class="eyebrow">Example · ICP findings</div>
+  <h1 style="font-size:40px;font-weight:600;max-width:560px">ICP findings report</h1>
+  <p style="font-size:18px;color:var(--muted);margin-top:16px;line-height:1.55;max-width:540px">
+    Placeholder page. Drop the scrubbed example findings report here when it is ready.
+  </p>
+  <div class="placeholder">
+    <h2 style="font-size:22px;font-weight:600;margin-bottom:10px">Content goes here</h2>
+    <p>Typical sections: most profitable ICP, buyer language, questions before yes, and a short roadmap. Replace this block with the real sample HTML or embed.</p>
+  </div>
+  <div style="margin-top:36px;display:flex;gap:12px;flex-wrap:wrap">
+    <a class="btn btn-accent" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call</a>
+    <a class="btn btn-ghost" href="index.html#samples">Back to samples</a>
+  </div>
+</main>
+</body>
+</html>

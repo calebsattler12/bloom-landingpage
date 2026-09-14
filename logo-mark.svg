@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-hidden="true">
+  <title>Bloom</title>
+  <rect width="32" height="32" rx="8" fill="#12C4B4"/>
+  <circle cx="16" cy="19" r="5.2" fill="#F4EFE3"/>
+  <circle cx="16" cy="11.2" r="4" fill="#F4EFE3"/>
+  <circle cx="10.8" cy="15.2" r="4" fill="#F4EFE3"/>
+  <circle cx="21.2" cy="15.2" r="4" fill="#F4EFE3"/>
+</svg>

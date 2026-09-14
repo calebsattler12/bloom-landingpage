@@ -4,19 +4,19 @@ Marketing site for Bloom at [runbloom.ai](https://runbloom.ai).
 
 ## Positioning
 
-Bloom is the AI agent team that turns sales calls and email conversations into organic, inbound deals.
-See `CLAUDE.md` and `brand-voice.md` for locked copy and craft rules.
+Bloom puts the language from sales calls and email to work so you get found,
+ranked, and chosen. See `CLAUDE.md` and `brand-voice.md` for locked framing
+and craft rules (imply the thesis; do not paste it on every section).
 
 ## Files
 
 - `index.html` — public marketing site
 - `pitch-deck.html` — sales deck (keyboard nav)
-- `90-day-timeline.html` — 90-day core-engine checklist
+- `90-day-timeline.html` — 90-day starter-pod checklist
 - `linkedin-content.md` — paste-ready LinkedIn drafts (manual post only)
 - `brand-voice.md` — voice rules for marketing copy
-- `logo-contour.svg` — rings-only mark (source of truth); pages typeset BLOOM beside it
-- `logo-contour.png` / `logo-contour@2x.png` — raster fallbacks
-- `favicon.png` — contour only (no word, no tagline)
+- `logo-mark.svg` — simple bloom icon (source of truth); pages typeset BLOOM beside it
+- `logo-mark.png` / `favicon.png` — raster mark
 - `CLAUDE.md` — agent context
 - `SEO-NOTES.md` — SEO/AEO tracking stub
 

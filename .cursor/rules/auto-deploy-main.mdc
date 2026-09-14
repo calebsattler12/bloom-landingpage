@@ -1,0 +1,23 @@
+---
+description: Auto commit and push marketing site changes to main
+alwaysApply: true
+---
+
+# Auto-deploy to main
+
+After finishing a batch of site/marketing edits in this repo, **commit and push to `origin/main` without waiting to be asked**, so Vercel can deploy to runbloom.ai.
+
+## When
+
+- Applies to completed work that should go live (HTML, copy, assets, deck, timeline, LinkedIn drafts, brand docs used by the site).
+- Skip only if the user explicitly says not to push, or if changes are clearly WIP / exploratory and they asked to hold.
+
+## How
+
+1. Follow the normal git safety protocol (status, diff, log; HEREDOC commit message; no force; no amend unless rules allow).
+2. Stage relevant files only (no secrets).
+3. Commit with a concise why-focused message.
+4. `git push -u origin HEAD` (or `git push` when tracking exists).
+5. Tell the user the commit SHA and that it is on `main` / deploying.
+
+Do not ask “want me to commit and push?” for routine site updates in this repo.

@@ -1,6 +1,6 @@
 # Bloom LinkedIn content pack (drafts)
 
-Paste-ready founder posts. Thesis: your team of AI agents generating organic, inbound deals. White-glove human install, monitor, and improve. Unlimited agents added as new project teams while you stay a client. Mines sales calls and email conversations.
+Paste-ready founder posts. Imply the outcome (buyer language → found, ranked, chosen) without restating the full thesis on every post. One idea per post.
 
 Soft CTA: Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
 
@@ -10,22 +10,21 @@ Posting rules:
 - No dollar amounts or price lists.
 - Voice: zero em dashes; no "it's not X, it's Y." See `brand-voice.md`.
 - Say agent, not bot. Prefer projects and use case. Do not boil down to "AI content."
+- Do not paste "unlimited agents" or "white glove" on every post. Show the idea once, in context.
 
 ---
 
-## 1. Outcome line
+## 1. Buyer language at work
 
-Your team of AI agents generating organic, inbound deals.
+Your best clients already said what they need.
 
-That is the job.
+On the calls. In the email threads. In the questions before yes.
 
-Bloom mines what your best clients actually say on sales calls and email conversations, then uses that language to get your business found, ranked, and chosen.
+Most teams leave that language in a recording folder.
 
-White-glove install on hardware you own.
-A human monitors and improves the teams.
-Unlimited agents added as new project teams while you stay a client.
+Bloom puts it to work so you get found, ranked, and chosen.
 
-If that problem is yours:
+If that gap is yours:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
@@ -36,50 +35,44 @@ Paid pipeline stops the moment spending stops.
 
 Organic compounds.
 
-Ranked pages and cited answers keep producing after the work that built them is done.
+Ranked pages and cited answers keep working after the spend that built them stops.
 
-Bloom installs agent teams that turn the language already sitting in your sales calls and email conversations into that asset.
+That is the asset we help you build from conversations you already have.
 
-You own the hardware. The teams stay with your business.
+You own the hardware. The work stays with the business.
 
 Book a Call:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 3. White glove
+## 3. Someone stays with it
 
 Babysitting Claude leaves you with drafts.
 Buying a content pack leaves you with files.
 
-Bloom is white glove:
-
-A human installs the agent team on hardware you own.
-Monitors what shipped and what is getting found.
-Improves the teams while you stay a client.
-
-Unlimited agents arrive as new projects, with human oversight.
+Bloom stands the roster up on a Mac mini you own.
+A human watches what shipped and what is getting found.
+Then grows the workstreams as the work expands.
 
 Curious whether that fits:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 4. Unlimited agents via projects
+## 4. Starter pod first, then projects
 
-The first 90 days install the core content agent team.
+The first 90 days stand up a starter pod: a team of agents you build on.
 
-After that, projects expand the roster:
+After that, projects add more agents:
 
 Publishing.
 SEO/AEO.
 LinkedIn (paste-only, never auto-posted).
-Weekly email updates.
-Call query that helps sales close deals.
+Weekly email.
+Call query that helps sales close.
 
-While you stay a client, Bloom keeps building new agent teams as new projects.
-
-Unlimited agents means ongoing build-out with a human partner beside you.
+The roster grows with the work, with a human partner beside you.
 
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
@@ -87,14 +80,14 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ## 5. ICP report you keep
 
-Before anything gets built, we analyze your sales calls and email conversations and hand you an ICP report.
+Before anything gets built, we dig into your calls and email and hand you an ICP report.
 
-Most profitable ICP to target.
+The ICP worth targeting.
 Buyer language.
 Questions before yes.
 A roadmap.
 
-You keep it either way, whether you install Bloom or not.
+You keep it either way.
 
 That is the low-risk place to start.
 
@@ -103,9 +96,7 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 6. Meet the core team
-
-The core content agent team includes:
+## 6. The starter pod
 
 Content Director
 Research / ICP
@@ -117,20 +108,19 @@ Scheduler
 
 Approval-gated drafts.
 LinkedIn never auto-posts.
-You own the hardware.
+Hardware you own.
 
-One outcome: organic, inbound deals from your own conversations.
+Jobs, not a pile of prompts.
 
 ---
 
 ## 7. How it runs
 
-Month to month after the 90-day core install.
+Month to month after the starter pod is live.
 
-Weekly email so you can monitor what the agents shipped and what is getting found.
+Weekly email so you can see what shipped and what is getting found.
 
-Unlimited agents via new projects while you stay a client.
-
+New projects as you grow.
 A fraction of a content team, with more capability across use cases.
 
 Tool-agnostic: Slack, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback, Granola.
@@ -146,6 +136,6 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 Start with the conversations.
 Keep the ICP report.
 
-Book a call. We will map the fit and run the diagnostic that becomes the foundation of the agent teams.
+Book a call. We map the fit and run the diagnostic you keep either way.
 
 https://calendar.app.google/kY3NqzNsspgzzw1F9

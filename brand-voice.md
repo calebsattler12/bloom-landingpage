@@ -37,21 +37,27 @@ the point. End on the result or the next step, not hype.
 
 ## Product framing (locked)
 
-1. **Outcome first.** Lead with agent teams that generate organic, inbound
-   deals. "Hire an AI employee" is supporting language only, never the hero.
+1. **Outcome first, implied.** Public copy shows buyer language at work
+   (found, ranked, chosen). Do not paste the full internal thesis on every
+   section. One proof point per section.
 2. **Do not boil down to "AI content."** Content is one capability cluster
    inside the agent-team offer.
 3. **Say agent, not bot.** Query agent, Slack agent, email agent.
-4. **White glove.** A human installs, monitors, and improves the team(s).
-   Client owns the hardware.
-5. **Unlimited agents.** While they stay a client, new agent teams ship as
-   new projects. Means ongoing build-out with human oversight, not
-   unsupervised autonomy.
+4. **Show the human partner.** Install, monitor, improve on hardware they
+   own. Prefer concrete language over repeating "white glove."
+5. **Roster growth.** New teams ship as projects; agents compound on the
+   starter pod. On the **pitch deck**, you may say this continues while they
+   stay a client. On the **website**, prefer "as you grow" / "as the work
+   expands" without the retainer frame.
 6. Prefer **projects** for expansion and **use case** for entry points.
+   The first install is a **starter pod** (team of agents). Later projects
+   compound more agents onto it. Do not say "content core" or "content engine."
+7. **No compulsive restating.** If the hero said it, later sections should
+   advance the story, not echo the same sentence.
 
 ## Pricing in public drafts
 
 Do **not** publish dollar amounts, retainers, or install fees in
 `index.html`, `pitch-deck.html`, or `linkedin-content.md`. Qualitative cost
-language only (own the hardware, month to month, unlimited agents, fraction
-of a content team) if needed. Prefer Book a Call over a price list.
+language only (own the hardware, month to month, roster grows with projects,
+fraction of a content team) if needed. Prefer Book a Call over a price list.
