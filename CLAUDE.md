@@ -23,6 +23,8 @@ no build step.
 - Vercel project `bloom-landing`, repo `calebsattler12/bloom-landingpage`
 - Push to `main` auto-deploys when Git is connected
 - Domain `runbloom.ai`
+- **Agent habit:** after finishing site edits, commit and push `main` without
+  asking (see `.cursor/rules/auto-deploy-main.mdc`), unless the user says hold.
 
 ## Brand
 
