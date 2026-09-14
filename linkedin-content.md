@@ -1,6 +1,6 @@
 # Bloom LinkedIn content pack (drafts)
 
-Paste-ready founder posts. Thesis: sales calls and email conversations → SEO/AEO content → organic, inbound deals.
+Paste-ready founder posts. Thesis: your team of AI agents generating organic, inbound deals. White-glove human install, monitor, and improve. Unlimited agents added as new project teams while you stay a client. Mines sales calls and email conversations.
 
 Soft CTA: Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
 
@@ -9,20 +9,21 @@ Posting rules:
 - No fabricated metrics, hours saved, or fake testimonials.
 - No dollar amounts or price lists.
 - Voice: zero em dashes; no "it's not X, it's Y." See `brand-voice.md`.
+- Say agent, not bot. Prefer projects and use case. Do not boil down to "AI content."
 
 ---
 
-## 1. Hero line
+## 1. Outcome line
 
-Most marketing AI tries to do everything.
+Your team of AI agents generating organic, inbound deals.
 
-We built Bloom to do one thing:
+That is the job.
 
-Turn your sales calls and email conversations into organic, inbound deals.
+Bloom mines what your best clients actually say on sales calls and email conversations, then uses that language to get your business found, ranked, and chosen.
 
-It mines what your best clients actually say and uses it to get your business found, ranked, and chosen.
-
-An installed agent team that keeps that loop live.
+White-glove install on hardware you own.
+A human monitors and improves the teams.
+Unlimited agents added as new project teams while you stay a client.
 
 If that problem is yours:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
@@ -35,91 +36,116 @@ Paid pipeline stops the moment spending stops.
 
 Organic compounds.
 
-It becomes the cheapest, highest-intent source of deals you have, and it keeps producing long after the work that built it is done.
+Ranked pages and cited answers keep producing after the work that built them is done.
 
-Bloom turns the language already sitting in your sales calls and email conversations into that asset.
+Bloom installs agent teams that turn the language already sitting in your sales calls and email conversations into that asset.
 
-You are not dependent on a software subscription to keep the engine running. You own the hardware.
+You own the hardware. The teams stay with your business.
 
 Book a Call:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 3. The loop
+## 3. White glove
 
-Bloom sells one loop:
+Babysitting Claude leaves you with drafts.
+Buying a content pack leaves you with files.
 
-Analyze Client Calls → Propose Content → Generate Content → Quality Assurance and Voice Gates → Review and Publish → Measure Performance and Iterate.
+Bloom is white glove:
 
-You are buying the loop staying live, and getting tighter every month.
+A human installs the agent team on hardware you own.
+Monitors what shipped and what is getting found.
+Improves the teams while you stay a client.
 
----
+Unlimited agents arrive as new projects, with human oversight.
 
-## 4. First 90 days
-
-What the first 90 days actually install:
-
-1. An ICP report from your sales calls and email conversations. Most profitable ICP to target. You keep it either way.
-2. The agent team around the core content engine: writers, QA, a queue from your calls and email.
-3. A live generation loop: drafts, voice gate, human approval.
-
-After the core is running, add projects (Services): publishing, deeper SEO/AEO, LinkedIn content (paste-only), weekly email updates to monitor agent progress, and the call query agent that helps your sales team close more deals.
-
-Curious whether your calls hold enough signal? Start there.
+Curious whether that fits:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 5. Continuously improves
+## 4. Unlimited agents via projects
 
-Just like your best employee, your agent team is always learning.
+The first 90 days install the core content agent team.
 
-What ranks and converts sharpens the next draft.
-New calls and email keep language current.
-Each format builds its own memory, so feedback compounds instead of resetting.
-The SEO/AEO standard re-baselines as what earns citations shifts.
+After that, projects expand the roster:
 
-Weekly email updates keep you on top of what the agents shipped and what is getting found.
+Publishing.
+SEO/AEO.
+LinkedIn (paste-only, never auto-posted).
+Weekly email updates.
+Call query that helps sales close deals.
 
-A running loop does that. A static content calendar does not.
+While you stay a client, Bloom keeps building new agent teams as new projects.
+
+Unlimited agents means ongoing build-out with a human partner beside you.
+
+https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 6. ICP report you keep
+## 5. ICP report you keep
 
 Before anything gets built, we analyze your sales calls and email conversations and hand you an ICP report.
 
-Most profitable ICP to target. Language. Questions. Roadmap.
+Most profitable ICP to target.
+Buyer language.
+Questions before yes.
+A roadmap.
 
 You keep it either way, whether you install Bloom or not.
+
+That is the low-risk place to start.
 
 Book a Call:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 7. Narrow on purpose
+## 6. Meet the core team
 
-Bloom is a content engine, deliberately scoped:
+The core content agent team includes:
 
-Content Director → Quality & Voice Gate → Research → writers → SEO/AEO → Scheduler.
+Content Director
+Research / ICP
+Content writers (how-to, article, playbook)
+LinkedIn writer (paste-only)
+Quality & Voice Gate
+SEO/AEO
+Scheduler
 
-Approval-gated.
-LinkedIn content is its own project after the core: paste-ready, never auto-posted.
-You own the hardware. Month to month after the 90-day core install.
+Approval-gated drafts.
+LinkedIn never auto-posts.
+You own the hardware.
 
 One outcome: organic, inbound deals from your own conversations.
 
 ---
 
-## 8. Soft CTA
+## 7. How it runs
 
-A fraction of the price of hiring a content team, with exponentially more capability.
-
-You own the hardware.
 Month to month after the 90-day core install.
 
+Weekly email so you can monitor what the agents shipped and what is getting found.
+
+Unlimited agents via new projects while you stay a client.
+
+A fraction of a content team, with more capability across use cases.
+
+Tool-agnostic: Slack, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback, Granola.
+
 If you are renting pipeline through ads and want an asset that compounds, let's talk.
+
+https://calendar.app.google/kY3NqzNsspgzzw1F9
+
+---
+
+## 8. Soft CTA
+
+Start with the conversations.
+Keep the ICP report.
+
+Book a call. We will map the fit and run the diagnostic that becomes the foundation of the agent teams.
 
 https://calendar.app.google/kY3NqzNsspgzzw1F9

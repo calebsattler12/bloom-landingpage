@@ -35,9 +35,23 @@ apply to Bloom.
 Direct, concrete, warm enough for B2B founders. Short sentences. Lead with
 the point. End on the result or the next step, not hype.
 
+## Product framing (locked)
+
+1. **Outcome first.** Lead with agent teams that generate organic, inbound
+   deals. "Hire an AI employee" is supporting language only, never the hero.
+2. **Do not boil down to "AI content."** Content is one capability cluster
+   inside the agent-team offer.
+3. **Say agent, not bot.** Query agent, Slack agent, email agent.
+4. **White glove.** A human installs, monitors, and improves the team(s).
+   Client owns the hardware.
+5. **Unlimited agents.** While they stay a client, new agent teams ship as
+   new projects. Means ongoing build-out with human oversight, not
+   unsupervised autonomy.
+6. Prefer **projects** for expansion and **use case** for entry points.
+
 ## Pricing in public drafts
 
 Do **not** publish dollar amounts, retainers, or install fees in
 `index.html`, `pitch-deck.html`, or `linkedin-content.md`. Qualitative cost
-language only (own the hardware, month to month, fraction of a content team)
-if needed. Prefer Book a Call over a price list.
+language only (own the hardware, month to month, unlimited agents, fraction
+of a content team) if needed. Prefer Book a Call over a price list.
