@@ -13,8 +13,8 @@ no build step.
 - `90-day-timeline.html` — shared 90-day checklist (starter pod install)
 - `linkedin-content.md` — paste-ready LinkedIn drafts
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
-- `logo-mark.svg` — teal rounded square + centered cream bloom; source of truth
-- Nav/footer/deck lockup: `[img src=logo-mark.svg] [gap] BLOOM` typeset in Schibsted Grotesk
+- `logo-mark.png` — teal rounded square + centered cream bloom; source of truth
+- Nav/footer/deck lockup: `[img src=logo-mark.png] [gap] BLOOM` typeset in Schibsted Grotesk
 - `favicon.png` — same mark, no word
 - Do not use the old contour rings, combined PNG lockup, or the tagline "INSIGHTS. LANDSCAPES. GROWTH."
 
@@ -30,7 +30,7 @@ no build step.
 
 - **Palette:** accent `#12C4B4`, background `#F4EFE3`, ink `#0B0B0C`
 - **Fonts:** Schibsted Grotesk (headings), Hanken Grotesk (body)
-- **Logo:** teal rounded-square bloom mark beside typeset BLOOM (Schibsted Grotesk for now; see `logo-font-options.html`). Never include "INSIGHTS. LANDSCAPES. GROWTH."
+- **Logo:** Mac mini 3D mark (`logo-mark.png`) beside typeset BLOOM (Schibsted Grotesk for now; see `logo-font-options.html`). Never include "INSIGHTS. LANDSCAPES. GROWTH."
 - **CTA (site):** Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
 - **CTA (deck close):** Work with us
 - Personality: light, approachable, friendly. Do not revive old Verity navy/Jost.

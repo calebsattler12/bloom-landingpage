@@ -15,7 +15,7 @@ and craft rules (imply the thesis; do not paste it on every section).
 - `90-day-timeline.html` — 90-day starter-pod checklist
 - `linkedin-content.md` — paste-ready LinkedIn drafts (manual post only)
 - `brand-voice.md` — voice rules for marketing copy
-- `logo-mark.svg` — teal bloom mark (source of truth); pages typeset BLOOM beside it
+- `logo-mark.png` — teal bloom mark (source of truth); pages typeset BLOOM beside it
 - `logo-mark.png` / `favicon.png` — raster mark
 - `CLAUDE.md` — agent context
 - `SEO-NOTES.md` — SEO/AEO tracking stub
