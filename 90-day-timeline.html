@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bloom · First 90 days</title>
-<meta name="description" content="Shared 90-day checklist: install the Bloom starter pod you chose. Five paths: Intelligence, Content, Search, Demand, or Sales Enablement. AI employees live through QA and human approval.">
+<meta name="description" content="Shared 90-day checklist: install the Bloom starter team you chose. Five paths: Intelligence, Content, Search, Demand, or Sales Enablement. AI employees live through QA and human approval.">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,7 +152,7 @@ h1{
 <div class="wrap">
   <header class="page">
     <div class="eyebrow">First 90 days</div>
-    <h1>Install the starter pod you chose.</h1>
+    <h1>Install the starter team you chose.</h1>
     <p class="lede">Foundation install only. Pick Customer Intelligence, Content Production, Search Visibility, Demand &amp; Lifecycle, or Sales Enablement. One job: get those AI employees live through QA and human approval.</p>
     <div class="progress-row">
       <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
@@ -171,11 +171,11 @@ h1{
   </div>
 
   <aside class="after">
-    <h2>After the starter pod: deepen the team</h2>
-    <p>These expansions are not part of the 90-day finish line. They ship once your starter pod is running.</p>
+    <h2>After the starter team: deepen the team</h2>
+    <p>These expansions are not part of the 90-day finish line. They ship once your starter team is running.</p>
     <ul>
-      <li>More agents on the pod<span>Additional employees and workstreams on the path you hired.</span></li>
-      <li>Second starter pod<span>Hire another pod once the first is live and steady.</span></li>
+      <li>More agents on the team<span>Additional employees and workstreams on the path you hired.</span></li>
+      <li>Second starter team<span>Hire another team once the first is live and steady.</span></li>
       <li>Publishing cadence<span>Deepen CMS drip and approval rhythm after the pool is trusted.</span></li>
       <li>Call query adoption<span>Quarterly training so the team actually uses Slack query.</span></li>
     </ul>
@@ -188,7 +188,7 @@ const DATA = [
     { n: "01", title: "Kickoff and call access", items: [
       "Grant access to call recordings and email conversations (Fathom, Circleback, or Granola). The ICP report is built from this data, so this comes first.",
       "Name who owns voice feedback on your side.",
-      "Kickoff: confirm which starter pod (Intelligence, Content, Search, Demand, or Sales Enablement). The 90 days install that pod only. Later expansions stay off the finish line.",
+      "Kickoff: confirm which starter team (Intelligence, Content, Search, Demand, or Sales Enablement). The 90 days install that team only. Later expansions stay off the finish line.",
       "ICP work starts from real sales calls and email conversations."
     ]},
     { n: "02", title: "ICP report and writing manual", items: [
@@ -200,9 +200,9 @@ const DATA = [
     ]}
   ]},
   { section: "Install the team", weeks: [
-    { n: "03", title: "Stand up the starter pod", items: [
+    { n: "03", title: "Stand up the starter team", items: [
       "Hardware and setup installed. You own the gear.",
-      "AI employees for the chosen starter pod stood up, plus the AI VP Slack surface.",
+      "AI employees for the chosen starter team stood up, plus the AI VP Slack surface.",
       "Call sources connected to the generation queue.",
       "Slack opened as the review channel.",
       "Confirm live means generation to QA to human approval. CMS go-live is a later project."
@@ -229,7 +229,7 @@ const DATA = [
     { n: "07", title: "LinkedIn starter, paste only", items: [
       "Optional LinkedIn drafts stood up on the same intake (paste-ready, never auto-posted).",
       "Confirm this does not slow the main generation queue.",
-      "Full LinkedIn content project stays a later expansion after the starter pod."
+      "Full LinkedIn content project stays a later expansion after the starter team."
     ]}
   ]},
   { section: "QA and approval", weeks: [
@@ -263,15 +263,15 @@ const DATA = [
       "A second cycle run with less oversight.",
       "Remaining bottlenecks identified and fixed.",
       "Review turnaround confirmed to fit the generation cadence.",
-      "You are briefed on steady-state for the starter pod."
+      "You are briefed on steady-state for the starter team."
     ]}
   ]},
   { section: "Live, day ~90", weeks: [
-    { n: "13", title: "Starter pod live", items: [
+    { n: "13", title: "Starter team live", items: [
       "Agent team runs generation to QA to human approval on cadence.",
       "Drafts sit in the approval pool, ready for a human.",
       "You are confirmed on cadence, voice, and review flow.",
-      "Handoff from rollout to steady-state of the starter pod.",
+      "Handoff from rollout to steady-state of the starter team.",
       "First post-launch check-in scheduled.",
       "Later projects named, not started: add-on AI employees and workstreams TBD with you."
     ]}
@@ -382,8 +382,8 @@ function render(){
         const note = document.createElement('div');
         note.className = 'final-note';
         note.textContent = complete
-          ? "The starter pod is live. Your AI employees are running generation to QA to human approval on cadence."
-          : "Finish line: the chosen starter pod running generation to QA to human approval. Projects hire more later.";
+          ? "The starter team is live. Your AI employees are running generation to QA to human approval on cadence."
+          : "Finish line: the chosen starter team running generation to QA to human approval. Projects hire more later.";
         body.appendChild(note);
       }
 

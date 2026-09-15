@@ -12,10 +12,10 @@ and craft rules (imply the thesis; do not paste it on every section).
 
 - `index.html` — public marketing site
 - `pitch-deck.html` — sales deck (keyboard nav)
-- `90-day-timeline.html` — 90-day starter-pod checklist
+- `90-day-timeline.html` — 90-day starter-team checklist
 - `linkedin-content.md` — paste-ready LinkedIn drafts (manual post only)
 - `brand-voice.md` — voice rules for marketing copy
-- `logo-mark.png` — teal bloom mark (source of truth); pages typeset BLOOM beside it
+- `logo-mark.png` — lavender bloom wordmark (source of truth)
 - `logo-mark.png` / `favicon.png` — raster mark
 - `CLAUDE.md` — agent context
 - `SEO-NOTES.md` — SEO/AEO tracking stub
