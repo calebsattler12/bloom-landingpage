@@ -111,20 +111,25 @@ p{margin:0;text-wrap:pretty;}
   content:"";flex:1;height:1px;background:var(--line);
 }
 .starters-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.logo-marquee-label{
+  margin:40px 0 14px;text-align:center;
+  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:14px;
+  letter-spacing:.04em;text-transform:uppercase;color:var(--muted);
+}
 .logo-marquee{
-  margin-top:40px;overflow:hidden;border:1px solid var(--line);border-radius:18px;
+  margin-top:0;overflow:hidden;border:1px solid var(--line);border-radius:18px;
   background:var(--soft);padding:22px 0;
 }
 .logo-marquee-track{
   display:flex;align-items:center;gap:36px;width:max-content;
-  animation:logoMarquee 42s linear infinite;
+  animation:logoMarquee 48s linear infinite;
 }
 .logo-marquee-item{
   display:inline-flex;align-items:center;gap:10px;flex:none;
   color:var(--ink);opacity:.78;
 }
 .logo-marquee-item img,.logo-marquee-item svg{
-  width:22px;height:22px;display:block;flex:none;
+  width:22px;height:22px;display:block;flex:none;object-fit:contain;border-radius:4px;
 }
 .logo-marquee-item .mark{
   width:22px;height:22px;border-radius:6px;flex:none;
@@ -526,22 +531,25 @@ p{margin:0;text-wrap:pretty;}
       <p style="font-size:15px;color:var(--muted);line-height:1.5">Weekly email so you can see progress. New projects mean Bloom builds more AI employees onto the teams you already run. A fraction of a content team, with more capability across use cases.</p>
     </div>
   </div>
-  <div class="logo-marquee" aria-label="Works with your tools">
+  <p class="logo-marquee-label">Tools we work with</p>
+  <div class="logo-marquee" aria-label="Tools we work with">
     <div class="logo-marquee-track">
       <div class="logo-marquee-item"><img src="logos/slack.svg" alt=""><span>Slack</span></div>
+      <div class="logo-marquee-item"><img src="logos/teams.png" alt=""><span>Microsoft Teams</span></div>
       <div class="logo-marquee-item"><img src="logos/webflow.svg" alt=""><span>Webflow CMS</span></div>
       <div class="logo-marquee-item"><img src="logos/hubspot.svg" alt=""><span>HubSpot</span></div>
       <div class="logo-marquee-item"><img src="logos/salesforce.svg" alt=""><span>Salesforce</span></div>
-      <div class="logo-marquee-item"><img src="logos/fathom.svg" alt=""><span>Fathom</span></div>
-      <div class="logo-marquee-item"><img src="logos/circleback.svg" alt=""><span>Circleback</span></div>
-      <div class="logo-marquee-item"><img src="logos/granola.svg" alt=""><span>Granola</span></div>
+      <div class="logo-marquee-item"><img src="logos/fathom.png" alt=""><span>Fathom</span></div>
+      <div class="logo-marquee-item"><img src="logos/circleback.png" alt=""><span>Circleback</span></div>
+      <div class="logo-marquee-item"><img src="logos/granola.png" alt=""><span>Granola</span></div>
       <div class="logo-marquee-item logo-marquee-dup" aria-hidden="true"><img src="logos/slack.svg" alt=""><span>Slack</span></div>
+      <div class="logo-marquee-item logo-marquee-dup" aria-hidden="true"><img src="logos/teams.png" alt=""><span>Microsoft Teams</span></div>
       <div class="logo-marquee-item logo-marquee-dup" aria-hidden="true"><img src="logos/webflow.svg" alt=""><span>Webflow CMS</span></div>
       <div class="logo-marquee-item logo-marquee-dup" aria-hidden="true"><img src="logos/hubspot.svg" alt=""><span>HubSpot</span></div>
       <div class="logo-marquee-item logo-marquee-dup" aria-hidden="true"><img src="logos/salesforce.svg" alt=""><span>Salesforce</span></div>
-      <div class="logo-marquee-item logo-marquee-dup" aria-hidden="true"><img src="logos/fathom.svg" alt=""><span>Fathom</span></div>
-      <div class="logo-marquee-item logo-marquee-dup" aria-hidden="true"><img src="logos/circleback.svg" alt=""><span>Circleback</span></div>
-      <div class="logo-marquee-item logo-marquee-dup" aria-hidden="true"><img src="logos/granola.svg" alt=""><span>Granola</span></div>
+      <div class="logo-marquee-item logo-marquee-dup" aria-hidden="true"><img src="logos/fathom.png" alt=""><span>Fathom</span></div>
+      <div class="logo-marquee-item logo-marquee-dup" aria-hidden="true"><img src="logos/circleback.png" alt=""><span>Circleback</span></div>
+      <div class="logo-marquee-item logo-marquee-dup" aria-hidden="true"><img src="logos/granola.png" alt=""><span>Granola</span></div>
     </div>
   </div>
 </section>

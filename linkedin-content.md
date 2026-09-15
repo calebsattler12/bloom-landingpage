@@ -121,7 +121,7 @@ Talk to your AI VP of Marketing in Slack the way you would any other employee.
 Weekly digest so you can see what shipped and what is getting found.
 New projects mean Bloom builds more AI employees onto the teams you already run.
 
-Works with Slack, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback, Granola.
+Tools we work with: Slack, Microsoft Teams, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback, Granola.
 
 If you are renting pipeline through ads and want teams that compound, let's talk.
 
