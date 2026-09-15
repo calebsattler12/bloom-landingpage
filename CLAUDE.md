@@ -137,9 +137,10 @@ forms QA, paid, win-loss, coaching, battlecards, case studies.
 ## Integrations (confirmed only)
 
 Slack, Microsoft Teams, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback,
-Granola. Show as a logo marquee on the site labeled "Tools we work with"
-(`logos/`: SVG for Slack/Webflow/HubSpot/Salesforce; PNG for Teams, Fathom,
-Circleback, Granola). Prefer local assets over CDN.
+Granola, Google Analytics, Ahrefs. Show as a logo marquee on the site labeled
+"Tools we work with" (`logos/`: SVG for Slack/Webflow/HubSpot/Salesforce; PNG
+for Teams, Fathom, Circleback, Granola, Google Analytics, Ahrefs). Prefer local
+assets over CDN.
 
 ## RevBlack proof
 
