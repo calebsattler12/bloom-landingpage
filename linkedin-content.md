@@ -1,6 +1,6 @@
 # Bloom LinkedIn content pack (drafts)
 
-Paste-ready founder posts. Imply the outcome (buyer language → found, ranked, chosen) without restating the full thesis on every post. One idea per post.
+Paste-ready founder posts. Lead with teams of AI agents and organic inbound deals. Hiring AI employees (plural) is the supporting frame. One idea per post.
 
 Soft CTA: Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
 
@@ -9,22 +9,22 @@ Posting rules:
 - No fabricated metrics, hours saved, or fake testimonials.
 - No dollar amounts or price lists.
 - Voice: zero em dashes; no "it's not X, it's Y." See `brand-voice.md`.
-- Say agent, not bot. Prefer projects and use case. Do not boil down to "AI content."
-- Do not paste "unlimited agents" or "white glove" on every post. Show the idea once, in context.
+- Say agent, not bot. Prefer projects, pods, and use case. Do not boil down to "AI content" or SEO alone.
+- Do not paste "unlimited agents" or "white glove" on every post. Retention language is fine here in soft form once, not every post.
 
 ---
 
-## 1. Buyer language at work
+## 1. Outcome line
 
-Your best clients already said what they need.
+Teams of AI agents that drive organic, inbound deals.
 
-On the calls. In the email threads. In the questions before yes.
+That is the job.
 
-Most teams leave that language in a recording folder.
+Bloom installs AI employees for your company. You pick a starter pod. Then we hire more agents onto the team as you grow.
 
-Bloom puts it to work so you get found, ranked, and chosen.
+Grounded in your sales calls and email.
 
-If that gap is yours:
+If that problem is yours:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
@@ -37,9 +37,9 @@ Organic compounds.
 
 Ranked pages and cited answers keep working after the spend that built them stops.
 
-That is the asset we help you build from conversations you already have.
+Bloom hires AI employee teams that help you own that asset, from conversations you already have.
 
-You own the hardware. The work stays with the business.
+You own the hardware. The teams stay with the business.
 
 Book a Call:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
@@ -51,28 +51,24 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 Babysitting Claude leaves you with drafts.
 Buying a content pack leaves you with files.
 
-Bloom stands the roster up on a Mac mini you own.
+Bloom stands AI employees up on a Mac mini you own.
 A human watches what shipped and what is getting found.
-Then grows the workstreams as the work expands.
+Then hires more onto the team as the work expands.
 
 Curious whether that fits:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 4. Starter pod first, then projects
+## 4. Choose a starter pod
 
-The first 90 days stand up a starter pod: a team of agents you build on.
+Level one is a starter pod. You choose the path:
 
-After that, projects add more agents:
+Content: approval-gated drafts from buyer language.
+SEO: query maps and ranked-page work that feeds organic inbound.
+Sales: nurture messages that keep open opportunities warm.
 
-Publishing.
-SEO/AEO.
-LinkedIn (paste-only, never auto-posted).
-Weekly email.
-Call query that helps sales close.
-
-The roster grows with the work, with a human partner beside you.
+Projects after that hire more AI employees onto the team.
 
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
@@ -96,36 +92,35 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 6. The starter pod
+## 6. What a pod feels like
 
-Content Director
-Research / ICP
-Content writers (how-to, article, playbook)
-LinkedIn writer (paste-only)
-Quality & Voice Gate
-SEO/AEO
-Scheduler
+A starter pod is a team of AI employees with jobs, not a pile of prompts.
 
-Approval-gated drafts.
-LinkedIn never auto-posts.
+Director or lead.
+Research.
+Writers or nurture agents.
+QA.
+A queue that never auto-publishes LinkedIn.
+
+Approval-gated work.
 Hardware you own.
 
-Jobs, not a pile of prompts.
+Hire the pod. Grow the team.
 
 ---
 
 ## 7. How it runs
 
-Month to month after the starter pod is live.
+Month to month after your AI employees ship.
 
 Weekly email so you can see what shipped and what is getting found.
 
-New projects as you grow.
+New projects add more agents as you grow.
 A fraction of a content team, with more capability across use cases.
 
 Tool-agnostic: Slack, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback, Granola.
 
-If you are renting pipeline through ads and want an asset that compounds, let's talk.
+If you are renting pipeline through ads and want teams that compound, let's talk.
 
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
@@ -133,9 +128,9 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ## 8. Soft CTA
 
-Start with the conversations.
+Hire your first pod of AI employees.
 Keep the ICP report.
 
-Book a call. We map the fit and run the diagnostic you keep either way.
+Book a call. We map which starter pod fits and run the diagnostic you keep either way.
 
 https://calendar.app.google/kY3NqzNsspgzzw1F9

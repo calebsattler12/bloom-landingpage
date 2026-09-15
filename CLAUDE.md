@@ -46,8 +46,9 @@ every section. Hero leads with buyer language at work (found, ranked, chosen).
 Say each proof point once: hardware ownership in partner/how-it-runs; roster
 growth in projects; ICP keep-either-way in samples/CTA.
 
-Lead with **outcome** (buyer language → inbound), not "hire an AI employee."
-Do **not** boil down to "AI content" or "10k for content."
+Lead with **outcome** (teams of AI agents → organic inbound deals).
+Hiring AI employees (plural) is supporting language across the site.
+Do **not** boil down to "AI content," SEO alone, or "10k for content."
 
 **White glove (show, don't label):** A human installs, monitors, and helps
 improve the team(s). Client owns the hardware (Mac mini). Prefer "How we show
