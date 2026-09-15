@@ -104,10 +104,25 @@ a{color:inherit;}
   display:inline-flex;align-items:center;font-size:13px;font-weight:600;
   padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;
 }
+.teams-tablist{
+  display:flex;gap:6px;margin-top:28px;max-width:360px;width:100%;
+  padding:5px;border-radius:999px;border:1px solid var(--line);background:#fff;
+}
+.teams-tab{
+  flex:1;appearance:none;cursor:pointer;border:0;background:transparent;
+  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:14px;
+  color:var(--muted);padding:11px 16px;border-radius:999px;
+}
+.teams-tab[aria-selected="true"]{background:var(--ink);color:#fff}
+.teams-panel{margin-top:28px;max-width:1100px}
+.teams-panel[hidden]{display:none !important}
+.deck-starters{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.deck-starters.sales-one{grid-template-columns:1fr;max-width:420px}
 @media (max-width:900px){
   .slide{padding:48px 28px 64px;}
   .brand,.footer-bar{left:28px;right:28px;}
-  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}
+  .grid-2,.grid-3,.grid-4,.deck-starters{grid-template-columns:1fr;}
+  .teams-tablist{max-width:none}
   h1{font-size:34px !important;}
   h2{font-size:28px !important;}
 }
@@ -189,34 +204,36 @@ a{color:inherit;}
     <div class="brand"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></div>
     <div class="eyebrow">Meet the starter teams</div>
     <h2 style="font-size:36px;font-weight:600;max-width:820px">Five starter teams. Marketing and sales paths.</h2>
-    <div class="grid-2" style="max-width:1100px;align-items:start">
-      <div>
-        <div class="tag" style="margin-bottom:12px">Marketing</div>
-        <div class="grid-2" style="gap:14px">
-          <div class="card">
-            <div class="tag">Research analyst</div>
-            <h3>Customer Intelligence</h3>
-            <p>ICP findings, competitive intel, website audit.</p>
-          </div>
-          <div class="card">
-            <div class="tag">Content team</div>
-            <h3>Content Production</h3>
-            <p>Director, format writers, voice, QA, approval-gated publishing.</p>
-          </div>
-          <div class="card">
-            <div class="tag">SEO specialist</div>
-            <h3>Search Visibility</h3>
-            <p>Keyword strategy and AEO citability feeding organic inbound.</p>
-          </div>
-          <div class="card">
-            <div class="tag">Demand gen</div>
-            <h3>Demand &amp; Lifecycle</h3>
-            <p>Nurture, forms QA, and paid creative. Outbound when they need it.</p>
-          </div>
+    <div class="teams-tablist" role="tablist" aria-label="Starter team paths">
+      <button type="button" class="teams-tab" role="tab" id="deck-tab-marketing" aria-selected="true" aria-controls="deck-teams-marketing" tabindex="0">Marketing</button>
+      <button type="button" class="teams-tab" role="tab" id="deck-tab-sales" aria-selected="false" aria-controls="deck-teams-sales" tabindex="-1">Sales</button>
+    </div>
+    <div class="teams-panel" role="tabpanel" id="deck-teams-marketing" aria-labelledby="deck-tab-marketing">
+      <div class="deck-starters">
+        <div class="card">
+          <div class="tag">Research analyst</div>
+          <h3>Customer Intelligence</h3>
+          <p>ICP findings, competitive intel, website audit.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Content team</div>
+          <h3>Content Production</h3>
+          <p>Director, format writers, voice, QA, approval-gated publishing.</p>
+        </div>
+        <div class="card">
+          <div class="tag">SEO specialist</div>
+          <h3>Search Visibility</h3>
+          <p>Keyword strategy and AEO citability feeding organic inbound.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Demand gen</div>
+          <h3>Demand &amp; Lifecycle</h3>
+          <p>Nurture, forms QA, and paid creative. Outbound when they need it.</p>
         </div>
       </div>
-      <div>
-        <div class="tag" style="margin-bottom:12px">Sales</div>
+    </div>
+    <div class="teams-panel" role="tabpanel" id="deck-teams-sales" aria-labelledby="deck-tab-sales" hidden>
+      <div class="deck-starters sales-one">
         <div class="card">
           <div class="tag">Sales analyst</div>
           <h3>Sales Enablement</h3>
@@ -360,6 +377,40 @@ a{color:inherit;}
 </div>
 <script>
 (function(){
+  const tablist = document.querySelector('.teams-tablist');
+  if (!tablist) return;
+  const tabs = [...tablist.querySelectorAll('[role="tab"]')];
+  function selectTab(tab, {focus = false} = {}){
+    tabs.forEach((t) => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      const panel = document.getElementById(t.getAttribute('aria-controls'));
+      if (panel) panel.hidden = !on;
+    });
+    if (focus) tab.focus();
+  }
+  tablist.addEventListener('click', (e) => {
+    const tab = e.target.closest('[role="tab"]');
+    if (!tab || !tabs.includes(tab)) return;
+    e.stopPropagation();
+    selectTab(tab);
+  });
+  tablist.addEventListener('keydown', (e) => {
+    const i = tabs.indexOf(document.activeElement);
+    if (i < 0) return;
+    let next = -1;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (i + 1) % tabs.length;
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = (i - 1 + tabs.length) % tabs.length;
+    else if (e.key === 'Home') next = 0;
+    else if (e.key === 'End') next = tabs.length - 1;
+    if (next < 0) return;
+    e.preventDefault();
+    e.stopPropagation();
+    selectTab(tabs[next], {focus:true});
+  });
+})();
+(function(){
   const slides=[...document.querySelectorAll('.slide')];
   let i=0;
   function render(){
@@ -372,13 +423,14 @@ a{color:inherit;}
   }
   function go(n){i=Math.max(0,Math.min(slides.length-1,n));render();}
   document.addEventListener('keydown',e=>{
+    if(e.target.closest('[role="tab"], .teams-tablist'))return;
     if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();go(i+1);}
     if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(i-1);}
     if(e.key==='Home'||e.key==='Escape')go(0);
     if(e.key==='End')go(slides.length-1);
   });
   document.getElementById('deck').addEventListener('click',e=>{
-    if(e.target.closest('a'))return;
+    if(e.target.closest('a, button, [role="tab"], .teams-tablist'))return;
     const mid=window.innerWidth/2;
     go(e.clientX<mid?i-1:i+1);
   });

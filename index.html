@@ -100,17 +100,26 @@ p{margin:0;text-wrap:pretty;}
   display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
   color:var(--muted);margin-bottom:6px;
 }
-.teams-group{margin-top:40px}
-.teams-group:first-of-type{margin-top:0}
-.teams-group-label{
-  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:15px;letter-spacing:.04em;
-  text-transform:uppercase;color:var(--ink);margin-bottom:16px;
-  display:flex;align-items:center;gap:12px;
+.teams-tablist{
+  display:flex;gap:6px;justify-content:center;align-items:stretch;
+  margin:0 auto 36px;max-width:420px;width:100%;
+  padding:5px;border-radius:999px;border:1px solid var(--line);background:var(--white);
 }
-.teams-group-label::after{
-  content:"";flex:1;height:1px;background:var(--line);
+.teams-tab{
+  flex:1;appearance:none;cursor:pointer;border:0;background:transparent;
+  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:15px;letter-spacing:-.01em;
+  color:var(--muted);padding:12px 18px;border-radius:999px;
+  transition:background .15s ease,color .15s ease;
 }
+.teams-tab:hover{color:var(--ink)}
+.teams-tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.teams-tab[aria-selected="true"]{
+  background:var(--ink);color:#fff;
+}
+.teams-panel{margin-top:0}
+.teams-panel[hidden]{display:none !important}
 .starters-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.starters-grid.sales-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}
 .logo-marquee-label{
   margin:40px 0 14px;text-align:center;
   font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:14px;
@@ -246,6 +255,7 @@ p{margin:0;text-wrap:pretty;}
   .wrap{padding-left:24px;padding-right:24px;}
   header.hero{grid-template-columns:1fr !important;gap:40px !important;}
   .grid-2,.grid-3,.teams-grid,.starters-grid,.cost-grid,.org-sticky,.samples-grid,.proof-list{grid-template-columns:1fr !important;}
+  .teams-tablist{max-width:none;width:100%}
   .nav-links{display:none !important;}
   .hero h1{font-size:40px !important;}
   nav{padding-left:24px !important;padding-right:24px !important;}
@@ -357,14 +367,18 @@ p{margin:0;text-wrap:pretty;}
 
 <section id="teams" style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap section">
-    <div style="text-align:center;margin-bottom:48px">
+    <div style="text-align:center;margin-bottom:40px">
       <div class="eyebrow">Meet the starter teams</div>
       <h2 style="font-size:42px;font-weight:600;max-width:740px;margin:0 auto">Hire the team that matches the job.</h2>
       <p style="font-size:16px;color:var(--muted);margin-top:16px;max-width:680px;margin-left:auto;margin-right:auto;line-height:1.55">Level one is a starter team. Marketing and sales paths share the same call vault. Projects deepen the team after install.</p>
     </div>
 
-    <div class="teams-group" id="teams-marketing">
-      <div class="teams-group-label">Marketing</div>
+    <div class="teams-tablist" role="tablist" aria-label="Starter team paths">
+      <button type="button" class="teams-tab" role="tab" id="tab-marketing" aria-selected="true" aria-controls="teams-marketing" tabindex="0">Marketing</button>
+      <button type="button" class="teams-tab" role="tab" id="tab-sales" aria-selected="false" aria-controls="teams-sales" tabindex="-1">Sales</button>
+    </div>
+
+    <div class="teams-panel" role="tabpanel" id="teams-marketing" aria-labelledby="tab-marketing">
       <div class="starters-grid">
         <article class="starter-card">
           <div><span class="badge">Your research analyst</span><div class="role">Customer Intelligence</div></div>
@@ -389,9 +403,8 @@ p{margin:0;text-wrap:pretty;}
       </div>
     </div>
 
-    <div class="teams-group" id="teams-sales">
-      <div class="teams-group-label">Sales</div>
-      <div class="starters-grid" style="grid-template-columns:1fr;max-width:420px">
+    <div class="teams-panel" role="tabpanel" id="teams-sales" aria-labelledby="tab-sales" hidden>
+      <div class="starters-grid sales-grid">
         <article class="starter-card">
           <div><span class="badge">Your sales analyst</span><div class="role">Sales Enablement</div></div>
           <p class="output"><strong style="color:var(--ink)">Output:</strong> Call query in Slack for close support, plus win-loss, battlecards, case studies, and coaching from the same call vault.</p>
@@ -610,6 +623,60 @@ p{margin:0;text-wrap:pretty;}
 </footer>
 
 <script>
+(function(){
+  const tablist = document.querySelector('.teams-tablist');
+  if (!tablist) return;
+  const tabs = [...tablist.querySelectorAll('[role="tab"]')];
+
+  function selectTab(tab, {focus = false, updateHash = false} = {}){
+    tabs.forEach((t) => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      const panel = document.getElementById(t.getAttribute('aria-controls'));
+      if (panel) panel.hidden = !on;
+    });
+    if (focus) tab.focus();
+    if (updateHash){
+      const id = tab.getAttribute('aria-controls');
+      if (id && history.replaceState) history.replaceState(null, '', '#' + id);
+    }
+  }
+
+  function tabFromHash(){
+    const hash = (location.hash || '').slice(1);
+    if (hash === 'teams-sales') return tabs.find((t) => t.id === 'tab-sales');
+    if (hash === 'teams-marketing' || hash === 'teams') return tabs.find((t) => t.id === 'tab-marketing');
+    return null;
+  }
+
+  tablist.addEventListener('click', (e) => {
+    const tab = e.target.closest('[role="tab"]');
+    if (!tab || !tabs.includes(tab)) return;
+    selectTab(tab, {updateHash:true});
+  });
+
+  tablist.addEventListener('keydown', (e) => {
+    const i = tabs.indexOf(document.activeElement);
+    if (i < 0) return;
+    let next = -1;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (i + 1) % tabs.length;
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = (i - 1 + tabs.length) % tabs.length;
+    else if (e.key === 'Home') next = 0;
+    else if (e.key === 'End') next = tabs.length - 1;
+    if (next < 0) return;
+    e.preventDefault();
+    selectTab(tabs[next], {focus:true, updateHash:true});
+  });
+
+  const fromHash = tabFromHash();
+  if (fromHash) selectTab(fromHash);
+  window.addEventListener('hashchange', () => {
+    const t = tabFromHash();
+    if (t) selectTab(t);
+  });
+})();
+
 (function(){
   const agents = [
     { name:'Research agent', state:'mining ICP', working:true, avatarBg:'#E7E0D1' },
