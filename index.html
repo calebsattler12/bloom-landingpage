@@ -203,7 +203,7 @@ p{margin:0;text-wrap:pretty;}
 }
 .proj-item.on .kicker,.proj-item.hot .kicker{color:var(--accent);}
 .org-chart{
-  width:100%;max-width:480px;margin:0 auto;
+  width:100%;max-width:420px;margin:0 auto;
   display:flex;flex-direction:column;align-items:center;
   font-family:'Schibsted Grotesk',system-ui,sans-serif;
 }
@@ -216,18 +216,23 @@ p{margin:0;text-wrap:pretty;}
 .org-stem{
   width:2px;height:18px;background:var(--accent);opacity:.55;
 }
+.org-stem[data-stem]{
+  opacity:0;transition:opacity .35s ease;
+}
 .org-row{
-  position:relative;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;
+  position:relative;display:flex;flex-wrap:nowrap;justify-content:center;gap:10px;
   width:100%;padding-top:16px;
 }
 .org-row::before{
-  content:"";position:absolute;top:0;left:18%;right:18%;height:2px;
+  content:"";position:absolute;top:0;left:12%;right:12%;height:2px;
   background:color-mix(in oklab, var(--accent) 35%, var(--line));
 }
+.org-row.marketing-row::before{left:10%;right:10%;}
+.org-row.expand-row::before{left:28%;right:28%;}
 .org-node{
   position:relative;
   background:var(--white);border:1px solid var(--line);border-radius:12px;
-  padding:12px 10px 10px;min-width:84px;max-width:110px;flex:1 1 84px;
+  padding:12px 10px 10px;min-width:96px;max-width:120px;flex:1 1 96px;
   text-align:center;
   transition:border-color .35s ease, background .35s ease, box-shadow .35s ease, opacity .4s ease, transform .4s ease;
 }
@@ -240,10 +245,6 @@ p{margin:0;text-wrap:pretty;}
   opacity:0;transform:translateY(10px) scale(.96);pointer-events:none;
 }
 .org-node.team.on{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
-.org-node.project{
-  opacity:0;transform:translateY(8px) scale(.96);pointer-events:none;
-}
-.org-node.project.on{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
 .org-node.hot{
   border-color:var(--accent);
   background:color-mix(in oklab, var(--accent) 8%, var(--white));
@@ -257,22 +258,31 @@ p{margin:0;text-wrap:pretty;}
   text-transform:uppercase;color:var(--muted);
 }
 .org-node.hot .org-kind{color:var(--accent);}
-.org-node.placeholder .org-kind{color:var(--muted);}
 .org-row.expand-row{
   opacity:0;max-height:0;overflow:hidden;padding-top:0;
   transition:opacity .35s ease, max-height .45s ease, padding .35s ease;
 }
 .org-row.expand-row.open{
-  opacity:1;max-height:160px;overflow:visible;padding-top:16px;
+  opacity:1;max-height:120px;overflow:visible;padding-top:16px;
 }
 .org-row.expand-row:not(.open)::before{opacity:0;}
 .org-pin{position:relative;}
 .org-sticky{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.org-list{
+  display:flex;flex-direction:column;gap:10px;margin-top:28px;
+}
 @media (min-width:901px){
-  .org-pin{height:220vh;}
+  .org-pin{height:280vh;}
   .org-sticky{
     position:sticky;top:72px;height:calc(100vh - 84px);
-    padding:24px 0;
+    padding:24px 0;align-items:start;
+  }
+  .org-chart{position:sticky;top:0;align-self:center;margin-top:12vh;}
+  .org-list{
+    max-height:calc(100vh - 260px);
+    overflow-y:auto;
+    padding-right:4px;
+    overscroll-behavior:contain;
   }
 }
 @media (max-width:900px){
@@ -286,7 +296,8 @@ p{margin:0;text-wrap:pretty;}
   .org-pin{height:auto;}
   .org-sticky{position:relative;height:auto;gap:36px;}
   .org-chart{max-width:100%;}
-  .org-node{min-width:96px;max-width:120px;flex:1 1 96px;padding:12px 10px;}
+  .org-node{min-width:88px;max-width:110px;flex:1 1 88px;padding:12px 8px;}
+  .org-row{flex-wrap:wrap;}
 }
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{
@@ -297,7 +308,8 @@ p{margin:0;text-wrap:pretty;}
   }
   .org-pin{height:auto !important;}
   .org-sticky{position:relative !important;height:auto !important;}
-  .org-node.team,.org-node.project{opacity:1 !important;transform:none !important;pointer-events:auto !important;}
+  .org-node.team{opacity:1 !important;transform:none !important;pointer-events:auto !important;}
+  .org-stem[data-stem]{opacity:.55 !important;}
   .org-row.expand-row{opacity:1 !important;max-height:none !important;overflow:visible !important;padding-top:16px !important;}
   .logo-marquee-track{animation:none !important;flex-wrap:wrap;width:100% !important;max-width:100%;justify-content:center;row-gap:16px;padding:0 20px;box-sizing:border-box;}
   .logo-marquee-track .logo-marquee-dup{display:none !important;}
@@ -445,7 +457,7 @@ p{margin:0;text-wrap:pretty;}
       <div class="eyebrow">Services</div>
       <h2 style="font-size:38px;font-weight:600;max-width:460px">Five starter teams. Pick the path that fits.</h2>
       <p style="font-size:16px;color:var(--muted);margin-top:14px;max-width:440px;line-height:1.55">Scroll the roster. Each step adds a team. Projects deepen that team after install.</p>
-      <div style="display:flex;flex-direction:column;gap:10px;margin-top:28px;max-height:calc(100vh - 280px);overflow-y:auto;padding-right:4px">
+      <div class="org-list">
         <article class="proj-item on" data-step="0">
           <div class="kicker">Marketing · research analyst</div>
           <h3 style="font-size:18px;font-weight:600">Customer Intelligence</h3>
@@ -476,12 +488,15 @@ p{margin:0;text-wrap:pretty;}
     <div class="org-chart" aria-hidden="true">
       <div class="org-root">Bloom AI team</div>
       <div class="org-stem"></div>
-      <div class="org-row">
-        <div class="org-node team" data-reveal="0"><span class="org-role">Intel</span><span class="org-kind">Marketing</span></div>
+      <div class="org-row marketing-row">
+        <div class="org-node team on" data-reveal="0"><span class="org-role">Intel</span><span class="org-kind">Marketing</span></div>
         <div class="org-node team" data-reveal="1"><span class="org-role">Content</span><span class="org-kind">Marketing</span></div>
         <div class="org-node team" data-reveal="2"><span class="org-role">Search</span><span class="org-kind">Marketing</span></div>
+      </div>
+      <div class="org-stem" data-stem></div>
+      <div class="org-row expand-row">
         <div class="org-node team" data-reveal="3"><span class="org-role">Demand</span><span class="org-kind">Sales</span></div>
-        <div class="org-node team" data-reveal="4"><span class="org-role">Sales</span><span class="org-kind">Sales</span></div>
+        <div class="org-node team" data-reveal="4"><span class="org-role">Enablement</span><span class="org-kind">Sales</span></div>
       </div>
     </div>
   </div>
@@ -734,20 +749,43 @@ p{margin:0;text-wrap:pretty;}
   if (!pin) return;
   const items = [...pin.querySelectorAll('.proj-item')];
   const nodes = [...pin.querySelectorAll('.org-node')];
+  const list = pin.querySelector('.org-list');
+  const stem = pin.querySelector('[data-stem]');
+  const expand = pin.querySelector('.expand-row');
   const maxStep = Math.max(0, items.length - 1);
+  const salesOpenAt = 3;
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const desktop = window.matchMedia('(min-width:901px)');
+  let syncingList = false;
 
   function setStep(step){
+    const s = Math.max(0, Math.min(maxStep, step));
     items.forEach((el) => {
       const n = Number(el.dataset.step);
-      el.classList.toggle('on', n <= step);
-      el.classList.toggle('hot', n === step);
+      el.classList.toggle('on', n <= s);
+      el.classList.toggle('hot', n === s);
     });
     nodes.forEach((el) => {
       const n = Number(el.dataset.reveal);
-      el.classList.toggle('on', n <= step);
-      el.classList.toggle('hot', n === step);
+      el.classList.toggle('on', n <= s);
+      el.classList.toggle('hot', n === s);
     });
+    if (expand) expand.classList.toggle('open', s >= salesOpenAt);
+    if (stem) stem.style.opacity = s >= salesOpenAt ? '0.55' : '0';
+    return s;
+  }
+
+  function syncListToStep(step){
+    if (!list || !desktop.matches) return;
+    const max = list.scrollHeight - list.clientHeight;
+    if (max <= 8) return;
+    const el = items[step];
+    if (!el) return;
+    const top = Math.min(max, Math.max(0, el.offsetTop - 12));
+    if (Math.abs(list.scrollTop - top) < 12) return;
+    syncingList = true;
+    list.scrollTop = top;
+    requestAnimationFrame(() => { syncingList = false; });
   }
 
   if (reduce){
@@ -755,37 +793,63 @@ p{margin:0;text-wrap:pretty;}
     return;
   }
 
-  const desktop = window.matchMedia('(min-width:901px)');
+  function stepFromItems(){
+    const mid = window.innerHeight * 0.42;
+    let step = 0;
+    items.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < mid) step = Number(el.dataset.step);
+    });
+    return step;
+  }
 
-  function fromScroll(){
+  function stepFromListScroll(){
+    if (!list) return 0;
+    const max = list.scrollHeight - list.clientHeight;
+    if (max <= 8) return 0;
+    return Math.round((list.scrollTop / max) * maxStep);
+  }
+
+  function fromPageScroll(){
+    if (!desktop.matches){
+      setStep(stepFromItems());
+      return;
+    }
     const rect = pin.getBoundingClientRect();
     const usable = pin.offsetHeight - window.innerHeight;
     if (usable <= 40){
-      const mid = window.innerHeight * 0.45;
-      let step = 0;
-      items.forEach((el) => {
-        const r = el.getBoundingClientRect();
-        if (r.top < mid) step = Number(el.dataset.step);
-      });
-      setStep(step);
+      const s = setStep(stepFromListScroll());
+      syncListToStep(s);
+      return;
+    }
+    if (rect.top > 72){
+      setStep(0);
+      syncListToStep(0);
       return;
     }
     const p = Math.max(0, Math.min(1, (-rect.top) / usable));
-    setStep(Math.round(p * maxStep));
+    const s = setStep(Math.round(p * maxStep));
+    syncListToStep(s);
+  }
+
+  function fromListScroll(){
+    if (syncingList || !desktop.matches) return;
+    setStep(stepFromListScroll());
   }
 
   let ticking = false;
-  function onScroll(){
+  function onPageScroll(){
     if (ticking) return;
     ticking = true;
-    requestAnimationFrame(() => { fromScroll(); ticking = false; });
+    requestAnimationFrame(() => { fromPageScroll(); ticking = false; });
   }
 
   setStep(0);
-  fromScroll();
-  window.addEventListener('scroll', onScroll, {passive:true});
-  window.addEventListener('resize', onScroll);
-  desktop.addEventListener('change', onScroll);
+  fromPageScroll();
+  window.addEventListener('scroll', onPageScroll, {passive:true});
+  window.addEventListener('resize', onPageScroll);
+  desktop.addEventListener('change', onPageScroll);
+  if (list) list.addEventListener('scroll', fromListScroll, {passive:true});
 })();
 </script>
 </body>
