@@ -113,10 +113,11 @@ Hire the pod. Grow the team.
 
 Month to month after your AI employees ship.
 
-Weekly email so you can see what shipped and what is getting found.
+No new dashboards. No new apps.
+Talk to them in Slack the way you would any other employee.
 
+Weekly email so you can see what shipped and what is getting found.
 New projects add more agents as you grow.
-A fraction of a content team, with more capability across use cases.
 
 Tool-agnostic: Slack, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback, Granola.
 

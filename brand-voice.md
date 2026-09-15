@@ -45,7 +45,8 @@ the point. End on the result or the next step, not hype.
    is OK as the hiring metaphor.
 4. **Show the human partner.** Install, monitor, improve on hardware they
    own. Prefer concrete language over repeating "white glove." Keep the Mac mini
-   vs self-serve contrast on the site.
+   vs self-serve contrast on the site. Day to day: no new dashboards or apps;
+   talk to AI employees in Slack like any other teammate.
 5. **Roster growth.** Starter pods are level one (Content, SEO, Sales). Projects
    hire more agents onto the team. On the **pitch deck**, you may say this
    continues while they stay a client. On the **website**, prefer "as you grow"

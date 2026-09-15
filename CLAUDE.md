@@ -13,7 +13,7 @@ no build step.
 - `90-day-timeline.html` — shared 90-day checklist (starter pod install)
 - `linkedin-content.md` — paste-ready LinkedIn drafts
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
-- `logo-mark.svg` — simple bloom icon (teal rounded square + cream petals); source of truth
+- `logo-mark.svg` — aluminum squircle (bottom-right) + teal status LED; source of truth
 - Nav/footer/deck lockup: `[img src=logo-mark.svg] [gap] BLOOM` typeset in Schibsted Grotesk
 - `favicon.png` — same mark, no word
 - Do not use the old contour rings, combined PNG lockup, or the tagline "INSIGHTS. LANDSCAPES. GROWTH."
@@ -30,7 +30,7 @@ no build step.
 
 - **Palette:** accent `#12C4B4`, background `#F4EFE3`, ink `#0B0B0C`
 - **Fonts:** Schibsted Grotesk (headings), Hanken Grotesk (body)
-- **Logo:** simple bloom icon beside typeset BLOOM (Schibsted Grotesk). Never include "INSIGHTS. LANDSCAPES. GROWTH."
+- **Logo:** aluminum squircle mark (bottom-right bias, teal LED) beside typeset BLOOM (Schibsted Grotesk). Never include "INSIGHTS. LANDSCAPES. GROWTH."
 - **CTA (site):** Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
 - **CTA (deck close):** Work with us
 - Personality: light, approachable, friendly. Do not revive old Verity navy/Jost.
@@ -94,7 +94,7 @@ roster grows with projects, fraction of a content team. Prefer Book a Call.
 5. Projects / services (scroll org: three starter pods, then project add-ons TBD)
 6. Samples (ICP teaser + link to `icp-findings-example.html`, Slack query, LinkedIn paste-only)
 7. First 90 days (install chosen starter pod → then projects; link 90-day-timeline.html)
-8. How it runs (month to month; weekly email; tool-agnostic)
+8. How it runs (month to month; no new dashboards/apps; talk in Slack like a teammate; weekly email; tool-agnostic)
 9. RevBlack (live multi-team client; logo + Visit RevBlack site)
 10. Final CTA
 
