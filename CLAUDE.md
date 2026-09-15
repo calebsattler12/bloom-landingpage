@@ -9,8 +9,10 @@ Marketing site for **Bloom** (Syncro Labs) at **runbloom.ai**. Static HTML,
 no build step.
 
 - `index.html` — public site
+- `get-started.html` — entry paths (ICP findings or Sales starter / win-loss) + first 90 days
 - `pitch-deck.html` — sales deck (keyboard nav)
 - `90-day-timeline.html` — shared 90-day checklist (starter team install)
+- `icp-findings-example.html` / `win-loss-example.html` — placeholder report templates
 - `linkedin-content.md` — paste-ready LinkedIn drafts
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
 - `logo-mark.png` — lavender rounded square + centered cream bloom wordmark; source of truth
@@ -95,7 +97,7 @@ Cut repeated thesis phrases.
 ## Pricing (public drafts)
 
 **Do not publish dollar amounts, install fees, or retainer figures** in
-`index.html`, `pitch-deck.html`, `90-day-timeline.html`, or
+`index.html`, `get-started.html`, `pitch-deck.html`, `90-day-timeline.html`, or
 `linkedin-content.md`. Qualitative only: own the hardware, no contract,
 roster grows with projects, fraction of a content team. Prefer Book a Call.
 
@@ -108,10 +110,14 @@ roster grows with projects, fraction of a content team. Prefer Book a Call.
 4. Meet the starter teams (Marketing vs Sales groups)
 5. Projects / services (scroll org: cumulative reveal of five starter teams)
 6. Samples (ICP report, Slack call query, LinkedIn from CEO notes / paste-only)
-7. First 90 days (install chosen starter team → then projects; link 90-day-timeline.html)
+7. RevBlack (live multi-team client; logo + Visit RevBlack site)
 8. After install (no contract; ongoing build-out; no new dashboards; tool logo marquee)
-9. RevBlack (live multi-team client; logo + Visit RevBlack site)
+9. Get started teaser (links to `get-started.html`; short 90-day pitch)
 10. Final CTA
+
+**Get started page (`get-started.html`):** ICP findings path vs Sales starter team
+(win-loss artifact); first 90 days steps; links to example templates, 90-day
+timeline, Marketing/Sales team tabs, Book a Call.
 
 ## Roster (from Agent Scopes DRAFT; scrub for public)
 
