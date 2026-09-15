@@ -42,9 +42,9 @@ install, monitor, improve. Unlimited agents via new project teams while
 retained. Grounded in buyer language from sales calls and email.
 
 **Public copy:** Imply that thesis. Do **not** paste the thesis sentence on
-every section. Hero leads with buyer language at work (found, ranked, chosen).
-Say each proof point once: hardware ownership in partner/how-it-runs; roster
-growth in projects; ICP keep-either-way in samples/CTA.
+every section. Hero leads with agent teams → organic inbound. Say each proof
+point once: hardware in partner/how-it-runs; roster growth in projects; ICP
+keep-either-way in samples/CTA; Slack / AI VP in how-it-runs.
 
 Lead with **outcome** (teams of AI agents → organic inbound deals).
 Hiring AI employees (plural) is supporting language across the site.
@@ -54,10 +54,18 @@ Do **not** boil down to "AI content," SEO alone, or "10k for content."
 improve the team(s). Client owns the hardware (Mac mini). Prefer "How we show
 up" / "Your hardware" over repeating "white glove."
 
-**Starter pods (level one):** Clients choose a path: **Content**, **SEO**, or
-**Sales** (nurture). Each is a team of AI employees / agents built around an
-output. Projects hire more agents onto the team later (specs TBD). Prefer
-**starter pod** over "content core" or "content engine."
+**Starter pods (level one):** Pitch **pods by client-facing name**, not every
+agent. First rollouts (LIVE on RevBlack; source: *Bloom Agent Scopes DRAFT*):
+**Customer Intelligence** ("your research analyst"), **Content Production**
+("your content team"), **Search Visibility** ("your SEO specialist").
+Orchestration (**AI VP of Marketing** + analytics) is the human-facing Slack
+surface across pods, not a separate starter choice. Prefer **starter pod**
+over "content core" or "content engine."
+
+**Expansion pods / projects:** Demand & Lifecycle (nurture, outbound stub,
+forms QA, paid ads) and Sales Enablement (win-loss, rep coaching, battlecards,
+case studies) are later hires. Public site lists project names, not LIVE/stub
+labels.
 
 **Public framing:** Lead with teams of AI agents → organic inbound deals.
 Hiring AI employees (plural) is the supporting metaphor across the site.
@@ -87,22 +95,39 @@ roster grows with projects, fraction of a content team. Prefer Book a Call.
 
 ## Site section map
 
-1. Hero (teams of AI agents → organic inbound deals; chips Content · SEO · Sales)
+1. Hero (teams of AI agents → organic inbound deals; chips Intelligence · Content · Search)
 2. Why this (hire AI employees; own the asset vs rent attention)
-3. How we show up / partner (install, monitor, improve; Mac mini; keep contrast)
-4. Meet the starter pods (choose Content, SEO, or Sales by output)
-5. Projects / services (scroll org: three starter pods, then project add-ons TBD)
-6. Samples (ICP teaser + link to `icp-findings-example.html`, Slack query, LinkedIn paste-only)
+3. How we show up / partner (install, monitor, improve; Mac mini; AI VP in Slack)
+4. Meet the starter pods (Customer Intelligence, Content Production, Search Visibility)
+5. Projects / services (scroll org: three LIVE pods, then Demand / Sales Enablement)
+6. Samples (ICP report, Slack call query, LinkedIn paste-only)
 7. First 90 days (install chosen starter pod → then projects; link 90-day-timeline.html)
-8. How it runs (month to month; no new dashboards/apps; talk in Slack like a teammate; weekly email; tool-agnostic)
+8. How it runs (month to month; no new dashboards; talk to AI VP in Slack; weekly digest; tool-agnostic)
 9. RevBlack (live multi-team client; logo + Visit RevBlack site)
 10. Final CTA
 
-## Roster (placeholders OK until scrubbed)
+## Roster (from Agent Scopes DRAFT; scrub for public)
 
-Starter pods: Content, SEO, Sales (nurture). Content roles still include
-Director, Research / ICP, writers, LinkedIn paste-only, QA, Scheduler.
-SEO and Sales employee lists are directional until scrubbed. Project add-ons TBD.
+**Source of truth:** Google Doc *Bloom Agent Scopes DRAFT* (internal). Agent
+detail is for build/sales enablement; public copy pitches pods + outputs.
+
+**LIVE first (install now):**
+- Pod 1 Customer Intelligence: Research (two-pass ICP), Call Query, Competitor
+  Intelligence, Content Audit
+- Pod 2 Content Production: Content Director, format writers (How-To · Article ·
+  Playbook · LinkedIn paste-only), Brand Voice, QA + Voice Gate, Publishing Scheduler
+- Pod 3 Search Visibility: SEO Agent, AEO Agent
+- Pod 4 Orchestration: AI VP of Marketing (only agent that talks to client),
+  Analytics, Findings/Roadmap Compiler
+
+**Later:** Pod 5 Demand (Email/Nurture NET-NEW; Outreach + Forms stubs; Paid Ads
+NET-NEW). Pod 6 Sales Enablement (Win-Loss, Rep Benchmarking, Battlecards, Case
+Study) all NET-NEW.
+
+**Public projects menu:** ICP Findings, Call Query, Competitive Intel, Website
+Audit, Brand Voice, Article Engine, Playbook/How-To, LinkedIn, Publishing,
+Keyword/SEO, AEO, Weekly Report, Performance reporting; then nurture, outbound,
+forms QA, paid, win-loss, coaching, battlecards, case studies.
 
 ## Integrations (confirmed only)
 
