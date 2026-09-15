@@ -150,10 +150,11 @@ assets over CDN.
 
 ## RevBlack proof
 
-Live client with multiple agent teams / projects. Link
+Live client with sales and marketing agent teams. Link
 https://www.revblack.com ("Visit RevBlack site"). Use `revblack-logo.png`.
-Do not use "first customer," inbound goal numbers (1–4 → 8–15), fabricated
-testimonials, or "12 hrs saved" stats.
+Approved quote (Director of Marketing, RevBlack): AI summary for a keyword
+after 3 weeks. Do not use "first customer," inbound goal numbers
+(1–4 → 8–15), fabricated testimonials, or "12 hrs saved" stats.
 
 ## Editing
 
