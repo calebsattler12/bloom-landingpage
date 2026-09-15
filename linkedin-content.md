@@ -64,11 +64,11 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 Level one is a starter pod. You choose the path:
 
-Customer Intelligence: your research analyst. ICP findings, call query, competitive intel.
-Content Production: your content team. Approval-gated drafts from buyer language.
-Search Visibility: your SEO specialist. Keyword strategy and answer-engine citability.
-
-Demand and Sales Enablement hire on later.
+Customer Intelligence: your research analyst.
+Content Production: your content team.
+Search Visibility: your SEO specialist.
+Demand & Lifecycle: your demand gen team.
+Sales Enablement: your sales analyst.
 
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
@@ -116,7 +116,7 @@ No new dashboards. No new apps.
 Talk to your AI VP of Marketing in Slack the way you would any other employee.
 
 Weekly digest so you can see what shipped and what is getting found.
-New projects add Demand and Sales Enablement agents as you grow.
+New projects deepen the pod you hired as you grow.
 
 Tool-agnostic: Slack, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback, Granola.
 
@@ -131,6 +131,6 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 Hire your first pod of AI employees.
 Keep the ICP findings report.
 
-Book a call. We map Intelligence, Content, or Search and run the diagnostic you keep either way.
+Book a call. We map which starter pod fits and run the diagnostic you keep either way.
 
 https://calendar.app.google/kY3NqzNsspgzzw1F9

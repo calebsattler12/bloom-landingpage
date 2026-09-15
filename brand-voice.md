@@ -39,20 +39,19 @@ the point. End on the result or the next step, not hype.
 
 1. **Outcome first.** Hero leads with teams of AI agents that drive organic,
    inbound deals. Supporting frame: hiring AI employees (plural) / starter pods.
-2. **Do not boil down to "AI content" or SEO alone.** Starter pods: Customer
-   Intelligence, Content Production, Search Visibility. Demand and Sales
-   Enablement are later projects. Pitch pods by name; agent count is proof.
+2. **Do not boil down to "AI content" or SEO alone.** Five starter pods:
+   Customer Intelligence, Content Production, Search Visibility, Demand &
+   Lifecycle, Sales Enablement. Pitch pods by name; agent count is proof.
 3. **Say agent, not bot.** Query agent, Slack agent, email agent. "AI employees"
    is OK as the hiring metaphor.
 4. **Show the human partner.** Install, monitor, improve on hardware they
    own. Prefer concrete language over repeating "white glove." Keep the Mac mini
    vs self-serve contrast on the site. Day to day: no new dashboards or apps;
    talk to AI employees in Slack like any other teammate.
-5. **Roster growth.** Starter pods are level one (Intelligence, Content,
-   Search). Projects hire Demand and Sales Enablement agents later. On the
-   **pitch deck**, you may say this continues while they stay a client. On the
-   **website**, prefer "as you grow" without the retainer frame. Day to day:
-   client talks to the AI VP in Slack.
+5. **Roster growth.** Five starter pods at level one. Projects deepen the
+   hired pod or add another. On the **pitch deck**, you may say this continues
+   while they stay a client. On the **website**, prefer "as you grow" without
+   the retainer frame. Day to day: client talks to the AI VP in Slack.
 6. Prefer **projects** for expansion and **use case** / **pod** for entry.
    Do not say "content core" or "content engine."
 7. **No compulsive restating.** If the hero said it, later sections should

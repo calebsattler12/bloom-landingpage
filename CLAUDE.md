@@ -13,7 +13,7 @@ no build step.
 - `90-day-timeline.html` — shared 90-day checklist (starter pod install)
 - `linkedin-content.md` — paste-ready LinkedIn drafts
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
-- `logo-mark.svg` — aluminum squircle (bottom-right) + teal status LED; source of truth
+- `logo-mark.svg` — teal rounded square + centered cream bloom; source of truth
 - Nav/footer/deck lockup: `[img src=logo-mark.svg] [gap] BLOOM` typeset in Schibsted Grotesk
 - `favicon.png` — same mark, no word
 - Do not use the old contour rings, combined PNG lockup, or the tagline "INSIGHTS. LANDSCAPES. GROWTH."
@@ -30,7 +30,7 @@ no build step.
 
 - **Palette:** accent `#12C4B4`, background `#F4EFE3`, ink `#0B0B0C`
 - **Fonts:** Schibsted Grotesk (headings), Hanken Grotesk (body)
-- **Logo:** aluminum squircle mark (bottom-right bias, teal LED) beside typeset BLOOM (Schibsted Grotesk). Never include "INSIGHTS. LANDSCAPES. GROWTH."
+- **Logo:** teal rounded-square bloom mark beside typeset BLOOM (Schibsted Grotesk for now; see `logo-font-options.html`). Never include "INSIGHTS. LANDSCAPES. GROWTH."
 - **CTA (site):** Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
 - **CTA (deck close):** Work with us
 - Personality: light, approachable, friendly. Do not revive old Verity navy/Jost.
@@ -55,17 +55,14 @@ improve the team(s). Client owns the hardware (Mac mini). Prefer "How we show
 up" / "Your hardware" over repeating "white glove."
 
 **Starter pods (level one):** Pitch **pods by client-facing name**, not every
-agent. First rollouts (LIVE on RevBlack; source: *Bloom Agent Scopes DRAFT*):
-**Customer Intelligence** ("your research analyst"), **Content Production**
-("your content team"), **Search Visibility** ("your SEO specialist").
-Orchestration (**AI VP of Marketing** + analytics) is the human-facing Slack
-surface across pods, not a separate starter choice. Prefer **starter pod**
-over "content core" or "content engine."
+agent. Clients can start with any of five (source: *Bloom Agent Scopes DRAFT*):
+**Customer Intelligence**, **Content Production**, **Search Visibility**,
+**Demand & Lifecycle**, **Sales Enablement**. Orchestration (**AI VP of
+Marketing** + analytics) is the Slack surface across pods, not a starter
+choice. Prefer **starter pod** over "content core" or "content engine."
 
-**Expansion pods / projects:** Demand & Lifecycle (nurture, outbound stub,
-forms QA, paid ads) and Sales Enablement (win-loss, rep coaching, battlecards,
-case studies) are later hires. Public site lists project names, not LIVE/stub
-labels.
+**Projects:** deepen the hired pod (more agents / cadence) or add a second
+pod after install. Public site does not use LIVE/stub labels.
 
 **Public framing:** Lead with teams of AI agents → organic inbound deals.
 Hiring AI employees (plural) is the supporting metaphor across the site.
@@ -95,11 +92,11 @@ roster grows with projects, fraction of a content team. Prefer Book a Call.
 
 ## Site section map
 
-1. Hero (teams of AI agents → organic inbound deals; chips Intelligence · Content · Search)
+1. Hero (teams of AI agents → organic inbound deals; five pod chips)
 2. Why this (hire AI employees; own the asset vs rent attention)
 3. How we show up / partner (install, monitor, improve; Mac mini; AI VP in Slack)
-4. Meet the starter pods (Customer Intelligence, Content Production, Search Visibility)
-5. Projects / services (scroll org: three LIVE pods, then Demand / Sales Enablement)
+4. Meet the starter pods (five: Intelligence, Content, Search, Demand, Sales)
+5. Projects / services (scroll org of five starter pods)
 6. Samples (ICP report, Slack call query, LinkedIn paste-only)
 7. First 90 days (install chosen starter pod → then projects; link 90-day-timeline.html)
 8. How it runs (month to month; no new dashboards; talk to AI VP in Slack; weekly digest; tool-agnostic)
@@ -111,18 +108,15 @@ roster grows with projects, fraction of a content team. Prefer Book a Call.
 **Source of truth:** Google Doc *Bloom Agent Scopes DRAFT* (internal). Agent
 detail is for build/sales enablement; public copy pitches pods + outputs.
 
-**LIVE first (install now):**
-- Pod 1 Customer Intelligence: Research (two-pass ICP), Call Query, Competitor
-  Intelligence, Content Audit
-- Pod 2 Content Production: Content Director, format writers (How-To · Article ·
-  Playbook · LinkedIn paste-only), Brand Voice, QA + Voice Gate, Publishing Scheduler
-- Pod 3 Search Visibility: SEO Agent, AEO Agent
-- Pod 4 Orchestration: AI VP of Marketing (only agent that talks to client),
-  Analytics, Findings/Roadmap Compiler
+**Starter pods (client can choose any):**
+- Customer Intelligence (LIVE): Research, Call Query, Competitor Intel, Content Audit
+- Content Production (LIVE): Director, format writers, Brand Voice, QA, Scheduler
+- Search Visibility (LIVE): SEO, AEO
+- Demand & Lifecycle (mostly NET-NEW / stubs): nurture, outreach, forms QA, paid
+- Sales Enablement (NET-NEW): win-loss, battlecards, case studies, coaching
 
-**Later:** Pod 5 Demand (Email/Nurture NET-NEW; Outreach + Forms stubs; Paid Ads
-NET-NEW). Pod 6 Sales Enablement (Win-Loss, Rep Benchmarking, Battlecards, Case
-Study) all NET-NEW.
+**Orchestration (always-on surface):** AI VP of Marketing, Analytics,
+Findings/Roadmap Compiler. Not a separate starter choice.
 
 **Public projects menu:** ICP Findings, Call Query, Competitive Intel, Website
 Audit, Brand Voice, Article Engine, Playbook/How-To, LinkedIn, Publishing,
