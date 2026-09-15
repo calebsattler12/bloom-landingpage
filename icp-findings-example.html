@@ -17,7 +17,7 @@
   --muted:#6C6C72;
   --line:rgba(11,11,12,.10);
   --paper:#F4EFE3;
-  --accent:#12C4B4;
+  --accent:#E0A0FC;
   --soft:#EEE7DA;
 }
 body{
@@ -31,14 +31,14 @@ a{color:var(--ink);text-decoration:none;}
 a:hover{color:var(--accent);}
 h1,h2{font-family:'Schibsted Grotesk',system-ui,sans-serif;letter-spacing:-.03em;line-height:1.05;}
 .logo{display:inline-flex;align-items:center;gap:11px;line-height:1;}
-.logo-mark{height:34px;width:auto;display:block}
+.logo-mark{height:36px;width:auto;display:block}
 .logo-word{font-family:'Schibsted Grotesk',system-ui,sans-serif;font-weight:700;letter-spacing:-.03em;font-size:22px;line-height:1;}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
   font-size:15px;font-weight:600;padding:13px 24px;border-radius:999px;
 }
-.btn-accent{background:var(--accent);color:#fff;}
-.btn-accent:hover{color:#fff;filter:brightness(.96);}
+.btn-accent{background:var(--accent);color:var(--ink);}
+.btn-accent:hover{color:var(--ink);filter:brightness(.96);}
 .btn-ghost{border:1px solid var(--line);background:transparent;}
 .wrap{max-width:720px;margin:0 auto;padding:0 24px;}
 nav{
@@ -62,7 +62,7 @@ nav{
 </head>
 <body>
 <nav>
-  <a href="index.html" aria-label="Bloom"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt=""><span class="logo-word">BLOOM</span></span></a>
+  <a href="index.html" aria-label="Bloom"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></a>
   <a class="btn btn-ghost" href="index.html#samples">← Back</a>
 </nav>
 

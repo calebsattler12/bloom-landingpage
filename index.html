@@ -16,7 +16,7 @@
   --muted:#6C6C72;
   --line:rgba(11,11,12,.10);
   --paper:#F4EFE3;
-  --accent:#12C4B4;
+  --accent:#E0A0FC;
   --soft:#EEE7DA;
   --white:#fff;
 }
@@ -39,8 +39,8 @@ p{margin:0;text-wrap:pretty;}
   transition:filter .15s ease;
 }
 .btn:hover{filter:brightness(.96);color:inherit;}
-.btn-accent{background:var(--accent);color:#fff;}
-.btn-accent:hover{color:#fff;}
+.btn-accent{background:var(--accent);color:var(--ink);}
+.btn-accent:hover{color:var(--ink);}
 .btn-ink{background:var(--ink);color:#fff;}
 .btn-ink:hover{color:#fff;}
 .btn-ghost{border:1px solid var(--line);background:transparent;color:var(--ink);}
@@ -54,7 +54,7 @@ p{margin:0;text-wrap:pretty;}
 .section{padding:88px 0;}
 .section-sm{padding:64px 0;}
 .logo{display:inline-flex;align-items:center;gap:11px;color:inherit;text-decoration:none;overflow:visible;line-height:1}
-.logo-mark{height:34px;width:auto;display:block;flex:none}
+.logo-mark{height:36px;width:auto;display:block;flex:none}
 .logo.sm .logo-mark{height:28px;width:auto}
 .logo-word{font-family:'Schibsted Grotesk',system-ui,sans-serif;font-weight:700;letter-spacing:-.04em;font-size:21px;line-height:1;color:var(--ink);display:block;transform:translateY(.5px)}
 .logo.sm .logo-word{font-size:16px}
@@ -132,7 +132,7 @@ p{margin:0;text-wrap:pretty;}
   font-family:'Schibsted Grotesk',system-ui,sans-serif;
 }
 .org-root{
-  background:var(--accent);color:#fff;border-radius:12px;
+  background:var(--accent);color:var(--ink);border-radius:12px;
   padding:12px 18px;font-weight:700;font-size:14px;letter-spacing:-.02em;
   text-align:center;min-width:150px;
   box-shadow:0 8px 24px -12px color-mix(in oklab, var(--accent) 55%, transparent);
@@ -225,7 +225,7 @@ p{margin:0;text-wrap:pretty;}
 <body>
 
 <nav style="display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:1px solid var(--line);position:sticky;top:0;background:color-mix(in oklab, var(--paper) 92%, transparent);backdrop-filter:blur(10px);z-index:50;">
-  <a href="#" aria-label="Bloom"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt=""><span class="logo-word">BLOOM</span></span></a>
+  <a href="#" aria-label="Bloom"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></a>
   <div class="nav-links" style="display:flex;align-items:center;gap:28px;font-size:15px;font-weight:500">
     <a href="#why">Why this</a>
     <a href="#teams">Starter pods</a>
@@ -255,7 +255,7 @@ p{margin:0;text-wrap:pretty;}
 
   <div style="background:var(--soft);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:0 30px 60px -30px rgba(11,11,12,.25)">
     <div style="display:flex;align-items:center;gap:10px;padding:2px 4px 14px">
-      <span class="logo sm" aria-hidden="true"><img class="logo-mark" src="logo-mark.png" alt=""><span class="logo-word">BLOOM</span></span>
+      <span class="logo sm" aria-hidden="true"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span>
       <span style="font-size:13.5px;font-weight:600">AI team</span>
       <span style="margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:var(--muted)"><span style="width:7px;height:7px;border-radius:50%;background:#22C55E;animation:blpulse 1.8s infinite"></span>Always on</span>
     </div>
@@ -509,16 +509,16 @@ p{margin:0;text-wrap:pretty;}
 </section>
 
 <section class="wrap" style="padding-top:40px;padding-bottom:96px">
-  <div style="background:var(--accent);border-radius:26px;padding:68px 48px;text-align:center;color:#fff">
-    <h2 style="font-size:44px;font-weight:600;color:#fff;max-width:700px;margin:0 auto">Hire your first pod of AI employees.</h2>
-    <p style="font-size:18px;color:rgba(255,255,255,.88);margin-top:16px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.5">Book a call. We map which starter pod fits and run the ICP findings report you keep either way.</p>
+  <div style="background:var(--accent);border-radius:26px;padding:68px 48px;text-align:center;color:var(--ink)">
+    <h2 style="font-size:44px;font-weight:600;color:var(--ink);max-width:700px;margin:0 auto">Hire your first pod of AI employees.</h2>
+    <p style="font-size:18px;color:rgba(11,11,12,.72);margin-top:16px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.5">Book a call. We map which starter pod fits and run the ICP findings report you keep either way.</p>
     <a class="btn btn-white" style="margin-top:28px" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call →</a>
   </div>
 </section>
 
 <footer style="border-top:1px solid var(--line)">
   <div class="wrap" style="padding:40px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px">
-    <a href="#" aria-label="Bloom"><span class="logo sm"><img class="logo-mark" src="logo-mark.png" alt=""><span class="logo-word">BLOOM</span></span></a>
+    <a href="#" aria-label="Bloom"><span class="logo sm"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></a>
     <div style="display:flex;gap:28px;font-size:14px;font-weight:500;color:var(--muted);flex-wrap:wrap">
       <a href="#why">Why this</a>
       <a href="#teams">Starter pods</a>
