@@ -40,7 +40,7 @@ the point. End on the result or the next step, not hype.
 1. **Outcome first.** Hero leads with teams of AI agents that drive organic,
    inbound deals. Supporting frame: hiring AI employees (plural) / starter teams.
 2. **Do not boil down to "AI content" or SEO alone.** Five starter teams:
-   Customer Intelligence, Content Production, Search Visibility, Demand &
+   Customer Intelligence, B2B Content Production, Search Visibility, Demand &
    Lifecycle, Sales Enablement. Pitch teams by name; agent count is proof.
    Public site groups them as **Marketing** (Intelligence, Content, Search)
    and **Sales** (Demand & Lifecycle, Sales Enablement, with call query as

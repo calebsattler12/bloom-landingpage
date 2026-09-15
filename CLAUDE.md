@@ -60,13 +60,13 @@ in their office. Prefer "How we show up" / "Your hardware" over repeating
 
 **Starter teams (level one):** Pitch **teams by client-facing name**, not every
 agent. Clients can start with any of five (source: *Bloom Agent Scopes DRAFT*):
-**Customer Intelligence**, **Content Production**, **Search Visibility**,
+**Customer Intelligence**, **B2B Content Production**, **Search Visibility**,
 **Demand & Lifecycle**, **Sales Enablement**. Orchestration (**AI VP of
 Marketing** + analytics) is the Slack surface across teams, not a starter
 choice. Prefer **starter team** over "content core" or "content engine."
 
 **Public grouping (Marketing vs Sales):**
-- **Marketing:** Customer Intelligence, Content Production, Search Visibility
+- **Marketing:** Customer Intelligence, B2B Content Production, Search Visibility
 - **Sales:** Demand & Lifecycle (nurture / forms / paid; outbound), Sales
   Enablement (call query, win-loss, battlecards, case studies, coaching).
   Call query is sales-facing; shares the intelligence call vault.
@@ -127,7 +127,7 @@ detail is for build/sales enablement; public copy pitches teams + outputs.
 **Starter teams (client can choose any):**
 - Customer Intelligence (LIVE): Research, Call Query, Competitor Intel, Content Audit
   (public Marketing card leans research/competitive/audit; call query framed under Sales)
-- Content Production (LIVE): Director, format writers, Brand Voice, QA, Scheduler
+- B2B Content Production (LIVE): Director, format writers, Brand Voice, QA, Scheduler
 - Search Visibility (LIVE): SEO, AEO
 - Demand & Lifecycle (mostly NET-NEW / stubs): nurture, forms QA, paid; outbound optional
 - Sales Enablement (NET-NEW): win-loss, battlecards, case studies, coaching (+ call query surface)

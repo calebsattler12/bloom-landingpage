@@ -66,7 +66,7 @@ Level one is a starter team. Marketing and sales paths share the same call vault
 
 Marketing:
 Customer Intelligence: your research analyst.
-Content Production: your content team.
+B2B Content Production: your content team.
 Search Visibility: your SEO specialist.
 Demand & Lifecycle: your demand gen team.
 
