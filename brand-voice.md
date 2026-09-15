@@ -42,9 +42,9 @@ the point. End on the result or the next step, not hype.
 2. **Do not boil down to "AI content" or SEO alone.** Five starter teams:
    Customer Intelligence, Content Production, Search Visibility, Demand &
    Lifecycle, Sales Enablement. Pitch teams by name; agent count is proof.
-   Public site groups them as **Marketing** (Intelligence, Content, Search,
-   Demand) and **Sales** (Sales Enablement, with call query as the sales-facing
-   Slack surface). Prefer **team** over **pod** in all public copy.
+   Public site groups them as **Marketing** (Intelligence, Content, Search)
+   and **Sales** (Demand & Lifecycle, Sales Enablement, with call query as
+   the sales-facing Slack surface). Prefer **team** over **pod** in all public copy.
 3. **Say agent, not bot.** Query agent, Slack agent, email agent. "AI employees"
    is OK as the hiring metaphor.
 4. **Show the human partner.** Install, monitor, build out on hardware they

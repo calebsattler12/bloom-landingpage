@@ -66,10 +66,10 @@ Marketing** + analytics) is the Slack surface across teams, not a starter
 choice. Prefer **starter team** over "content core" or "content engine."
 
 **Public grouping (Marketing vs Sales):**
-- **Marketing:** Customer Intelligence, Content Production, Search Visibility,
-  Demand & Lifecycle (nurture / forms / paid; outbound may lean sales-side)
-- **Sales:** Sales Enablement (call query, win-loss, battlecards, case studies,
-  coaching). Call query is sales-facing; shares the intelligence call vault.
+- **Marketing:** Customer Intelligence, Content Production, Search Visibility
+- **Sales:** Demand & Lifecycle (nurture / forms / paid; outbound), Sales
+  Enablement (call query, win-loss, battlecards, case studies, coaching).
+  Call query is sales-facing; shares the intelligence call vault.
 
 **Projects:** deepen the hired team (more agents / cadence) or add a second
 team after install. Public site does not use LIVE/stub labels. Bloom builds
@@ -104,7 +104,7 @@ roster grows with projects, fraction of a content team. Prefer Book a Call.
 ## Site section map
 
 1. Hero (teams of AI agents → organic inbound deals; Marketing/Sales + team chips)
-2. Why this (agent teams / organic growth engine vs renting pipeline)
+2. Why Bloom (organic inbound that compounds vs renting pipeline)
 3. How we show up / partner (install, monitor, build out; Mac mini they own;
    Bloom installs in office; AI VP in Slack)
 4. Meet the starter teams (Marketing vs Sales groups)
