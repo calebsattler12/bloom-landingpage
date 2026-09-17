@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 160" role="img" aria-label="bloom AI">
+  <g fill="#E0A0FC">
+    <!-- b stem -->
+    <rect x="20" y="18" width="30" height="124" rx="15"/>
+    <!-- b bowl (ring) -->
+    <path fill-rule="evenodd" d="M50 86c0-33 25-56 58-56s58 23 58 56-25 56-58 56-58-23-58-56zm58-28c-16 0-28 13-28 28s12 28 28 28 28-13 28-28-12-28-28-28z"/>
+    <!-- l -->
+    <rect x="186" y="18" width="30" height="124" rx="15"/>
+    <!-- infinity oo -->
+    <path fill="none" stroke="#E0A0FC" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"
+          d="M268 86c0-24 16-40 38-40 14 0 25 7 32 18 7-11 18-18 32-18 22 0 38 16 38 40s-16 40-38 40c-14 0-25-7-32-18-7 11-18 18-32 18-22 0-38-16-38-40z"/>
+    <!-- m -->
+    <path d="M452 142V56c0-15 9-24 22-24s22 9 22 24v78c0-15 9-24 22-24s22 9 22 24v52c0 8-7 14-15 14s-15-6-15-14V82c0-6-4-11-9-11s-9 5-9 11v60c0 8-7 14-15 14s-15-6-15-14V82c0-6-4-11-9-11s-9 5-9 11v60c0 8-7 14-15 14s-15-6-15-14z"/>
+    <!-- AI -->
+    <text x="560" y="118" font-family="Arial Rounded MT Bold, Arial Rounded Bold, Helvetica Rounded, sans-serif"
+          font-size="108" font-weight="700" letter-spacing="4">AI</text>
+  </g>
+</svg>
