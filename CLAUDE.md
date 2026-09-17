@@ -11,10 +11,10 @@ no build step.
 - `index.html` — public site
 - `get-started.html` — entry paths (ICP findings or Sales starter / win-loss) + first 90 days
 - `pitch-deck.html` — sales deck (keyboard nav)
-- `90-day-timeline.html` — shared 90-day checklist (starter team install)
-- `90-day-example.html` — example client 90-day build-out (arrows + **Build your 90 day plan** calendar CTA)
+- `90-day-timeline.html` — flagship 12-week Content Production checklist
+- `90-day-example.html` — example client 90-day build-out for Content Production (arrows + **Build your 90 day plan** calendar CTA)
 - `icp-findings-example.html` / `win-loss-example.html` — display-case reports (scrubbed composite, highlight arrows, page-specific calendar CTAs)
-- `teams/*.html` — placeholder briefs for the five starter teams
+- `teams/*.html` — starter team pages with org view (agents + cadence) and roster tables; Content Production includes the flagship 12-week roadmap
 - `robots.txt` / `sitemap.xml` — discoverability; `logo-font-options.html` is noindex
 - `linkedin-content.md` — paste-ready LinkedIn drafts
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
@@ -126,7 +126,8 @@ outline, example client plan, Marketing/Sales team tabs, Book a Call.
 
 **Team pages:** `teams/customer-intelligence.html`, `b2b-content-production.html`,
 `search-visibility.html`, `demand-lifecycle.html`, `sales-enablement.html`.
-Placeholder until specs are scrubbed. No recommended starter pairing on the public site.
+Each page has an org view of the agents on that team. Content Production is the
+flagship 12-week install. No recommended starter pairing on the public site.
 
 ## Roster (from Agent Scopes DRAFT; scrub for public)
 
