@@ -3,9 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bloom · First 90 days</title>
-<meta name="description" content="Shared 90-day checklist: install the Bloom starter team you chose. Five paths: Intelligence, Content, Search, Demand, or Sales Enablement. AI employees live through QA and human approval.">
+<title>Bloom AI · First 90 days</title>
+<meta name="description" content="Shared 90-day checklist: install the Bloom AI starter team you chose. Five paths: Intelligence, Content, Search, Demand, or Sales Enablement.">
+<link rel="canonical" href="https://runbloom.ai/90-day-timeline.html">
 <link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bloom AI">
+<meta property="og:title" content="Bloom AI · First 90 days">
+<meta property="og:description" content="Install the starter team you chose. Generation to QA to human approval in ninety days.">
+<meta property="og:url" content="https://runbloom.ai/90-day-timeline.html">
+<meta property="og:image" content="https://runbloom.ai/logo-mark.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bloom AI · First 90 days">
+<meta name="twitter:description" content="Install the starter team you chose. Generation to QA to human approval.">
+<meta name="twitter:image" content="https://runbloom.ai/logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -145,6 +156,7 @@ h1{
   <div class="topnav-links">
     <a href="index.html">Site</a>
     <a href="get-started.html">Get started</a>
+    <a href="90-day-example.html">Example plan</a>
     <a href="pitch-deck.html">Deck</a>
     <a class="btn" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call</a>
   </div>
@@ -155,6 +167,9 @@ h1{
     <div class="eyebrow">First 90 days</div>
     <h1>Install the starter team you chose.</h1>
     <p class="lede">Foundation install only. Pick Customer Intelligence, B2B Content Production, Search Visibility, Demand &amp; Lifecycle, or Sales Enablement. One job: get those AI employees live through QA and human approval.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px">
+      <a class="btn" href="90-day-example.html">See an example client plan</a>
+    </div>
     <div class="progress-row">
       <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
       <div class="progress-pct" id="progressPct">0%</div>
@@ -420,6 +435,7 @@ if (hasShared){
   document.getElementById('sharedNote').textContent = 'Shared progress. Anyone with this link sees the same checklist.';
 }
 
+render();
 (async () => { await loadState(); render(); })();
 </script>
 </body>

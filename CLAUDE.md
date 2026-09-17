@@ -12,7 +12,10 @@ no build step.
 - `get-started.html` — entry paths (ICP findings or Sales starter / win-loss) + first 90 days
 - `pitch-deck.html` — sales deck (keyboard nav)
 - `90-day-timeline.html` — shared 90-day checklist (starter team install)
-- `icp-findings-example.html` / `win-loss-example.html` — placeholder report templates
+- `90-day-example.html` — example client 90-day build-out (arrows + **Build your 90 day plan** calendar CTA)
+- `icp-findings-example.html` / `win-loss-example.html` — display-case reports (scrubbed composite, highlight arrows, page-specific calendar CTAs)
+- `teams/*.html` — placeholder briefs for the five starter teams
+- `robots.txt` / `sitemap.xml` — discoverability; `logo-font-options.html` is noindex
 - `linkedin-content.md` — paste-ready LinkedIn drafts
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
 - `logo-mark.png` — lavender rounded square + centered cream bloom wordmark; source of truth
@@ -34,6 +37,8 @@ no build step.
 - **Fonts:** Schibsted Grotesk (headings), Hanken Grotesk (body)
 - **Logo:** full wordmark in `logo-mark.png` (no separate BLOOM typeset). Never include "INSIGHTS. LANDSCAPES. GROWTH."
 - **CTA (site):** Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
+- **Display-page CTAs (same URL):** ICP → Get your ICP report; win-loss → Get your win-loss report; 90-day example → Build your 90 day plan
+- **Social:** LinkedIn https://www.linkedin.com/company/bloom-ai-llc/ (JSON-LD `sameAs`). No Twitter account.
 - **CTA (deck close):** Work with us
 - Personality: light, approachable, friendly. Do not revive old Verity navy/Jost.
 - Prefer **team** over **pod** in all public-facing copy.
@@ -109,15 +114,19 @@ roster grows with projects, fraction of a content team. Prefer Book a Call.
    Bloom installs in office; AI VP in Slack)
 4. Meet the starter teams (Marketing vs Sales groups)
 5. Projects / services (scroll org: cumulative reveal of five starter teams)
-6. Samples (ICP report, Slack call query, LinkedIn from CEO notes / paste-only)
+6. Samples (ICP report, win-loss report, Slack call query, LinkedIn from CEO notes / paste-only)
 7. RevBlack (live multi-team client; logo + Visit RevBlack site)
 8. After install (no contract; ongoing build-out; no new dashboards; tool logo marquee)
 9. Get started teaser (links to `get-started.html`; short 90-day pitch)
 10. Final CTA
 
 **Get started page (`get-started.html`):** ICP findings path vs Sales starter team
-(win-loss artifact); first 90 days steps; links to example templates, 90-day
-timeline, Marketing/Sales team tabs, Book a Call.
+(win-loss artifact); first 90 days steps; links to example reports, 90-day
+outline, example client plan, Marketing/Sales team tabs, Book a Call.
+
+**Team pages:** `teams/customer-intelligence.html`, `b2b-content-production.html`,
+`search-visibility.html`, `demand-lifecycle.html`, `sales-enablement.html`.
+Placeholder until specs are scrubbed. No recommended starter pairing on the public site.
 
 ## Roster (from Agent Scopes DRAFT; scrub for public)
 
@@ -160,8 +169,7 @@ after 3 weeks. Do not use "first customer," inbound goal numbers
 
 - Prefer targeted edits unless repositioning the whole narrative
 - Respect `prefers-reduced-motion` (org chart shows all; marquee becomes static)
-- Preview `index.html`, `pitch-deck.html`, and `90-day-timeline.html`
-  locally before pushing
+- Preview `index.html`, `pitch-deck.html`, `90-day-timeline.html`, `90-day-example.html`, and the example reports locally before pushing
 - 90-day live means generation → QA → human approval (pool). CMS
   publishing is a later project, not the install finish line.
 - Say **agent** not **bot** in user-facing copy.

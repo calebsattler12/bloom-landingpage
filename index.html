@@ -3,9 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bloom · AI agent teams for organic, inbound deals</title>
-<meta name="description" content="Bloom installs teams of AI agents for B2B marketing and sales. Start with Customer Intelligence, B2B Content Production, or Search Visibility. Talk to your AI VP in Slack. Organic inbound from your calls and email.">
+<title>Bloom AI · teams of agents for organic inbound</title>
+<meta name="description" content="Bloom AI installs teams of AI agents for B2B marketing and sales. Start with Customer Intelligence, B2B Content Production, Search Visibility, Demand &amp; Lifecycle, or Sales Enablement. Talk to your AI VP in Slack.">
+<link rel="canonical" href="https://runbloom.ai/">
 <link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bloom AI">
+<meta property="og:title" content="Bloom AI · teams of agents for organic inbound">
+<meta property="og:description" content="Hire a starter team of AI agents. Organic inbound from the language already in your calls and email.">
+<meta property="og:url" content="https://runbloom.ai/">
+<meta property="og:image" content="https://runbloom.ai/logo-mark.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bloom AI · teams of agents for organic inbound">
+<meta name="twitter:description" content="Hire a starter team of AI agents. Organic inbound from your calls and email.">
+<meta name="twitter:image" content="https://runbloom.ai/logo-mark.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Bloom AI","legalName":"Bloom AI LLC","url":"https://runbloom.ai","logo":"https://runbloom.ai/logo-mark.png","sameAs":["https://www.linkedin.com/company/bloom-ai-llc/"]},{"@type":"WebSite","name":"Bloom AI","url":"https://runbloom.ai"}]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -84,6 +98,10 @@ p{margin:0;text-wrap:pretty;}
   background:var(--white);border:1px solid var(--line);border-radius:18px;padding:26px 24px;
   display:flex;flex-direction:column;gap:12px;
 }
+a.starter-card{color:inherit;}
+a.starter-card:hover{color:inherit;border-color:color-mix(in oklab, var(--accent) 45%, var(--line));}
+.starter-card .more{font-size:13px;font-weight:600;margin-top:2px;color:var(--ink);}
+a.starter-card:hover .more{color:var(--accent);}
 .starter-card .badge{
   display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
   color:var(--accent);margin-bottom:2px;
@@ -416,36 +434,41 @@ p{margin:0;text-wrap:pretty;}
 
     <div class="teams-panel" role="tabpanel" id="teams-marketing" aria-labelledby="tab-marketing">
       <div class="starters-grid">
-        <article class="starter-card">
+        <a class="starter-card" href="teams/customer-intelligence.html">
           <div><span class="badge">Your research analyst</span><div class="role">Customer Intelligence</div></div>
           <p class="output"><strong style="color:var(--ink)">Output:</strong> ICP findings from real calls, buyer language gaps, competitive intel, and a website audit that feeds the queue.</p>
           <div class="agents"><strong>AI employees on this team</strong>Research / ICP · Competitor intel · Content audit</div>
-        </article>
-        <article class="starter-card">
+          <span class="more">Team page →</span>
+        </a>
+        <a class="starter-card" href="teams/b2b-content-production.html">
           <div><span class="badge">Your content team</span><div class="role">B2B Content Production</div></div>
           <p class="output"><strong style="color:var(--ink)">Output:</strong> Approval-gated how-tos, articles, playbooks, and LinkedIn drafts (paste-only) from a tight call source set.</p>
           <div class="agents"><strong>AI employees on this team</strong>Director · Format writers · Brand voice · QA gate · Scheduler</div>
-        </article>
-        <article class="starter-card">
+          <span class="more">Team page →</span>
+        </a>
+        <a class="starter-card" href="teams/search-visibility.html">
           <div><span class="badge">Your SEO specialist</span><div class="role">Search Visibility</div></div>
           <p class="output"><strong style="color:var(--ink)">Output:</strong> Keyword strategy, gap tickets for the content queue, and answer-engine citability so organic inbound compounds.</p>
           <div class="agents"><strong>AI employees on this team</strong>SEO agent · AEO agent</div>
-        </article>
+          <span class="more">Team page →</span>
+        </a>
       </div>
     </div>
 
     <div class="teams-panel" role="tabpanel" id="teams-sales" aria-labelledby="tab-sales" hidden>
       <div class="starters-grid sales-grid">
-        <article class="starter-card">
+        <a class="starter-card" href="teams/demand-lifecycle.html">
           <div><span class="badge">Your demand gen team</span><div class="role">Demand &amp; Lifecycle</div></div>
           <p class="output"><strong style="color:var(--ink)">Output:</strong> Nurture sequences, forms QA, and paid creative sourced from buyer hooks. Outbound when you need it.</p>
           <div class="agents"><strong>AI employees on this team</strong>List builder · Nurture writer · Performance · Forms QA · Paid</div>
-        </article>
-        <article class="starter-card">
+          <span class="more">Team page →</span>
+        </a>
+        <a class="starter-card" href="teams/sales-enablement.html">
           <div><span class="badge">Your sales analyst</span><div class="role">Sales Enablement</div></div>
           <p class="output"><strong style="color:var(--ink)">Output:</strong> Call query in Slack for close support, plus win-loss, battlecards, case studies, and coaching from the same call vault.</p>
           <div class="agents"><strong>AI employees on this team</strong>Call query · Win-loss · Battlecards · Case studies · Rep coaching</div>
-        </article>
+          <span class="more">Team page →</span>
+        </a>
       </div>
     </div>
   </div>
@@ -462,26 +485,31 @@ p{margin:0;text-wrap:pretty;}
           <div class="kicker">Marketing · research analyst</div>
           <h3 style="font-size:18px;font-weight:600">Customer Intelligence</h3>
           <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">ICP findings, competitive intel, website audit.</p>
+          <a href="teams/customer-intelligence.html" style="display:inline-block;margin-top:8px;font-size:13px;font-weight:600">Team page →</a>
         </article>
         <article class="proj-item" data-step="1">
           <div class="kicker">Marketing · content team</div>
           <h3 style="font-size:18px;font-weight:600">B2B Content Production</h3>
           <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Director, format writers, voice, QA, and approval-gated publishing.</p>
+          <a href="teams/b2b-content-production.html" style="display:inline-block;margin-top:8px;font-size:13px;font-weight:600">Team page →</a>
         </article>
         <article class="proj-item" data-step="2">
           <div class="kicker">Marketing · SEO specialist</div>
           <h3 style="font-size:18px;font-weight:600">Search Visibility</h3>
           <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Keyword strategy and AEO so pages get found and cited.</p>
+          <a href="teams/search-visibility.html" style="display:inline-block;margin-top:8px;font-size:13px;font-weight:600">Team page →</a>
         </article>
         <article class="proj-item" data-step="3">
           <div class="kicker">Sales · demand gen</div>
           <h3 style="font-size:18px;font-weight:600">Demand &amp; Lifecycle</h3>
           <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Email nurture, forms QA, paid ads. Outbound when you need it.</p>
+          <a href="teams/demand-lifecycle.html" style="display:inline-block;margin-top:8px;font-size:13px;font-weight:600">Team page →</a>
         </article>
         <article class="proj-item" data-step="4">
           <div class="kicker">Sales · sales analyst</div>
           <h3 style="font-size:18px;font-weight:600">Sales Enablement</h3>
           <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Call query, win-loss, battlecards, case studies, and coaching.</p>
+          <a href="teams/sales-enablement.html" style="display:inline-block;margin-top:8px;font-size:13px;font-weight:600">Team page →</a>
         </article>
       </div>
     </div>
@@ -509,12 +537,18 @@ p{margin:0;text-wrap:pretty;}
     <h2 style="font-size:42px;font-weight:600;max-width:740px;margin:0 auto">See the shape of the work before you install.</h2>
     <p class="ink-muted" style="font-size:16px;margin-top:16px;max-width:620px;margin-left:auto;margin-right:auto;line-height:1.55">Teasers only. The ICP report is yours whether you install or not.</p>
   </div>
-  <div class="samples-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+  <div class="samples-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px">
     <article class="sample-card">
       <div class="tag">ICP report you keep either way</div>
       <h3 style="font-size:22px;font-weight:600;margin-bottom:10px">Most profitable ICP</h3>
       <p style="font-size:15px;line-height:1.5">Buyer language, questions before yes, and the ICP worth targeting, pulled from your calls and email. Roadmap included.</p>
       <a class="btn btn-ghost sample-cta" href="icp-findings-example.html">See example report →</a>
+    </article>
+    <article class="sample-card">
+      <div class="tag">Win-loss · Sales path</div>
+      <h3 style="font-size:22px;font-weight:600;margin-bottom:10px">Why deals closed or stalled</h3>
+      <p style="font-size:15px;line-height:1.5">Won and lost patterns from the same call vault. Objections, upstairs stalls, and coaching hooks for Sales Enablement.</p>
+      <a class="btn btn-ghost sample-cta" href="win-loss-example.html">See example report →</a>
     </article>
     <article class="sample-card">
       <div class="tag">Slack query</div>
@@ -616,6 +650,7 @@ p{margin:0;text-wrap:pretty;}
     <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:32px">
       <a class="btn btn-ink" href="get-started.html">See how to get started →</a>
       <a class="btn btn-ghost" href="90-day-timeline.html">90-day outline</a>
+      <a class="btn btn-ghost" href="90-day-example.html">Example client plan</a>
     </div>
   </div>
 </section>
@@ -640,6 +675,7 @@ p{margin:0;text-wrap:pretty;}
       <a href="#projects">Services</a>
       <a href="#how">After install</a>
       <a href="get-started.html">Get started</a>
+      <a href="https://www.linkedin.com/company/bloom-ai-llc/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
     <div style="font-size:13.5px;color:var(--muted);line-height:1.55;text-align:right">
       <div style="font-weight:600;color:var(--ink)">Bloom AI LLC</div>

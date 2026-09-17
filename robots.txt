@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /logo-font-options.html
+
+Sitemap: https://runbloom.ai/sitemap.xml

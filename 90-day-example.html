@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom AI · Example 90-day build-out plan</title>
+<meta name="description" content="Example 90-day plan Bloom AI would make for a new client to map starter-team build-out. Kickoff, install, generation, review, go-live.">
+<link rel="canonical" href="https://runbloom.ai/90-day-example.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bloom AI">
+<meta property="og:title" content="Bloom AI · Example 90-day build-out plan">
+<meta property="og:description" content="A sample 90-day plan for standing up a starter team. Progress saves in this browser.">
+<meta property="og:url" content="https://runbloom.ai/90-day-example.html">
+<meta property="og:image" content="https://runbloom.ai/logo-mark.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bloom AI · Example 90-day build-out plan">
+<meta name="twitter:description" content="A sample 90-day plan for standing up a starter team.">
+<meta name="twitter:image" content="https://runbloom.ai/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="display-report.css">
+<style>
+.progress-row{display:flex;align-items:center;gap:16px;margin-top:22px;max-width:640px;}
+.progress-track{
+  flex:1;height:14px;border-radius:8px;background:#E9E1CE;
+  border:1px solid var(--line);overflow:hidden;
+}
+.progress-fill{
+  height:100%;width:0%;background:linear-gradient(90deg,var(--accent-deep),var(--accent));
+  border-radius:8px 0 0 8px;transition:width .5s ease;
+}
+.progress-pct{font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:20px;min-width:58px;text-align:right;}
+.progress-sub{font-size:12.5px;color:var(--muted);margin-top:8px;display:flex;justify-content:space-between;align-items:center;max-width:640px;}
+.reset-btn{background:none;border:none;color:var(--muted);font-size:12px;text-decoration:underline;cursor:pointer;font-family:inherit;padding:0;}
+.reset-btn:hover{color:var(--ink);}
+.shared-note{margin-top:10px;font-size:12px;font-weight:600;color:var(--accent-deep);display:flex;align-items:center;gap:6px;}
+.shared-note::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none;}
+.timeline{position:relative;padding-left:2px;}
+.rail-track{position:absolute;left:27px;top:6px;bottom:6px;width:3px;background:repeating-linear-gradient(180deg,var(--line) 0 10px,transparent 10px 18px);}
+.rail-fill{position:absolute;left:27px;top:6px;width:3px;height:0%;background:var(--accent);transition:height .5s ease;border-radius:2px;}
+.annotate-phase{margin-bottom:8px;}
+.annotate-phase.is-highlighted .card{border-color:color-mix(in oklab, var(--accent) 50%, var(--line));}
+.section-label{
+  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:13px;
+  letter-spacing:.06em;color:var(--muted);text-transform:uppercase;
+  margin:8px 0 14px 68px;padding-top:6px;
+}
+.stage{position:relative;display:grid;grid-template-columns:56px 1fr;gap:0 24px;}
+.node{position:relative;z-index:2;}
+.node .dot{
+  width:56px;height:56px;border-radius:50%;background:var(--white);border:3px solid var(--ink);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:16px;
+  transition:background .3s ease,border-color .3s ease,color .3s ease;cursor:pointer;
+}
+.stage.done .node .dot{background:var(--accent);border-color:var(--accent-deep);color:var(--ink);}
+.stage.final .node .dot{font-size:18px;}
+.stage.final.done .node .dot{background:var(--ink);border-color:var(--ink);color:var(--accent);}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;margin-bottom:28px;overflow:hidden;}
+.card-head{padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;cursor:pointer;user-select:none;}
+.card-head:hover{background:color-mix(in oklab, var(--accent) 6%, transparent);}
+.head-left{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
+.week-tag{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--accent-deep);text-transform:uppercase;}
+.week-title{font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:18px;letter-spacing:-.02em;}
+.head-right{display:flex;align-items:center;gap:10px;white-space:nowrap;}
+.count-pill{font-size:12px;font-weight:700;color:var(--muted);background:var(--paper);padding:4px 10px;border-radius:20px;}
+.stage.done .count-pill{color:var(--accent-deep);background:rgba(224,160,252,.18);}
+.chevron{width:10px;height:10px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .25s ease;margin-right:2px;}
+.card.open .chevron{transform:rotate(-135deg);}
+.card-body{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.card.open .card-body{max-height:720px;}
+.items{padding:2px 22px 18px;border-top:1px solid var(--line);}
+.item{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14.5px;cursor:pointer;}
+.item:last-child{border-bottom:none;}
+.item input{margin-top:3px;width:17px;height:17px;accent-color:var(--accent-deep);cursor:pointer;flex:none;}
+.item span{line-height:1.4;}
+.item.checked span{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--accent-deep);}
+.final-note{padding:14px 22px 18px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);}
+@media (max-width:600px){
+  .node .dot{width:44px;height:44px;font-size:14px;}
+  .stage{grid-template-columns:44px 1fr;}
+  .rail-track,.rail-fill{left:21px;}
+  .section-label{margin-left:56px;}
+  .week-title{font-size:16px;}
+}
+</style>
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html" aria-label="Bloom"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="get-started.html">Get started</a>
+    <a href="90-day-timeline.html">90-day outline</a>
+  </div>
+  <a class="btn btn-accent" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Build your 90 day plan</a>
+</nav>
+
+<div class="page-wrap">
+  <header class="page-head">
+    <div class="eyebrow">Example · Client 90-day plan</div>
+    <h1>How Bloom maps a starter-team build-out.</h1>
+    <p class="lede">This is the shape of a 90-day plan Bloom would write with a new client. Weeks below follow a B2B Content Production install. Your plan is rewritten around the starter team you hire. Checkboxes save in this browser only.</p>
+    <div class="progress-row">
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="progress-pct" id="progressPct">0%</div>
+    </div>
+    <div class="progress-sub">
+      <span id="progressCount">0 of 0 steps complete</span>
+      <button class="reset-btn" id="resetBtn" type="button">Reset progress</button>
+    </div>
+    <div class="shared-note">Example plan. Progress stays on this device.</div>
+  </header>
+
+  <div class="annotate-layout">
+    <div class="report-col">
+      <div class="timeline" id="timeline">
+        <div class="rail-track"></div>
+        <div class="rail-fill" id="railFill"></div>
+      </div>
+    </div>
+    <aside class="annotate-rail" id="annotate-rail" aria-label="Plan highlights"></aside>
+  </div>
+  <p class="annotate-live" id="annotate-live" aria-live="polite"></p>
+
+  <div class="page-cta">
+    <h2>Build the 90-day plan for your team.</h2>
+    <p>Book a call. Bloom writes the week-by-week map for the starter team you hire, then installs it.</p>
+    <div class="btns">
+      <a class="btn btn-white" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Build your 90 day plan</a>
+      <a class="btn btn-ghost" style="border-color:rgba(11,11,12,.2)" href="index.html">Back to Bloom AI</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-foot">
+  <div class="inner">
+    <a href="index.html" aria-label="Bloom"><span class="logo sm"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></a>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="get-started.html">Get started</a>
+      <a href="90-day-timeline.html">90-day outline</a>
+      <a href="https://www.linkedin.com/company/bloom-ai-llc/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="foot-meta">
+      <div style="font-weight:600;color:var(--ink)">Bloom AI LLC</div>
+      <div>© 2026 Bloom AI LLC</div>
+    </div>
+  </div>
+</footer>
+
+<script src="display-annotate.js"></script>
+<script>
+const DATA = [
+  { section: "Audits and roadmaps", caption: "Kickoff, ICP, and the audits you keep", weeks: [
+    { n: "01", title: "Kickoff and ICP review", items: [
+      "Grant access to your call recording platform. ICP findings are built from this data, so this comes first.",
+      "Confirm kickoff and share the brand voice you want on the page.",
+      "We review your ICP findings against the account.",
+      "Audit kicks off: keyword and topic clustering."
+    ]},
+    { n: "02", title: "Audit and roadmap delivery", items: [
+      "ICP findings report is finalized: who your best customers are and what triggers them to buy.",
+      "Content audit is completed: what to keep, fix, and add.",
+      "SEO / AEO audit is completed: visibility gaps and the quickest wins.",
+      "Writing manual is drafted: voice and editorial standard for every draft.",
+      "Everything above is compiled into your roadmap and presented for sign-off."
+    ]}
+  ]},
+  { section: "Install", caption: "Hardware and the team on day one", weeks: [
+    { n: "03", title: "Install", items: [
+      "Access granted for ongoing production on the starter team you hired.",
+      "Dedicated setup installed and connected. You own the gear.",
+      "Call data connected to generation.",
+      "Final check against your roadmap."
+    ]}
+  ]},
+  { section: "Generation", caption: "Voice, first drafts, LinkedIn paste-only", weeks: [
+    { n: "04", title: "Load sources and test drafts", items: [
+      "Source materials are loaded in.",
+      "First internal test drafts are generated.",
+      "Drafts checked against your brand voice."
+    ]},
+    { n: "05", title: "Voice calibration", items: [
+      "We run a first batch of test content.",
+      "You review early drafts and mark tone and style.",
+      "We fine-tune the writing manual from your notes.",
+      "We re-test until the voice consistently sounds like you.",
+      "Calibrated writing manual is locked as the standard."
+    ]},
+    { n: "06", title: "First format piece", items: [
+      "We decide together: interview, notes, or chat for intake.",
+      "Cadence: live session, async, or both.",
+      "First intake session runs.",
+      "First piece is drafted: a how-to, written to the calibrated manual."
+    ]},
+    { n: "07", title: "LinkedIn starter, paste only", items: [
+      "LinkedIn drafts stood up on the same intake. Paste-ready. Bloom never auto-posts.",
+      "First LinkedIn posts drafted alongside core pieces.",
+      "Confirm this does not slow the main generation queue."
+    ]}
+  ]},
+  { section: "Review", caption: "Humans in Slack before anything ships", weeks: [
+    { n: "08", title: "Review process setup", items: [
+      "Reviewer(s) assigned.",
+      "Review channel chosen: Slack or Teams.",
+      "First batch of drafts run through review.",
+      "Feedback patterns captured to improve the next draft."
+    ]},
+    { n: "09", title: "Review refinement", items: [
+      "Feedback loop with your reviewer tightened.",
+      "Brand voice and templates updated from your notes.",
+      "Review turnaround shortened.",
+      "How-to and LinkedIn tracks re-tested against the refined voice."
+    ]}
+  ]},
+  { section: "Approval pool", caption: "Cadence with human approval, not auto-publish", weeks: [
+    { n: "10", title: "Approval pool", items: [
+      "Article structure defined.",
+      "Generation cadence and timing set.",
+      "Approved drafts land in a review pool. Nothing auto-publishes.",
+      "First approved pieces queued. CMS drip can be a later project."
+    ]},
+    { n: "11", title: "Dry run", items: [
+      "One full cycle: generation to review to human approval.",
+      "Output checked against article structure.",
+      "Handoff gaps fixed.",
+      "LinkedIn stays paste-only."
+    ]},
+    { n: "12", title: "Full run-through", items: [
+      "A second full cycle with less oversight.",
+      "Remaining bottlenecks identified and fixed.",
+      "Review turnaround confirmed to fit cadence.",
+      "You are briefed on steady-state for the starter team."
+    ]}
+  ]},
+  { section: "Live", caption: "Starter team running on cadence", weeks: [
+    { n: "13", title: "Live", items: [
+      "The team runs generation to QA to human approval on its own cadence.",
+      "You are confirmed on cadence, structure, and review flow.",
+      "Handoff from rollout to steady-state.",
+      "First post-launch check-in scheduled."
+    ]}
+  ]}
+];
+
+const STORAGE_KEY = "bloom-90d-example-v1";
+let state = {};
+let openWeek = "01";
+
+function itemKey(weekN, idx){ return weekN + "-" + idx; }
+
+function loadState(){
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) state = JSON.parse(raw);
+  } catch (e) { state = {}; }
+}
+function saveState(){
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+  catch (e) { console.error("Could not save progress", e); }
+}
+function weekComplete(week){ return week.items.every((_, idx) => state[itemKey(week.n, idx)]); }
+function weekCheckedCount(week){ return week.items.filter((_, idx) => state[itemKey(week.n, idx)]).length; }
+function totalCounts(){
+  let total = 0, done = 0;
+  DATA.forEach(sec => sec.weeks.forEach(w => { total += w.items.length; done += weekCheckedCount(w); }));
+  return { total, done };
+}
+
+function render(){
+  const timeline = document.getElementById("timeline");
+  timeline.querySelectorAll(".annotate-phase, .section-label, .stage").forEach(el => el.remove());
+  const allWeeks = [];
+  DATA.forEach(sec => sec.weeks.forEach(w => allWeeks.push(w)));
+  const totalWeeks = allWeeks.length;
+  let doneWeeksInOrder = 0;
+  for (const w of allWeeks){ if (weekComplete(w)) doneWeeksInOrder++; else break; }
+
+  DATA.forEach(sec => {
+    const phase = document.createElement("div");
+    phase.className = "annotate-phase";
+    phase.setAttribute("data-caption", sec.caption);
+
+    const mobile = document.createElement("p");
+    mobile.className = "mobile-caption";
+    mobile.textContent = sec.caption;
+    phase.appendChild(mobile);
+
+    const label = document.createElement("div");
+    label.className = "section-label";
+    label.textContent = sec.section;
+    phase.appendChild(label);
+
+    sec.weeks.forEach(week => {
+      const isFinal = week.n === "13";
+      const complete = weekComplete(week);
+      const checkedCount = weekCheckedCount(week);
+
+      const stage = document.createElement("div");
+      stage.className = "stage" + (complete ? " done" : "") + (isFinal ? " final" : "");
+
+      const node = document.createElement("div");
+      node.className = "node";
+      node.innerHTML = `<div class="dot">${complete ? (isFinal ? "★" : "✓") : week.n}</div>`;
+
+      const card = document.createElement("div");
+      card.className = "card" + (openWeek === week.n ? " open" : "");
+
+      const head = document.createElement("div");
+      head.className = "card-head";
+      head.innerHTML = `
+        <div class="head-left">
+          <span class="week-tag">Week ${week.n}</span>
+          <span class="week-title">${week.title}</span>
+        </div>
+        <div class="head-right">
+          <span class="count-pill">${checkedCount}/${week.items.length}</span>
+          <span class="chevron"></span>
+        </div>`;
+      head.addEventListener("click", () => { openWeek = (openWeek === week.n) ? null : week.n; render(); });
+
+      const body = document.createElement("div");
+      body.className = "card-body";
+      const itemsWrap = document.createElement("div");
+      itemsWrap.className = "items";
+      week.items.forEach((text, idx) => {
+        const key = itemKey(week.n, idx);
+        const checked = !!state[key];
+        const row = document.createElement("label");
+        row.className = "item" + (checked ? " checked" : "");
+        row.innerHTML = `<input type="checkbox" ${checked ? "checked" : ""}/><span></span>`;
+        row.querySelector("span").textContent = text;
+        row.querySelector("input").addEventListener("change", (e) => {
+          state[key] = e.target.checked;
+          saveState();
+          render();
+        });
+        itemsWrap.appendChild(row);
+      });
+      body.appendChild(itemsWrap);
+
+      if (isFinal){
+        const note = document.createElement("div");
+        note.className = "final-note";
+        note.textContent = complete
+          ? "The starter team is live. Generation to QA to human approval is running on cadence."
+          : "Finish line: the hired starter team running generation to QA to human approval.";
+        body.appendChild(note);
+      }
+
+      card.appendChild(head);
+      card.appendChild(body);
+      stage.appendChild(node);
+      stage.appendChild(card);
+      phase.appendChild(stage);
+    });
+
+    timeline.appendChild(phase);
+  });
+
+  const { total, done } = totalCounts();
+  const pct = total ? Math.round((done/total)*100) : 0;
+  document.getElementById("progressFill").style.width = pct + "%";
+  document.getElementById("progressPct").textContent = pct + "%";
+  document.getElementById("progressCount").textContent = `${done} of ${total} steps complete`;
+  const railPct = totalWeeks ? (doneWeeksInOrder/totalWeeks)*100 : 0;
+  document.getElementById("railFill").style.height = railPct + "%";
+
+  if (window.initDisplayAnnotate) window.initDisplayAnnotate();
+}
+
+document.getElementById("resetBtn").addEventListener("click", () => {
+  if (confirm("Reset progress on this device?")) {
+    state = {};
+    saveState();
+    render();
+  }
+});
+
+loadState();
+render();
+</script>
+</body>
+</html>
