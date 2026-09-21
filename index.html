@@ -120,26 +120,7 @@ a.starter-card:hover .more{color:var(--accent);}
   display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
   color:var(--muted);margin-bottom:6px;
 }
-.teams-tablist{
-  display:flex;gap:6px;justify-content:center;align-items:stretch;
-  margin:0 auto 36px;max-width:420px;width:100%;
-  padding:5px;border-radius:999px;border:1px solid var(--line);background:var(--white);
-}
-.teams-tab{
-  flex:1;appearance:none;cursor:pointer;border:0;background:transparent;
-  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:15px;letter-spacing:-.01em;
-  color:var(--muted);padding:12px 18px;border-radius:999px;
-  transition:background .15s ease,color .15s ease;
-}
-.teams-tab:hover{color:var(--ink)}
-.teams-tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.teams-tab[aria-selected="true"]{
-  background:var(--ink);color:#fff;
-}
-.teams-panel{margin-top:0}
-.teams-panel[hidden]{display:none !important}
 .starters-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.starters-grid.sales-grid{grid-template-columns:repeat(2,1fr);max-width:860px;margin:0 auto}
 .section-ink{background:var(--ink);color:#fff}
 .section-ink .eyebrow{color:var(--accent)}
 .section-ink h2,.section-ink h3{color:#fff}
@@ -309,7 +290,6 @@ a.starter-card:hover .more{color:var(--accent);}
   .wrap{padding-left:24px;padding-right:24px;}
   header.hero{grid-template-columns:1fr !important;gap:40px !important;}
   .grid-2,.grid-3,.teams-grid,.starters-grid,.cost-grid,.org-sticky,.samples-grid,.proof-list{grid-template-columns:1fr !important;}
-  .teams-tablist{max-width:none;width:100%}
   .nav-links{display:none !important;}
   .hero h1{font-size:40px !important;}
   nav{padding-left:24px !important;padding-right:24px !important;}
@@ -356,16 +336,14 @@ a.starter-card:hover .more{color:var(--accent);}
     <p style="font-size:18px;line-height:1.55;color:var(--muted);margin-top:22px;max-width:520px">Pick a starter team. Talk to your AI VP in Slack. Bloom builds more agents onto the roster as you grow.</p>
     <div style="display:flex;align-items:center;gap:12px;margin-top:32px;flex-wrap:wrap">
       <a class="btn btn-ink" href="https://calendar.app.google/kY3NqzNsspgzzw1F9" target="_blank" rel="noopener">Book a Call</a>
-      <a class="btn btn-ghost" href="#teams">Choose a team →</a>
+      <a class="btn btn-ghost" href="#teams">Choose an employee →</a>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px">
-      <a class="hero-chip" href="#teams-marketing">Marketing</a>
-      <a class="hero-chip" href="#teams-sales">Sales</a>
-      <a class="hero-chip" href="#teams-marketing">Intelligence</a>
-      <a class="hero-chip" href="#teams-marketing">Content</a>
-      <a class="hero-chip" href="#teams-marketing">Search</a>
-      <a class="hero-chip" href="#teams-sales">Demand</a>
-      <a class="hero-chip" href="#teams-sales">Sales Enablement</a>
+      <a class="hero-chip" href="#teams">Research Analyst</a>
+      <a class="hero-chip" href="#teams">Content Director</a>
+      <a class="hero-chip" href="#teams">SEO Specialist</a>
+      <a class="hero-chip" href="#teams">Demand Manager</a>
+      <a class="hero-chip" href="#teams">Sales Analyst</a>
     </div>
   </div>
 
@@ -424,54 +402,42 @@ a.starter-card:hover .more{color:var(--accent);}
 <section id="teams" style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap section">
     <div style="text-align:center;margin-bottom:40px">
-      <div class="eyebrow">Meet the starter teams</div>
-      <h2 style="font-size:42px;font-weight:600;max-width:740px;margin:0 auto">Hire the team that matches the job.</h2>
-      <p style="font-size:16px;color:var(--muted);margin-top:16px;max-width:680px;margin-left:auto;margin-right:auto;line-height:1.55">Start with one team. Marketing and sales share the same call vault. Projects deepen that team after install.</p>
+      <div class="eyebrow">Meet the starter employees</div>
+      <h2 style="font-size:42px;font-weight:600;max-width:740px;margin:0 auto">Hire the employee that matches the job.</h2>
+      <p style="font-size:16px;color:var(--muted);margin-top:16px;max-width:680px;margin-left:auto;margin-right:auto;line-height:1.55">Start with one marketing hire. They share the same call vault. Projects deepen the roster after install.</p>
     </div>
 
-    <div class="teams-tablist" role="tablist" aria-label="Starter team paths">
-      <button type="button" class="teams-tab" role="tab" id="tab-marketing" aria-selected="true" aria-controls="teams-marketing" tabindex="0">Marketing</button>
-      <button type="button" class="teams-tab" role="tab" id="tab-sales" aria-selected="false" aria-controls="teams-sales" tabindex="-1">Sales</button>
-    </div>
-
-    <div class="teams-panel" role="tabpanel" id="teams-marketing" aria-labelledby="tab-marketing">
-      <div class="starters-grid">
-        <a class="starter-card" href="teams/customer-intelligence.html">
-          <div><span class="badge">Your research analyst</span><div class="role">Customer Intelligence</div></div>
-          <p class="output"><strong style="color:var(--ink)">Output:</strong> ICP findings from real calls, buyer language gaps, competitive intel, and a website audit that feeds the queue.</p>
-          <div class="agents"><strong>AI employees on this team</strong>Research / ICP · Competitor intel · Content audit</div>
-          <span class="more">Team page →</span>
-        </a>
-        <a class="starter-card" href="teams/b2b-content-production.html">
-          <div><span class="badge">Your content team</span><div class="role">B2B Content Production</div></div>
-          <p class="output"><strong style="color:var(--ink)">Output:</strong> Approval-gated how-tos, articles, playbooks, and LinkedIn drafts (paste-only) from a tight call source set.</p>
-          <div class="agents"><strong>AI employees on this team</strong>Director · Format writers · Brand voice · QA gate · Scheduler</div>
-          <span class="more">Team page →</span>
-        </a>
-        <a class="starter-card" href="teams/search-visibility.html">
-          <div><span class="badge">Your SEO specialist</span><div class="role">Search Visibility</div></div>
-          <p class="output"><strong style="color:var(--ink)">Output:</strong> Keyword strategy, gap tickets for the content queue, and answer-engine citability so organic inbound compounds.</p>
-          <div class="agents"><strong>AI employees on this team</strong>SEO agent · AEO agent</div>
-          <span class="more">Team page →</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="teams-panel" role="tabpanel" id="teams-sales" aria-labelledby="tab-sales" hidden>
-      <div class="starters-grid sales-grid">
-        <a class="starter-card" href="teams/demand-lifecycle.html">
-          <div><span class="badge">Your demand gen team</span><div class="role">Demand &amp; Lifecycle</div></div>
-          <p class="output"><strong style="color:var(--ink)">Output:</strong> Nurture sequences, forms QA, and paid creative sourced from buyer hooks. Outbound when you need it.</p>
-          <div class="agents"><strong>AI employees on this team</strong>List builder · Nurture writer · Performance · Forms QA · Paid</div>
-          <span class="more">Team page →</span>
-        </a>
-        <a class="starter-card" href="teams/sales-enablement.html">
-          <div><span class="badge">Your sales analyst</span><div class="role">Sales Enablement</div></div>
-          <p class="output"><strong style="color:var(--ink)">Output:</strong> Call query in Slack for close support, plus win-loss, battlecards, case studies, and coaching from the same call vault.</p>
-          <div class="agents"><strong>AI employees on this team</strong>Call query · Win-loss · Battlecards · Case studies · Rep coaching</div>
-          <span class="more">Team page →</span>
-        </a>
-      </div>
+    <div class="starters-grid">
+      <a class="starter-card" href="teams/customer-intelligence.html">
+        <div><span class="badge">Customer Intelligence</span><div class="role">Research Analyst</div></div>
+        <p class="output"><strong style="color:var(--ink)">Output:</strong> ICP findings from real calls, buyer language gaps, competitive intel, and a website audit that feeds the queue.</p>
+        <div class="agents"><strong>AI employees on this team</strong>Research / ICP · Competitor intel · Content audit</div>
+        <span class="more">Team page →</span>
+      </a>
+      <a class="starter-card" href="teams/b2b-content-production.html">
+        <div><span class="badge">B2B Content Production</span><div class="role">Content Director</div></div>
+        <p class="output"><strong style="color:var(--ink)">Output:</strong> Approval-gated how-tos, articles, playbooks, and LinkedIn drafts (paste-only) from a tight call source set.</p>
+        <div class="agents"><strong>AI employees on this team</strong>Format writers · Brand voice · QA gate · Scheduler</div>
+        <span class="more">Team page →</span>
+      </a>
+      <a class="starter-card" href="teams/search-visibility.html">
+        <div><span class="badge">Search Visibility</span><div class="role">SEO Specialist</div></div>
+        <p class="output"><strong style="color:var(--ink)">Output:</strong> Keyword strategy, gap tickets for the content queue, and answer-engine citability so organic inbound compounds.</p>
+        <div class="agents"><strong>AI employees on this team</strong>SEO agent · AEO agent</div>
+        <span class="more">Team page →</span>
+      </a>
+      <a class="starter-card" href="teams/demand-lifecycle.html">
+        <div><span class="badge">Demand &amp; Lifecycle</span><div class="role">Demand Manager</div></div>
+        <p class="output"><strong style="color:var(--ink)">Output:</strong> Nurture sequences, forms QA, and paid creative sourced from buyer hooks. Outbound when you need it.</p>
+        <div class="agents"><strong>AI employees on this team</strong>List builder · Nurture writer · Performance · Forms QA · Paid</div>
+        <span class="more">Team page →</span>
+      </a>
+      <a class="starter-card" href="teams/sales-enablement.html">
+        <div><span class="badge">Sales Enablement</span><div class="role">Sales Analyst</div></div>
+        <p class="output"><strong style="color:var(--ink)">Output:</strong> Call query in Slack for close support, plus win-loss, battlecards, case studies, and coaching from the same call vault.</p>
+        <div class="agents"><strong>AI employees on this team</strong>Call query · Win-loss · Battlecards · Case studies · Rep coaching</div>
+        <span class="more">Team page →</span>
+      </a>
     </div>
   </div>
 </section>
@@ -484,32 +450,32 @@ a.starter-card:hover .more{color:var(--accent);}
       <p style="font-size:16px;color:var(--muted);margin-top:14px;max-width:440px;line-height:1.55">Scroll the roster. Each step adds a team. Projects deepen that team after install.</p>
       <div class="org-list">
         <article class="proj-item on" data-step="0">
-          <div class="kicker">Marketing · research analyst</div>
-          <h3 style="font-size:18px;font-weight:600">Customer Intelligence</h3>
+          <div class="kicker">Customer Intelligence</div>
+          <h3 style="font-size:18px;font-weight:600">Research Analyst</h3>
           <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">ICP findings, competitive intel, website audit.</p>
           <a href="teams/customer-intelligence.html" style="display:inline-block;margin-top:8px;font-size:13px;font-weight:600">Team page →</a>
         </article>
         <article class="proj-item" data-step="1">
-          <div class="kicker">Marketing · content team</div>
-          <h3 style="font-size:18px;font-weight:600">B2B Content Production</h3>
+          <div class="kicker">B2B Content Production</div>
+          <h3 style="font-size:18px;font-weight:600">Content Director</h3>
           <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Director, format writers, voice, QA, and approval-gated publishing.</p>
           <a href="teams/b2b-content-production.html" style="display:inline-block;margin-top:8px;font-size:13px;font-weight:600">Team page →</a>
         </article>
         <article class="proj-item" data-step="2">
-          <div class="kicker">Marketing · SEO specialist</div>
-          <h3 style="font-size:18px;font-weight:600">Search Visibility</h3>
+          <div class="kicker">Search Visibility</div>
+          <h3 style="font-size:18px;font-weight:600">SEO Specialist</h3>
           <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Keyword strategy and AEO so pages get found and cited.</p>
           <a href="teams/search-visibility.html" style="display:inline-block;margin-top:8px;font-size:13px;font-weight:600">Team page →</a>
         </article>
         <article class="proj-item" data-step="3">
-          <div class="kicker">Sales · demand gen</div>
-          <h3 style="font-size:18px;font-weight:600">Demand &amp; Lifecycle</h3>
+          <div class="kicker">Demand &amp; Lifecycle</div>
+          <h3 style="font-size:18px;font-weight:600">Demand Manager</h3>
           <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Email nurture, forms QA, paid ads. Outbound when you need it.</p>
           <a href="teams/demand-lifecycle.html" style="display:inline-block;margin-top:8px;font-size:13px;font-weight:600">Team page →</a>
         </article>
         <article class="proj-item" data-step="4">
-          <div class="kicker">Sales · sales analyst</div>
-          <h3 style="font-size:18px;font-weight:600">Sales Enablement</h3>
+          <div class="kicker">Sales Enablement</div>
+          <h3 style="font-size:18px;font-weight:600">Sales Analyst</h3>
           <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45">Call query, win-loss, battlecards, case studies, and coaching.</p>
           <a href="teams/sales-enablement.html" style="display:inline-block;margin-top:8px;font-size:13px;font-weight:600">Team page →</a>
         </article>
@@ -519,14 +485,14 @@ a.starter-card:hover .more{color:var(--accent);}
       <div class="org-root">Bloom AI team</div>
       <div class="org-stem"></div>
       <div class="org-row marketing-row">
-        <div class="org-node team on" data-reveal="0"><span class="org-role">Intel</span><span class="org-kind">Marketing</span></div>
+        <div class="org-node team on" data-reveal="0"><span class="org-role">Research</span><span class="org-kind">Marketing</span></div>
         <div class="org-node team" data-reveal="1"><span class="org-role">Content</span><span class="org-kind">Marketing</span></div>
         <div class="org-node team" data-reveal="2"><span class="org-role">Search</span><span class="org-kind">Marketing</span></div>
       </div>
       <div class="org-stem" data-stem></div>
       <div class="org-row expand-row">
-        <div class="org-node team" data-reveal="3"><span class="org-role">Demand</span><span class="org-kind">Sales</span></div>
-        <div class="org-node team" data-reveal="4"><span class="org-role">Enablement</span><span class="org-kind">Sales</span></div>
+        <div class="org-node team" data-reveal="3"><span class="org-role">Demand</span><span class="org-kind">Marketing</span></div>
+        <div class="org-node team" data-reveal="4"><span class="org-role">Sales</span><span class="org-kind">Marketing</span></div>
       </div>
     </div>
   </div>
@@ -690,60 +656,6 @@ a.starter-card:hover .more{color:var(--accent);}
 </footer>
 
 <script>
-(function(){
-  const tablist = document.querySelector('.teams-tablist');
-  if (!tablist) return;
-  const tabs = [...tablist.querySelectorAll('[role="tab"]')];
-
-  function selectTab(tab, {focus = false, updateHash = false} = {}){
-    tabs.forEach((t) => {
-      const on = t === tab;
-      t.setAttribute('aria-selected', on ? 'true' : 'false');
-      t.tabIndex = on ? 0 : -1;
-      const panel = document.getElementById(t.getAttribute('aria-controls'));
-      if (panel) panel.hidden = !on;
-    });
-    if (focus) tab.focus();
-    if (updateHash){
-      const id = tab.getAttribute('aria-controls');
-      if (id && history.replaceState) history.replaceState(null, '', '#' + id);
-    }
-  }
-
-  function tabFromHash(){
-    const hash = (location.hash || '').slice(1);
-    if (hash === 'teams-sales') return tabs.find((t) => t.id === 'tab-sales');
-    if (hash === 'teams-marketing' || hash === 'teams') return tabs.find((t) => t.id === 'tab-marketing');
-    return null;
-  }
-
-  tablist.addEventListener('click', (e) => {
-    const tab = e.target.closest('[role="tab"]');
-    if (!tab || !tabs.includes(tab)) return;
-    selectTab(tab, {updateHash:true});
-  });
-
-  tablist.addEventListener('keydown', (e) => {
-    const i = tabs.indexOf(document.activeElement);
-    if (i < 0) return;
-    let next = -1;
-    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (i + 1) % tabs.length;
-    else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = (i - 1 + tabs.length) % tabs.length;
-    else if (e.key === 'Home') next = 0;
-    else if (e.key === 'End') next = tabs.length - 1;
-    if (next < 0) return;
-    e.preventDefault();
-    selectTab(tabs[next], {focus:true, updateHash:true});
-  });
-
-  const fromHash = tabFromHash();
-  if (fromHash) selectTab(fromHash);
-  window.addEventListener('hashchange', () => {
-    const t = tabFromHash();
-    if (t) selectTab(t);
-  });
-})();
-
 (function(){
   const agents = [
     { name:'Research agent', state:'mining ICP', working:true, avatarBg:'#E7E0D1' },
