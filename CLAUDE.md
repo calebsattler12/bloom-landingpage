@@ -14,7 +14,9 @@ no build step.
 - `90-day-timeline.html` / `90-day-example.html` — example fitted 90-day
   build (intelligence + Slack lead first, then more seats)
 - `icp-findings-example.html` / `win-loss-example.html` — display-case
-  deliverables (scrubbed composite, highlight arrows, page-specific calendar CTAs)
+  deliverables (scrubbed composite, highlight arrows, page-specific calendar CTAs).
+  ICP sample follows the remade 11-section pack (no public evidence appendix,
+  no dollar amounts, names masked).
 - `teams/*.html` — always-on marketing employee pages (person titles)
 - `robots.txt` / `sitemap.xml` — discoverability; `logo-font-options.html` is noindex
 - `linkedin-content.md` — paste-ready LinkedIn drafts
@@ -115,6 +117,15 @@ roster grows, fraction of a content team. Prefer Book a Call.
 
 **Get started page:** examples of deliverables, 90-day example, Book a Call.
 No two-SKU “ICP path vs Sales starter.”
+
+**ICP findings sample (11 sections, public):** (1) Executive synthesis (2)
+Evidence base and method (3) Best-client roster and commercial LTV (4)
+Derived ICP snapshot (5) Buying committee (6) What buyers actually say (7)
+Stated ICP vs derived ICP (8) Qualification boundaries (9) Month-over-month
+drift (10) Implications for content and positioning (11) Decisions and next
+actions. Do not publish Section 12 (evidence appendix), client names, or
+dollar LTV on the public page. Source: remade ICP Findings Report template
+/ EXAMPLE_ICP-Findings-Report.
 
 **Employee pages:** one page per roster seat. Demand Manager stays.
 `teams/search-visibility.html` redirects to the SEO Director page.
