@@ -4,15 +4,14 @@ Marketing site for Bloom at [runbloom.ai](https://runbloom.ai).
 
 ## Positioning
 
-Bloom puts the language from sales calls and email to work so you get found,
-ranked, and chosen. See `CLAUDE.md` and `brand-voice.md` for locked framing
-and craft rules (imply the thesis; do not paste it on every section).
+Bloom puts always-on marketing employees on a Mac mini you own. See `CLAUDE.md`
+and `brand-voice.md` for locked framing and craft rules.
 
 ## Files
 
 - `index.html` — public marketing site
 - `pitch-deck.html` — sales deck (keyboard nav)
-- `90-day-timeline.html` — 90-day starter-team checklist
+- `90-day-timeline.html` / `90-day-example.html` — example 90-day team build
 - `linkedin-content.md` — paste-ready LinkedIn drafts (manual post only)
 - `brand-voice.md` — voice rules for marketing copy
 - `logo-mark.png` — lavender bloom wordmark (source of truth)

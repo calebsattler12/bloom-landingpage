@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/teams/search-visibility.html",
+      "destination": "/teams/seo.html",
+      "permanent": true
+    },
+    {
+      "source": "/teams/sales-enablement.html",
+      "destination": "/teams/deal-enablement.html",
+      "permanent": true
+    }
+  ]
+}

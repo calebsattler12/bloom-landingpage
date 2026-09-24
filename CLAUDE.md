@@ -9,12 +9,13 @@ Marketing site for **Bloom** (Syncro Labs) at **runbloom.ai**. Static HTML,
 no build step.
 
 - `index.html` — public site
-- `get-started.html` — entry paths (ICP findings or Sales starter / win-loss) + first 90 days
+- `get-started.html` — samples of the work + Book a Call + 90-day example
 - `pitch-deck.html` — sales deck (keyboard nav)
-- `90-day-timeline.html` — flagship 12-week Content Production checklist
-- `90-day-example.html` — example client 90-day build-out for Content Production (arrows + **Build your 90 day plan** calendar CTA)
-- `icp-findings-example.html` / `win-loss-example.html` — display-case reports (scrubbed composite, highlight arrows, page-specific calendar CTAs)
-- `teams/*.html` — starter team pages with org view (agents + cadence) and roster tables; Content Production includes the flagship 12-week roadmap
+- `90-day-timeline.html` / `90-day-example.html` — example fitted 90-day
+  build (intelligence + Slack lead first, then more seats)
+- `icp-findings-example.html` / `win-loss-example.html` — display-case
+  deliverables (scrubbed composite, highlight arrows, page-specific calendar CTAs)
+- `teams/*.html` — always-on marketing employee pages (person titles)
 - `robots.txt` / `sitemap.xml` — discoverability; `logo-font-options.html` is noindex
 - `linkedin-content.md` — paste-ready LinkedIn drafts
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
@@ -40,115 +41,83 @@ no build step.
 - **Display-page CTAs (same URL):** ICP → Get your ICP report; win-loss → Get your win-loss report; 90-day example → Build your 90 day plan
 - **Social:** LinkedIn https://www.linkedin.com/company/bloom-ai-llc/ (JSON-LD `sameAs`). No Twitter account.
 - **CTA (deck close):** Work with us
-- Personality: light, approachable, friendly. Do not revive old Verity navy/Jost.
-- Prefer **team** over **pod** in all public-facing copy.
+- Personality: light, approachable, friendly, slightly dramatic on **pain**. Do not revive old Verity navy/Jost.
+- Prefer **team** over **pod**. Prefer **employees** on the homepage. **Director / manager** on cards. **Agent** in supporting copy. Never **bot**.
 
 ## Positioning (locked)
 
-**Thesis (internal):** Agent teams that generate organic, inbound deals. Human
-install, monitor, build out. Unlimited agents via new project teams while
-retained. Grounded in buyer language from sales calls and email.
+**Source of truth:** Google Doc *Brainstorm Document* (internal). It overrides
+the old five-starter-team menu and the organic-inbound-only thesis.
 
-**Public copy:** Imply that thesis. Do **not** paste the thesis sentence on
-every section. Hero leads with agent teams → organic inbound. Say each proof
-point once: hardware in partner/after-install; roster growth in projects; ICP
-keep-either-way in samples/CTA; Slack / AI VP in after-install.
+**Thesis (internal):** One always-on marketing team. Client owns the Mac mini;
+Bloom installs it in their office. Human stands it up and stays. Client talks
+to the **Orchestrator** in Slack. Every fitted 90-day plan starts with
+Customer Intelligence and the Orchestrator, then about three more seats for
+their situation. Sales motion: first call (where we can help), second call
+(bring the 90-day roadmap). Cloudflare is the factory floor. Do not put
+Cloudflare, Workers, or Durable Objects on the marketing site.
 
-Lead with **outcome** (teams of AI agents → organic inbound deals).
-Hiring AI employees (plural) is supporting language across the site.
-Do **not** boil down to "AI content," SEO alone, or "10k for content."
+**Public copy:** Imply that thesis. Do **not** paste sales steps, “CI then
+Orchestrator then three,” or the phrase “reports + recommended actions.”
+Show **example deliverables**. Hero: always-on marketing employees. Hardware
+and “we stay” live in How we show up / After install. Samples prove the work.
+Book a Call is the motion.
 
-**White glove (show, don't label):** A human installs, monitors, and builds out
-the team(s). Client owns the hardware (Mac mini); Bloom comes and installs it
-in their office. Prefer "How we show up" / "Your hardware" over repeating
-"white glove."
+Do **not** boil down to “AI content,” SEO alone, or a consultancy that
+ships a build and leaves. Show stay-with-you in partner and after-install
+copy. Never use “it’s not X, it’s Y.”
 
-**Starter teams (level one):** Pitch **teams by client-facing name**, not every
-agent. Clients can start with any of five (source: *Bloom Agent Scopes DRAFT*):
-**Customer Intelligence**, **B2B Content Production**, **Search Visibility**,
-**Demand & Lifecycle**, **Sales Enablement**. Orchestration (**AI VP of
-Marketing** + analytics) is the Slack surface across teams, not a starter
-choice. Prefer **starter team** over "content core" or "content engine."
+**White glove (show, don't label):** A human installs, monitors, and builds
+out. Client owns the Mac mini; Bloom comes and installs it in their office.
+Prefer "How we show up" / "Your hardware" over repeating "white glove."
 
-**Public grouping (Marketing vs Sales):**
-- **Marketing:** Customer Intelligence, B2B Content Production, Search Visibility
-- **Sales:** Demand & Lifecycle (nurture / forms / paid; outbound), Sales
-  Enablement (call query, win-loss, battlecards, case studies, coaching).
-  Call query is sales-facing; shares the intelligence call vault.
+**Roster (one marketing list, no Marketing vs Sales tabs):**
+Orchestrator, Customer Intelligence Director, SEO Director, Content Director,
+Demand Manager (Demand & Lifecycle), Deal Enablement Director, Competitive
+Advantage Director, Events & Partnerships Manager, Social Media Manager,
+Data Structure. Data Structure copy stays **vague** (working memory for the
+team). Do not explain knowledge bases, evidence IDs, or CRM hygiene.
 
-**Projects:** deepen the hired team (more agents / cadence) or add a second
-team after install. Public site does not use LIVE/stub labels. Bloom builds
-those AI employees onto the teams they hired.
+Search Visibility is folded into the SEO Director. Content Director is
+audit-first; do not make a 12-week content mill the flagship. LinkedIn is
+paste-only. Approval before anything client-facing goes live.
 
-**Public framing:** Lead with teams of AI agents → organic inbound deals.
-Hiring AI employees (plural) is the supporting metaphor across the site.
-
-**Retention language:** Phrases like "while you stay a client" / "while
-retained" belong on the **pitch deck**, not on `index.html`. On the site,
-talk about compounding agents and growing the roster without the retainer
-frame. Prefer "no contract" over month-to-month lock-in language on the site.
-
-**Projects / use cases:** Prefer **projects** for expansion; **use case** for
-entry points. Content is one capability cluster inside the starter team.
-Approval ≠ auto-publish. LinkedIn is paste-only. Placeholders OK until specs
-are scrubbed.
+**Retention language:** “While you stay a client” / “while retained” belong
+on the **pitch deck**, not on `index.html`. On the site: always on, Bloom
+keeps building the roster, no contract. Bloom does not disappear after
+kickoff.
 
 ## Voice
 
 Follow `brand-voice.md`: zero em dashes; no "it's not X, it's Y"; banned AI
-diction; no fabricated proof; say **agent** not **bot**. One job per section.
-Cut repeated thesis phrases.
+diction; no fabricated proof. One job per section. Cut repeated thesis phrases.
+Slightly dramatic on pain. Calm on how Bloom stays.
 
 ## Pricing (public drafts)
 
 **Do not publish dollar amounts, install fees, or retainer figures** in
 `index.html`, `get-started.html`, `pitch-deck.html`, `90-day-timeline.html`, or
 `linkedin-content.md`. Qualitative only: own the hardware, no contract,
-roster grows with projects, fraction of a content team. Prefer Book a Call.
+roster grows, fraction of a content team. Prefer Book a Call.
 
 ## Site section map
 
-1. Hero (teams of AI agents → organic inbound deals; Marketing/Sales + team chips)
-2. Why Bloom (organic inbound that compounds vs renting pipeline)
-3. How we show up / partner (install, monitor, build out; Mac mini they own;
-   Bloom installs in office; AI VP in Slack)
-4. Meet the starter teams (Marketing vs Sales groups)
-5. Projects / services (scroll org: cumulative reveal of five starter teams)
-6. Samples (ICP report, win-loss report, Slack call query, LinkedIn from CEO notes / paste-only)
-7. RevBlack (live multi-team client; logo + Visit RevBlack site)
-8. After install (no contract; ongoing build-out; no new dashboards; tool logo marquee)
-9. Get started teaser (links to `get-started.html`; short 90-day pitch)
+1. Hero (always-on marketing employees; chips to the roster)
+2. Why Bloom (pain: queue, wrong language, paid that pauses, a project that went quiet)
+3. How we show up (Mac mini they own; Bloom installs in office; human stays; Slack)
+4. The team (one marketing roster of person-titled employees)
+5. How the roster grows (implied: intelligence + Slack lead, then seats that fit)
+6. Samples (ICP, win-loss, Slack, LinkedIn paste-only)
+7. RevBlack (live client; logo + Visit RevBlack site)
+8. After install (always on; Bloom keeps building; no new dashboards; tool logo marquee)
+9. Get started teaser (samples + 90-day example + Book a Call; no call-one/call-two)
 10. Final CTA
 
-**Get started page (`get-started.html`):** ICP findings path vs Sales starter team
-(win-loss artifact); first 90 days steps; links to example reports, 90-day
-outline, example client plan, Marketing/Sales team tabs, Book a Call.
+**Get started page:** examples of deliverables, 90-day example, Book a Call.
+No two-SKU “ICP path vs Sales starter.”
 
-**Team pages:** `teams/customer-intelligence.html`, `b2b-content-production.html`,
-`search-visibility.html`, `demand-lifecycle.html`, `sales-enablement.html`.
-Each page has an org view of the agents on that team. Content Production is the
-flagship 12-week install. No recommended starter pairing on the public site.
-
-## Roster (from Agent Scopes DRAFT; scrub for public)
-
-**Source of truth:** Google Doc *Bloom Agent Scopes DRAFT* (internal). Agent
-detail is for build/sales enablement; public copy pitches teams + outputs.
-
-**Starter teams (client can choose any):**
-- Customer Intelligence (LIVE): Research, Call Query, Competitor Intel, Content Audit
-  (public Marketing card leans research/competitive/audit; call query framed under Sales)
-- B2B Content Production (LIVE): Director, format writers, Brand Voice, QA, Scheduler
-- Search Visibility (LIVE): SEO, AEO
-- Demand & Lifecycle (mostly NET-NEW / stubs): nurture, forms QA, paid; outbound optional
-- Sales Enablement (NET-NEW): win-loss, battlecards, case studies, coaching (+ call query surface)
-
-**Orchestration (always-on surface):** AI VP of Marketing, Analytics,
-Findings/Roadmap Compiler. Not a separate starter choice.
-
-**Public projects menu:** ICP Findings, Call Query, Competitive Intel, Website
-Audit, Brand Voice, Article Engine, Playbook/How-To, LinkedIn, Publishing,
-Keyword/SEO, AEO, Weekly Report, Performance reporting; then nurture, outbound,
-forms QA, paid, win-loss, coaching, battlecards, case studies.
+**Employee pages:** one page per roster seat. Demand Manager stays.
+`teams/search-visibility.html` redirects to the SEO Director page.
 
 ## Integrations (confirmed only)
 
@@ -160,17 +129,15 @@ assets over CDN.
 
 ## RevBlack proof
 
-Live client with sales and marketing agent teams. Link
-https://www.revblack.com ("Visit RevBlack site"). Use `revblack-logo.png`.
-Approved quote (Director of Marketing, RevBlack): AI summary for a keyword
-after 3 weeks. Do not use "first customer," inbound goal numbers
-(1–4 → 8–15), fabricated testimonials, or "12 hrs saved" stats.
+Live client. Link https://www.revblack.com ("Visit RevBlack site"). Use
+`revblack-logo.png`. Approved quote (Director of Marketing, RevBlack): AI
+summary for a keyword after 3 weeks. Do not use "first customer," inbound
+goal numbers (1–4 → 8–15), fabricated testimonials, or "12 hrs saved" stats.
+Do not put internal quality post-mortems on the site.
 
 ## Editing
 
 - Prefer targeted edits unless repositioning the whole narrative
 - Respect `prefers-reduced-motion` (org chart shows all; marquee becomes static)
 - Preview `index.html`, `pitch-deck.html`, `90-day-timeline.html`, `90-day-example.html`, and the example reports locally before pushing
-- 90-day live means generation → QA → human approval (pool). CMS
-  publishing is a later project, not the install finish line.
 - Say **agent** not **bot** in user-facing copy.

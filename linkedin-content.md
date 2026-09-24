@@ -1,6 +1,6 @@
 # Bloom LinkedIn content pack (drafts)
 
-Paste-ready founder posts. Lead with teams of AI agents and organic inbound deals. Hiring AI employees (plural) is the supporting frame. One idea per post.
+Paste-ready founder posts. Lead with always-on marketing employees on hardware they own. A human stays. One idea per post.
 
 Soft CTA: Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
 
@@ -9,37 +9,35 @@ Posting rules:
 - No fabricated metrics, hours saved, or fake testimonials.
 - No dollar amounts or price lists.
 - Voice: zero em dashes; no "it's not X, it's Y." See `brand-voice.md`.
-- Say agent, not bot. Pitch teams by name. Do not boil down to "AI content" or SEO alone.
-- Prefer **team** over **pod**. Do not paste "unlimited agents" or "white glove" on every post.
+- Say agent, not bot. Do not boil down to "AI content" or SEO alone.
+- Prefer **team** and **employees**. Do not paste "unlimited agents" or "white glove" on every post.
+- Do not walk the sales process or say "reports plus recommended actions."
 
 ---
 
 ## 1. Outcome line
 
-Teams of AI agents that drive organic, inbound deals.
+Your agentic team of marketing employees.
 
-That is the job.
-
-Pick a starter team. Talk to an AI VP in Slack. Grow from there as Bloom builds more agents onto the roster.
-
-Grounded in your sales calls and email.
+Always on.
+On a Mac mini you own.
+Talk to the Orchestrator in Slack.
+A human from Bloom stays on the loop.
 
 If that problem is yours:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 2. Paid vs organic
+## 2. The bind
 
-Paid pipeline stops the moment spending stops.
+The queue never clears.
+The ICP lives in one person's head.
+The homepage still talks like last year's guess.
 
-Organic compounds.
+Paid goes quiet and so does the calendar.
 
-Agent teams ship ranked pages and cited answers that keep working after the spend that built them stops.
-
-Bloom installs agent teams aimed at growth you keep, from conversations you already have.
-
-You own the hardware. Bloom installs it in your office. The teams stay with the business.
+Bloom puts always-on employees in the office, on hardware you keep.
 
 Book a Call:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
@@ -48,82 +46,82 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ## 3. Someone stays with it
 
-Babysitting Claude leaves you with drafts.
-Buying a content pack leaves you with files.
+A slide deck from a consultant goes stale in a week.
+A Claude tab goes quiet the day the champion gets busy.
 
-Bloom stands AI employees up on a Mac mini you own.
-A human watches what shipped and what is getting found.
-Day to day you talk to an AI VP in Slack, like any other employee.
+Bloom stands employees up on a Mac mini you own.
+A human watches what shipped.
+Day to day you talk to the Orchestrator in Slack.
+
+Kickoff is the start of the team.
 
 Curious whether that fits:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 4. Choose a starter team
+## 4. The roster
 
-Level one is a starter team. Marketing and sales paths share the same call vault.
+One marketing team.
 
-Marketing:
-Customer Intelligence: your research analyst.
-B2B Content Production: your content team.
-Search Visibility: your SEO specialist.
-Demand & Lifecycle: your demand gen team.
-
-Sales:
-Sales Enablement: call query, win-loss, battlecards, case studies, coaching.
+Orchestrator in Slack.
+Customer Intelligence Director.
+SEO Director.
+Content Director.
+Demand Manager.
+Deal Enablement Director.
+Competitive Advantage Director.
+Events and Partnerships Manager.
+Social Media Manager.
+Data Structure, keeping the working memory in order.
 
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 5. ICP report you keep
+## 5. ICP pack you keep
 
-Before anything gets built, we dig into your calls and email and hand you an ICP findings report.
+Before anything gets built, we dig into your calls and email and hand you an ICP findings pack.
 
-The ICP worth targeting.
+Who actually buys.
 Buyer language.
 Questions before yes.
-A roadmap.
 
 You keep it either way.
 
-That is the low-risk place to start.
+That is a low-risk place to look at the work.
 
 Book a Call:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 6. What a team feels like
+## 6. What the team feels like
 
-A starter team is a set of AI employees with jobs, not a pile of prompts.
+Always-on employees with jobs.
 
-Research that owns the true ICP.
-A director routing format writers.
-SEO and AEO feeding the queue.
-An AI VP you talk to in Slack.
+Intelligence that owns who buys.
+An Orchestrator you talk to in Slack.
+SEO, content, demand, deals, and the rest of marketing filled from the work in front of you.
 
-Approval-gated work.
+Approval before anything client-facing goes live.
 Hardware you own.
 
-Hire the team. Grow the roster.
+Hire the team. Keep them on.
 
 ---
 
 ## 7. After install
 
-No contract. After your starter team of employees ships, Bloom keeps building.
+No contract. The employees stay on. Bloom keeps building.
 
 No new dashboards. No new apps.
-Talk to your AI VP of Marketing in Slack the way you would any other employee.
+Talk to the Orchestrator in Slack the way you would any other employee.
 
-Weekly digest so you can see what shipped and what is getting found.
-New projects mean Bloom builds more AI employees onto the teams you already run.
+Weekly digest so you can see what shipped.
+Bloom adds seats onto the team you already run.
 
-Tools we work with: Slack, Microsoft Teams, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback, Granola, Google Analytics, Ahrefs.
-
-If you are renting pipeline through ads and want teams that compound, let's talk.
+You own the mini. Bloom installed it in your office.
 
 https://calendar.app.google/kY3NqzNsspgzzw1F9
 
@@ -131,9 +129,9 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ## 8. Soft CTA
 
-Hire your first team of AI employees.
-Keep the ICP findings report.
+Hire always-on marketing employees.
+Keep the ICP findings pack.
 
-Book a call. We map which starter team fits and run the diagnostic you keep either way.
+Book a call. We look at the work together.
 
 https://calendar.app.google/kY3NqzNsspgzzw1F9

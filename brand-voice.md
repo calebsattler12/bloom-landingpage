@@ -37,27 +37,25 @@ the point. End on the result or the next step, not hype.
 
 ## Product framing (locked)
 
-1. **Outcome first.** Hero leads with teams of AI agents that drive organic,
-   inbound deals. Supporting frame: hiring AI employees (plural) / starter teams.
-2. **Do not boil down to "AI content" or SEO alone.** Five starter teams:
-   Customer Intelligence, B2B Content Production, Search Visibility, Demand &
-   Lifecycle, Sales Enablement. Pitch teams by name; agent count is proof.
-   Public site groups them as **Marketing** (Intelligence, Content, Search)
-   and **Sales** (Demand & Lifecycle, Sales Enablement, with call query as
-   the sales-facing Slack surface). Prefer **team** over **pod** in all public copy.
-3. **Say agent, not bot.** Query agent, Slack agent, email agent. "AI employees"
-   is OK as the hiring metaphor.
-4. **Show the human partner.** Install, monitor, build out on hardware they
-   own. Prefer concrete language over repeating "white glove." Client owns the
+1. **Outcome first.** Hero leads with always-on marketing employees. Supporting
+   frame: one team, Orchestrator in Slack, hardware they own, Bloom stays.
+2. **Do not boil down to "AI content" or SEO alone.** One marketing roster:
+   Orchestrator, Customer Intelligence Director, SEO Director, Content Director,
+   Demand Manager, Deal Enablement Director, Competitive Advantage Director,
+   Events & Partnerships Manager, Social Media Manager, Data Structure (vague
+   on purpose). Pitch **employees** by person title. Prefer **team** over **pod**.
+3. **Say agent, not bot.** Query agent, Slack agent. "AI employees" and
+   "always-on employees" are the hiring metaphor on the homepage.
+4. **Show the human partner.** Install, monitor, stay on hardware they own.
+   Prefer concrete language over repeating "white glove." Client owns the
    Mac mini; Bloom comes and installs it in their office. Day to day: no new
-   dashboards or apps; talk to AI employees in Slack like any other teammate.
-5. **Roster growth.** Five starter teams at level one. Projects deepen the
-   hired team or add another. On the **pitch deck**, you may say this continues
-   while they stay a client. On the **website**, prefer "as you grow" without
-   the retainer frame. Day to day: client talks to the AI VP in Slack. Bloom
-   builds more AI employees onto the teams they hired.
-6. Prefer **projects** for expansion and **use case** / **team** for entry.
-   Do not say "content core" or "content engine."
+   dashboards; talk to the Orchestrator in Slack like any other teammate.
+5. **Roster growth.** Intelligence and the Orchestrator come first. Then seats
+   that fit. On the **pitch deck**, you may say this continues while they stay
+   a client. On the **website**, prefer always on / Bloom keeps building. Do
+   not print the two-call sales process.
+6. Prefer **team** for the department and **employee / director / manager**
+   for seats. Do not say "content core" or "content engine."
 7. **No compulsive restating.** If the hero said it, later sections should
    advance the story, not echo the same sentence.
 
