@@ -15,8 +15,8 @@ no build step.
   build (intelligence + Slack lead first, then more seats)
 - `icp-findings-example.html` / `win-loss-example.html` — display-case
   deliverables (scrubbed composite, highlight arrows, page-specific calendar CTAs).
-  ICP sample follows the remade 11-section pack (no public evidence appendix,
-  no dollar amounts, names masked).
+  ICP and win-loss samples follow the remade 11-section packs (no public
+  evidence appendix, no dollar amounts, names masked).
 - `teams/*.html` — always-on marketing employee pages (person titles)
 - `robots.txt` / `sitemap.xml` — discoverability; `logo-font-options.html` is noindex
 - `linkedin-content.md` — paste-ready LinkedIn drafts
@@ -126,6 +126,14 @@ drift (10) Implications for content and positioning (11) Decisions and next
 actions. Do not publish Section 12 (evidence appendix), client names, or
 dollar LTV on the public page. Source: remade ICP Findings Report template
 / EXAMPLE_ICP-Findings-Report.
+
+**Win-loss sample (11 sections, public):** (1) Executive synthesis (2) Win
+rate by segment (3) Why deals were won (4) Why deals were lost (5)
+Competitor involvement (6) Objection frequency ranking (7) Stage drop
+analysis (8) CRM reconciliation (9) Expansion and referral signals (10)
+Recommended messaging fixes (11) Decisions and next actions. Do not publish
+the evidence appendix, client names, or dollar amounts. Source:
+EXAMPLE_Win-Loss-Report. Keep rates labeled directional when n is small.
 
 **Employee pages:** one page per roster seat. Demand Manager stays.
 `teams/search-visibility.html` redirects to the SEO Director page.
