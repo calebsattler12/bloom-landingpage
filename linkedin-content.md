@@ -2,7 +2,7 @@
 
 Paste-ready founder posts. Lead with always-on marketing employees on hardware they own. A human stays. One idea per post.
 
-Soft CTA: Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
+Soft CTA: Book a Call → https://calendar.app.google/oLraWPKZUFHqQXt18
 
 Posting rules:
 - Manual paste only. Bloom does not auto-post LinkedIn.
@@ -25,7 +25,7 @@ Talk to the Orchestrator in Slack.
 A human from Bloom stays on the loop.
 
 If that problem is yours:
-https://calendar.app.google/kY3NqzNsspgzzw1F9
+https://calendar.app.google/oLraWPKZUFHqQXt18
 
 ---
 
@@ -40,7 +40,7 @@ Paid goes quiet and so does the calendar.
 Bloom puts always-on employees in the office, on hardware you keep.
 
 Book a Call:
-https://calendar.app.google/kY3NqzNsspgzzw1F9
+https://calendar.app.google/oLraWPKZUFHqQXt18
 
 ---
 
@@ -56,7 +56,7 @@ Day to day you talk to the Orchestrator in Slack.
 Kickoff is the start of the team.
 
 Curious whether that fits:
-https://calendar.app.google/kY3NqzNsspgzzw1F9
+https://calendar.app.google/oLraWPKZUFHqQXt18
 
 ---
 
@@ -75,7 +75,7 @@ Events and Partnerships Manager.
 Social Media Manager.
 Data Structure, keeping the working memory in order.
 
-https://calendar.app.google/kY3NqzNsspgzzw1F9
+https://calendar.app.google/oLraWPKZUFHqQXt18
 
 ---
 
@@ -91,7 +91,7 @@ Then the seats your situation needs.
 Look at an example plan. Then we talk about your office.
 
 Book a Call:
-https://calendar.app.google/kY3NqzNsspgzzw1F9
+https://calendar.app.google/oLraWPKZUFHqQXt18
 
 ---
 
@@ -122,7 +122,7 @@ Bloom adds seats onto the team you already run.
 
 You own the mini. Bloom installed it in your office.
 
-https://calendar.app.google/kY3NqzNsspgzzw1F9
+https://calendar.app.google/oLraWPKZUFHqQXt18
 
 ---
 
@@ -133,4 +133,4 @@ Every new client gets a 90-day roadmap.
 
 Book a call. We look at the work together.
 
-https://calendar.app.google/kY3NqzNsspgzzw1F9
+https://calendar.app.google/oLraWPKZUFHqQXt18

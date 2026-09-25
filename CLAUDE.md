@@ -39,7 +39,7 @@ no build step.
 - **Palette:** accent `#E0A0FC`, background `#F4EFE3`, ink `#0B0B0C`
 - **Fonts:** Schibsted Grotesk (headings), Hanken Grotesk (body)
 - **Logo:** full wordmark in `logo-mark.png` (no separate BLOOM typeset). Never include "INSIGHTS. LANDSCAPES. GROWTH."
-- **CTA (site):** Book a Call → https://calendar.app.google/kY3NqzNsspgzzw1F9
+- **CTA (site):** Book a Call → https://calendar.app.google/oLraWPKZUFHqQXt18
 - **Display-page CTAs (same URL):** ICP → Get your ICP report; win-loss → Get your win-loss report; 90-day example → Build your 90 day plan
 - **Social:** LinkedIn https://www.linkedin.com/company/bloom-ai-llc/ (JSON-LD `sameAs`). No Twitter account.
 - **CTA (deck close):** Work with us
