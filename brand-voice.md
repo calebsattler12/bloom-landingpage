@@ -50,6 +50,7 @@ the point. End on the result or the next step, not hype.
    Prefer concrete language over repeating "white glove." Client owns the
    Mac mini; Bloom comes and installs it in their office. Day to day: no new
    dashboards; talk to the Orchestrator in Slack like any other teammate.
+   The Orchestrator outlines future agent strategy (which seats come next).
 5. **Roster growth.** Intelligence and the Orchestrator come first. Then seats
    that fit. On the **pitch deck**, you may say this continues while they stay
    a client. On the **website**, prefer always on / Bloom keeps building. Do

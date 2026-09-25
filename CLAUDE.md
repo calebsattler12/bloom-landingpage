@@ -75,7 +75,8 @@ out. Client owns the Mac mini; Bloom comes and installs it in their office.
 Prefer "How we show up" / "Your hardware" over repeating "white glove."
 
 **Roster (one marketing list, no Marketing vs Sales tabs):**
-Orchestrator, Customer Intelligence Director, SEO Director, Content Director,
+Orchestrator (Slack lead; outlines future agent strategy), Customer Intelligence
+Director, SEO Director, Content Director,
 Demand Manager (Demand & Lifecycle), Deal Enablement Director, Competitive
 Advantage Director, Events & Partnerships Manager, Social Media Manager,
 Data Structure. Data Structure copy stays **vague** (working memory for the

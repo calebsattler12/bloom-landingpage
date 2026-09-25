@@ -64,7 +64,7 @@ https://calendar.app.google/oLraWPKZUFHqQXt18
 
 One marketing team.
 
-Orchestrator in Slack.
+Orchestrator in Slack. Outlines which agents come next.
 Customer Intelligence Director.
 SEO Director.
 Content Director.
@@ -100,7 +100,7 @@ https://calendar.app.google/oLraWPKZUFHqQXt18
 Always-on employees with jobs.
 
 Intelligence that owns who buys.
-An Orchestrator you talk to in Slack.
+An Orchestrator you talk to in Slack. That seat outlines which agents come next.
 SEO, content, demand, deals, and the rest of marketing filled from the work in front of you.
 
 Approval before anything client-facing goes live.
