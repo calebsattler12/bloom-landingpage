@@ -40,18 +40,18 @@
     <div class="eyebrow">Example · Deal Enablement</div>
     <h1>Win-loss report</h1>
     <p class="lede">Why deals were actually won and lost, from what was said on the calls rather than the loss-reason field. Same masked client and vault as the <a href="icp-findings-example.html">ICP findings example</a>. This sample follows Bloom's 11-section pack. Account names and commercial figures stay masked as X.</p>
-    <p class="mask-note">Scroll the report. Lavender arrows mark each of the 11 sections you receive. With 4 won and 5 lost deals labeled in the window, every rate here is directional. No invented close rates.</p>
+    <p class="mask-note">Scroll the report. Lavender arrows mark each of the 11 sections you receive. With 3 won and 10 lost deals labeled in the window, every rate here is directional. No invented close rates.</p>
     <div class="table-wrap">
       <table class="meta-table">
         <tbody>
           <tr><th>Prepared for</th><td>Client sales team (names masked)</td></tr>
           <tr><th>Prepared by</th><td>Bloom (Deal Enablement Director)</td></tr>
-          <tr><th>Reporting period</th><td>2026-07-24 → 2026-09-22 (60-day window)</td></tr>
-          <tr><th>Data cutoff</th><td>Circleback remine through 2026-08-25 (about 3,347 meetings tagged); CRM snapshot week of 2026-08-09</td></tr>
-          <tr><th>Deals in scope</th><td>4 won · 5 lost (CRM labels). Poor-fit not split out yet.</td></tr>
-          <tr><th>Compared against</th><td>v0 baseline (first live build)</td></tr>
+          <tr><th>Reporting period</th><td>2026-07-27 → 2026-09-25</td></tr>
+          <tr><th>Data cutoff</th><td>Circleback through 2026-09-24; CRM snapshot 2026-09-25</td></tr>
+          <tr><th>Deals in scope</th><td>3 won · 10 lost (CRM labels / snapshot-confirmed). Poor-fit not split out yet.</td></tr>
+          <tr><th>Compared against</th><td>Sep 24 live baseline (v0)</td></tr>
           <tr><th>Rep-level analysis</th><td>Off</td></tr>
-          <tr><th>Version</th><td>v0 baseline</td></tr>
+          <tr><th>Version</th><td>September refresh vs Sep 24 baseline</td></tr>
         </tbody>
       </table>
     </div>
@@ -64,7 +64,8 @@
         <p class="mobile-caption">Why they won, why they lost</p>
         <p class="report-num">Section 1 of 11</p>
         <h2>Executive synthesis</h2>
-        <p>This period, the client closed 4 of 9 labeled deals (about 44% win rate, directional, n = 9). The dominant reason deals closed: the buyer already knew their CRM or attribution was lying, and a signer was willing to pay for an ongoing partner, not tickets. The dominant reason they did not: the day-to-day contact liked the work, but the budget or board would not put RevOps ahead of hiring sellers (or cutting spend). This is the first live build, so there is no month-over-month change yet.</p>
+        <p>This period the client closed 3 of 13 labeled deals (about 23% win rate, directional). The dominant win: the buyer already knew their CRM or attribution was lying, and a signer was willing to pay for an ongoing partner, not tickets. The dominant loss: the day-to-day contact liked the work, but the budget or board would not put RevOps ahead of hiring sellers (or cutting spend).</p>
+        <p>Versus the Sep 24 baseline: September late-stage is board-gate heavy. Only one September closed-won. The closed-lost set expanded. A Contract Sent cluster is still open as of the Sep 25 pull, and is not counted as wins or losses yet.</p>
         <div class="table-wrap">
           <table>
             <thead>
@@ -85,51 +86,38 @@
               </tr>
               <tr>
                 <td>Δ</td>
-                <td>What changed: v0 baseline</td>
-                <td>First live build. The next report compares against this one.</td>
-                <td>n/a</td>
+                <td>Sep refresh vs Sep 24 baseline</td>
+                <td>Board gates dominate late-stage; only 1 Sep closed-won; expanded closed-lost set</td>
+                <td>Directional</td>
               </tr>
             </tbody>
           </table>
         </div>
         <blockquote class="quote-block">“Visibility problem, not content problem.”</blockquote>
-        <p>Headline win rate uses labeled deals. Poor-fit losses are not split out yet, so 4 / 9 includes any poor-fit deals.</p>
+        <p>Headline win rate uses labeled deals. Poor-fit losses are not split out yet, so 3 / 13 includes any poor-fit deals. A visibility-framed keep story (data plus dual-CRM, not “make more content”) still sits in the insight bank; a September weekly sync confirms the engagement continues.</p>
       </section>
 
       <section class="report-block" data-caption="Win rate by segment">
         <p class="mobile-caption">Win rate by segment</p>
         <p class="report-num">Section 2 of 11</p>
         <h2>Win rate by segment</h2>
-        <p>Segments match the Customer Intelligence Director's R1-R5 cuts in the ICP findings report, so both packs use the same slices. Outcomes are not yet tagged to a segment in this baseline.</p>
+        <p>Segments match the Customer Intelligence Director's R1-R5 cuts in the ICP findings report. CRM deal to segment mapping is still incomplete, so rates stay at the all-deals rollup only.</p>
         <div class="table-wrap">
           <table>
             <thead>
-              <tr><th>Segment</th><th>Won</th><th>Lost</th><th>Poor-fit</th><th>Win rate</th><th>n</th><th>vs last month</th></tr>
+              <tr><th>Segment</th><th>Won</th><th>Lost</th><th>Win rate</th><th>n</th><th>vs last</th><th>Confidence</th></tr>
             </thead>
             <tbody>
-              <tr><td>R1. New in-seat GTM leader</td><td>Not yet split</td><td>Not yet split</td><td>Not yet split</td><td>n/a</td><td>n/a</td><td>baseline</td></tr>
-              <tr><td>R2. Overwhelmed operator / post-migration</td><td>Not yet split</td><td>Not yet split</td><td>Not yet split</td><td>n/a</td><td>n/a</td><td>baseline</td></tr>
-              <tr><td>R3. Revenue exec / blind spot</td><td>Not yet split</td><td>Not yet split</td><td>Not yet split</td><td>n/a</td><td>n/a</td><td>baseline</td></tr>
-              <tr><td>R4. PE portco / PE channel</td><td>Not yet split</td><td>Not yet split</td><td>Not yet split</td><td>n/a</td><td>n/a</td><td>baseline</td></tr>
-              <tr><td>All labeled deals</td><td>4</td><td>5</td><td>Not split</td><td>~44%</td><td>9</td><td>baseline</td></tr>
+              <tr><td>R1. New in-seat GTM leader</td><td>n/a</td><td>n/a</td><td>n/a</td><td>n/a</td><td>open</td><td>n/a</td></tr>
+              <tr><td>R2. Overwhelmed operator / post-migration</td><td>n/a</td><td>n/a</td><td>n/a</td><td>n/a</td><td>open</td><td>n/a</td></tr>
+              <tr><td>R3. Revenue exec / blind spot</td><td>n/a</td><td>n/a</td><td>n/a</td><td>n/a</td><td>open</td><td>n/a</td></tr>
+              <tr><td>R4. PE portco / PE channel</td><td>n/a</td><td>n/a</td><td>n/a</td><td>n/a</td><td>open</td><td>n/a</td></tr>
+              <tr><td>R5. Headcount before systems</td><td>n/a</td><td>n/a</td><td>n/a</td><td>n/a</td><td>open</td><td>n/a</td></tr>
+              <tr><td>All labeled deals</td><td>3</td><td>10</td><td>~23%</td><td>13</td><td>Down vs Sep 24 (~44% on a tinier set)</td><td>Directional</td></tr>
             </tbody>
           </table>
         </div>
-        <h3 style="font-size:16px;margin-top:18px">Supplementary cut: lead source</h3>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>Lead source</th><th>Won</th><th>Lost</th><th>Lost value</th><th>Confidence</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Outbound / BDR</td><td>Not yet split</td><td>1 (Account L)</td><td>X</td><td>Directional</td></tr>
-              <tr><td>Direct</td><td>Not yet split</td><td>2 (Account M)</td><td>X</td><td>Directional</td></tr>
-              <tr><td>Marketing-sourced</td><td>Not yet split</td><td>0</td><td>n/a</td><td>Directional</td></tr>
-              <tr><td>Referral / PE</td><td>Not yet split</td><td>Not yet split</td><td>n/a</td><td>Directional</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>Directional read: cold and low-warmth sources (outbound BDR, Direct) lost more often than referral and PE paths. No marketing-sourced deals appeared in the lost column.</p>
+        <p>Lead-source matrix omitted this refresh. CRM lead-source properties were not reliably pulled for every labeled deal. Do not invent rows.</p>
       </section>
 
       <section class="report-block" data-caption="Why deals were won">
@@ -139,25 +127,28 @@
         <div class="table-wrap">
           <table>
             <thead>
-              <tr><th>#</th><th>Win reason</th><th>Spine quote</th><th>Confidence</th></tr>
+              <tr><th>#</th><th>Win reason</th><th>Named deals (masked)</th><th>Spine quote / signal</th><th>Confidence</th></tr>
             </thead>
             <tbody>
               <tr>
                 <td>1</td>
                 <td>Buyer already knows the CRM / attribution is lying and buys an ongoing partner, not tickets</td>
-                <td>“Visibility problem, not content problem.” (Account C)</td>
+                <td>September closed-won (only Sep CW); July-dated CW (attribution TBD); Account H (early tenure)</td>
+                <td>Visibility / Direct-bucket pain + partner who stays</td>
                 <td>Directional</td>
               </tr>
               <tr>
                 <td>2</td>
                 <td>Continuity: the sole RevOps knowledge-holder leaves; they buy stabilize + document</td>
-                <td>Verbatim still being traced to Account G-class calls</td>
+                <td>Account G (keep / case study); September exemplars: sole-admin black box; bus-factor framing on a board-gated deal</td>
+                <td>“Company breaks if he gets hit by a bus”; contractor left → CRM black box</td>
                 <td>Directional</td>
               </tr>
               <tr>
                 <td>3</td>
-                <td>An exec signer is in the deal (revenue exec as decision maker, operator with an exec sponsor, or a confirmed PE portco exec)</td>
-                <td>Account H closed-won (early tenure); Account D renewal signed</td>
+                <td>An exec signer is in the deal</td>
+                <td>Account H closed-won; Account D renewal (retained, not in the 3)</td>
+                <td>Operator alone stalls; signer above the day-to-day contact</td>
                 <td>Directional</td>
               </tr>
             </tbody>
@@ -170,7 +161,7 @@
               <tr><th>Dimension</th><th>Profile</th></tr>
             </thead>
             <tbody>
-              <tr><td>Company</td><td>PE/VC-backed B2B, HubSpot and/or Salesforce, US</td></tr>
+              <tr><td>Company</td><td>PE/VC-backed B2B, HubSpot and/or Salesforce, US (ARR band masked)</td></tr>
               <tr><td>Day-to-day</td><td>New in-seat GTM leader or overwhelmed operator (inherited mess, Direct bucket, cannot prove ROI)</td></tr>
               <tr><td>Signer</td><td>CFO / CRO / COO or PE-backed decision maker. The operator alone stalls.</td></tr>
               <tr><td>Shape</td><td>Retainer / multi-month partner (Accounts A, D, F, I, C as the model book)</td></tr>
@@ -178,8 +169,8 @@
           </table>
         </div>
         <p>What “not tickets” means to the buyer: opinions and pushback, the simplest build that works, documented, board-ready visibility, and a partner who stays for strategy and delivery when tribal knowledge walks out.</p>
-        <p>What won deals had that lost deals did not: a named signer above the operator, and a warmer source (referral or PE) rather than cold outbound or Direct. Directional.</p>
-        <p>Accounts A and D are retained books rather than new deals in the window. They explain why buyers stay, and they belong in the proof set, but they are not counted in the 4 won. Only one named closed-won in the CRM snapshot is public-safe to describe as early tenure, not Ideal proof.</p>
+        <p>What won deals had that lost deals did not: a named signer above the operator. Lead source is not reliable enough this refresh to keep the warmer-source claim. Directional.</p>
+        <p>Accounts A and D are retained books rather than new deals in the window. They explain why buyers stay, and they belong in the proof set, but they are not counted in the 3 won. Account H is public-safe to describe as early tenure, not Ideal proof. The September closed-won is delivery-first, proof later.</p>
       </section>
 
       <section class="report-block" data-caption="Why deals were lost">
@@ -190,34 +181,35 @@
         <div class="table-wrap">
           <table>
             <thead>
-              <tr><th>Loss reason</th><th>Category</th><th>Rank by frequency</th><th>Confidence</th></tr>
+              <tr><th>Loss reason</th><th>Category</th><th>Rank by call language</th></tr>
             </thead>
             <tbody>
               <tr>
                 <td>Board / budget funds sellers (or cuts spend) before RevOps</td>
                 <td>No decision / priority</td>
-                <td>1 (call language)</td>
-                <td>Directional</td>
+                <td>1</td>
               </tr>
               <tr>
-                <td>Buyer cannot say what they would be buying, and will not take it to the decision maker without a stronger case</td>
-                <td>No decision / weak business case</td>
-                <td>2</td>
-                <td>Directional</td>
+                <td>Prior relationship / alternate vendor already chosen</td>
+                <td>Lost to competitor (relationship)</td>
+                <td>Named</td>
               </tr>
               <tr>
-                <td>Operator with no signer: nobody asked who signs above them in the first couple of conversations</td>
-                <td>Champion without authority</td>
-                <td>3</td>
-                <td>Directional</td>
+                <td>Term / budget floor mismatch</td>
+                <td>Qualification</td>
+                <td>Named</td>
+              </tr>
+              <tr>
+                <td>Exec hold / in-house path</td>
+                <td>No decision</td>
+                <td>Named</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p>Known lost deals in the CRM snapshot week: Account L (outbound / BDR) and Account M ×2 (Direct). Closed-lost reason fields were not in the pull, so ranking by dollar value cannot be computed yet. Amounts stay X.</p>
-        <h3 style="font-size:16px;margin-top:18px">Poor-fit losses (not counted in the headline win rate)</h3>
-        <p>None classified in this baseline. The source does not split poor-fit from genuine losses. Use ICP findings Section 8 as the qualification boundary once deals are tagged.</p>
-        <p>Do-not-model accounts (context, not losses in this window): live ops that are locked out of Ideal proof, plus peak-invoice-but-wrong-fit cautionary examples. Do not sell against those logos.</p>
+        <p>Closed-lost set through 2026-09-25 (names and amounts masked): an August cluster of CRM-labeled losses, a budget-floor mismatch that later closed-lost, a term-length mismatch, an exec hold that chose an in-house path, and a loss to a prior-relationship vendor. A prior-report closed-lost claim that is not in the Sep 25 snapshot is treated as residue, not a current labeled loss.</p>
+        <h3 style="font-size:16px;margin-top:18px">Poor-fit / do-not-model</h3>
+        <p>Poor-fit vs genuine-loss split is still incomplete (no systematic ICP Section 8 tagging on every closed-lost). Context only: live ops locked out of Ideal proof, plus peak-invoice-but-wrong-fit cautionary examples. Do not sell against those logos.</p>
       </section>
 
       <section class="report-block" data-caption="Who they competed against">
@@ -227,62 +219,70 @@
         <div class="table-wrap">
           <table>
             <thead>
-              <tr><th>Competitor</th><th>What buyers said</th></tr>
+              <tr><th>Competitor type</th><th>What buyers said / did</th></tr>
             </thead>
             <tbody>
               <tr>
                 <td>Status quo: hire more sellers first</td>
-                <td>Hiring more AEs first will burn through reps (champion's argument against the board)</td>
+                <td>Board default before RevOps spend. Champion argument: hiring more AEs first burns through reps.</td>
               </tr>
               <tr>
-                <td>Ticket-based help (implied alternative to a partner)</td>
-                <td>No named vendor in this window</td>
+                <td>SI / implementer / in-house build</td>
+                <td>Compare fractional partner vs traditional implementation vs build. One named discovery later chose in-house.</td>
+              </tr>
+              <tr>
+                <td>Prior relationship vendor</td>
+                <td>Existing exec relationship wins. One named loss in the window.</td>
+              </tr>
+              <tr>
+                <td>Named agencies</td>
+                <td>None named this window.</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p>New competitors this month: none named. The real competitor in this window was the board's preference for headcount.</p>
+        <p>The real competitor this period was almost always status quo, headcount, or prior relationship, not a named RevOps agency.</p>
       </section>
 
       <section class="report-block" data-caption="Objection ranking">
         <p class="mobile-caption">Objection ranking</p>
         <p class="report-num">Section 6 of 11</p>
         <h2>Objection frequency ranking</h2>
+        <p>No honest frequency counts this refresh (would invent). Ranked by how often they show up as deal-killing language on named calls.</p>
         <div class="table-wrap">
           <table>
             <thead>
-              <tr><th>Rank</th><th>Objection</th><th>Times raised</th><th>Response to test</th></tr>
+              <tr><th>Rank</th><th>Objection</th><th>Named exemplars</th><th>Response to test</th></tr>
             </thead>
             <tbody>
               <tr>
                 <td>1</td>
                 <td>“Board approval is the blocker.”</td>
-                <td>Heard over and over (count not yet per deal)</td>
-                <td>One forwardable page: “Don’t hire another seller until the funnel exists.”</td>
+                <td>Late-stage board-gated deals (one with a board budget ask)</td>
+                <td>Forwardable page: “Don’t hire another seller until the funnel exists.”</td>
               </tr>
               <tr>
                 <td>2</td>
-                <td>“We still don’t know what we’d be buying.”</td>
-                <td>Not yet counted</td>
-                <td>Sell the ongoing partner, not tickets: opinions, simplest build, documented, board-ready</td>
+                <td>“We need to hire more AEs / sellers first.”</td>
+                <td>Board pushing “just hire more salespeople”</td>
+                <td>Hiring into a broken funnel burns through reps</td>
               </tr>
               <tr>
                 <td>3</td>
-                <td>“We won’t push this to the decision maker without a stronger case.”</td>
-                <td>Not yet counted</td>
-                <td>Get a named signer before deepening demos; give the champion the forwardable page</td>
+                <td>ROI / budget / timing won’t clear upstairs</td>
+                <td>Later closed-lost / in-house path; PE visibility vs fractional vs headcount timing</td>
+                <td>Named signer + cost-of-inaction before deepening demos</td>
               </tr>
               <tr>
                 <td>4</td>
-                <td>“We need to hire more AEs first.”</td>
-                <td>Not yet counted</td>
-                <td>Hiring into a broken funnel burns through reps</td>
+                <td>“We still don’t know what we’d be buying” / won’t push upstairs</td>
+                <td>Champion-only deals without a signer early</td>
+                <td>Sell ongoing partner, not tickets; ask “who signs above you?” on call 1–2</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p>Objections that correlate with loss cannot be stated yet. Counts per deal are not in the source, and n = 9 is below a useful minimum sample. Directional read: board / headcount objections appear in lost and stalled deals.</p>
-        <p>Objections 2-4 are paraphrased from call language. The responses are recommendations to test, not yet verified in a won deal.</p>
+        <p>Responses are coaching recommendations to test, not yet verified as win rates.</p>
       </section>
 
       <section class="report-block" data-caption="Where deals drop">
@@ -292,31 +292,28 @@
         <div class="table-wrap">
           <table>
             <thead>
-              <tr><th>Stage</th><th>Deals entered</th><th>Stalled / lost here</th><th>What happened on the last call before the stall</th></tr>
+              <tr><th>Stage</th><th>What tends to happen</th><th>Exemplars (masked)</th></tr>
             </thead>
             <tbody>
               <tr>
-                <td>Discovery (first couple of calls)</td>
-                <td>Not yet from CRM history</td>
-                <td>Not yet</td>
-                <td>Operator-only; nobody asked who signs above them</td>
+                <td>Discovery</td>
+                <td>Operator-only; nobody asks who signs above them</td>
+                <td>Early PE-visibility / ROI-budget shape</td>
               </tr>
               <tr>
                 <td>Business case / exec approval</td>
-                <td>Not yet</td>
-                <td>Not yet</td>
-                <td>Champion asks for a clearer case, or reports “board approval is the blocker”; deal stays open or goes quiet</td>
+                <td>Champion sold; board / budget gate</td>
+                <td>Named board-gated deals</td>
               </tr>
               <tr>
                 <td>Commit / close</td>
-                <td>2+ (Deal N, Deal O)</td>
-                <td>2 slipped</td>
-                <td>Both hit their close dates with no closed-won in the snapshot. Watch, not counted as losses.</td>
+                <td>Contract Sent cluster still open; prior slips</td>
+                <td>Three deals still Contract Sent as of Sep 25; one prior-relationship loss pre-close</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p>Biggest leak (directional): the move from champion to economic buyer. Deals do not die in discovery; they stall when the case goes upstairs without a signer already engaged.</p>
+        <p>Biggest leak (directional): champion → economic buyer. Deals rarely die in discovery; they stall when the case goes upstairs without a signer already engaged.</p>
       </section>
 
       <section class="report-block" data-caption="CRM vs the calls">
@@ -331,16 +328,34 @@
             </thead>
             <tbody>
               <tr>
-                <td>Account L (outbound / BDR, value X)</td>
+                <td>Account (Aug closed-lost)</td>
                 <td>Field not in the CRM pull</td>
-                <td>Calls still to be tagged to this deal</td>
-                <td>Field not pulled</td>
+                <td>Not pulled for call-level reconciliation this refresh</td>
+                <td>Unknown</td>
               </tr>
               <tr>
-                <td>Account M ×2 (Direct, value X)</td>
-                <td>Field not in the CRM pull</td>
-                <td>Calls still to be tagged to this deal</td>
-                <td>Field not pulled</td>
+                <td>Account (Sep closed-lost)</td>
+                <td>Closed-lost in snapshot</td>
+                <td>Discovery: ROI / budget framing; later chose in-house</td>
+                <td>Calls richer than CRM label</td>
+              </tr>
+              <tr>
+                <td>Account (prior-relationship loss)</td>
+                <td>Lost (snapshot narrative)</td>
+                <td>Prior executive relationship vendor</td>
+                <td>Calls explain CRM</td>
+              </tr>
+              <tr>
+                <td>Account (floor mismatch → closed-lost)</td>
+                <td>Closed-lost in snapshot</td>
+                <td>Budget floor mismatch earlier; then closed-lost</td>
+                <td>Partial</td>
+              </tr>
+              <tr>
+                <td>Prior-report residue</td>
+                <td>n/a</td>
+                <td>Not in the Sep 25 snapshot</td>
+                <td>N/A: do not reconcile</td>
               </tr>
             </tbody>
           </table>
@@ -378,10 +393,28 @@
                 <td>Public-safe check first</td>
               </tr>
               <tr>
+                <td>Account C</td>
+                <td>Retention</td>
+                <td>Weekly sync continues (September)</td>
+                <td>Keep the story; visibility framing</td>
+              </tr>
+              <tr>
                 <td>Account H</td>
                 <td>Case study (later)</td>
                 <td>Closed-won in window; early tenure</td>
                 <td>Not yet: not Ideal proof until tenure builds</td>
+              </tr>
+              <tr>
+                <td>Account (Sep closed-won)</td>
+                <td>New closed-won</td>
+                <td>Only September closed-won; kickoff in motion</td>
+                <td>Delivery quality first; proof later</td>
+              </tr>
+              <tr>
+                <td>Account (Direct work live)</td>
+                <td>Delivery / Direct work</td>
+                <td>Direct traffic attribution still live on September delivery calls</td>
+                <td>Keep as a P2 proof path when public-safe</td>
               </tr>
             </tbody>
           </table>
@@ -406,13 +439,18 @@
               </tr>
               <tr>
                 <td>Get a named signer before deepening demos; operator-only means stall risk</td>
-                <td>Stage drop (Section 7), loss reason 3 (Section 4)</td>
+                <td>Stage drop (Section 7), board gates (Section 4)</td>
                 <td>Deal Enablement</td>
               </tr>
               <tr>
                 <td>One forwardable page: “Don’t hire another seller until the funnel exists”</td>
                 <td>Top objection (Section 6), top loss reason (Section 4)</td>
                 <td>Content Director</td>
+              </tr>
+              <tr>
+                <td>Continuity / bus-factor proof (Account G plus September exemplars)</td>
+                <td>Win reason #2 (Section 3)</td>
+                <td>Content / Deal Enablement</td>
               </tr>
               <tr>
                 <td>Proof logos (public-safe): Accounts A, D, F, I, C, B. Never the excluded Ideal lockout as proof</td>
@@ -429,19 +467,19 @@
         <p class="mobile-caption">Decisions and next actions</p>
         <p class="report-num">Section 11 of 11</p>
         <h2>Decisions and next actions</h2>
-        <p>Every action has a named owner and a date. This sample uses roles, not people. No open actions carried over: this is the baseline.</p>
+        <p>Every action has a named owner and a date. This sample uses roles, not people.</p>
         <div class="table-wrap">
           <table>
             <thead>
               <tr><th>Action</th><th>Owner</th><th>Due</th><th>Status</th></tr>
             </thead>
             <tbody>
-              <tr><td>Add closed-lost reason to the CRM pull and make it required</td><td>Client ops</td><td>Next refresh</td><td>Open</td></tr>
-              <tr><td>Re-run after the next Circleback sync to pick up newer calls</td><td>Deal Enablement Director</td><td>Next refresh</td><td>Open</td></tr>
-              <tr><td>Next vault sync for newer closed-won / closed-lost deals</td><td>Client ops</td><td>Next refresh</td><td>Open</td></tr>
-              <tr><td>Draft the forwardable “don’t hire another seller” one-pager</td><td>Content Director</td><td>Next refresh</td><td>Ticket pending</td></tr>
-              <tr><td>Add “who signs above you?” to the first two discovery calls</td><td>Client sales lead</td><td>Next refresh</td><td>Open</td></tr>
-              <tr><td>Set the minimum sample threshold for pattern language</td><td>Client + Bloom</td><td>Next refresh</td><td>Decision needed</td></tr>
+              <tr><td>Add closed-lost reason to the CRM pull (required)</td><td>Client ops</td><td>2026-10-25</td><td>Open</td></tr>
+              <tr><td>Map labeled deals → ICP segment + lead source</td><td>Analytics / CRM pull</td><td>2026-10-25</td><td>Open</td></tr>
+              <tr><td>Draft the forwardable “don’t hire another seller” one-pager</td><td>Content Director</td><td>2026-10-25</td><td>Ticket pending</td></tr>
+              <tr><td>Add “who signs above you?” to the first two discovery calls</td><td>Client sales lead</td><td>2026-10-25</td><td>Open</td></tr>
+              <tr><td>Watch Contract Sent cluster into the next refresh</td><td>Deal Enablement Director</td><td>2026-10-25</td><td>Open</td></tr>
+              <tr><td>Set the minimum sample threshold for pattern language</td><td>Client + Bloom</td><td>2026-10-25</td><td>Decision needed</td></tr>
             </tbody>
           </table>
         </div>
