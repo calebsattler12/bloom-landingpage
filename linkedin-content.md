@@ -79,17 +79,16 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 
 ---
 
-## 5. ICP pack you keep
+## 5. 90-day roadmap
 
-Before anything gets built, we dig into your calls and email and hand you an ICP findings pack.
+Every new client gets a 90-day roadmap.
 
-Who actually buys.
-Buyer language.
-Questions before yes.
+Hardware you own.
+Intelligence on the vault.
+A Slack lead you can talk to.
+Then the seats your situation needs.
 
-You keep it either way.
-
-That is a low-risk place to look at the work.
+Look at an example plan. Then we talk about your office.
 
 Book a Call:
 https://calendar.app.google/kY3NqzNsspgzzw1F9
@@ -130,7 +129,7 @@ https://calendar.app.google/kY3NqzNsspgzzw1F9
 ## 8. Soft CTA
 
 Hire always-on marketing employees.
-Keep the ICP findings pack.
+Every new client gets a 90-day roadmap.
 
 Book a call. We look at the work together.
 

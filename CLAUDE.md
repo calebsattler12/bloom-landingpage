@@ -63,7 +63,8 @@ Cloudflare, Workers, or Durable Objects on the marketing site.
 Orchestrator then three,” or the phrase “reports + recommended actions.”
 Show **example deliverables**. Hero: always-on marketing employees. Hardware
 and “we stay” live in How we show up / After install. Samples prove the work.
-Book a Call is the motion.
+Every new client gets a **90-day roadmap**. Do **not** say they keep an ICP
+findings pack either way. Book a Call is the motion.
 
 Do **not** boil down to “AI content,” SEO alone, or a consultancy that
 ships a build and leaves. Show stay-with-you in partner and after-install
