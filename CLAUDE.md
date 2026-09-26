@@ -13,10 +13,12 @@ no build step.
 - `pitch-deck.html` — sales deck (keyboard nav)
 - `90-day-timeline.html` / `90-day-example.html` — example fitted 90-day
   build (intelligence + Slack lead first, then more seats)
-- `icp-findings-example.html` / `win-loss-example.html` — display-case
-  deliverables (scrubbed composite, highlight arrows, page-specific calendar CTAs).
+- `icp-findings-example.html` / `win-loss-example.html` /
+  `events-partnerships-example.html` — display-case deliverables (scrubbed
+  composite, highlight arrows, page-specific calendar CTAs).
   ICP and win-loss samples follow the remade 11-section packs (no public
-  evidence appendix, no dollar amounts, names masked).
+  evidence appendix, no dollar amounts, names masked). Events sample is a
+  9-section day-1 pack (rolling 90 to 180 day window; no sources appendix).
 - `teams/*.html` — always-on marketing employee pages (person titles)
 - `robots.txt` / `sitemap.xml` — discoverability; `logo-font-options.html` is noindex
 - `linkedin-content.md` — paste-ready LinkedIn drafts
@@ -40,7 +42,7 @@ no build step.
 - **Fonts:** Schibsted Grotesk (headings), Hanken Grotesk (body)
 - **Logo:** full wordmark in `logo-mark.png` (no separate BLOOM typeset). Never include "INSIGHTS. LANDSCAPES. GROWTH."
 - **CTA (site):** Book a Call → https://calendar.app.google/oLraWPKZUFHqQXt18
-- **Display-page CTAs (same URL):** ICP → Get your ICP report; win-loss → Get your win-loss report; 90-day example → Build your 90 day plan
+- **Display-page CTAs (same URL):** ICP → Get your ICP report; win-loss → Get your win-loss report; events → Get your events report; 90-day example → Build your 90 day plan
 - **Social:** LinkedIn https://www.linkedin.com/company/bloom-ai-llc/ (JSON-LD `sameAs`). No Twitter account.
 - **CTA (deck close):** Work with us
 - Personality: light, approachable, friendly, slightly dramatic on **pain**. Do not revive old Verity navy/Jost.
@@ -100,8 +102,8 @@ Slightly dramatic on pain. Calm on how Bloom stays.
 ## Pricing (public drafts)
 
 **Do not publish dollar amounts, install fees, or retainer figures** in
-`index.html`, `get-started.html`, `pitch-deck.html`, `90-day-timeline.html`, or
-`linkedin-content.md`. Qualitative only: own the hardware, no contract,
+`index.html`, `get-started.html`, `pitch-deck.html`, `90-day-timeline.html`,
+`events-partnerships-example.html`, or `linkedin-content.md`. Qualitative only: own the hardware, no contract,
 roster grows, fraction of a content team. Prefer Book a Call.
 
 ## Site section map
@@ -111,7 +113,7 @@ roster grows, fraction of a content team. Prefer Book a Call.
 3. How we show up (Mac mini they own; Bloom installs in office; human stays; Slack)
 4. The team (one marketing roster of person-titled employees)
 5. How the roster grows (implied: intelligence + Slack lead, then seats that fit)
-6. Samples (ICP, win-loss, Slack, LinkedIn paste-only)
+6. Samples (ICP, win-loss, events, Slack, LinkedIn paste-only)
 7. RevBlack (live client; logo + Visit RevBlack site)
 8. After install (always on; Bloom keeps building; no new dashboards; tool logo marquee)
 9. Get started teaser (samples + 90-day example + Book a Call; no call-one/call-two)
@@ -136,6 +138,15 @@ analysis (8) CRM reconciliation (9) Expansion and referral signals (10)
 Recommended messaging fixes (11) Decisions and next actions. Do not publish
 the evidence appendix, client names, or dollar amounts. Source:
 EXAMPLE_Win-Loss-Report. Keep rates labeled directional when n is small.
+
+**Events & Partnerships sample (9 sections, public):** Delivered day 1,
+covering a rolling 90 to 180 day window. (1) Executive summary (2) Event
+shortlist with ICP fit score, cost, and deadlines (3) Podcast and show
+shortlist (4) Sponsorship and community options (5) Partner and
+co-marketing candidates (6) Competitor event watch with go / counter-program
+/ skip (7) Pitch pipeline and status (8) Post-event debriefs (9) Decisions:
+register, pitch, or pass. Do not publish the sources appendix, client names,
+spokesperson names, competitor vendor names, or dollar amounts.
 
 **Employee pages:** one page per roster seat. Demand Manager stays.
 `teams/search-visibility.html` redirects to the SEO Director page.
