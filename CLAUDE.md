@@ -148,7 +148,10 @@ co-marketing candidates (6) Competitor event watch with go / counter-program
 register, pitch, or pass. Do not publish the sources appendix, client names,
 spokesperson names, competitor vendor names, or dollar amounts.
 
-**Employee pages:** one page per roster seat. Demand Manager stays.
+**Employee pages:** one page per roster seat. Each page lists the named
+monthly pack (or monthly check) from the Brainstorm Document, plus what
+lands in Slack between deliveries. Demand Manager stays on the roster
+without a numbered pack of its own. Data Structure copy stays vague.
 `teams/search-visibility.html` redirects to the SEO Director page.
 
 ## Integrations (confirmed only)
