@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DXC609MWB7"></script>
+<script src="/gtag-init.js"></script>
+<title>Bloom AI · Pitch Deck</title>
+<meta name="description" content="Bloom AI sales deck: always-on marketing employees on hardware they own. A human stays.">
+<link rel="canonical" href="https://runbloom.ai/blue-variation/pitch-deck.html">
+<link rel="icon" type="image/svg+xml" href="/blue-variation/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bloom AI">
+<meta property="og:title" content="Bloom AI · Pitch Deck">
+<meta property="og:description" content="Always-on marketing employees. Mac mini they own. Bloom stays.">
+<meta property="og:url" content="https://runbloom.ai/blue-variation/pitch-deck.html">
+<meta property="og:image" content="https://runbloom.ai/logo-mark.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --ink:#0B0B0F;
+  --muted:#5E6272;
+  --line:rgba(11,11,12,.10);
+  --paper:#FFFFFF;
+  --accent:#3355FF;
+}
+html,body{height:100%;}
+body{
+  font-family:Geist,system-ui,sans-serif;
+  color:var(--ink);
+  background:#1a1a1c;
+  -webkit-font-smoothing:antialiased;
+  overflow:hidden;
+}
+h1,h2,h3{font-family:Geist,system-ui,sans-serif;letter-spacing:-.03em;line-height:1.02;text-wrap:balance;}
+p{text-wrap:pretty;line-height:1.55;}
+a{color:inherit;}
+.deck{position:relative;width:100vw;height:100vh;}
+.slide{
+  position:absolute;inset:0;
+  display:none;
+  padding:56px 72px 72px;
+  background:var(--paper);
+  flex-direction:column;
+  justify-content:center;
+}
+.slide.on{display:flex;}
+.slide.dark{background:var(--ink);color:#fff;}
+.slide.dark .muted{color:rgba(255,255,255,.62);}
+.slide.dark .eyebrow{color:var(--accent);}
+.slide.dark .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);}
+.eyebrow{
+  font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:18px;
+}
+.muted{color:var(--muted);}
+.accent{color:var(--accent);}
+.lead{font-size:22px;max-width:820px;margin-top:22px;}
+.small{font-size:15px;}
+.brand{
+  position:absolute;top:24px;left:72px;
+  display:flex;align-items:center;
+}
+.logo{display:inline-flex;align-items:center;gap:11px;line-height:1;color:inherit}
+.logo{overflow:visible}
+.logo-mark{height:36px;width:auto;display:block;flex:none}
+.logo-word{font-family:Geist,system-ui,sans-serif;font-weight:700;letter-spacing:-.03em;font-size:21px;line-height:1;color:var(--ink);display:block;transform:translateY(.5px)}
+.slide.dark .logo-word{color:var(--paper);}
+.footer-bar{
+  position:absolute;left:72px;right:72px;bottom:28px;
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:13px;color:var(--muted);
+}
+.slide.dark .footer-bar{color:rgba(255,255,255,.45);}
+.progress{display:flex;gap:6px;align-items:center;}
+.dot{width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.28;}
+.dot.on{opacity:1;background:var(--accent);}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px;max-width:980px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px;max-width:1040px;}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px;max-width:1100px;}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 22px 20px;
+}
+.card h3{font-size:18px;font-weight:600;margin-bottom:8px;}
+.card p{font-size:14.5px;color:var(--muted);line-height:1.45;}
+.slide.dark .card p{color:rgba(255,255,255,.62);}
+.card .tag{
+  display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px;
+}
+.card .tag.muted-tag{color:var(--muted);}
+.loop{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:40px;max-width:1000px;
+}
+.loop .node{
+  background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;
+  font-family:Geist,sans-serif;font-weight:600;font-size:13px;line-height:1.25;
+  max-width:180px;text-align:center;
+}
+.slide.dark .loop .node{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.14);}
+.loop .arrow{color:var(--accent);font-weight:700;font-size:18px;}
+.cta{
+  display:inline-flex;align-items:center;gap:10px;
+  margin-top:36px;background:var(--accent);color:#fff;
+  font-weight:600;font-size:16px;padding:16px 26px;border-radius:10px;text-decoration:none;
+}
+.cta:hover{filter:brightness(.95);}
+.hint{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);font-size:12px;color:rgba(255,255,255,.35);z-index:20;pointer-events:none;}
+.chip-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
+.chip{
+  display:inline-flex;align-items:center;font-size:13px;font-weight:600;
+  padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;
+}
+.teams-tablist{
+  display:flex;gap:6px;margin-top:28px;max-width:360px;width:100%;
+  padding:5px;border-radius:999px;border:1px solid var(--line);background:#fff;
+}
+.teams-tab{
+  flex:1;appearance:none;cursor:pointer;border:0;background:transparent;
+  font-family:Geist,sans-serif;font-weight:600;font-size:14px;
+  color:var(--muted);padding:11px 16px;border-radius:999px;
+}
+.teams-tab[aria-selected="true"]{background:var(--ink);color:#fff}
+.teams-panel{margin-top:28px;max-width:1100px}
+.teams-panel[hidden]{display:none !important}
+.deck-starters{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.deck-starters.sales-two{grid-template-columns:1fr 1fr;max-width:860px}
+@media (max-width:900px){
+  .slide{padding:48px 28px 64px;}
+  .brand,.footer-bar{left:28px;right:28px;}
+  .grid-2,.grid-3,.grid-4,.deck-starters{grid-template-columns:1fr;}
+  .teams-tablist{max-width:none}
+  h1{font-size:34px !important;}
+  h2{font-size:28px !important;}
+}
+@media print{
+  body{overflow:visible;background:#fff;}
+  .deck{height:auto;}
+  .slide{position:relative;display:flex !important;page-break-after:always;min-height:100vh;}
+  .hint{display:none;}
+}
+</style>
+<link rel="stylesheet" href="brand.css">
+</head>
+<body>
+<div class="hint">← → or click · Space next · Esc first</div>
+<div class="deck" id="deck">
+
+  <section class="slide on" data-title="Title">
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
+    <div class="eyebrow">Sales deck</div>
+    <h1 style="font-size:56px;font-weight:600;max-width:900px">Your agentic team of <span class="accent">marketing employees</span>.</h1>
+    <p class="lead muted">Always on. On a Mac mini they own. Bloom stays. They talk to the Orchestrator in Slack.</p>
+    <div class="chip-row">
+      <span class="chip">Orchestrator</span>
+      <span class="chip">Intelligence</span>
+      <span class="chip">SEO</span>
+      <span class="chip">Content</span>
+      <span class="chip">Demand</span>
+      <span class="chip">Deal Enablement</span>
+    </div>
+    <div class="footer-bar"><span>runbloom.ai</span><div class="progress"></div></div>
+  </section>
+
+  <section class="slide dark" data-title="Why Bloom">
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
+    <div class="eyebrow">Why Bloom</div>
+    <h2 style="font-size:44px;font-weight:600;max-width:860px">The queue never clears. The ICP lives in one person’s head.</h2>
+    <p class="lead muted">The site talks like a brochure. Buyers talk like people in pain. Paid goes quiet and so does the calendar. Someone left a slide deck and a Slack that went cold.</p>
+    <div class="grid-2">
+      <div class="card">
+        <div class="tag">The bind</div>
+        <h3>Every month starts over</h3>
+        <p>Ads pause. Pipeline vanishes. The person who knew the customer is in back-to-backs.</p>
+      </div>
+      <div class="card" style="border-color:color-mix(in oklab, var(--accent) 55%, transparent);box-shadow:0 0 0 1px color-mix(in oklab, var(--accent) 25%, transparent)">
+        <div class="tag">What they hire</div>
+        <h3>Employees who keep working</h3>
+        <p>Always-on marketing employees on a Mac mini they own. Bloom installs it. A human stays.</p>
+      </div>
+    </div>
+    <div class="footer-bar"><span>Own the growth engine · human partner</span><div class="progress"></div></div>
+  </section>
+
+  <section class="slide" data-title="How we show up">
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
+    <div class="eyebrow">How we show up</div>
+    <h2 style="font-size:44px;font-weight:600;max-width:820px">A human stands it up and stays with it.</h2>
+    <p class="lead muted" style="font-size:18px">They own the Mac mini. Bloom installs it in their office. Not a self-serve cloud pack they babysit alone.</p>
+    <div class="grid-3">
+      <div class="card">
+        <div class="tag">Install</div>
+        <h3>Install the employees</h3>
+        <p>Wire sources. Put always-on employees on hardware that stays in their office.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Monitor</div>
+        <h3>Stay on the loop</h3>
+        <p>Weekly email on what shipped, what is getting found, and what needs approval.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Build out</div>
+        <h3>Bloom stays</h3>
+        <p>More employees on the roster while they stay a client, under human oversight. Kickoff is not goodbye.</p>
+      </div>
+    </div>
+    <div class="footer-bar"><span>Human partner · client-owned hardware</span><div class="progress"></div></div>
+  </section>
+
+  <section class="slide" data-title="The team">
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
+    <div class="eyebrow">The team</div>
+    <h2 style="font-size:36px;font-weight:600;max-width:820px">Always-on marketing employees. One roster.</h2>
+    <div class="deck-starters" style="grid-template-columns:repeat(2,1fr);max-width:1040px">
+      <div class="card"><div class="tag">Slack</div><h3>Orchestrator</h3><p>Monthly package plus weekly pulse. Outlines which seats come next.</p></div>
+      <div class="card"><div class="tag">Who buys</div><h3>Customer Intelligence Director</h3><p>Eleven-section ICP findings from the vault.</p></div>
+      <div class="card"><div class="tag">Search</div><h3>SEO Director</h3><p>Search and answer visibility report.</p></div>
+      <div class="card"><div class="tag">The site</div><h3>Content Director</h3><p>Content performance and audit report. Audit first.</p></div>
+      <div class="card"><div class="tag">Demand</div><h3>Demand Manager</h3><p>Nurture, forms, paid from buyer hooks.</p></div>
+      <div class="card"><div class="tag">Deals</div><h3>Deal Enablement Director</h3><p>Eleven-section win-loss from the calls.</p></div>
+      <div class="card"><div class="tag">The set</div><h3>Competitive Advantage Director</h3><p>Competitive position report. Dated. Public sources.</p></div>
+      <div class="card"><div class="tag">Rooms</div><h3>Events &amp; Partnerships Manager</h3><p>Events report. 90 to 180 day window.</p></div>
+      <div class="card"><div class="tag">LinkedIn</div><h3>Social Media Manager</h3><p>Social presence report. Paste only.</p></div>
+      <div class="card"><div class="tag">Memory</div><h3>Data Structure</h3><p>Monthly check on working memory.</p></div>
+    </div>
+    <div class="footer-bar"><span>One marketing list · Bloom stays</span><div class="progress"></div></div>
+  </section>
+
+  <section class="slide dark" data-title="Projects">
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
+    <div class="eyebrow">Projects</div>
+    <h2 style="font-size:42px;font-weight:600;max-width:820px">Intelligence and a Slack lead. Then the seats that fit.</h2>
+    <div class="grid-3" style="max-width:1040px">
+      <div class="card">
+        <div class="tag">First</div>
+        <h3>Orchestrator + Intelligence</h3>
+        <p>The person in Slack outlines future agent strategy. Intelligence owns the ICP. The rest of the team works from that language.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Then</div>
+        <h3>Fill from the situation</h3>
+        <p>SEO, Content, Demand, Deal Enablement, and the rest of marketing, from the work in front of them.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Always</div>
+        <h3>Talk in Slack</h3>
+        <p>No new dashboards. A human is still on the loop. Kickoff is not goodbye.</p>
+      </div>
+    </div>
+    <div class="footer-bar"><span>Projects expand the roster while retained</span><div class="progress"></div></div>
+  </section>
+
+  <section class="slide" data-title="Samples">
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
+    <div class="eyebrow">Samples</div>
+    <h2 style="font-size:42px;font-weight:600;max-width:780px">See the shape of the work before you install.</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="tag">Sample</div>
+        <h3>ICP report</h3>
+        <p>Most profitable ICP, buyer language, and next actions from their calls and email.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Teaser</div>
+        <h3>Slack query</h3>
+        <p>Ask call history so sales can close with language buyers already used.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Paste-only</div>
+        <h3>CEO voice, CMO queue</h3>
+        <p>Paste-ready drafts from CEO chat history or daily notes so LinkedIn and site copy stay aligned. Never auto-posted.</p>
+      </div>
+    </div>
+    <p class="small muted" style="margin-top:28px;max-width:640px">No fabricated metrics. New clients get a 90-day roadmap.</p>
+    <div class="footer-bar"><span>90-day roadmap · real artifact</span><div class="progress"></div></div>
+  </section>
+
+  <section class="slide dark" data-title="First 90 days">
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
+    <div class="eyebrow">Your first 90 days</div>
+    <h2 style="font-size:42px;font-weight:600;max-width:820px">Ninety days on hardware they own.</h2>
+    <div class="grid-3" style="max-width:1000px">
+      <div class="card">
+        <div class="tag">1</div>
+        <h3>Stand the employees up</h3>
+        <p>Mini in the office. Orchestrator in Slack, outlining which seats come next. Customer Intelligence on the vault.</p>
+      </div>
+      <div class="card">
+        <div class="tag">2</div>
+        <h3>Fill the seats that fit</h3>
+        <p>The rest of marketing, from the work in front of them.</p>
+      </div>
+      <div class="card">
+        <div class="tag">3</div>
+        <h3>Keep them on</h3>
+        <p>Approvals in Slack. A human still watching. Bloom does not pack up.</p>
+      </div>
+    </div>
+    <p class="small muted" style="margin-top:28px"><a href="90-day-timeline.html">See the 90-day plan →</a></p>
+    <div class="footer-bar"><span>Starter team first · projects expand later</span><div class="progress"></div></div>
+  </section>
+
+  <section class="slide" data-title="After install">
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
+    <div class="eyebrow">After install</div>
+    <h2 style="font-size:42px;font-weight:600;max-width:860px">No contract. The employees stay on. Bloom keeps building.</h2>
+    <div class="grid-3" style="max-width:1040px">
+      <div class="card">
+        <div class="tag">Ownership</div>
+        <h3>They own the hardware</h3>
+        <p>Runs on a Mac mini they own. Bloom installs it in their office. Not stuck on a rented subscription to keep the work going.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Day to day</div>
+        <h3>Talk to the Orchestrator</h3>
+        <p>Slack, the way they would any other teammate. That seat outlines how the roster grows. A human is still on the loop.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Ongoing</div>
+        <h3>Bloom keeps building the roster</h3>
+        <p>Weekly email so they can see progress. New projects while they stay a client mean Bloom builds more AI employees onto the teams they run.</p>
+      </div>
+    </div>
+    <p class="small muted" style="margin-top:28px;max-width:720px">Tools we work with: Slack, Microsoft Teams, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback, Granola, Google Analytics, and Ahrefs.</p>
+    <div class="footer-bar"><span>No public price list · Book a Call</span><div class="progress"></div></div>
+  </section>
+
+  <section class="slide dark" data-title="RevBlack">
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
+    <div class="eyebrow">Client example</div>
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px">
+      <img src="/revblack-logo.png" alt="RevBlack" width="56" height="56" style="display:block;border-radius:14px;flex-shrink:0">
+      <h2 style="font-size:42px;font-weight:600;max-width:860px;margin:0">RevBlack: live multi-team client.</h2>
+    </div>
+    <blockquote class="lead" style="max-width:760px;margin:0;padding:0;border:0;font-style:normal">“Look what happened! We are in the AI summary for the keyword after just 3 weeks of setting this up! That's my job working!”</blockquote>
+    <p class="small muted" style="margin-top:10px">Director of Marketing, RevBlack</p>
+    <p class="lead muted" style="max-width:760px;margin-top:18px">Bloom AI teams deployed:</p>
+    <div class="grid-2" style="max-width:960px">
+      <div class="card">
+        <h3>LIVE teams</h3>
+        <p>Customer Intelligence, Content Director, and SEO Director on their calls and email.</p>
+      </div>
+      <div class="card">
+        <h3>Orchestrator</h3>
+        <p>Weekly digest, Slack approvals, and which seats to fill next. Publishing pipeline. Call query for close support.</p>
+      </div>
+    </div>
+    <p class="small muted" style="margin-top:28px"><a href="https://www.revblack.com" target="_blank" rel="noopener">Visit RevBlack site</a></p>
+    <div class="footer-bar"><span>revblack.com</span><div class="progress"></div></div>
+  </section>
+
+  <section class="slide dark" data-title="Work with us">
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
+    <div class="eyebrow">Next step</div>
+    <h2 style="font-size:48px;font-weight:600;max-width:780px">Hire always-on marketing employees.</h2>
+    <p class="lead muted">Book a call. We look at the work together. Every new client gets a 90-day roadmap. Bloom stays after install.</p>
+    <a class="cta" href="https://calendar.app.google/oLraWPKZUFHqQXt18" target="_blank" rel="noopener">Work with us →</a>
+    <div class="footer-bar"><span>runbloom.ai</span><div class="progress"></div></div>
+  </section>
+
+</div>
+<script>
+(function(){
+  const tablist = document.querySelector('.teams-tablist');
+  if (!tablist) return;
+  const tabs = [...tablist.querySelectorAll('[role="tab"]')];
+  function selectTab(tab, {focus = false} = {}){
+    tabs.forEach((t) => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      const panel = document.getElementById(t.getAttribute('aria-controls'));
+      if (panel) panel.hidden = !on;
+    });
+    if (focus) tab.focus();
+  }
+  tablist.addEventListener('click', (e) => {
+    const tab = e.target.closest('[role="tab"]');
+    if (!tab || !tabs.includes(tab)) return;
+    e.stopPropagation();
+    selectTab(tab);
+  });
+  tablist.addEventListener('keydown', (e) => {
+    const i = tabs.indexOf(document.activeElement);
+    if (i < 0) return;
+    let next = -1;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (i + 1) % tabs.length;
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = (i - 1 + tabs.length) % tabs.length;
+    else if (e.key === 'Home') next = 0;
+    else if (e.key === 'End') next = tabs.length - 1;
+    if (next < 0) return;
+    e.preventDefault();
+    e.stopPropagation();
+    selectTab(tabs[next], {focus:true});
+  });
+})();
+(function(){
+  const slides=[...document.querySelectorAll('.slide')];
+  let i=0;
+  function render(){
+    slides.forEach((s,n)=>{
+      s.classList.toggle('on',n===i);
+      s.querySelectorAll('.progress').forEach(p=>{
+        p.innerHTML=slides.map((_,k)=>`<span class="dot${k===i?' on':''}"></span>`).join('');
+      });
+    });
+  }
+  function go(n){i=Math.max(0,Math.min(slides.length-1,n));render();}
+  document.addEventListener('keydown',e=>{
+    if(e.target.closest('[role="tab"], .teams-tablist'))return;
+    if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();go(i+1);}
+    if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(i-1);}
+    if(e.key==='Home'||e.key==='Escape')go(0);
+    if(e.key==='End')go(slides.length-1);
+  });
+  document.getElementById('deck').addEventListener('click',e=>{
+    if(e.target.closest('a, button, [role="tab"], .teams-tablist'))return;
+    const mid=window.innerWidth/2;
+    go(e.clientX<mid?i-1:i+1);
+  });
+  render();
+})();
+</script>
+</body>
+</html>
