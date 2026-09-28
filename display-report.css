@@ -211,6 +211,7 @@ footer.site-foot .inner{
   display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;
 }
 .foot-links{display:flex;gap:24px;font-size:14px;font-weight:500;color:var(--muted);flex-wrap:wrap;}
+.roster-jump p{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:15px;font-weight:500;line-height:1.5}
 .foot-meta{font-size:13.5px;color:var(--muted);line-height:1.55;text-align:right;}
 @media (max-width:980px){
   .annotate-layout{grid-template-columns:1fr;}
