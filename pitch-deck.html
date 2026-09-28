@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXC609MWB7"></script>
-<script src="gtag-init.js"></script>
+<script src="/gtag-init.js"></script>
 <title>Bloom AI · Pitch Deck</title>
 <meta name="description" content="Bloom AI sales deck: always-on marketing employees on hardware they own. A human stays.">
 <link rel="canonical" href="https://runbloom.ai/pitch-deck.html">
-<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Bloom AI">
 <meta property="og:title" content="Bloom AI · Pitch Deck">
@@ -16,27 +16,24 @@
 <meta property="og:url" content="https://runbloom.ai/pitch-deck.html">
 <meta property="og:image" content="https://runbloom.ai/logo-mark.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --ink:#0B0B0C;
-  --muted:#6C6C72;
+  --ink:#0B0B0F;
+  --muted:#5E6272;
   --line:rgba(11,11,12,.10);
-  --paper:#F4EFE3;
-  --accent:#E0A0FC;
+  --paper:#FFFFFF;
+  --accent:#3355FF;
 }
 html,body{height:100%;}
 body{
-  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  font-family:Geist,system-ui,sans-serif;
   color:var(--ink);
   background:#1a1a1c;
   -webkit-font-smoothing:antialiased;
   overflow:hidden;
 }
-h1,h2,h3{font-family:'Schibsted Grotesk',system-ui,sans-serif;letter-spacing:-.03em;line-height:1.02;text-wrap:balance;}
+h1,h2,h3{font-family:Geist,system-ui,sans-serif;letter-spacing:-.03em;line-height:1.02;text-wrap:balance;}
 p{text-wrap:pretty;line-height:1.55;}
 a{color:inherit;}
 .deck{position:relative;width:100vw;height:100vh;}
@@ -68,7 +65,7 @@ a{color:inherit;}
 .logo{display:inline-flex;align-items:center;gap:11px;line-height:1;color:inherit}
 .logo{overflow:visible}
 .logo-mark{height:36px;width:auto;display:block;flex:none}
-.logo-word{font-family:'Schibsted Grotesk',system-ui,sans-serif;font-weight:700;letter-spacing:-.03em;font-size:21px;line-height:1;color:var(--ink);display:block;transform:translateY(.5px)}
+.logo-word{font-family:Geist,system-ui,sans-serif;font-weight:700;letter-spacing:-.03em;font-size:21px;line-height:1;color:var(--ink);display:block;transform:translateY(.5px)}
 .slide.dark .logo-word{color:var(--paper);}
 .footer-bar{
   position:absolute;left:72px;right:72px;bottom:28px;
@@ -98,15 +95,15 @@ a{color:inherit;}
 }
 .loop .node{
   background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;
-  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:13px;line-height:1.25;
+  font-family:Geist,sans-serif;font-weight:600;font-size:13px;line-height:1.25;
   max-width:180px;text-align:center;
 }
 .slide.dark .loop .node{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.14);}
 .loop .arrow{color:var(--accent);font-weight:700;font-size:18px;}
 .cta{
   display:inline-flex;align-items:center;gap:10px;
-  margin-top:36px;background:var(--accent);color:var(--ink);
-  font-weight:700;font-size:16px;padding:16px 26px;border-radius:999px;text-decoration:none;
+  margin-top:36px;background:var(--accent);color:#fff;
+  font-weight:600;font-size:16px;padding:16px 26px;border-radius:10px;text-decoration:none;
 }
 .cta:hover{filter:brightness(.95);}
 .hint{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);font-size:12px;color:rgba(255,255,255,.35);z-index:20;pointer-events:none;}
@@ -121,7 +118,7 @@ a{color:inherit;}
 }
 .teams-tab{
   flex:1;appearance:none;cursor:pointer;border:0;background:transparent;
-  font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:14px;
+  font-family:Geist,sans-serif;font-weight:600;font-size:14px;
   color:var(--muted);padding:11px 16px;border-radius:999px;
 }
 .teams-tab[aria-selected="true"]{background:var(--ink);color:#fff}
@@ -144,13 +141,14 @@ a{color:inherit;}
   .hint{display:none;}
 }
 </style>
+<link rel="stylesheet" href="brand.css">
 </head>
 <body>
 <div class="hint">← → or click · Space next · Esc first</div>
 <div class="deck" id="deck">
 
   <section class="slide on" data-title="Title">
-    <div class="brand"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></div>
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
     <div class="eyebrow">Sales deck</div>
     <h1 style="font-size:56px;font-weight:600;max-width:900px">Your agentic team of <span class="accent">marketing employees</span>.</h1>
     <p class="lead muted">Always on. On a Mac mini they own. Bloom stays. They talk to the Orchestrator in Slack.</p>
@@ -166,7 +164,7 @@ a{color:inherit;}
   </section>
 
   <section class="slide dark" data-title="Why Bloom">
-    <div class="brand"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></div>
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
     <div class="eyebrow">Why Bloom</div>
     <h2 style="font-size:44px;font-weight:600;max-width:860px">The queue never clears. The ICP lives in one person’s head.</h2>
     <p class="lead muted">The site talks like a brochure. Buyers talk like people in pain. Paid goes quiet and so does the calendar. Someone left a slide deck and a Slack that went cold.</p>
@@ -186,7 +184,7 @@ a{color:inherit;}
   </section>
 
   <section class="slide" data-title="How we show up">
-    <div class="brand"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></div>
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
     <div class="eyebrow">How we show up</div>
     <h2 style="font-size:44px;font-weight:600;max-width:820px">A human stands it up and stays with it.</h2>
     <p class="lead muted" style="font-size:18px">They own the Mac mini. Bloom installs it in their office. Not a self-serve cloud pack they babysit alone.</p>
@@ -211,7 +209,7 @@ a{color:inherit;}
   </section>
 
   <section class="slide" data-title="The team">
-    <div class="brand"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></div>
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
     <div class="eyebrow">The team</div>
     <h2 style="font-size:36px;font-weight:600;max-width:820px">Always-on marketing employees. One roster.</h2>
     <div class="deck-starters" style="grid-template-columns:repeat(2,1fr);max-width:1040px">
@@ -230,7 +228,7 @@ a{color:inherit;}
   </section>
 
   <section class="slide dark" data-title="Projects">
-    <div class="brand"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></div>
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
     <div class="eyebrow">Projects</div>
     <h2 style="font-size:42px;font-weight:600;max-width:820px">Intelligence and a Slack lead. Then the seats that fit.</h2>
     <div class="grid-3" style="max-width:1040px">
@@ -254,7 +252,7 @@ a{color:inherit;}
   </section>
 
   <section class="slide" data-title="Samples">
-    <div class="brand"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></div>
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
     <div class="eyebrow">Samples</div>
     <h2 style="font-size:42px;font-weight:600;max-width:780px">See the shape of the work before you install.</h2>
     <div class="grid-3">
@@ -279,7 +277,7 @@ a{color:inherit;}
   </section>
 
   <section class="slide dark" data-title="First 90 days">
-    <div class="brand"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></div>
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
     <div class="eyebrow">Your first 90 days</div>
     <h2 style="font-size:42px;font-weight:600;max-width:820px">Ninety days on hardware they own.</h2>
     <div class="grid-3" style="max-width:1000px">
@@ -304,7 +302,7 @@ a{color:inherit;}
   </section>
 
   <section class="slide" data-title="After install">
-    <div class="brand"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></div>
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
     <div class="eyebrow">After install</div>
     <h2 style="font-size:42px;font-weight:600;max-width:860px">No contract. The employees stay on. Bloom keeps building.</h2>
     <div class="grid-3" style="max-width:1040px">
@@ -329,10 +327,10 @@ a{color:inherit;}
   </section>
 
   <section class="slide dark" data-title="RevBlack">
-    <div class="brand"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></div>
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
     <div class="eyebrow">Client example</div>
     <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px">
-      <img src="revblack-logo.png" alt="RevBlack" width="56" height="56" style="display:block;border-radius:14px;flex-shrink:0">
+      <img src="/revblack-logo.png" alt="RevBlack" width="56" height="56" style="display:block;border-radius:14px;flex-shrink:0">
       <h2 style="font-size:42px;font-weight:600;max-width:860px;margin:0">RevBlack: live multi-team client.</h2>
     </div>
     <blockquote class="lead" style="max-width:760px;margin:0;padding:0;border:0;font-style:normal">“Look what happened! We are in the AI summary for the keyword after just 3 weeks of setting this up! That's my job working!”</blockquote>
@@ -353,7 +351,7 @@ a{color:inherit;}
   </section>
 
   <section class="slide dark" data-title="Work with us">
-    <div class="brand"><span class="logo"><img class="logo-mark" src="logo-mark.png" alt="Bloom"></span></div>
+    <div class="brand"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></div>
     <div class="eyebrow">Next step</div>
     <h2 style="font-size:48px;font-weight:600;max-width:780px">Hire always-on marketing employees.</h2>
     <p class="lead muted">Book a call. We look at the work together. Every new client gets a 90-day roadmap. Bloom stays after install.</p>

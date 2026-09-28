@@ -23,10 +23,11 @@ no build step.
 - `robots.txt` / `sitemap.xml` — discoverability; `logo-font-options.html` is noindex
 - `linkedin-content.md` — paste-ready LinkedIn drafts
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
-- `logo-mark.png` — lavender rounded square + centered cream bloom wordmark; source of truth
-- Nav/footer/deck lockup: wordmark image only (`logo-mark.png`)
-- `favicon.png` — same mark, no word
-- Do not use the old contour rings, combined PNG lockup, or the tagline "INSIGHTS. LANDSCAPES. GROWTH."
+- Nav/footer/deck lockup: CSS wordmark `bloom` plus the always-on light (`brand.css`). `logo-mark.png` remains the Open Graph image until a new share mark exists.
+- `favicon.svg` — Bloom Blue glow mark
+- `brand.css` — Geist, tokens, wordmark glow, section scale
+- Do not use the old contour rings, cream/lavender palette, Schibsted/Hanken, combined PNG lockup, or the tagline "INSIGHTS. LANDSCAPES. GROWTH."
+- `/blue-variation` redirects to the live root. Do not restage a second site there.
 
 ## Deployment
 
@@ -38,9 +39,11 @@ no build step.
 
 ## Brand
 
-- **Palette:** accent `#E0A0FC`, background `#F4EFE3`, ink `#0B0B0C`
-- **Fonts:** Schibsted Grotesk (headings), Hanken Grotesk (body)
-- **Logo:** full wordmark in `logo-mark.png` (no separate BLOOM typeset). Never include "INSIGHTS. LANDSCAPES. GROWTH."
+- **Palette:** ink `#0B0B0F`, white `#FFFFFF`, cloud `#F4F5F8`, mist `#E4E7EE`, slate `#5E6272`, Bloom Blue `#3355FF` (accent, light, one high-intent CTA). Glow edge `#FFB8E6` / halo `#A591FF`. No full-bleed blue sections.
+- **Fonts:** Geist (UI and headings), Geist Mono (labels)
+- **Logo:** `bloom` wordmark plus glowing light. Never include "INSIGHTS. LANDSCAPES. GROWTH."
+- **Hero:** Your marketing department, always on.
+- **Close CTA:** Book a call to get your own 90 day implementation plan.
 - **CTA (site):** Book a Call → https://calendar.app.google/oLraWPKZUFHqQXt18
 - **Display-page CTAs (same URL):** ICP → Get your ICP report; win-loss → Get your win-loss report; events → Get your events report; 90-day example → Build your 90 day plan
 - **Social:** LinkedIn https://www.linkedin.com/company/bloom-ai-llc/ (JSON-LD `sameAs`). No Twitter account.
@@ -158,7 +161,7 @@ without a numbered pack of its own. Data Structure copy stays vague.
 
 Slack, Microsoft Teams, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback,
 Granola, Google Analytics, Ahrefs. Show as a logo marquee on the site labeled
-"Tools we work with" (`logos/`: SVG for Slack/Webflow/HubSpot/Salesforce; PNG
+"Tools Bloom integrates with" (`logos/`: SVG for Slack/Webflow/HubSpot/Salesforce; PNG
 for Teams, Fathom, Circleback, Granola, Google Analytics, Ahrefs). Prefer local
 assets over CDN.
 

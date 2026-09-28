@@ -1,34 +1,34 @@
 :root{
-  --ink:#0B0B0C;
-  --muted:#6C6C72;
+  --ink:#0B0B0F;
+  --muted:#5E6272;
   --line:rgba(11,11,12,.10);
-  --paper:#F4EFE3;
-  --accent:#E0A0FC;
-  --soft:#EEE7DA;
+  --paper:#FFFFFF;
+  --accent:#3355FF;
+  --soft:#F4F5F8;
   --white:#fff;
-  --accent-deep:#B56AD9;
+  --accent-deep:#3355FF;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 body{
-  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  font-family:Geist,system-ui,sans-serif;
   color:var(--ink);
   background:var(--paper);
   -webkit-font-smoothing:antialiased;
 }
 a{color:var(--ink);text-decoration:none;}
 a:hover{color:var(--accent);}
-h1,h2,h3{font-family:'Schibsted Grotesk',system-ui,sans-serif;letter-spacing:-.03em;line-height:1.05;text-wrap:balance;}
+h1,h2,h3{font-family:Geist,system-ui,sans-serif;letter-spacing:-.03em;line-height:1.05;text-wrap:balance;}
 p{text-wrap:pretty;}
 .logo{display:inline-flex;align-items:center;line-height:1;}
 .logo-mark{height:36px;width:auto;display:block;}
 .logo.sm .logo-mark{height:28px;}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  font-size:15px;font-weight:600;padding:13px 24px;border-radius:999px;
+  font-size:15px;font-weight:600;padding:13px 24px;border-radius:10px;
   transition:filter .15s ease;
 }
 .btn:hover{filter:brightness(.96);color:inherit;}
-.btn-accent{background:var(--accent);color:var(--ink);}
+.btn-accent{background:var(--accent);color:#fff;}
 .btn-accent:hover{color:var(--ink);}
 .btn-ink{background:var(--ink);color:#fff;}
 .btn-ink:hover{color:#fff;}
@@ -48,10 +48,10 @@ nav.topnav{
   gap:16px;
 }
 .nav-links{display:flex;align-items:center;gap:22px;font-size:14.5px;font-weight:500;}
-.page-wrap{max-width:1180px;margin:0 auto;padding:48px 48px 96px;}
-.page-head{max-width:720px;margin-bottom:40px;}
-.page-head h1{font-size:clamp(32px,5vw,48px);font-weight:600;}
-.page-head .lede{font-size:18px;color:var(--muted);margin-top:16px;line-height:1.55;}
+.page-wrap{max-width:1180px;margin:0 auto;padding:64px 48px 112px;}
+.page-head{max-width:760px;margin-bottom:48px;}
+.page-head h1{font-size:clamp(40px,5vw,60px);font-weight:600;}
+.page-head .lede{font-size:20px;color:var(--muted);margin-top:18px;line-height:1.55;}
 .mask-note{font-size:13.5px;color:var(--muted);margin-top:14px;line-height:1.5;}
 .annotate-layout{
   display:grid;
@@ -116,10 +116,10 @@ nav.topnav{
 .torg{
   width:100%;max-width:720px;margin:8px auto 0;
   display:flex;flex-direction:column;align-items:center;
-  font-family:'Schibsted Grotesk',system-ui,sans-serif;
+  font-family:Geist,system-ui,sans-serif;
 }
 .torg-root,.torg-mid{
-  background:var(--accent);color:var(--ink);border-radius:12px;
+  background:var(--accent);color:#fff;border-radius:12px;
   padding:12px 18px;font-weight:700;font-size:14px;letter-spacing:-.02em;
   text-align:center;min-width:160px;
 }
@@ -160,7 +160,7 @@ nav.topnav{
 }
 .torg-caption{
   margin-top:16px;font-size:13.5px;line-height:1.5;color:var(--muted);
-  font-family:'Hanken Grotesk',system-ui,sans-serif;text-align:center;max-width:560px;
+  font-family:Geist,system-ui,sans-serif;text-align:center;max-width:560px;
 }
 .shared-surface{
   font-size:14.5px;line-height:1.55;color:var(--muted);
@@ -173,7 +173,7 @@ nav.topnav{
   background:var(--soft);border-radius:12px;padding:12px 14px;
 }
 .roadmap-week strong{
-  display:block;font-family:'Schibsted Grotesk',system-ui,sans-serif;
+  display:block;font-family:Geist,system-ui,sans-serif;
   font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-deep);
   margin-bottom:6px;
 }

@@ -12,7 +12,17 @@
     },
     {
       "source": "/blue-variation",
-      "destination": "/blue-variation/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blue-variation/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blue-variation/:path*",
+      "destination": "/:path*",
       "permanent": true
     }
   ]
