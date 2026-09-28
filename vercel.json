@@ -9,6 +9,11 @@
       "source": "/teams/sales-enablement.html",
       "destination": "/teams/deal-enablement.html",
       "permanent": true
+    },
+    {
+      "source": "/blue-variation",
+      "destination": "/blue-variation/",
+      "permanent": true
     }
   ]
 }
