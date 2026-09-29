@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DXC609MWB7"></script>
+<script src="/gtag-init.js"></script>
+<title>Bloom AI · AI for B2B, in the office</title>
+<meta name="description" content="Bloom is an AI shop for B2B companies. We deploy a Mac mini in your office to run the systems like another employee. Book a call.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://www.runbloom.ai/preview/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bloom AI">
+<meta property="og:title" content="Bloom AI · AI for B2B, in the office">
+<meta property="og:description" content="An AI shop for B2B companies. A Mac mini in your office, running like another employee.">
+<meta property="og:url" content="https://www.runbloom.ai/preview/">
+<meta property="og:image" content="https://www.runbloom.ai/logo-mark.png">
+<link rel="stylesheet" href="/brand.css">
+<style>
+  html, body { margin: 0; background: #fff; color: #0B0B0F; }
+  .page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 48px;
+    position: relative;
+    z-index: 2;
+  }
+  .hero {
+    position: relative;
+    isolation: isolate;
+    flex: 1;
+    padding: 56px 48px 72px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    width: min(720px, 90vw);
+    height: min(720px, 90vw);
+    right: -18%;
+    top: -28%;
+    background: radial-gradient(circle at 50% 50%,
+      rgba(255, 184, 230, 0.42) 0%,
+      rgba(165, 145, 255, 0.30) 28%,
+      rgba(51, 85, 255, 0.18) 50%,
+      transparent 72%);
+  }
+  .hero-inner { position: relative; z-index: 1; max-width: 720px; }
+  h1 {
+    font-family: Geist, system-ui, sans-serif;
+    font-weight: 600;
+    font-size: clamp(40px, 6vw, 68px);
+    letter-spacing: -0.055em;
+    line-height: 0.96;
+    margin: 0;
+    max-width: 14ch;
+  }
+  .lede {
+    margin: 22px 0 0;
+    font-size: 20px;
+    line-height: 1.55;
+    color: #5E6272;
+    max-width: 38em;
+  }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .btn-ink { background: #0B0B0F; color: #fff; }
+  .btn-ink:hover { color: #fff; }
+  .quotes {
+    padding: 0 48px 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .quotes h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3355FF;
+    margin: 0 0 22px;
+  }
+  .quote-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .quote-card {
+    border: 1px solid rgba(11, 11, 15, 0.10);
+    border-radius: 18px;
+    padding: 24px 22px 22px;
+    background: #fff;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px;
+  }
+  .quote-card p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.45;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #5E6272;
+  }
+  .quote-card cite {
+    font-style: normal;
+    font-size: 13.5px;
+    color: #5E6272;
+  }
+  .quote-card cite strong {
+    display: block;
+    color: #0B0B0F;
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .talk {
+    border-top: 1px solid rgba(11, 11, 15, 0.10);
+    padding: 28px 48px 36px;
+  }
+  .talk-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .talk a.person {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: inherit;
+    text-decoration: none;
+  }
+  .talk img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 72% 18%;
+    display: block;
+  }
+  .talk .label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5E6272;
+  }
+  .talk .name {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    margin-top: 2px;
+  }
+  @media (max-width: 860px) {
+    nav, .hero, .quotes, .talk { padding-left: 24px; padding-right: 24px; }
+    .quote-grid { grid-template-columns: 1fr; }
+    h1 { max-width: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <nav>
+    <a href="/preview/" aria-label="Bloom"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></a>
+    <a class="btn btn-accent" href="https://calendar.app.google/oLraWPKZUFHqQXt18" target="_blank" rel="noopener">Book a Call</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>An AI shop for B2B companies<span class="on-light" aria-hidden="true"></span></h1>
+      <p class="lede">We deploy a Mac mini in your office. It runs the systems like another employee: always on, in the building, on hardware you own.</p>
+      <div class="actions">
+        <a class="btn btn-ink" href="https://calendar.app.google/oLraWPKZUFHqQXt18" target="_blank" rel="noopener">Book a Call</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="quotes" aria-label="Quotes">
+    <h2>From people in the work</h2>
+    <div class="quote-grid">
+      <figure class="quote-card">
+        <p>Quote to come.</p>
+        <cite><strong>Tate Stone</strong> CEO, RevBlack</cite>
+      </figure>
+      <figure class="quote-card">
+        <p>Quote to come.</p>
+        <cite><strong>Julia Ribas</strong> Director of Marketing, RevBlack</cite>
+      </figure>
+      <figure class="quote-card">
+        <p>Quote to come.</p>
+        <cite><strong>Rob Nelson</strong></cite>
+      </figure>
+    </div>
+  </section>
+
+  <footer class="talk">
+    <div class="talk-inner">
+      <a class="person" href="https://calendar.app.google/oLraWPKZUFHqQXt18" target="_blank" rel="noopener">
+        <img src="caleb.jpg" alt="Caleb Sattler">
+        <span>
+          <span class="label">Talk with Caleb</span>
+          <span class="name">Caleb Sattler</span>
+        </span>
+      </a>
+      <a class="btn btn-accent" href="https://calendar.app.google/oLraWPKZUFHqQXt18" target="_blank" rel="noopener">Book a Call</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
