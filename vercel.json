@@ -24,6 +24,21 @@
       "source": "/blue-variation/:path*",
       "destination": "/:path*",
       "permanent": true
+    },
+    {
+      "source": "/preview",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/preview/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/preview/index.html",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }

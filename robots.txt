@@ -2,6 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /logo-font-options.html
 Disallow: /linkedin/
-Disallow: /preview/
 
 Sitemap: https://www.runbloom.ai/sitemap.xml

@@ -42,7 +42,7 @@ no build step.
 - **Palette:** ink `#0B0B0F`, white `#FFFFFF`, cloud `#F4F5F8`, mist `#E4E7EE`, slate `#5E6272`, Bloom Blue `#3355FF` (accent, light, one high-intent CTA). Glow edge `#FFB8E6` / halo `#A591FF`. No full-bleed blue sections.
 - **Fonts:** Geist (UI and headings), Geist Mono (labels)
 - **Logo:** `bloom` wordmark plus glowing light. Never include "INSIGHTS. LANDSCAPES. GROWTH."
-- **Hero:** Your marketing department, always on.
+- **Hero:** AI agents driving inbound leads, from your office. `index.html` is that splash (Book a Call, three quotes, talk with the founder).
 - **Close CTA:** Book a call to get your own 90 day implementation plan.
 - **CTA (site):** Book a Call → https://calendar.app.google/oLraWPKZUFHqQXt18
 - **Display-page CTAs (same URL):** ICP → Get your ICP report; win-loss → Get your win-loss report; events → Get your events report; 90-day example → Build your 90 day plan
