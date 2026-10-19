@@ -37,9 +37,9 @@ the point. End on the result or the next step, not hype.
 
 ## Product framing (locked)
 
-1. **Outcome first.** Hero: turn call data into organic, inbound leads.
-   Supporting frame: pages from calls and expert voice so AI search names you;
-   a person approves every page.
+1. **Outcome first.** Hero: Mobilize your call data. Supporting frame: pages
+   from calls and expert voice so AI search names you; a person approves every
+   page; organic inbound follows.
 2. **Pain.** AI already answers buyers and names someone else.
 3. **How.** Calls and experts → draft → gates → client approval → pages live
    and scorecard. Show the steps; do not paste internal factory detail.

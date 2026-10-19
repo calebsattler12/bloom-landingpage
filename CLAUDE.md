@@ -38,8 +38,8 @@ no build step.
 - **Palette:** ink `#0B0B0F`, white `#FFFFFF`, cloud `#F4F5F8`, mist `#E4E7EE`, slate `#5E6272`, Bloom Blue `#3355FF` (accent, light, one high-intent CTA). Glow edge `#FFB8E6` / halo `#A591FF`. No full-bleed blue sections.
 - **Fonts:** Geist (UI and headings), Geist Mono (labels)
 - **Logo:** `bloom` wordmark plus glowing light. Never include "INSIGHTS. LANDSCAPES. GROWTH."
-- **Hero:** Turn your call data into organic, inbound leads. `index.html` is
-  that splash (Book a Call, how strip, three quotes, talk with the founder).
+- **Hero:** Mobilize your call data. `index.html` is that splash (Book a Call,
+  how strip, three quotes, talk with the founder).
 - **CTA (site):** Book a Call → https://calendar.app.google/oLraWPKZUFHqQXt18
 - **Social:** LinkedIn https://www.linkedin.com/company/bloom-ai-llc/ (JSON-LD `sameAs`). No Twitter account.
 - Personality: light, approachable, friendly, slightly dramatic on **pain**.
@@ -92,7 +92,7 @@ Slightly dramatic on pain. Calm on how Bloom works.
 
 ## Site section map (`index.html`)
 
-1. Hero (call data → organic inbound leads)
+1. Hero (Mobilize your call data)
 2. How it works (thin step strip: calls and experts → draft → gates → approval → pages live and scorecard)
 3. Quotes (Tate, Julia, Rob)
 4. Talk with the founder + Book a Call
