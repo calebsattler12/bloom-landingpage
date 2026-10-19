@@ -8,26 +8,22 @@ work, and link fixes do not require re-deriving context every session.
 Marketing site for **Bloom** (Syncro Labs) at **runbloom.ai**. Static HTML,
 no build step.
 
-- `index.html` — public site
-- `get-started.html` — samples of the work + Book a Call + 90-day example
-- `pitch-deck.html` — sales deck (keyboard nav)
-- `90-day-timeline.html` / `90-day-example.html` — example fitted 90-day
-  build (intelligence + Slack lead first, then more seats)
-- `icp-findings-example.html` / `win-loss-example.html` /
-  `events-partnerships-example.html` — display-case deliverables (scrubbed
-  composite, highlight arrows, page-specific calendar CTAs).
-  ICP and win-loss samples follow the remade 11-section packs (no public
-  evidence appendix, no dollar amounts, names masked). Events sample is a
-  9-section day-1 pack (rolling 90 to 180 day window; no sources appendix).
-- `teams/*.html` — always-on marketing employee pages (person titles)
+- `index.html` — public splash homepage (AI search / inbound thesis)
+- `preview/index.html` — mirror of the homepage; `/preview/` 301s to `/`
+- `get-started.html`, `pitch-deck.html`, `90-day-*`, sample reports, `teams/*`
+  — **legacy** pages from the older always-on marketing roster narrative.
+  Do not let them override homepage positioning until a later rewrite pass.
 - `robots.txt` / `sitemap.xml` — discoverability; `logo-font-options.html` is noindex
-- `linkedin-content.md` — paste-ready LinkedIn drafts
+- `linkedin-content.md` — paste-ready LinkedIn drafts (may still reflect legacy
+  framing; prefer homepage thesis for new posts)
 - `brand-voice.md` — craft rules (sourced from RevBlack locked voice; Bloom-adapted)
-- Nav/footer/deck lockup: CSS wordmark `bloom` plus the always-on light (`brand.css`). `logo-mark.png` remains the Open Graph image until a new share mark exists.
+- Nav/footer lockup: CSS wordmark `bloom` plus the always-on light (`brand.css`).
+  `logo-mark.png` remains the Open Graph image until a new share mark exists.
 - `favicon.svg` — Bloom Blue glow mark
 - `brand.css` — Geist, tokens, wordmark glow, section scale
-- Do not use the old contour rings, cream/lavender palette, Schibsted/Hanken, combined PNG lockup, or the tagline "INSIGHTS. LANDSCAPES. GROWTH."
-- `/blue-variation` redirects to the live root. Do not restage a second site there.
+- Do not use the old contour rings, cream/lavender palette, Schibsted/Hanken,
+  combined PNG lockup, or the tagline "INSIGHTS. LANDSCAPES. GROWTH."
+- `/blue-variation` and `/preview/` redirect to the live root.
 
 ## Deployment
 
@@ -42,140 +38,74 @@ no build step.
 - **Palette:** ink `#0B0B0F`, white `#FFFFFF`, cloud `#F4F5F8`, mist `#E4E7EE`, slate `#5E6272`, Bloom Blue `#3355FF` (accent, light, one high-intent CTA). Glow edge `#FFB8E6` / halo `#A591FF`. No full-bleed blue sections.
 - **Fonts:** Geist (UI and headings), Geist Mono (labels)
 - **Logo:** `bloom` wordmark plus glowing light. Never include "INSIGHTS. LANDSCAPES. GROWTH."
-- **Hero:** Always on, 24/7. `index.html` is that splash (Book a Call, three quotes, talk with the founder).
-- **Close CTA:** Book a call to get your own 90 day implementation plan.
+- **Hero:** Turn your call data into organic, inbound leads. `index.html` is
+  that splash (Book a Call, how strip, three quotes, talk with the founder).
 - **CTA (site):** Book a Call → https://calendar.app.google/oLraWPKZUFHqQXt18
-- **Display-page CTAs (same URL):** ICP → Get your ICP report; win-loss → Get your win-loss report; events → Get your events report; 90-day example → Build your 90 day plan
 - **Social:** LinkedIn https://www.linkedin.com/company/bloom-ai-llc/ (JSON-LD `sameAs`). No Twitter account.
-- **CTA (deck close):** Work with us
-- Personality: light, approachable, friendly, slightly dramatic on **pain**. Do not revive old Verity navy/Jost.
-- Prefer **team** over **pod**. Prefer **employees** on the homepage. **Director / manager** on cards. **Agent** in supporting copy. Never **bot**.
+- Personality: light, approachable, friendly, slightly dramatic on **pain**.
+- Prefer **agent** in supporting copy. Never **bot**.
 
 ## Positioning (locked)
 
-**Source of truth:** Google Doc *Brainstorm Document* (internal). It overrides
-the old five-starter-team menu and the organic-inbound-only thesis.
+**Source of truth for the public homepage:** the current AI-search inbound
+thesis (client decks such as Curant are engagement examples; do not paste
+client-specific verticals, competitor names, or prices onto the public site).
 
-**Thesis (internal):** One always-on marketing team. Client owns the Mac mini;
-Bloom installs it in their office. Human stands it up and stays. Client talks
-to the **Orchestrator** in Slack. Every fitted 90-day plan starts with
-Customer Intelligence and the Orchestrator, then about three more seats for
-their situation. Sales motion: first call (where we can help), second call
-(bring the 90-day roadmap). Cloudflare is the factory floor. Do not put
-Cloudflare, Workers, or Durable Objects on the marketing site.
+**Thesis (public):** Bloom turns a company’s call recordings and expert
+interviews into pages that get **named in AI search**, so buyers find them
+and **organic inbound** follows.
 
-**Public copy:** Imply that thesis. Do **not** paste sales steps, “CI then
-Orchestrator then three,” or the phrase “reports + recommended actions.”
-Show **example deliverables**. Hero: always-on marketing employees. Hardware
-and “we stay” live in How we show up / After install. Samples prove the work.
-Every new client gets a **90-day roadmap**. Do **not** say they keep an ICP
-findings pack either way. Book a Call is the motion.
+**Pain:** AI already answers your buyers and names someone else.
 
-Do **not** boil down to “AI content,” SEO alone, or a consultancy that
-ships a build and leaves. Show stay-with-you in partner and after-install
-copy. Never use “it’s not X, it’s Y.”
+**How (show, do not over-label):** buyer questions → real call packets →
+expert interview → agent draft → quality gates → human approval → HTML ready
+to post. Weekly scorecard on the core buyer questions. Quality line: your
+calls, your expert’s voice, a person approves every page.
 
-**White glove (show, don't label):** A human installs, monitors, and builds
-out. Client owns the Mac mini; Bloom comes and installs it in their office.
-Prefer "How we show up" / "Your hardware" over repeating "white glove."
+**Motion:** Book a Call.
 
-**Roster (one marketing list, no Marketing vs Sales tabs):**
-Orchestrator (Slack lead; outlines future agent strategy), Customer Intelligence
-Director, SEO Director, Content Director,
-Demand Manager (Demand & Lifecycle), Deal Enablement Director, Competitive
-Advantage Director, Events & Partnerships Manager, Social Media Manager,
-Data Structure. Data Structure copy stays **vague** (working memory for the
-team). Do not explain knowledge bases, evidence IDs, or CRM hygiene.
+**Do not lead with:** Mac mini, always-on marketing roster / Orchestrator /
+director seats, or “no token charges.” Those are not the public lead story.
+Do not put Cloudflare, Workers, or Durable Objects on the marketing site.
+Never use “it’s not X, it’s Y.” Do not boil the product down to generic
+“AI content” or SEO alone. Do not publish dollar amounts, install fees, or
+retainer figures.
 
-Search Visibility is folded into the SEO Director. Content Director is
-audit-first; do not make a 12-week content mill the flagship. LinkedIn is
-paste-only. Approval before anything client-facing goes live.
-
-**Retention language:** “While you stay a client” / “while retained” belong
-on the **pitch deck**, not on `index.html`. On the site: always on, Bloom
-keeps building the roster, no contract. Bloom does not disappear after
-kickoff.
+**Legacy pages:** `get-started.html`, `pitch-deck.html`, `90-day-*`,
+`icp-findings-example.html`, `win-loss-example.html`,
+`events-partnerships-example.html`, and `teams/*` still describe the older
+always-on marketing-team offer. Leave them in place for now. Do not expand
+or revive that roster narrative on `index.html`. A later pass should align
+or retire them.
 
 ## Voice
 
 Follow `brand-voice.md`: zero em dashes; no "it's not X, it's Y"; banned AI
 diction; no fabricated proof. One job per section. Cut repeated thesis phrases.
-Slightly dramatic on pain. Calm on how Bloom stays.
+Slightly dramatic on pain. Calm on how Bloom works.
 
 ## Pricing (public drafts)
 
 **Do not publish dollar amounts, install fees, or retainer figures** in
 `index.html`, `get-started.html`, `pitch-deck.html`, `90-day-timeline.html`,
-`events-partnerships-example.html`, or `linkedin-content.md`. Qualitative only: own the hardware, no contract,
-roster grows, fraction of a content team. Prefer Book a Call.
+`events-partnerships-example.html`, or `linkedin-content.md`. Prefer Book a Call.
 
-## Site section map
+## Site section map (`index.html`)
 
-1. Hero (always-on marketing employees; chips to the roster)
-2. Why Bloom (pain: queue, wrong language, paid that pauses, a project that went quiet)
-3. How we show up (Mac mini they own; Bloom installs in office; human stays; Slack)
-4. The team (one marketing roster of person-titled employees)
-5. How the roster grows (implied: intelligence + Slack lead, then seats that fit)
-6. Samples (ICP, win-loss, events, Slack, LinkedIn paste-only)
-7. RevBlack (live client; logo + Visit RevBlack site)
-8. After install (always on; Bloom keeps building; no new dashboards; tool logo marquee)
-9. Get started teaser (samples + 90-day example + Book a Call; no call-one/call-two)
-10. Final CTA
+1. Hero (call data → organic inbound leads)
+2. How it works (thin step strip: calls and experts → draft → gates → approval → pages live and scorecard)
+3. Quotes (Tate, Julia, Rob)
+4. Talk with the founder + Book a Call
 
-**Get started page:** examples of deliverables, 90-day example, Book a Call.
-No two-SKU “ICP path vs Sales starter.”
+## Proof on the homepage
 
-**ICP findings sample (11 sections, public):** (1) Executive synthesis (2)
-Evidence base and method (3) Best-client roster and commercial LTV (4)
-Derived ICP snapshot (5) Buying committee (6) What buyers actually say (7)
-Stated ICP vs derived ICP (8) Qualification boundaries (9) Month-over-month
-drift (10) Implications for content and positioning (11) Decisions and next
-actions. Do not publish Section 12 (evidence appendix), client names, or
-dollar LTV on the public page. Source: remade ICP Findings Report template
-/ EXAMPLE_ICP-Findings-Report.
-
-**Win-loss sample (11 sections, public):** (1) Executive synthesis (2) Win
-rate by segment (3) Why deals were won (4) Why deals were lost (5)
-Competitor involvement (6) Objection frequency ranking (7) Stage drop
-analysis (8) CRM reconciliation (9) Expansion and referral signals (10)
-Recommended messaging fixes (11) Decisions and next actions. Do not publish
-the evidence appendix, client names, or dollar amounts. Source:
-EXAMPLE_Win-Loss-Report. Keep rates labeled directional when n is small.
-
-**Events & Partnerships sample (9 sections, public):** Delivered day 1,
-covering a rolling 90 to 180 day window. (1) Executive summary (2) Event
-shortlist with ICP fit score, cost, and deadlines (3) Podcast and show
-shortlist (4) Sponsorship and community options (5) Partner and
-co-marketing candidates (6) Competitor event watch with go / counter-program
-/ skip (7) Pitch pipeline and status (8) Post-event debriefs (9) Decisions:
-register, pitch, or pass. Do not publish the sources appendix, client names,
-spokesperson names, competitor vendor names, or dollar amounts.
-
-**Employee pages:** one page per roster seat. Each page lists the named
-monthly pack (or monthly check) from the Brainstorm Document, plus what
-lands in Slack between deliveries. Demand Manager stays on the roster
-without a numbered pack of its own. Data Structure copy stays vague.
-`teams/search-visibility.html` redirects to the SEO Director page.
-
-## Integrations (confirmed only)
-
-Slack, Microsoft Teams, Webflow CMS, HubSpot, Salesforce, Fathom, Circleback,
-Granola, Google Analytics, Ahrefs. Show as a logo marquee on the site labeled
-"Tools Bloom integrates with" (`logos/`: SVG for Slack/Webflow/HubSpot/Salesforce; PNG
-for Teams, Fathom, Circleback, Granola, Google Analytics, Ahrefs). Prefer local
-assets over CDN.
-
-## RevBlack proof
-
-Live client. Link https://www.revblack.com ("Visit RevBlack site"). Use
-`revblack-logo.png`. Approved quote (Director of Marketing, RevBlack): AI
-summary for a keyword after 3 weeks. Do not use "first customer," inbound
-goal numbers (1–4 → 8–15), fabricated testimonials, or "12 hrs saved" stats.
-Do not put internal quality post-mortems on the site.
+Approved quotes already on the splash (Tate Stone, Julia Ribas, Rob Nelson).
+Do not fabricate new testimonials. Do not put Curant, disability claims, or
+named competitor vendors on the public homepage.
 
 ## Editing
 
 - Prefer targeted edits unless repositioning the whole narrative
-- Respect `prefers-reduced-motion` (org chart shows all; marquee becomes static)
-- Preview `index.html`, `pitch-deck.html`, `90-day-timeline.html`, `90-day-example.html`, and the example reports locally before pushing
-- Say **agent** not **bot** in user-facing copy.
+- Preview `index.html` locally before pushing
+- Say **agent** not **bot** in user-facing copy
+- After homepage edits, keep `preview/index.html` in sync with `index.html`

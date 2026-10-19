@@ -37,32 +37,22 @@ the point. End on the result or the next step, not hype.
 
 ## Product framing (locked)
 
-1. **Outcome first.** Hero leads with always-on marketing employees. Supporting
-   frame: one team, Orchestrator in Slack, hardware they own, Bloom stays.
-2. **Do not boil down to "AI content" or SEO alone.** One marketing roster:
-   Orchestrator, Customer Intelligence Director, SEO Director, Content Director,
-   Demand Manager, Deal Enablement Director, Competitive Advantage Director,
-   Events & Partnerships Manager, Social Media Manager, Data Structure (vague
-   on purpose). Pitch **employees** by person title. Prefer **team** over **pod**.
-3. **Say agent, not bot.** Query agent, Slack agent. "AI employees" and
-   "always-on employees" are the hiring metaphor on the homepage.
-4. **Show the human partner.** Install, monitor, stay on hardware they own.
-   Prefer concrete language over repeating "white glove." Client owns the
-   Mac mini; Bloom comes and installs it in their office. Day to day: no new
-   dashboards; talk to the Orchestrator in Slack like any other teammate.
-   The Orchestrator outlines future agent strategy (which seats come next).
-5. **Roster growth.** Intelligence and the Orchestrator come first. Then seats
-   that fit. On the **pitch deck**, you may say this continues while they stay
-   a client. On the **website**, prefer always on / Bloom keeps building. Do
-   not print the two-call sales process.
-6. Prefer **team** for the department and **employee / director / manager**
-   for seats. Do not say "content core" or "content engine."
-7. **No compulsive restating.** If the hero said it, later sections should
+1. **Outcome first.** Hero: turn call data into organic, inbound leads.
+   Supporting frame: pages from calls and expert voice so AI search names you;
+   a person approves every page.
+2. **Pain.** AI already answers buyers and names someone else.
+3. **How.** Calls and experts → draft → gates → client approval → pages live
+   and scorecard. Show the steps; do not paste internal factory detail.
+4. **Say agent, not bot.** Prefer concrete work over hiring metaphors on the
+   homepage. Do not lead with Mac mini, marketing roster seats, or no-token
+   charges.
+5. **Do not boil down to generic "AI content" or SEO alone.** The point is
+   getting named in AI search so inbound follows.
+6. **No compulsive restating.** If the hero said it, later sections should
    advance the story, not echo the same sentence.
 
 ## Pricing in public drafts
 
 Do **not** publish dollar amounts, retainers, or install fees in
-`index.html`, `pitch-deck.html`, or `linkedin-content.md`. Qualitative cost
-language only (own the hardware, no contract, roster grows with projects,
-fraction of a content team) if needed. Prefer Book a Call over a price list.
+`index.html`, `pitch-deck.html`, or `linkedin-content.md`. Prefer Book a Call
+over a price list.
