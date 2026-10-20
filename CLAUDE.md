@@ -127,11 +127,10 @@ uses a "Choose your level" section with Level 1 / 2 / 3 placeholders
 2. The gap (causes)
 3. How it works (snapshot → plan → interview → approve → measure)
 4. Snapshot form
-5. What to expect (report, Loom, 20-minute call)
-6. Onboarding (Day 0 / 7 / 9 / 14)
-7. Choose your level (placeholders)
-8. Quotes (Tate, Julia, Rob)
-9. Talk with the founder + Book a Call
+5. Onboarding (Day 0 / 7 / 9 / 14)
+6. Choose your level (placeholders)
+7. Quotes (Tate, Julia, Rob)
+8. Talk with the founder + Book a Call
 
 ## Proof on the homepage
 
