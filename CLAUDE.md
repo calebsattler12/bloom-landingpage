@@ -114,8 +114,9 @@ uses a "Choose your level" section with Level 1 / 2 / 3 placeholders
   email shortly!" and a button back to home.
 - `POST /api/snapshot` emails `calebsattler21@gmail.com` via Formsubmit.
   First live send may require Caleb to confirm the Formsubmit activation email.
-- Sample report (do not name the company on the marketing site):
-  https://bloom-snapshots.calebsattler21.workers.dev/r/6f2Kzequ55tLUSziZAx_dq5P4SezYS9x
+- Public sample: `/snapshot/sample/` uses a blurred image
+  (`snapshot/sample-report.jpg`). Company, domain, and competitor names are
+  unreadable. Do not link the live Zipliens report URL on the marketing site.
 - The snapshot app admin at bloom-snapshots.calebsattler21.workers.dev is
   Caleb-only. The public site collects the request; it does not generate the
   report in the browser.

@@ -265,6 +265,28 @@
     font-size: 15px;
     font-weight: 500;
   }
+  .sample-preview {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid rgba(11, 11, 15, 0.10);
+    border-radius: 16px;
+    overflow: hidden;
+    background: #F4F5F8;
+    text-decoration: none;
+    color: inherit;
+  }
+  .sample-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .sample-preview span {
+    display: block;
+    padding: 12px 16px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5E6272;
+  }
   .talk {
     border-top: 1px solid rgba(11, 11, 15, 0.10);
     padding: 20px 0 24px;
@@ -439,8 +461,11 @@
         </div>
         <p class="form-error" data-snapshot-error hidden></p>
       </form>
-      <a class="sample-link" href="https://bloom-snapshots.calebsattler21.workers.dev/r/6f2Kzequ55tLUSziZAx_dq5P4SezYS9x" target="_blank" rel="noopener">See a sample report</a>
     </div>
+    <a class="sample-preview" href="/snapshot/sample/">
+      <img src="/snapshot/sample-report.jpg" alt="Sample AI visibility report with company names blurred">
+      <span>See a sample report. Company names are hidden.</span>
+    </a>
   </div>
 </section>
 
