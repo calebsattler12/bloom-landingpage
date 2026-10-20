@@ -25,6 +25,7 @@
     background: #fff;
     color: #0B0B0F;
   }
+  *, *::before, *::after { box-sizing: border-box; }
   html { scroll-padding-top: 88px; }
   nav.top {
     display: flex;
@@ -179,14 +180,22 @@
     line-height: 1.45;
     color: #5E6272;
   }
-  .level-grid .card { display: flex; flex-direction: column; gap: 0; }
+  .level-grid .card {
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+  }
   .level-grid .card .price {
-    margin-top: 16px;
+    margin-top: auto;
+    padding-top: 18px;
     font-size: 15px;
     font-weight: 600;
     color: #0B0B0F;
   }
-  .level-grid .card .btn { margin-top: 16px; width: 100%; }
+  .level-grid .card .btn {
+    margin-top: 14px;
+    width: 100%;
+  }
   .quote-card {
     display: flex;
     flex-direction: column;
