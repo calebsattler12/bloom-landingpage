@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DXC609MWB7"></script>
+<script src="/gtag-init.js"></script>
+<title>Bloom AI · Free AI visibility report</title>
+<meta name="description" content="Enter your website for a free Bloom AI visibility report. We test buyer questions in your category and email you the snapshot.">
+<link rel="canonical" href="https://www.runbloom.ai/snapshot/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bloom AI">
+<meta property="og:title" content="Bloom AI · Free AI visibility report">
+<meta property="og:description" content="Enter your website and email. Bloom will send a free AI visibility snapshot.">
+<meta property="og:url" content="https://www.runbloom.ai/snapshot/">
+<meta property="og:image" content="https://www.runbloom.ai/logo-mark.png">
+<link rel="stylesheet" href="/brand.css">
+<style>
+  html, body { margin: 0; background: #fff; color: #0B0B0F; }
+  nav.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 48px;
+  }
+  .builder {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: calc(100dvh - 88px);
+    display: flex;
+    align-items: center;
+    padding: 48px 0 72px;
+  }
+  .builder::before {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    width: min(720px, 90vw);
+    height: min(720px, 90vw);
+    right: -12%;
+    top: -40%;
+    background: radial-gradient(circle at 50% 50%,
+      rgba(255, 184, 230, 0.42) 0%,
+      rgba(165, 145, 255, 0.30) 28%,
+      rgba(51, 85, 255, 0.18) 50%,
+      transparent 72%);
+  }
+  .inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 48px;
+    box-sizing: border-box;
+  }
+  .kicker {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3355FF;
+    margin: 0 0 12px;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: clamp(32px, 5vw, 48px);
+    letter-spacing: -0.05em;
+    line-height: 1.02;
+    margin: 0;
+  }
+  .lede {
+    margin: 16px 0 0;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #5E6272;
+  }
+  .snap-box {
+    margin-top: 28px;
+    border: 1px solid rgba(11, 11, 15, 0.10);
+    border-radius: 20px;
+    padding: 24px;
+    background: #fff;
+  }
+  .snap-form { display: grid; gap: 12px; }
+  .field-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5E6272;
+    margin-bottom: 6px;
+  }
+  .snap-form input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(11, 11, 15, 0.16);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font: inherit;
+    font-size: 16px;
+  }
+  .snap-form input:focus {
+    outline: 2px solid #3355FF;
+    outline-offset: 1px;
+  }
+  .snap-form .hp { position: absolute; left: -9999px; height: 0; overflow: hidden; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    width: 100%;
+  }
+  .btn-ink { background: #0B0B0F; color: #fff; }
+  .btn-ink:hover { color: #fff; }
+  .form-error { margin: 4px 0 0; color: #b42318; font-size: 14px; }
+  .sample-link { display: inline-block; margin-top: 14px; font-size: 15px; font-weight: 500; }
+  .snapshot-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    background: rgba(11, 11, 15, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .snapshot-modal[hidden] { display: none; }
+  .snapshot-modal-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px 28px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+  }
+  .snapshot-modal-card h2 {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: -0.03em;
+  }
+  .snapshot-modal-card .btn { margin-top: 20px; }
+  @media (max-width: 860px) {
+    nav.top, .inner { padding-left: 24px; padding-right: 24px; }
+  }
+</style>
+</head>
+<body>
+<nav class="top">
+  <a href="/" aria-label="Bloom"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></a>
+  <a class="btn btn-accent" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener" style="width:auto">Book a Call</a>
+</nav>
+<main class="builder">
+  <div class="inner">
+    <p class="kicker">Free report</p>
+    <h1>Get your free AI visibility report<span class="on-light" aria-hidden="true"></span></h1>
+    <p class="lede">Enter your website and email. We test the buyer questions in your category and send you the snapshot.</p>
+    <div class="snap-box">
+      <form class="snap-form" data-snapshot-form action="/api/snapshot" method="post">
+        <label>
+          <span class="field-label">Website URL</span>
+          <input type="text" name="url" required placeholder="https://yourcompany.com" autocomplete="url" inputmode="url">
+        </label>
+        <label>
+          <span class="field-label">Email</span>
+          <input type="email" name="email" required placeholder="you@company.com" autocomplete="email">
+        </label>
+        <label class="hp" aria-hidden="true">
+          <span>Company</span>
+          <input type="text" name="company" tabindex="-1" autocomplete="off">
+        </label>
+        <button class="btn btn-ink" type="submit">Create</button>
+        <p class="form-error" data-snapshot-error hidden></p>
+      </form>
+      <a class="sample-link" href="https://bloom-snapshots.calebsattler21.workers.dev/r/6f2Kzequ55tLUSziZAx_dq5P4SezYS9x" target="_blank" rel="noopener">See a sample report</a>
+    </div>
+  </div>
+</main>
+<div class="snapshot-modal" id="snapshot-done" hidden>
+  <div class="snapshot-modal-card" tabindex="-1" role="dialog" aria-labelledby="snapshot-done-title" aria-modal="true">
+    <h2 id="snapshot-done-title">Great, we'll send that to your email shortly!</h2>
+    <a class="btn btn-ink" href="/">Back to home</a>
+  </div>
+</div>
+<script src="/snapshot-form.js"></script>
+</body>
+</html>

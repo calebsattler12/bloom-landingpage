@@ -37,19 +37,23 @@ the point. End on the result or the next step, not hype.
 
 ## Product framing (locked)
 
-1. **Outcome first.** Hero: Mobilize your call data. Supporting frame: pages
-   from calls and expert voice so AI search names you; a person approves every
-   page; organic inbound follows.
-2. **Pain.** AI already answers buyers and names someone else.
-3. **How.** Calls and experts → draft → gates → client approval → pages live
-   and scorecard. Show the steps; do not paste internal factory detail.
+1. **Outcome first.** Hero: Get your company named in AI answers, not just
+   your competitors. Supporting frame: free snapshot, then pages from real
+   interviews and approved drafts so ChatGPT, Perplexity, and Google AI
+   Overviews name you.
+2. **Pain.** When buyers ask AI for the best tool in a category, a competitor
+   usually gets named. Usual causes: missing buyer-question pages, no industry
+   or comparison pages, few pages indexed, AI crawlers blocked.
+3. **How.** Snapshot → plan → voice-agent interviews → Slack approval →
+   publish to Webflow or WordPress → weekly report and dashboard.
 4. **Say agent, not bot.** Prefer concrete work over hiring metaphors on the
    homepage. Do not lead with Mac mini, marketing roster seats, or no-token
    charges.
 5. **Do not boil down to generic "AI content" or SEO alone.** The point is
-   getting named in AI search so inbound follows.
+   getting named in AI answers.
 6. **No compulsive restating.** If the hero said it, later sections should
    advance the story, not echo the same sentence.
+7. **Sales path.** Free report, short Loom on the first gap, 20-minute call.
 
 ## Pricing in public drafts
 
