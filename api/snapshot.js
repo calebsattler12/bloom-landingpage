@@ -1,4 +1,4 @@
-const TO_EMAIL = "calebsattler21@gmail.com";
+const TO_EMAIL = "caleb@runbloom.ai";
 const FORMSUBMIT = `https://formsubmit.co/ajax/${TO_EMAIL}`;
 
 function parseBody(req) {

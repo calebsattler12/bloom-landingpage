@@ -2,7 +2,7 @@
   const modal = document.getElementById("snapshot-done");
   if (!modal) return;
 
-  const NOTIFY_EMAIL = "calebsattler21@gmail.com";
+  const NOTIFY_EMAIL = "caleb@runbloom.ai";
 
   function showDone() {
     modal.hidden = false;
@@ -84,7 +84,7 @@
       if (submit) {
         submit.disabled = true;
         submit.dataset.label = submit.dataset.label || submit.textContent;
-        submit.textContent = "Creating…";
+        submit.textContent = "Sending…";
       }
 
       try {

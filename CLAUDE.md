@@ -112,8 +112,13 @@ uses a "Choose your level" section with Level 1 / 2 / 3 placeholders
 - Public builder: `/snapshot/` (also the homepage `#snapshot` form).
 - Visitor submits website URL + email, sees "Great, we'll send that to your
   email shortly!" and a button back to home.
-- `POST /api/snapshot` emails `calebsattler21@gmail.com` via Formsubmit.
-  First live send may require Caleb to confirm the Formsubmit activation email.
+- `POST /api/snapshot` emails `caleb@runbloom.ai` via Formsubmit.
+  It only sends that alert. It does not create a job in the bloom-snapshots app.
+  Changing the recipient requires a one-time Formsubmit activation: the first
+  submission sends an activation email to `caleb@runbloom.ai`. Open it and
+  click the confirmation link. Formsubmit holds submissions (about 30 days)
+  and delivers them after confirmation. The browser fallback in
+  `snapshot-form.js` posts to the same address if `/api/snapshot` is down.
 - Public sample: `/snapshot/sample/` uses a blurred image
   (`snapshot/sample-report.jpg`). Company, domain, and competitor names are
   unreadable. Do not link the live Zipliens report URL on the marketing site.
