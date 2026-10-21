@@ -37,10 +37,9 @@ the point. End on the result or the next step, not hype.
 
 ## Product framing (locked)
 
-1. **Outcome first.** Hero: Get your company named in AI answers, not just
-   your competitors. Supporting frame: free snapshot, then pages from real
-   interviews and approved drafts so ChatGPT, Perplexity, and Google AI
-   Overviews name you.
+1. **Outcome first.** Hero: Get named in AI answers. Supporting frame: free
+   snapshot, then pages from real interviews and approved drafts so ChatGPT,
+   Perplexity, and Google AI Overviews name you.
 2. **Pain.** When buyers ask AI for the best tool in a category, a competitor
    usually gets named. Usual causes: missing buyer-question pages, no industry
    or comparison pages, few pages indexed, AI crawlers blocked.

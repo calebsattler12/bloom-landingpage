@@ -40,9 +40,9 @@ no build step, plus a Vercel function for snapshot requests.
 - **Palette:** ink `#0B0B0F`, white `#FFFFFF`, cloud `#F4F5F8`, mist `#E4E7EE`, slate `#5E6272`, Bloom Blue `#3355FF` (accent, light, one high-intent CTA). Glow edge `#FFB8E6` / halo `#A591FF`. No full-bleed blue sections.
 - **Fonts:** Geist (UI and headings), Geist Mono (labels)
 - **Logo:** `bloom` wordmark plus glowing light. Never include "INSIGHTS. LANDSCAPES. GROWTH."
-- **Hero:** Get your company named in AI answers, not just your competitors.
+- **Hero:** Get named in AI answers.
 - **CTA (site):** Book a Call → https://calendar.app.google/zw5FN51UGRgyidLv7
-- **Secondary CTA:** Get your free AI visibility report → `/snapshot/` or `#snapshot`
+- **Secondary CTA:** Get your free report → `/snapshot/` or `#snapshot`
 - **Social:** LinkedIn https://www.linkedin.com/company/bloom-ai-llc/ (JSON-LD `sameAs`). No Twitter account.
 - Personality: light, approachable, friendly, slightly dramatic on **pain**.
 - Prefer **agent** in supporting copy. Never **bot**.
@@ -98,8 +98,7 @@ Follow `brand-voice.md`: zero em dashes; no "it's not X, it's Y"; banned AI
 diction; no fabricated proof. One job per section. Cut repeated thesis phrases.
 Slightly dramatic on pain. Calm on how Bloom works.
 
-The locked hero line uses "not just your competitors" from the Oct 20 brief.
-Do not add more "not just / it's not" constructions elsewhere.
+Keep headlines short. Do not add "not just / it's not" constructions.
 
 ## Pricing (public drafts)
 
