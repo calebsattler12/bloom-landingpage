@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DXC609MWB7"></script>
+<script src="/gtag-init.js"></script>
+<title>Bloom AI · Share Search Console</title>
+<meta name="description" content="Step-by-step: add Bloom as a Restricted user in Google Search Console, then email Caleb.">
+<link rel="canonical" href="https://www.runbloom.ai/gsc/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/brand.css">
+<link rel="stylesheet" href="/access-guide.css">
+</head>
+<body>
+<nav class="top">
+  <a href="/" aria-label="Bloom"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></a>
+  <a class="btn btn-accent" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a Call</a>
+</nav>
+<main class="guide">
+  <p class="kicker">Onboarding</p>
+  <h1>Share Search Console access<span class="on-light" aria-hidden="true"></span></h1>
+  <p class="lede">Search Console has no API key. You add Caleb as a Restricted user, then email him the property URL. About 5 minutes. Read-only.</p>
+
+  <div class="callout">
+    <h2>Before you start</h2>
+    <ul>
+      <li>Use a laptop or desktop. The Search Console app is harder for this.</li>
+      <li>Sign in with the Google account that <em>owns</em> the website in Search Console. Restricted and Full users cannot add people.</li>
+      <li>Add this exact address: <code>calebsattler21@gmail.com</code></li>
+      <li>Permission to pick: <strong>Restricted</strong>. Do not pick Owner. Do not pick Full unless Caleb asked for it.</li>
+      <li>Do not send passwords, 2FA codes, or JSON key files.</li>
+    </ul>
+  </div>
+
+  <h2 class="block-title">Add Caleb</h2>
+  <p class="section-lede">Do these in order. If a screen does not match, skip to troubleshooting at the bottom.</p>
+  <ol class="steps">
+    <li class="step">
+      <span class="n">Step 1</span>
+      <h3>Open Search Console</h3>
+      <p>Go to <a href="https://search.google.com/search-console" target="_blank" rel="noopener">search.google.com/search-console</a>.</p>
+      <p>Sign in with the Google account that manages the site. If Google asks you to pick an account, pick the one used when the site was verified.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 2</span>
+      <h3>Pick the right property</h3>
+      <p>Top left, click the property selector. It shows a URL or a domain name.</p>
+      <p>Choose the property for the site Bloom is working on. If you see both a domain property (<code>sc-domain:yourcompany.com</code>) and a URL-prefix property (<code>https://www.yourcompany.com</code>), pick the domain one if it exists. Otherwise pick the exact URL people type in a browser, including <code>www</code> or not, matching the live site.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 3</span>
+      <h3>Open Users and permissions</h3>
+      <p>In the left sidebar, scroll to the bottom. Click <strong>Settings</strong> (gear).</p>
+      <p>Click <strong>Users and permissions</strong>. This row only shows up for Owners. If you do not see it, you are not an Owner on this property. Stop here and ask whoever verified the site (often a developer, IT, or the agency that set Search Console up).</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 4</span>
+      <h3>Click Add user</h3>
+      <p>Top of the user list, click <strong>Add user</strong>.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 5</span>
+      <h3>Paste Caleb's email</h3>
+      <p>In the email field, paste <code>calebsattler21@gmail.com</code>. Copy it. Do not retype it. A Google Group or shared inbox will fail. It has to be that Google account.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 6</span>
+      <h3>Set permission to Restricted</h3>
+      <p>Open the permission dropdown. Choose <strong>Restricted</strong>.</p>
+      <p>Restricted can view Performance, indexing, and most reports. It cannot add users, change settings, or verify owners. That is what Bloom needs.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 7</span>
+      <h3>Save, then check the list</h3>
+      <p>Click <strong>Add</strong>.</p>
+      <p>You should see <code>calebsattler21@gmail.com</code> in the list with Restricted next to it. Access is immediate. Caleb does not have to click a magic link first, though Google may email him.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 8</span>
+      <h3>Copy the property name</h3>
+      <p>Look at the top-left property selector again. Copy the full property string. Examples: <code>https://www.yourcompany.com/</code> or <code>sc-domain:yourcompany.com</code>.</p>
+      <p>If Bloom should see more than one property (www and the apex, or a staging host you care about), add Restricted on each one and copy every property name.</p>
+    </li>
+  </ol>
+
+  <h2 class="block-title">Send it to Caleb</h2>
+  <p class="section-lede">Email is enough. Include the property name so he can find you in his Search Console list.</p>
+  <div class="send">
+    <p>To: <code>calebsattler21@gmail.com</code></p>
+    <p>Use this as the body. Fill the brackets.</p>
+    <pre>Subject: Search Console access for [company]
+
+Hi Caleb,
+I added calebsattler21@gmail.com as Restricted on Search Console.
+
+Property: [paste the property name from the top-left selector]
+Company: [company]
+My name: [you]
+My email: [you]</pre>
+    <div class="actions">
+      <a class="btn btn-ink" href="mailto:calebsattler21@gmail.com?subject=Search%20Console%20access&body=Hi%20Caleb%2C%0A%0AI%20added%20calebsattler21%40gmail.com%20as%20Restricted%20on%20Search%20Console.%0A%0AProperty%3A%20%0ACompany%3A%20%0AMy%20name%3A%20%0AMy%20email%3A%20">Open email to Caleb</a>
+    </div>
+  </div>
+
+  <h2 class="block-title">If you get stuck</h2>
+  <ul class="trouble">
+    <li><strong>No Users and permissions.</strong> You are not an Owner. Ask the person who originally verified the site. A Restricted or Full user cannot add Caleb.</li>
+    <li><strong>Add user is missing or gray.</strong> Same cause. You need Owner on that property.</li>
+    <li><strong>Google says the email is invalid.</strong> It must be a Google account. <code>calebsattler21@gmail.com</code> is valid. A company distribution list is not.</li>
+    <li><strong>You have several properties.</strong> Add Restricted on each live site Bloom should see. Put every property name in the email.</li>
+    <li><strong>Domain vs URL-prefix.</strong> Domain covers http, https, www, and subdomains. URL-prefix covers only that exact protocol and host. Prefer domain when you have it.</li>
+    <li><strong>The site is not in Search Console yet.</strong> Someone has to add and verify the property first. Bloom cannot do that without Owner access to the DNS or CMS. Email Caleb and say it is not set up.</li>
+  </ul>
+
+  <p class="other">Need GA4 too? Use <a href="/ga4/">the GA4 guide</a>.</p>
+</main>
+</body>
+</html>

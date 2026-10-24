@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DXC609MWB7"></script>
+<script src="/gtag-init.js"></script>
+<title>Bloom AI · Share your GA4 key</title>
+<meta name="description" content="Step-by-step: copy your GA4 Measurement ID, add Bloom as a Viewer, then email Caleb.">
+<link rel="canonical" href="https://www.runbloom.ai/ga4/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/brand.css">
+<link rel="stylesheet" href="/access-guide.css">
+</head>
+<body>
+<nav class="top">
+  <a href="/" aria-label="Bloom"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></a>
+  <a class="btn btn-accent" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a Call</a>
+</nav>
+<main class="guide">
+  <p class="kicker">Onboarding</p>
+  <h1>Share your GA4 key<span class="on-light" aria-hidden="true"></span></h1>
+  <p class="lede">Two things: the Measurement ID (it starts with G-) and Viewer access for Caleb. About 8 minutes. Read-only. Do not send passwords or JSON key files.</p>
+
+  <div class="callout">
+    <h2>Before you start</h2>
+    <ul>
+      <li>Use a laptop or desktop.</li>
+      <li>You need the <strong>Administrator</strong> role on the GA4 property to add users. Editor cannot add people.</li>
+      <li>This has to be GA4, not Universal Analytics. If you only see a UA- property, email Caleb. Bloom needs GA4.</li>
+      <li>Add this exact address: <code>calebsattler21@gmail.com</code></li>
+      <li>Role to pick: <strong>Viewer</strong>. Do not pick Administrator or Editor.</li>
+    </ul>
+  </div>
+
+  <h2 class="block-title">Copy the GA4 key</h2>
+  <p class="section-lede">The key Bloom needs is the Measurement ID. It looks like <code>G-XXXXXXXXXX</code>. Also copy the numeric Property ID.</p>
+  <ol class="steps">
+    <li class="step">
+      <span class="n">Step 1</span>
+      <h3>Open Google Analytics</h3>
+      <p>Go to <a href="https://analytics.google.com" target="_blank" rel="noopener">analytics.google.com</a> and sign in.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 2</span>
+      <h3>Confirm you are in the right property</h3>
+      <p>Bottom left, click <strong>Admin</strong> (gear).</p>
+      <p>At the top of Admin, use the account and property picker. Select the account, then the GA4 property for the live marketing site. The property name is usually the company or website name. It should not say "Universal Analytics" or show a View column like the old product.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 3</span>
+      <h3>Open the web data stream</h3>
+      <p>Still in Admin, under the Property column, find <strong>Data collection and modification</strong>, then click <strong>Data streams</strong>.</p>
+      <p>If your Admin is a search field plus a list of cards, search for "Data streams".</p>
+      <p>Click the web stream. It is labeled Web, and the URL should match the live site. If you have more than one web stream, pick the production site, not a staging or app stream.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 4</span>
+      <h3>Copy the Measurement ID</h3>
+      <p>Top right of the stream details, you will see <strong>Measurement ID</strong>. It starts with <code>G-</code> and then a string of letters and numbers.</p>
+      <p>Click the copy icon, or highlight it and copy. Paste it into a note. This is the GA4 key.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 5</span>
+      <h3>Copy the Property ID too</h3>
+      <p>Go back to Admin. Under Property, click <strong>Property details</strong> (sometimes labeled Property settings).</p>
+      <p>Copy <strong>Property ID</strong>. It is a number, like <code>123456789</code>. Not the same as the G- key. Caleb needs both.</p>
+    </li>
+  </ol>
+
+  <h2 class="block-title">Add Caleb as Viewer</h2>
+  <p class="section-lede">The G- key is not enough on its own. Viewer access lets Bloom open the reports.</p>
+  <ol class="steps">
+    <li class="step">
+      <span class="n">Step 6</span>
+      <h3>Open Property access management</h3>
+      <p>Admin, Property column, click <strong>Property access management</strong>.</p>
+      <p>Do not use Account access management unless you intend to grant every property in the account. Property-only is enough.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 7</span>
+      <h3>Add user</h3>
+      <p>Top right, click the blue <strong>+</strong>, then <strong>Add users</strong>.</p>
+      <p>If you do not see +, you are not an Administrator on this property. Ask whoever owns the Analytics account.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 8</span>
+      <h3>Paste Caleb's email</h3>
+      <p>Email address: <code>calebsattler21@gmail.com</code>. Copy it. Do not retype it.</p>
+      <p>Leave <strong>Notify new users by email</strong> checked so he gets the invite.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 9</span>
+      <h3>Choose Viewer only</h3>
+      <p>Under Standard roles, select <strong>Viewer</strong>.</p>
+      <p>Leave Administrator, Editor, Marketer, and Analyst off. Viewer can see reports and settings. It cannot change events, tracking, or users.</p>
+      <p>Leave data restrictions (cost and revenue) unchecked unless your company requires it. Unchecked means Caleb can see those fields if they exist.</p>
+    </li>
+    <li class="step">
+      <span class="n">Step 10</span>
+      <h3>Click Add</h3>
+      <p>Top right, click <strong>Add</strong>.</p>
+      <p>You should see <code>calebsattler21@gmail.com</code> in the list with Viewer as a direct role. If it already existed, open that row and set the role to Viewer, then save.</p>
+    </li>
+  </ol>
+
+  <h2 class="block-title">Send it to Caleb</h2>
+  <p class="section-lede">Email the Measurement ID, the Property ID, and a note that Viewer is granted.</p>
+  <div class="send">
+    <p>To: <code>calebsattler21@gmail.com</code></p>
+    <p>Use this as the body. Fill the brackets.</p>
+    <pre>Subject: GA4 key for [company]
+
+Hi Caleb,
+Viewer access is granted to calebsattler21@gmail.com.
+
+Measurement ID (GA4 key): G-[paste]
+Property ID: [paste the number]
+Property name: [as shown in Analytics]
+Company: [company]
+My name: [you]
+My email: [you]</pre>
+    <div class="actions">
+      <a class="btn btn-ink" href="mailto:calebsattler21@gmail.com?subject=GA4%20key&body=Hi%20Caleb%2C%0A%0AViewer%20access%20is%20granted%20to%20calebsattler21%40gmail.com.%0A%0AMeasurement%20ID%20(GA4%20key)%3A%20G-%0AProperty%20ID%3A%20%0AProperty%20name%3A%20%0ACompany%3A%20%0AMy%20name%3A%20%0AMy%20email%3A%20">Open email to Caleb</a>
+    </div>
+  </div>
+
+  <h2 class="block-title">If you get stuck</h2>
+  <ul class="trouble">
+    <li><strong>No Property access management, or no +.</strong> You need the Administrator role. Editor, Marketer, Analyst, and Viewer cannot add users.</li>
+    <li><strong>You only have Universal Analytics.</strong> Look for a property whose ID starts with UA-. That is the old product. Bloom needs a GA4 property (Measurement ID starts with G-). If you do not have one, say so in the email.</li>
+    <li><strong>Several data streams.</strong> Copy the Measurement ID from the production web stream. Put the stream URL in the email if you are unsure.</li>
+    <li><strong>Several GA4 properties.</strong> Use the one on the live marketing site. If Bloom should see more than one, add Viewer on each and send every G- ID.</li>
+    <li><strong>Google says the email is invalid.</strong> It must be a Google account. <code>calebsattler21@gmail.com</code> is valid. A company distribution list is not.</li>
+    <li><strong>You found an API secret under Measurement Protocol.</strong> Skip it. Bloom does not need that secret for read-only reporting.</li>
+  </ul>
+
+  <p class="other">Need Search Console too? Use <a href="/gsc/">the Search Console guide</a>.</p>
+</main>
+</body>
+</html>
