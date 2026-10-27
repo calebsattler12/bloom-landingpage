@@ -43,7 +43,7 @@ no build step, plus a Vercel function for snapshot requests.
 - **Palette:** ink `#0B0B0F`, white `#FFFFFF`, cloud `#F4F5F8`, mist `#E4E7EE`, slate `#5E6272`, Bloom Blue `#3355FF` (accent, light, one high-intent CTA). Glow edge `#FFB8E6` / halo `#A591FF`. No full-bleed blue sections.
 - **Fonts:** Geist (UI and headings), Geist Mono (labels)
 - **Logo:** `bloom` wordmark plus glowing light. Never include "INSIGHTS. LANDSCAPES. GROWTH."
-- **Hero:** Get named in AI answers.
+- **Hero:** Turn your call data into content.
 - **CTA (site):** Book a Call → https://calendar.app.google/zw5FN51UGRgyidLv7
 - **Secondary CTA:** Get your free report → `/snapshot/` or `#snapshot`
 - **Social:** LinkedIn https://www.linkedin.com/company/bloom-ai-llc/ (JSON-LD `sameAs`). No Twitter account.
@@ -125,7 +125,7 @@ uses a "Choose your level" section with Level 1 / 2 / 3 placeholders
 
 ## Site section map (`index.html`)
 
-1. Hero (named in AI answers)
+1. Hero (turn your call data into content)
 2. The gap (causes)
 3. How it works (snapshot → plan → interview → approve → measure)
 4. Snapshot form
