@@ -11,8 +11,8 @@ no build step, plus a Vercel function for snapshot requests.
 - `index.html` — public homepage (AI answers / snapshot + content system)
 - `snapshot/index.html` — public snapshot builder (`/snapshot/`)
 - `gsc/index.html`, `ga4/index.html` — orphan onboarding guides (noindex).
-  How to grant Caleb read-only Search Console / GA4 access and email him.
-  Not in nav or sitemap.
+  How to grant Caleb read-only Search Console / GA4 access and email him
+  at `caleb@runbloom.ai`. Not in nav or sitemap.
 - `api/snapshot.js` — emails snapshot requests to Caleb
 - `preview/index.html` — mirror of the homepage; `/preview/` 301s to `/`
 - `get-started.html`, `pitch-deck.html`, `90-day-*`, sample reports, `teams/*`
