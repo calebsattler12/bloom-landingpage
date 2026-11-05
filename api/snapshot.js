@@ -44,6 +44,7 @@ export default async function handler(req, res) {
 
   const email = String(body.email || "").trim().toLowerCase();
   const website = normalizeUrl(body.url || body.website);
+  const competitors = String(body.competitors || "").trim().slice(0, 300);
   if (!isEmail(email) || !website) {
     return res.status(400).json({ ok: false, error: "Enter a website URL and email." });
   }
@@ -55,8 +56,9 @@ export default async function handler(req, res) {
       _captcha: "false",
       email,
       website,
+      competitors: competitors || "(not provided)",
       source: "runbloom.ai snapshot builder",
-      message: `New snapshot request\nWebsite: ${website}\nEmail: ${email}`,
+      message: `New snapshot request\nWebsite: ${website}\nEmail: ${email}\nCompetitors: ${competitors || "(not provided)"}`,
     };
 
     const response = await fetch(FORMSUBMIT, {

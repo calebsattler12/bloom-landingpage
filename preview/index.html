@@ -198,6 +198,7 @@
     margin-top: 32px;
   }
   .snap-form label { display: block; }
+  .snap-form .field-wide { grid-column: 1 / -1; }
   .snap-form .field-label {
     display: block;
     font-size: 12px;
@@ -467,6 +468,10 @@
         <input type="text" name="company" tabindex="-1" autocomplete="off">
       </label>
       <button class="btn btn-ink" type="submit">Create</button>
+      <label class="field-wide">
+        <span class="field-label">Who are your top 2 competitors? <span style="font-weight:400;letter-spacing:0;text-transform:none">(optional)</span></span>
+        <input type="text" name="competitors" placeholder="Competitor A, Competitor B" autocomplete="off">
+      </label>
       <p class="form-error" data-snapshot-error hidden></p>
     </form>
     <a class="sample-link" href="/snapshot/sample/">See a sample. Names hidden.</a>

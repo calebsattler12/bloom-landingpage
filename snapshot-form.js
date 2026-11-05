@@ -51,8 +51,15 @@
         _captcha: "false",
         email: payload.email,
         website: payload.url,
+        competitors: payload.competitors || "",
         source: "runbloom.ai snapshot builder",
-        message: "New snapshot request\nWebsite: " + payload.url + "\nEmail: " + payload.email,
+        message:
+          "New snapshot request\nWebsite: " +
+          payload.url +
+          "\nEmail: " +
+          payload.email +
+          "\nCompetitors: " +
+          (payload.competitors || "(not provided)"),
       }),
     });
     if (!response.ok) {
@@ -78,6 +85,7 @@
       const payload = {
         url: ((form.querySelector('[name="url"]') || {}).value || "").trim(),
         email: ((form.querySelector('[name="email"]') || {}).value || "").trim(),
+        competitors: ((form.querySelector('[name="competitors"]') || {}).value || "").trim(),
         company: ((form.querySelector('[name="company"]') || {}).value || "").trim(),
       };
 
