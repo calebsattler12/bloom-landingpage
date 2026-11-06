@@ -9,6 +9,8 @@ Marketing site for **Bloom** (Syncro Labs) at **runbloom.ai**. Static HTML,
 no build step, plus a Vercel function for snapshot requests.
 
 - `index.html` — public homepage (AI answers / snapshot + content system)
+- `privacy/index.html` — public privacy policy (`/privacy/`), covers site analytics
+  and LinkedIn ads / Insight Tag disclosure
 - `snapshot/index.html` — public snapshot builder (`/snapshot/`)
 - `gsc/index.html`, `ga4/index.html` — orphan onboarding guides (noindex).
   How to grant Caleb read-only Search Console / GA4 access and email him
