@@ -24,6 +24,15 @@
     });
   });
 
+  function setLinkedInUserData(email) {
+    if (!email || typeof window.lintrk !== "function") return;
+    try {
+      window.lintrk("setUserData", { email: email });
+    } catch (error) {
+      console.warn("LinkedIn enhanced matching unavailable", error);
+    }
+  }
+
   async function send(payload) {
     try {
       const response = await fetch("/api/snapshot", {
@@ -97,6 +106,7 @@
 
       try {
         await send(payload);
+        setLinkedInUserData(payload.email);
         form.reset();
         showDone();
       } catch (error) {
