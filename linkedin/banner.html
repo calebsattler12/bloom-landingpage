@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<title>LinkedIn banner</title>
+<link rel="stylesheet" href="../brand.css">
+<style>
+  html, body { margin: 0; background: #fff; }
+  .banner {
+    position: relative;
+    width: 1584px;
+    height: 396px;
+    overflow: hidden;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 40px 72px 48px;
+    isolation: isolate;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    width: 640px;
+    height: 640px;
+    left: -80px;
+    top: -180px;
+    pointer-events: none;
+    z-index: 0;
+    background: radial-gradient(circle at 50% 50%,
+      rgba(255, 184, 230, 0.38) 0%,
+      rgba(165, 145, 255, 0.28) 26%,
+      rgba(51, 85, 255, 0.18) 48%,
+      transparent 70%);
+  }
+  .inner {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: right;
+  }
+  .wordmark { font-size: 32px; }
+  .wordmark .light { width: 9px; height: 9px; top: 2px; right: 2px; }
+  h1 {
+    margin: 0;
+    font-family: Geist, system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+    color: #0B0B0F;
+    max-width: 18ch;
+  }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="inner">
+      <span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span>
+      <h1>Your marketing team,<br>always on</h1>
+    </div>
+  </div>
+</body>
+</html>
