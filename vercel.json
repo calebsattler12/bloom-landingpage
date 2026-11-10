@@ -1,44 +1,37 @@
 {
   "redirects": [
-    {
-      "source": "/teams/search-visibility.html",
-      "destination": "/teams/seo.html",
-      "permanent": true
-    },
-    {
-      "source": "/teams/sales-enablement.html",
-      "destination": "/teams/deal-enablement.html",
-      "permanent": true
-    },
-    {
-      "source": "/blue-variation",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blue-variation/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blue-variation/:path*",
-      "destination": "/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/preview",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/preview/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/preview/index.html",
-      "destination": "/",
-      "permanent": true
-    }
+    { "source": "/blue-variation", "destination": "/", "permanent": true },
+    { "source": "/blue-variation/", "destination": "/", "permanent": true },
+    { "source": "/blue-variation/:path*", "destination": "/:path*", "permanent": true },
+    { "source": "/preview", "destination": "/", "permanent": true },
+    { "source": "/preview/", "destination": "/", "permanent": true },
+    { "source": "/preview/index.html", "destination": "/", "permanent": true },
+
+    { "source": "/get-started.html", "destination": "/snapshot/", "permanent": true },
+    { "source": "/get-started", "destination": "/snapshot/", "permanent": true },
+    { "source": "/pitch-deck.html", "destination": "/", "permanent": true },
+    { "source": "/pitch-deck", "destination": "/", "permanent": true },
+    { "source": "/90-day-timeline.html", "destination": "/", "permanent": true },
+    { "source": "/90-day-timeline", "destination": "/", "permanent": true },
+    { "source": "/90-day-example.html", "destination": "/", "permanent": true },
+    { "source": "/90-day-example", "destination": "/", "permanent": true },
+    { "source": "/sitemap.html", "destination": "/", "permanent": true },
+    { "source": "/icp-findings-example.html", "destination": "/snapshot/", "permanent": true },
+    { "source": "/icp-findings-example", "destination": "/snapshot/", "permanent": true },
+    { "source": "/win-loss-example.html", "destination": "/snapshot/", "permanent": true },
+    { "source": "/win-loss-example", "destination": "/snapshot/", "permanent": true },
+    { "source": "/events-partnerships-example.html", "destination": "/snapshot/", "permanent": true },
+    { "source": "/events-partnerships-example", "destination": "/snapshot/", "permanent": true },
+
+    { "source": "/teams", "destination": "/", "permanent": true },
+    { "source": "/teams/", "destination": "/", "permanent": true },
+    { "source": "/teams/:path*", "destination": "/", "permanent": true },
+
+    { "source": "/gsc", "destination": "/", "permanent": true },
+    { "source": "/gsc/", "destination": "/", "permanent": true },
+    { "source": "/gsc/:path*", "destination": "/", "permanent": true },
+    { "source": "/ga4", "destination": "/", "permanent": true },
+    { "source": "/ga4/", "destination": "/", "permanent": true },
+    { "source": "/ga4/:path*", "destination": "/", "permanent": true }
   ]
 }

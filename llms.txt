@@ -1,0 +1,37 @@
+# Bloom AI
+
+> Bloom is a marketing automation and AI-visibility agency (AEO + SEO) for B2B software, SaaS, and professional services companies.
+
+## Summary
+
+Bloom gets B2B companies inbound leads by making them visible in AI answers and Google search. The public entry offer is a free snapshot of how the company shows up in AI and Google search.
+
+## Who it serves
+
+US founders and CEOs of B2B software, SaaS, or professional services companies, about 10 to 25 employees, with a salesperson but weak inbound.
+
+## Free snapshot
+
+Visitors submit a website URL and work email (optional competitors) at https://www.runbloom.ai/snapshot/ or on the homepage. Bloom emails a free snapshot of how often the company is named for buyer questions, and which sources AI cites. Call recordings are not required for the free snapshot.
+
+## How the paid work runs
+
+1. Plan from ICP, GSC, GA4, and buyer questions
+2. Voice-agent interviews of the company's people
+3. Human approval of every draft in Slack
+4. Publish to Webflow or WordPress
+5. Weekly email report and a live AI visibility dashboard
+
+## Contact
+
+- Email: caleb@runbloom.ai
+- Book a call: https://calendar.app.google/zw5FN51UGRgyidLv7
+- LinkedIn: https://www.linkedin.com/company/bloom-ai-llc/
+- Legal name: Bloom AI LLC
+
+## Key pages
+
+- https://www.runbloom.ai/
+- https://www.runbloom.ai/snapshot/
+- https://www.runbloom.ai/snapshot/sample/
+- https://www.runbloom.ai/privacy/

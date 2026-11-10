@@ -3,485 +3,259 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#3355FF">
+<link rel="apple-touch-icon" href="/logo-mark.png">
 <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MHTDNN3G"></script>
 <script src="/gtag-init.js"></script>
-<title>Bloom AI · Turn your call data into content</title>
-<meta name="description" content="Bloom turns your call data into pages so AI names you. Get a free report, then book a call.">
+<title>Bloom AI · Get your free snapshot</title>
+<meta name="description" content="Get a free snapshot of how you show up in AI answers and Google search. Bloom helps B2B teams get inbound leads with high-intent content.">
 <link rel="canonical" href="https://www.runbloom.ai/">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Bloom AI">
-<meta property="og:title" content="Bloom AI · Turn your call data into content">
-<meta property="og:description" content="Your calls and experts become pages. Then AI names you.">
+<meta property="og:title" content="Bloom AI · Get your free snapshot">
+<meta property="og:description" content="See how often AI and Google name you. Start with a free snapshot.">
 <meta property="og:url" content="https://www.runbloom.ai/">
-<meta property="og:image" content="https://www.runbloom.ai/logo-mark.png">
+<meta property="og:image" content="https://www.runbloom.ai/og-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bloom AI · Get your free snapshot">
+<meta name="twitter:description" content="See how often AI and Google name you. Start with a free snapshot.">
+<meta name="twitter:image" content="https://www.runbloom.ai/og-share.jpg">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Bloom AI","legalName":"Bloom AI LLC","url":"https://www.runbloom.ai/","logo":"https://www.runbloom.ai/logo-mark.png","sameAs":["https://www.linkedin.com/company/bloom-ai-llc/"]},{"@type":"WebSite","name":"Bloom AI","url":"https://www.runbloom.ai/"},{"@type":"WebPage","name":"Turn your call data into content","url":"https://www.runbloom.ai/"}]}
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","name":"Bloom AI","legalName":"Bloom AI LLC","url":"https://www.runbloom.ai/","logo":"https://www.runbloom.ai/logo-mark.png","email":"caleb@runbloom.ai","sameAs":["https://www.linkedin.com/company/bloom-ai-llc/"],"contactPoint":{"@type":"ContactPoint","email":"caleb@runbloom.ai","contactType":"sales"}},
+{"@type":"WebSite","name":"Bloom AI","url":"https://www.runbloom.ai/"},
+{"@type":"WebPage","name":"Get your free snapshot","url":"https://www.runbloom.ai/"},
+{"@type":"Service","name":"AI visibility and inbound content","provider":{"@type":"Organization","name":"Bloom AI"},"description":"Free AI visibility snapshot, then interviews, Slack-approved pages, and weekly measurement so B2B companies get named in AI answers and Google search.","url":"https://www.runbloom.ai/snapshot/"},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is the free snapshot, and what do you need from me to make it?","acceptedAnswer":{"@type":"Answer","text":"The free snapshot shows how often AI names you for buyer questions in your category, and which sources it cites. We need your website URL and a work email. Optional competitors improve the comparison."}},
+{"@type":"Question","name":"Do I need to send call recordings to get the snapshot?","acceptedAnswer":{"@type":"Answer","text":"No. The snapshot is built from your website and category questions. Call data is used later, after we start working together."}},
+{"@type":"Question","name":"How do pages get published?","acceptedAnswer":{"@type":"Answer","text":"Your team approves every draft in Slack. Then it goes to Webflow or WordPress. Nothing ships to the live site without a human yes."}},
+{"@type":"Question","name":"Who is this for?","acceptedAnswer":{"@type":"Answer","text":"US founders and CEOs of B2B software, SaaS, or professional services companies, about 10 to 25 employees, with a salesperson but weak inbound."}},
+{"@type":"Question","name":"How long until the first draft?","acceptedAnswer":{"@type":"Answer","text":"After onboarding access on day 0, foundation work lands around day 7, the first calibration draft around day 9, and weekly reporting at day 14."}},
+{"@type":"Question","name":"How does pricing work?","acceptedAnswer":{"@type":"Answer","text":"Three publishing levels. Price is set on a call. Starting at TODO_STARTING_PRICE."}},
+{"@type":"Question","name":"Will you post to our LinkedIn or site without approval?","acceptedAnswer":{"@type":"Answer","text":"No. Site drafts need a human yes in Slack before publish. LinkedIn is paste-only and never auto-posted."}},
+{"@type":"Question","name":"How do I get in touch?","acceptedAnswer":{"@type":"Answer","text":"Email caleb@runbloom.ai, or book a call on the calendar linked from the site."}}
+]}
+]}
 </script>
 <link rel="stylesheet" href="/brand.css">
-<style>
-  html, body {
-    margin: 0;
-    background: #fff;
-    color: #0B0B0F;
-  }
-  *, *::before, *::after { box-sizing: border-box; }
-  html { scroll-padding-top: 80px; }
-  nav.top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 20px 48px;
-    position: sticky;
-    top: 0;
-    z-index: 4;
-    background: #fff;
-    border-bottom: 1px solid rgba(11, 11, 15, 0.06);
-  }
-  nav.top .quiet {
-    color: #5E6272;
-    font-size: 15px;
-    font-weight: 500;
-    text-decoration: none;
-    margin-right: 8px;
-  }
-  nav.top .quiet:hover { color: #0B0B0F; }
-  nav.top .nav-actions { display: flex; align-items: center; gap: 20px; }
-  .inner {
-    width: 100%;
-    max-width: 920px;
-    margin: 0 auto;
-    padding: 0 48px;
-  }
-  .site-hero {
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
-    padding: 96px 0 88px;
-  }
-  .site-hero::before {
-    content: "";
-    position: absolute;
-    pointer-events: none;
-    z-index: 0;
-    width: min(560px, 70vw);
-    height: min(560px, 70vw);
-    right: -12%;
-    top: -40%;
-    background: radial-gradient(circle at 50% 50%,
-      rgba(51, 85, 255, 0.12) 0%,
-      rgba(165, 145, 255, 0.08) 40%,
-      transparent 70%);
-  }
-  .site-hero .inner { position: relative; z-index: 1; }
-  h1 {
-    font-weight: 600;
-    font-size: clamp(40px, 6vw, 68px);
-    letter-spacing: -0.055em;
-    line-height: 1.02;
-    margin: 0;
-    max-width: 11em;
-  }
-  .lede {
-    margin: 22px 0 0;
-    font-size: 19px;
-    line-height: 1.55;
-    color: #5E6272;
-    max-width: 32em;
-  }
-  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 32px; }
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    border: 0;
-    cursor: pointer;
-    font-family: inherit;
-    border-radius: 8px !important;
-    padding: 13px 22px !important;
-    font-size: 15px !important;
-    white-space: nowrap;
-  }
-  .btn-ink { background: #0B0B0F; color: #fff; }
-  .btn-ink:hover { color: #fff; }
-  .text-link {
-    color: #0B0B0F;
-    font-size: 15px;
-    font-weight: 500;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(11, 11, 15, 0.25);
-    padding-bottom: 2px;
-  }
-  .text-link:hover { color: #3355FF; border-bottom-color: #3355FF; }
-  .kicker {
-    font-family: "Geist Mono", ui-monospace, monospace;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #5E6272;
-    margin: 0 0 14px;
-  }
-  section.band {
-    padding: 80px 0;
-    border-top: 1px solid rgba(11, 11, 15, 0.08);
-  }
-  section.band h2 {
-    font-size: clamp(26px, 3vw, 36px);
-    font-weight: 600;
-    letter-spacing: -0.04em;
-    line-height: 1.15;
-    margin: 0;
-  }
-  .band-lede {
-    margin: 10px 0 0;
-    font-size: 17px;
-    line-height: 1.5;
-    color: #5E6272;
-    max-width: 36em;
-  }
-  .cause-list {
-    list-style: none;
-    margin: 32px 0 0;
-    padding: 0;
-    display: grid;
-    gap: 0;
-  }
-  .cause-list li {
-    padding: 16px 0;
-    border-top: 1px solid rgba(11, 11, 15, 0.08);
-    font-size: 17px;
-    letter-spacing: -0.02em;
-  }
-  .cause-list li:last-child { border-bottom: 1px solid rgba(11, 11, 15, 0.08); }
-  .steps {
-    list-style: none;
-    margin: 36px 0 0;
-    padding: 0;
-    display: grid;
-    gap: 0;
-  }
-  .steps li {
-    display: grid;
-    grid-template-columns: 2.4em 1fr;
-    gap: 16px;
-    padding: 20px 0;
-    border-top: 1px solid rgba(11, 11, 15, 0.08);
-  }
-  .steps li:last-child { border-bottom: 1px solid rgba(11, 11, 15, 0.08); }
-  .steps .n {
-    font-family: "Geist Mono", ui-monospace, monospace;
-    font-size: 13px;
-    color: #3355FF;
-    padding-top: 3px;
-  }
-  .steps h3 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: -0.03em;
-  }
-  .steps p {
-    margin: 6px 0 0;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #5E6272;
-    max-width: 40em;
-  }
-  .snap-form {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr auto;
-    gap: 10px;
-    align-items: end;
-    margin-top: 32px;
-  }
-  .snap-form label { display: block; }
-  .snap-form .field-wide { grid-column: 1 / -1; }
-  .snap-form .field-label {
-    display: block;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    color: #5E6272;
-    margin-bottom: 8px;
-  }
-  .snap-form input {
-    width: 100%;
-    border: 0;
-    border-bottom: 1px solid rgba(11, 11, 15, 0.18);
-    border-radius: 0;
-    padding: 10px 0 12px;
-    font: inherit;
-    font-size: 16px;
-    color: #0B0B0F;
-    background: transparent;
-  }
-  .snap-form input:focus {
-    outline: none;
-    border-bottom-color: #3355FF;
-  }
-  .snap-form .hp { position: absolute; left: -9999px; height: 0; overflow: hidden; }
-  .snap-form .form-error {
-    grid-column: 1 / -1;
-    margin: 4px 0 0;
-    color: #b42318;
-    font-size: 14px;
-  }
-  .sample-link {
-    display: inline-block;
-    margin-top: 18px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #5E6272;
-  }
-  .days {
-    list-style: none;
-    margin: 36px 0 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-  }
-  .days li { min-width: 0; }
-  .days .n {
-    font-family: "Geist Mono", ui-monospace, monospace;
-    font-size: 12px;
-    color: #3355FF;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-  .days h3 {
-    margin: 10px 0 0;
-    font-size: 18px;
-    letter-spacing: -0.03em;
-  }
-  .days p {
-    margin: 8px 0 0;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #5E6272;
-  }
-  .level-row {
-    margin: 28px 0 0;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: -0.03em;
-  }
-  .quote-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
-    margin-top: 32px;
-  }
-  .quote-card {
-    margin: 0;
-    padding: 28px 0;
-    border-top: 1px solid rgba(11, 11, 15, 0.08);
-  }
-  .quote-card:last-child { border-bottom: 1px solid rgba(11, 11, 15, 0.08); }
-  .quote-card p {
-    margin: 0;
-    font-size: 20px;
-    line-height: 1.4;
-    letter-spacing: -0.03em;
-    max-width: 22em;
-  }
-  .quote-card cite {
-    display: block;
-    margin-top: 14px;
-    font-style: normal;
-    font-size: 14px;
-    color: #5E6272;
-  }
-  .quote-card cite strong {
-    color: #0B0B0F;
-    font-weight: 600;
-  }
-  .talk {
-    border-top: 1px solid rgba(11, 11, 15, 0.08);
-    padding: 28px 0 36px;
-  }
-  .talk-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .talk a.person {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    color: inherit;
-    text-decoration: none;
-  }
-  .talk img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 42%;
-    display: block;
-  }
-  .talk .label {
-    display: block;
-    font-size: 12px;
-    color: #5E6272;
-  }
-  .talk .name {
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: -0.03em;
-    margin-top: 2px;
-  }
-  .snapshot-modal {
-    position: fixed;
-    inset: 0;
-    z-index: 20;
-    background: rgba(11, 11, 15, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-  }
-  .snapshot-modal[hidden] { display: none; }
-  .snapshot-modal-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 32px 28px;
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-  }
-  .snapshot-modal-card h2 {
-    margin: 0;
-    font-size: 22px;
-    letter-spacing: -0.03em;
-  }
-  .snapshot-modal-card .btn { margin-top: 20px; }
-  @media (max-width: 800px) {
-    nav.top, .inner { padding-left: 24px; padding-right: 24px; }
-    nav.top .quiet { display: none; }
-    .snap-form, .days { grid-template-columns: 1fr; }
-    .days { gap: 24px; }
-    h1 { max-width: none; }
-    .quote-card p { font-size: 18px; }
-  }
-</style>
+<link rel="stylesheet" href="/site.css">
 </head>
 <body>
-<nav class="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHTDNN3G" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+
+<nav class="top" aria-label="Primary">
   <a href="/" aria-label="Bloom"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></a>
+  <div class="nav-links">
+    <a href="#how">How it works</a>
+    <a href="/snapshot/sample/">Sample</a>
+    <a href="#pricing">Pricing</a>
+  </div>
   <div class="nav-actions">
-    <a class="quiet" href="/snapshot/">Get your report</a>
-    <a class="btn btn-accent" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a Call</a>
+    <a class="btn btn-primary btn-sm" href="#snapshot">Get your free snapshot</a>
+    <a class="btn btn-secondary btn-sm" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Menu">☰</button>
+  </div>
+  <div class="nav-panel" id="mobile-nav" data-nav-panel>
+    <a href="#how">How it works</a>
+    <a href="/snapshot/sample/">Sample</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="#snapshot">Get your free snapshot</a>
+    <a href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
   </div>
 </nav>
 
-<header class="site-hero">
+<main id="main">
+<header class="site-hero" id="snapshot">
   <div class="inner">
-    <h1>Turn your call data into content<span class="on-light" aria-hidden="true"></span></h1>
-    <p class="lede">Your calls and experts become pages. Then AI names you.</p>
-    <div class="actions">
-      <a class="btn btn-ink" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a Call</a>
-      <a class="text-link" href="#snapshot">Get your free report</a>
+    <div>
+      <p class="kicker">Free snapshot</p>
+      <h1>Get a free snapshot of how you show up in AI and Google search<span class="on-light" aria-hidden="true"></span></h1>
+      <p class="lede">Enter your website. Bloom emails a free snapshot of how you perform in AI answers and Google search. If the gap is real, we interview your people and publish the pages that get you named.</p>
+      <p class="qualifier">Built for B2B software, SaaS, and professional services teams of about 10 to 25 people.</p>
+      <form class="snap-form hero-form" data-snapshot-form action="/api/snapshot" method="post">
+        <label>
+          <span class="field-label">Website URL</span>
+          <input type="url" name="url" required placeholder="https://yourcompany.com" autocomplete="url" inputmode="url">
+        </label>
+        <label>
+          <span class="field-label">Work email</span>
+          <input type="email" name="email" required placeholder="you@company.com" autocomplete="email">
+        </label>
+        <label class="field-wide">
+          <span class="field-label">Who are your top 2 competitors? <span style="font-weight:400;letter-spacing:0;text-transform:none">(optional)</span></span>
+          <input type="text" name="competitors" placeholder="Competitor A, Competitor B" autocomplete="off">
+        </label>
+        <label class="hp" aria-hidden="true"><span>Company</span><input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+        <div class="field-submit">
+          <button class="btn btn-primary" type="submit">Get your free snapshot</button>
+          <p class="form-error" data-snapshot-error hidden></p>
+        </div>
+      </form>
+      <div class="section-cta">
+        <a class="btn btn-secondary" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
+        <a class="text-link" href="/snapshot/sample/">See a sample snapshot</a>
+      </div>
+      <p style="margin:14px 0 0;font-size:14px;color:var(--muted)"><a class="text-link quiet" href="#loom-teardown">Prefer a personal video? Get a free 15-minute Loom teardown.</a></p>
+    </div>
+    <div class="hero-visuals" aria-hidden="false">
+      <div class="ai-mock" role="img" aria-label="Example AI answer that names a competitor instead of your company">
+        <p class="q">Buyer question</p>
+        <p class="a">“What’s the best tool for [your category]?”</p>
+        <p class="a" style="margin-top:12px">AI answers with a shortlist. It names <strong>a competitor</strong>, cites their comparison page, and skips you.<span class="typing" aria-hidden="true"></span></p>
+        <p class="cite">Example mock · not a real product UI</p>
+      </div>
+      <a class="report-preview" href="/snapshot/sample/">
+        <img src="/snapshot/sample-report-preview.jpg" width="1000" height="1286" alt="Preview of a Bloom free snapshot with company names blurred">
+        <span>Sample snapshot · company names hidden</span>
+      </a>
     </div>
   </div>
 </header>
 
-<section class="band" aria-label="The problem">
+<section class="section" aria-labelledby="gap-title" data-reveal>
   <div class="inner">
     <p class="kicker">The gap</p>
-    <h2>AI names someone else.</h2>
-    <ul class="cause-list">
-      <li>No page for the exact question buyers ask</li>
-      <li>No industry or comparison pages</li>
-      <li>Too few pages indexed</li>
-      <li>AI crawlers blocked in robots.txt</li>
+    <h2 id="gap-title">AI names someone else when your site does not answer the question.</h2>
+    <ul class="gap-grid">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h5M8 13h8"/></svg>
+        <h3>No page for the exact question</h3>
+        <p>Buyers ask AI a specific question. You have no page built for it.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 7h10v10H7z"/><path d="M10 4h10v10"/></svg>
+        <h3>No industry or comparison pages</h3>
+        <p>Shortlist and “vs” questions go to whoever wrote them first.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19V5M4 19h16"/><path d="M8 15v-4M12 15V9M16 15v-7"/></svg>
+        <h3>Too few pages indexed</h3>
+        <p>AI cites pages Google can find. Thin sites stay invisible.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M5 5l14 14"/></svg>
+        <h3>AI crawlers blocked</h3>
+        <p>robots.txt can quietly block the bots that read your site.</p>
+      </li>
     </ul>
+    <div class="section-cta">
+      <a class="btn btn-primary" href="#snapshot">Get your free snapshot</a>
+      <a class="btn btn-secondary" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
+    </div>
   </div>
 </section>
 
-<section class="band" aria-label="How Bloom works">
+<section class="section" aria-labelledby="proof-title" data-reveal>
+  <div class="inner">
+    <p class="kicker">Social proof</p>
+    <h2 id="proof-title">From the work</h2>
+    <p class="section-lede">Teams we work with</p>
+    <div class="logo-row" data-logo-row></div>
+    <div class="quote-grid">
+      <figure class="quote-card">
+        <p>“I love that. I want that. I just want that for my company. I actually love what you're doing here.”</p>
+        <cite><strong>Tate Stone</strong> · CEO, RevBlack</cite>
+      </figure>
+      <figure class="quote-card">
+        <p>“Look at the source for this deal, it came from the AI search. That's my job working!”</p>
+        <cite><strong>Julia Ribas</strong> · Director of Marketing, RevBlack</cite>
+      </figure>
+      <figure class="quote-card">
+        <p>“The agents are basically doing the work of a couple full time hires (content, analytics, nurturing, etc).”</p>
+        <cite><strong>Rob Nelson</strong> · Ex-CEO, Grow.com. Diversifi board member</cite>
+      </figure>
+    </div>
+    <div class="section-cta">
+      <a class="btn btn-primary" href="#snapshot">Get your free snapshot</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how" aria-labelledby="how-title" data-reveal>
   <div class="inner">
     <p class="kicker">How it works</p>
-    <h2>From a snapshot to live pages</h2>
-    <ol class="steps">
+    <h2 id="how-title">From a free snapshot to live pages</h2>
+    <p class="section-lede">Bloom gets B2B companies inbound leads by making them visible in AI answers and Google search.</p>
+    <ol class="steps-flow">
       <li>
         <span class="n">01</span>
-        <div>
-          <h3>Snapshot</h3>
-          <p>We test buyer questions in your category, count how often you are named, and show which sources AI cites.</p>
-        </div>
+        <h3>Snapshot</h3>
+        <p>Buyer questions in your category, how often you are named, which sources AI cites. This is the free snapshot.</p>
       </li>
       <li>
         <span class="n">02</span>
-        <div>
-          <h3>Plan</h3>
-          <p>ICP, GSC, GA4, and buyer questions become a prioritized content plan.</p>
-        </div>
+        <h3>Plan</h3>
+        <p>ICP, GSC, GA4, and those questions become a prioritized content plan.</p>
       </li>
       <li>
         <span class="n">03</span>
-        <div>
-          <h3>Interviews</h3>
-          <p>A voice agent interviews your people, so the pages carry real experience.</p>
-        </div>
+        <h3>Interviews</h3>
+        <p>A voice agent interviews your people so the pages carry real experience.</p>
       </li>
       <li>
         <span class="n">04</span>
-        <div>
-          <h3>Publish</h3>
-          <p>Your team approves every draft in Slack. Then it goes to Webflow or WordPress.</p>
-        </div>
+        <h3>Publish</h3>
+        <p>Your team approves every draft in Slack. Then it goes to Webflow or WordPress.</p>
       </li>
       <li>
         <span class="n">05</span>
-        <div>
-          <h3>Measure</h3>
-          <p>A weekly email and a live dashboard track AI visibility.</p>
-        </div>
+        <h3>Measure</h3>
+        <p>A weekly email and a live dashboard track AI visibility.</p>
       </li>
     </ol>
+    <div class="section-cta">
+      <a class="btn btn-primary" href="#snapshot">Get your free snapshot</a>
+      <a class="btn btn-secondary" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
+    </div>
   </div>
 </section>
 
-<section class="band" id="snapshot" aria-label="Free AI visibility report">
+<section class="section" id="loom-teardown" aria-labelledby="loom-title" data-reveal>
   <div class="inner">
-    <p class="kicker">Free report</p>
-    <h2>Get your free report</h2>
-    <p class="band-lede">Enter your website. We'll email the snapshot.</p>
-    <form class="snap-form" data-snapshot-form action="/api/snapshot" method="post">
-      <label>
-        <span class="field-label">Website URL</span>
-        <input type="text" name="url" required placeholder="https://yourcompany.com" autocomplete="url" inputmode="url">
-      </label>
-      <label>
-        <span class="field-label">Email</span>
-        <input type="email" name="email" required placeholder="you@company.com" autocomplete="email">
-      </label>
-      <label class="hp" aria-hidden="true">
-        <span>Company</span>
-        <input type="text" name="company" tabindex="-1" autocomplete="off">
-      </label>
-      <button class="btn btn-ink" type="submit">Create</button>
-      <label class="field-wide">
-        <span class="field-label">Who are your top 2 competitors? <span style="font-weight:400;letter-spacing:0;text-transform:none">(optional)</span></span>
-        <input type="text" name="competitors" placeholder="Competitor A, Competitor B" autocomplete="off">
-      </label>
-      <p class="form-error" data-snapshot-error hidden></p>
-    </form>
-    <a class="sample-link" href="/snapshot/sample/">See a sample. Names hidden.</a>
+    <div class="loom-block">
+      <p class="kicker">Fallback</p>
+      <h2 id="loom-title">Free 15-minute Loom teardown</h2>
+      <p class="section-lede">Prefer a personal video? Caleb records a 15-minute Loom walking through your website. This is the highest-touch free option for people who skip the snapshot first.</p>
+      <form class="loom-form" data-loom-form action="/api/loom-teardown" method="post">
+        <label>
+          <span class="field-label">Name</span>
+          <input type="text" name="name" required autocomplete="name">
+        </label>
+        <label>
+          <span class="field-label">Work email</span>
+          <input type="email" name="email" required autocomplete="email">
+        </label>
+        <label class="field-wide">
+          <span class="field-label">Website URL</span>
+          <input type="url" name="url" required placeholder="https://yourcompany.com" autocomplete="url">
+        </label>
+        <label class="hp" aria-hidden="true"><span>Company</span><input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+        <div class="field-wide">
+          <button class="btn btn-secondary" type="submit">Get a free 15-minute Loom teardown</button>
+          <p class="form-error" data-loom-error hidden></p>
+        </div>
+      </form>
+      <div class="form-success" data-loom-success hidden>
+        Got it. Caleb will send the Loom to your email. Questions? <a href="mailto:caleb@runbloom.ai">caleb@runbloom.ai</a>
+      </div>
+      <p style="margin:16px 0 0;font-size:14px"><a class="text-link" href="#snapshot">Still better: get your free snapshot first</a></p>
+    </div>
   </div>
 </section>
 
-<section class="band" aria-label="Onboarding timeline">
+<section class="section" aria-labelledby="onboard-title" data-reveal>
   <div class="inner">
     <p class="kicker">New clients</p>
-    <h2>First two weeks</h2>
+    <h2 id="onboard-title">First two weeks</h2>
+    <p class="section-lede">Call data and interviews start after you become a client. The free snapshot only needs your website.</p>
     <ol class="days">
       <li>
         <span class="n">Day 0</span>
@@ -504,64 +278,235 @@
         <p>Weekly email and a live dashboard start.</p>
       </li>
     </ol>
+    <div class="section-cta">
+      <a class="btn btn-primary" href="#snapshot">Get your free snapshot</a>
+    </div>
   </div>
 </section>
 
-<section class="band" aria-label="Choose your level">
+<section class="section" aria-labelledby="results-title" data-reveal>
+  <div class="inner">
+    <p class="kicker">Results</p>
+    <h2 id="results-title">What the work looks like</h2>
+    <p class="section-lede">Example charts from the sample snapshot shape. Not live client metrics.</p>
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h3>AI visibility share of voice</h3>
+        <p class="ex">Example</p>
+        <svg viewBox="0 0 240 140" role="img" aria-labelledby="chart1-title chart1-desc">
+          <title id="chart1-title">Example share of voice bars</title>
+          <desc id="chart1-desc">Example bars showing a competitor ahead of your company.</desc>
+          <rect x="20" y="20" width="150" height="18" fill="#3355FF" opacity=".85" rx="3"/>
+          <rect x="20" y="50" width="110" height="18" fill="#0B0B0F" rx="3"/>
+          <rect x="20" y="80" width="70" height="18" fill="#A591FF" rx="3"/>
+          <text x="20" y="128" font-size="11" fill="#5E6272">Competitor · You · Other</text>
+        </svg>
+      </div>
+      <div class="chart-card">
+        <h3>Pages indexed vs competitor</h3>
+        <p class="ex">Example</p>
+        <svg viewBox="0 0 240 140" role="img" aria-labelledby="chart2-title chart2-desc">
+          <title id="chart2-title">Example indexed pages comparison</title>
+          <desc id="chart2-desc">Two bars comparing indexed page counts.</desc>
+          <rect x="40" y="40" width="40" height="70" fill="#0B0B0F" rx="3"/>
+          <rect x="120" y="20" width="40" height="90" fill="#3355FF" rx="3"/>
+          <text x="40" y="128" font-size="11" fill="#5E6272">You · Competitor</text>
+        </svg>
+      </div>
+      <div class="chart-card">
+        <h3>Visibility over time</h3>
+        <p class="ex">Example</p>
+        <svg viewBox="0 0 240 140" role="img" aria-labelledby="chart3-title chart3-desc">
+          <title id="chart3-title">Example visibility line</title>
+          <desc id="chart3-desc">A rising line chart labeled as an example.</desc>
+          <polyline fill="none" stroke="#3355FF" stroke-width="3" points="20,110 60,95 100,100 140,70 180,55 220,35"/>
+          <circle cx="220" cy="35" r="4" fill="#3355FF"/>
+        </svg>
+      </div>
+    </div>
+    <div class="dashboard-mock">
+      <p class="ex" style="margin:0 0 8px;font-family:Geist Mono,monospace;font-size:11px;color:var(--muted)">Example weekly email / dashboard preview</p>
+      <p style="margin:0;font-weight:600">AI visibility this week</p>
+      <div class="bar" style="width:62%"></div>
+      <div class="bar" style="width:38%;opacity:.55"></div>
+      <div class="bar" style="width:74%;opacity:.35"></div>
+    </div>
+    <div class="case-todo">
+      <strong>TODO_CASE_STUDY</strong> · B2B software · Weak AI visibility · Bloom published high-intent pages after interviews · Result: TODO_CASE_METRIC
+    </div>
+    <div class="section-cta">
+      <a class="btn btn-primary" href="#snapshot">Get your free snapshot</a>
+      <a class="text-link" href="/snapshot/sample/">See a sample snapshot</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing" aria-labelledby="pricing-title" data-reveal>
   <div class="inner">
     <p class="kicker">Pricing</p>
-    <h2>Choose your level</h2>
-    <p class="band-lede">Three publishing volumes. Price is set on a call.</p>
-    <p class="level-row">Level 1 · Level 2 · Level 3</p>
-    <div class="actions">
-      <a class="btn btn-ink" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a Call</a>
+    <h2 id="pricing-title">Choose your level</h2>
+    <p class="section-lede">Three publishing volumes. Price is set on a call. Starting at TODO_STARTING_PRICE.</p>
+    <div class="levels">
+      <article class="level-card">
+        <h3>Level 1</h3>
+        <p class="price">TODO_LEVEL_1_VOLUME</p>
+        <ul>
+          <li>Starter publishing volume</li>
+          <li>Interview-backed pages</li>
+          <li>Slack approval before publish</li>
+          <li>Weekly email report</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-primary btn-sm" href="#snapshot">Get your free snapshot</a>
+          <a class="btn btn-secondary btn-sm" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
+        </div>
+      </article>
+      <article class="level-card">
+        <h3>Level 2</h3>
+        <p class="price">TODO_LEVEL_2_VOLUME</p>
+        <ul>
+          <li>Core publishing volume</li>
+          <li>More interview cadence</li>
+          <li>Slack approval before publish</li>
+          <li>Weekly email + live dashboard</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-primary btn-sm" href="#snapshot">Get your free snapshot</a>
+          <a class="btn btn-secondary btn-sm" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
+        </div>
+      </article>
+      <article class="level-card">
+        <h3>Level 3</h3>
+        <p class="price">TODO_LEVEL_3_VOLUME</p>
+        <ul>
+          <li>Highest publishing volume</li>
+          <li>Broader interview coverage</li>
+          <li>Slack approval before publish</li>
+          <li>Weekly email + live dashboard</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-primary btn-sm" href="#snapshot">Get your free snapshot</a>
+          <a class="btn btn-secondary btn-sm" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="band" aria-label="Quotes">
+<section class="section" id="faq" aria-labelledby="faq-title" data-reveal>
   <div class="inner">
-    <p class="kicker">From the work</p>
-    <div class="quote-grid">
-      <figure class="quote-card">
-        <p>“I love that. I want that. I just want that for my company. I actually love what you're doing here.”</p>
-        <cite><strong>Tate Stone</strong> · CEO, RevBlack</cite>
-      </figure>
-      <figure class="quote-card">
-        <p>“Look at the source for this deal, it came from the AI search. That's my job working!”</p>
-        <cite><strong>Julia Ribas</strong> · Director of Marketing, RevBlack</cite>
-      </figure>
-      <figure class="quote-card">
-        <p>“The agents are basically doing the work of a couple full time hires (content, analytics, nurturing, etc).”</p>
-        <cite><strong>Rob Nelson</strong> · Ex-CEO, Grow.com. Diversifi board member</cite>
-      </figure>
+    <p class="kicker">FAQ</p>
+    <h2 id="faq-title">Questions founders ask</h2>
+    <div class="faq" data-faq>
+      <details>
+        <summary>What is the free snapshot, and what do you need from me to make it?</summary>
+        <p>The free snapshot shows how often AI names you for buyer questions in your category, and which sources it cites. We need your website URL and a work email. Optional competitors improve the comparison.</p>
+      </details>
+      <details>
+        <summary>Do I need to send call recordings to get the snapshot?</summary>
+        <p>No. The snapshot is built from your website and category questions. Call data is used later, after we start working together.</p>
+      </details>
+      <details>
+        <summary>How do pages get published?</summary>
+        <p>Your team approves every draft in Slack. Then it goes to Webflow or WordPress. Nothing ships to the live site without a human yes.</p>
+      </details>
+      <details>
+        <summary>Who is this for?</summary>
+        <p>US founders and CEOs of B2B software, SaaS, or professional services companies, about 10 to 25 employees, with a salesperson but weak inbound.</p>
+      </details>
+      <details>
+        <summary>How long until the first draft?</summary>
+        <p>After onboarding access on day 0, foundation work lands around day 7, the first calibration draft around day 9, and weekly reporting at day 14.</p>
+      </details>
+      <details>
+        <summary>How does pricing work?</summary>
+        <p>Three publishing levels. Price is set on a call. Starting at TODO_STARTING_PRICE.</p>
+      </details>
+      <details>
+        <summary>Will you post to our LinkedIn or site without approval?</summary>
+        <p>No. Site drafts need a human yes in Slack before publish. LinkedIn is paste-only and never auto-posted.</p>
+      </details>
+      <details>
+        <summary>How do I get in touch?</summary>
+        <p>Email <a href="mailto:caleb@runbloom.ai">caleb@runbloom.ai</a>, or <a href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">book a call</a>.</p>
+      </details>
+    </div>
+    <div class="section-cta">
+      <a class="btn btn-primary" href="#snapshot">Get your free snapshot</a>
+      <a class="btn btn-secondary" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
     </div>
   </div>
 </section>
 
-<footer class="talk">
-  <div class="inner talk-inner">
-    <a class="person" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">
-      <img src="/preview/caleb.jpg?v=2" alt="Caleb Sattler">
-      <span>
-        <span class="label">Talk with the founder</span>
-        <span class="name">Caleb Sattler</span>
-      </span>
-    </a>
-    <div class="actions" style="align-items:center">
-      <a class="text-link" href="/privacy/">Privacy</a>
-      <a class="btn btn-accent" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a Call</a>
+<section class="section" aria-labelledby="about-title" data-reveal>
+  <div class="inner">
+    <p class="kicker">About</p>
+    <h2 id="about-title">Human approval is the product</h2>
+    <p class="section-lede">Bloom AI LLC helps B2B companies get inbound leads by producing high-intent content at scale. A voice agent interviews your people. Your team approves every draft in Slack. Then we publish to Webflow or WordPress and measure AI visibility each week.</p>
+    <p class="section-lede">Talk with the founder at <a class="text-link" href="mailto:caleb@runbloom.ai">caleb@runbloom.ai</a>.</p>
+    <div class="section-cta">
+      <a class="btn btn-primary" href="#snapshot">Get your free snapshot</a>
+      <a class="btn btn-secondary" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
     </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="foot-grid">
+      <div>
+        <a href="/" aria-label="Bloom"><span class="wordmark sm">bloom<span class="light" aria-hidden="true"></span></span></a>
+        <p style="margin:12px 0 0;color:var(--muted);font-size:14px;max-width:22em">AI visibility and inbound content for B2B teams.</p>
+        <p style="margin:12px 0 0"><a class="mail" href="mailto:caleb@runbloom.ai">caleb@runbloom.ai</a></p>
+      </div>
+      <div class="foot-links">
+        <a href="#how">How it works</a>
+        <a href="/snapshot/sample/">Sample</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="/privacy/">Privacy</a>
+      </div>
+      <div class="foot-links">
+        <a href="#snapshot">Get your free snapshot</a>
+        <a href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
+        <a href="https://www.linkedin.com/company/bloom-ai-llc/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#loom-teardown">Loom teardown</a>
+      </div>
+    </div>
+    <div class="founder-row">
+      <a class="person" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">
+        <img src="/preview/caleb-96.jpg" width="48" height="48" alt="Caleb Sattler">
+        <span>
+          <span class="label">Talk with the founder</span>
+          <span class="name">Caleb Sattler</span>
+        </span>
+      </a>
+      <div class="section-cta" style="margin:0">
+        <a class="btn btn-secondary btn-sm" href="mailto:caleb@runbloom.ai">caleb@runbloom.ai</a>
+        <a class="btn btn-accent btn-sm" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
+      </div>
+    </div>
+    <p class="legal-line">© 2026 Bloom AI LLC</p>
   </div>
 </footer>
 
 <div class="snapshot-modal" id="snapshot-done" hidden>
   <div class="snapshot-modal-card" tabindex="-1" role="dialog" aria-labelledby="snapshot-done-title" aria-modal="true">
-    <h2 id="snapshot-done-title">Great, we'll send that to your email shortly!</h2>
-    <a class="btn btn-ink" href="/">Back to home</a>
+    <h2 id="snapshot-done-title">Great, we'll email your free snapshot shortly.</h2>
+    <p>Questions? <a href="mailto:caleb@runbloom.ai">caleb@runbloom.ai</a></p>
+    <div class="actions section-cta">
+      <a class="btn btn-secondary" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
+      <a class="btn btn-primary" href="/">Back to home</a>
+    </div>
+    <p style="margin-top:16px;font-size:13px"><a class="text-link quiet" href="#loom-teardown">Prefer a personal video? Get a free 15-minute Loom teardown.</a></p>
   </div>
 </div>
+
+<script src="/logos/clients/manifest.js"></script>
+<script src="/site.js"></script>
 <script src="/snapshot-form.js"></script>
+<script src="/loom-form.js"></script>
 <script src="/linkedin-insight.js"></script>
 <noscript>
 <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=10389140&fmt=gif" />

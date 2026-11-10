@@ -1,6 +1,3 @@
-const TO_EMAIL = "calebsattler21@gmail.com";
-const FORMSUBMIT = `https://formsubmit.co/ajax/${TO_EMAIL}`;
-
 function parseBody(req) {
   if (req.body && typeof req.body === "object") return req.body;
   if (typeof req.body === "string") {
@@ -37,6 +34,12 @@ export default async function handler(req, res) {
     return res.status(405).json({ ok: false, error: "Method not allowed" });
   }
 
+  const notifyEmail = String(process.env.NOTIFY_EMAIL || "").trim();
+  if (!notifyEmail || !isEmail(notifyEmail)) {
+    console.error("NOTIFY_EMAIL is not configured");
+    return res.status(500).json({ ok: false, error: "Could not send the request. Try again." });
+  }
+
   const body = parseBody(req);
   if (body.company) {
     return res.status(200).json({ ok: true });
@@ -51,17 +54,17 @@ export default async function handler(req, res) {
 
   try {
     const payload = {
-      _subject: "New AI visibility snapshot request",
+      _subject: "New free snapshot request",
       _template: "box",
       _captcha: "false",
       email,
       website,
       competitors: competitors || "(not provided)",
-      source: "runbloom.ai snapshot builder",
-      message: `New snapshot request\nWebsite: ${website}\nEmail: ${email}\nCompetitors: ${competitors || "(not provided)"}`,
+      source: "runbloom.ai free snapshot",
+      message: `New free snapshot request\nWebsite: ${website}\nEmail: ${email}\nCompetitors: ${competitors || "(not provided)"}`,
     };
 
-    const response = await fetch(FORMSUBMIT, {
+    const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(notifyEmail)}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -72,7 +75,7 @@ export default async function handler(req, res) {
 
     if (!response.ok) {
       const text = await response.text();
-      console.error("Formsubmit failed", response.status, text);
+      console.error("Notify failed", response.status, text);
       return res.status(502).json({ ok: false, error: "Could not send the request. Try again." });
     }
 

@@ -37,9 +37,9 @@ the point. End on the result or the next step, not hype.
 
 ## Product framing (locked)
 
-1. **Outcome first.** Hero: Turn your call data into content. Supporting
-   frame: calls and expert interviews become pages so AI names you. Free
-   snapshot, then approved drafts.
+1. **Outcome first.** Hero: Get a free snapshot of how you show up in AI
+   and Google search. Supporting frame: free snapshot first, then interviews,
+   Slack-approved pages, and measurement so AI names you.
 2. **Pain.** When buyers ask AI for the best tool in a category, a competitor
    usually gets named. Usual causes: missing buyer-question pages, no industry
    or comparison pages, few pages indexed, AI crawlers blocked.
