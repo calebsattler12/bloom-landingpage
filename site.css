@@ -260,12 +260,14 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
-  align-items: center;
-  padding: 72px 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 120px 0 72px;
   border-top: 0;
   background: var(--accent);
   color: #fff;
   width: 100%;
+  text-align: left;
 }
 .site-hero::before {
   content: "";
@@ -275,8 +277,7 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   width: min(720px, 90vw);
   height: min(720px, 90vw);
   right: -18%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 12%;
   border-radius: 50%;
   background: radial-gradient(circle at 50% 50%,
     rgba(255,255,255,.22) 0%,
@@ -288,7 +289,11 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   position: relative;
   z-index: 1;
   display: block;
-  max-width: 48rem;
+  width: 100%;
+  max-width: var(--max);
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
 }
 .site-hero .kicker {
   color: rgba(255,255,255,.72);
