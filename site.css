@@ -883,12 +883,12 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   max-width: 160px;
   object-fit: contain;
   flex: 0 0 auto;
-  background: none;
+  background: transparent;
   border: 0;
   box-shadow: none;
   padding: 0;
-  filter: grayscale(1) contrast(1.15) brightness(0.15);
-  opacity: .78;
+  filter: none;
+  opacity: .85;
 }
 @keyframes logo-marquee {
   from { transform: translateX(0); }
