@@ -500,6 +500,42 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   flex: 1;
 }
 .level-card .actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 10px; }
+.level-card--ink {
+  background: var(--ink);
+  border-color: rgba(255,255,255,.08);
+  color: #fff;
+}
+.level-card--ink h3 { color: #fff; }
+.level-card--ink .price { color: rgba(255,255,255,.55); }
+.level-card--ink ul { color: rgba(255,255,255,.72); }
+.level-card--ink .btn-secondary {
+  color: #fff !important;
+  border-color: rgba(255,255,255,.35) !important;
+}
+.level-card--accent {
+  background: var(--accent);
+  border-color: transparent;
+  color: #fff;
+}
+.level-card--accent h3 { color: #fff; }
+.level-card--accent .price { color: rgba(255,255,255,.75); }
+.level-card--accent ul { color: rgba(255,255,255,.88); }
+.level-card--accent .btn-primary {
+  background: #fff !important;
+  color: var(--accent) !important;
+}
+.level-card--accent .btn-primary:hover {
+  background: rgba(255,255,255,.9) !important;
+  color: var(--accent) !important;
+}
+.level-card--accent .btn-secondary {
+  color: #fff !important;
+  border-color: rgba(255,255,255,.45) !important;
+}
+.level-card--paper {
+  background: #fff;
+  border-color: rgba(11,11,15,.12);
+}
 
 /* FAQ */
 .faq details {
