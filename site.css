@@ -162,6 +162,21 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   max-width: 40em;
 }
 .section-cta { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.closing-cta .inner {
+  text-align: center;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.closing-cta h2 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 40px) !important;
+  letter-spacing: -.04em;
+  line-height: 1.15;
+}
+.closing-cta .section-cta {
+  justify-content: center;
+}
 
 /* Snapshot form */
 .snap-form {
