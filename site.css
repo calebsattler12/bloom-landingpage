@@ -193,14 +193,27 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   padding-top: 48px !important;
   padding-bottom: 48px !important;
 }
+.snap-panel-row {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 20px;
+  align-items: stretch;
+}
 .snap-panel {
-  max-width: 640px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   background: var(--ink);
   color: #fff;
   border-radius: 16px;
   padding: 28px 28px 32px;
   border: 1px solid rgba(255,255,255,.08);
+  height: 100%;
+}
+.snap-panel-row .report-preview {
+  min-height: 100%;
+}
+.snap-panel-row .report-preview img {
+  min-height: 320px;
 }
 .snap-panel h2 {
   margin: 0;
@@ -377,7 +390,7 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
 .hero-visuals {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1.05fr .95fr;
+  grid-template-columns: minmax(0, 640px);
   align-items: stretch;
   max-width: none;
 }
@@ -1292,6 +1305,7 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   nav.top .nav-actions .btn-secondary,
   nav.top .nav-actions .nav-page { display: none; }
   .hero-visuals,
+  .snap-panel-row,
   .gap-grid,
   .steps-flow,
   .days,
