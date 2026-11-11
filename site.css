@@ -44,16 +44,14 @@ a { color: inherit; }
   white-space: nowrap;
   transition: background .15s ease, color .15s ease, border-color .15s ease;
 }
-.btn-primary, .btn-ink {
-  background: var(--ink) !important;
-  color: #fff !important;
-}
-.btn-primary:hover, .btn-ink:hover { background: #1a1a22 !important; color: #fff !important; }
-.btn-accent {
+.btn-primary, .btn-ink, .btn-accent {
   background: var(--accent) !important;
   color: #fff !important;
 }
-.btn-accent:hover { background: #2744e6 !important; color: #fff !important; }
+.btn-primary:hover, .btn-ink:hover, .btn-accent:hover {
+  background: #2744e6 !important;
+  color: #fff !important;
+}
 .btn-secondary, .btn-ghost {
   background: transparent !important;
   color: var(--ink) !important;
@@ -256,28 +254,30 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
 }
 .hero-visuals { display: grid; gap: 16px; }
 .ai-mock {
-  background: #fff;
-  border: 1px solid rgba(11,11,15,.1);
+  background: var(--ink);
+  border: 1px solid rgba(255,255,255,.08);
   border-radius: 12px;
   padding: 18px 18px 16px;
-  box-shadow: 0 12px 40px rgba(11,11,15,.06);
+  box-shadow: 0 12px 40px rgba(11,11,15,.18);
+  color: #fff;
 }
 .ai-mock .q {
   font-family: "Geist Mono", ui-monospace, monospace;
   font-size: 12px;
-  color: var(--muted);
+  color: rgba(255,255,255,.55);
   margin: 0 0 10px;
 }
 .ai-mock .a {
   margin: 0;
   font-size: 15px;
   line-height: 1.5;
+  color: rgba(255,255,255,.92);
 }
-.ai-mock .a strong { color: var(--accent); }
+.ai-mock .a strong { color: #9db0ff; }
 .ai-mock .cite {
   margin-top: 12px;
   font-size: 12px;
-  color: var(--muted);
+  color: rgba(255,255,255,.45);
 }
 .ai-mock .typing {
   display: inline-block;
@@ -342,18 +342,19 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   gap: 12px;
 }
 .steps-flow li {
-  background: #fff;
-  border: 1px solid rgba(11,11,15,.08);
+  background: var(--ink);
+  border: 1px solid rgba(255,255,255,.08);
   border-radius: 12px;
   padding: 18px 14px;
+  color: #fff;
 }
 .steps-flow .n {
   font-family: "Geist Mono", ui-monospace, monospace;
   font-size: 12px;
-  color: var(--accent);
+  color: #9db0ff;
 }
-.steps-flow h3 { margin: 8px 0 0; font-size: 16px; }
-.steps-flow p { margin: 8px 0 0; font-size: 14px; line-height: 1.45; color: var(--muted); }
+.steps-flow h3 { margin: 8px 0 0; font-size: 16px; color: #fff; }
+.steps-flow p { margin: 8px 0 0; font-size: 14px; line-height: 1.45; color: rgba(255,255,255,.65); }
 
 /* Timeline */
 .days {
@@ -446,11 +447,14 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
 .chart-card svg { width: 100%; height: auto; }
 .dashboard-mock {
   margin-top: 16px;
-  border: 1px solid rgba(11,11,15,.1);
+  border: 1px solid rgba(255,255,255,.08);
   border-radius: 12px;
   padding: 18px;
-  background: #fff;
+  background: var(--ink);
+  color: #fff;
 }
+.dashboard-mock .ex { color: rgba(255,255,255,.45) !important; }
+.dashboard-mock p { color: #fff; }
 .dashboard-mock .bar {
   height: 10px;
   border-radius: 99px;

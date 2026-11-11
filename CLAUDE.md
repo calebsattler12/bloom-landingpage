@@ -43,7 +43,7 @@ no build step, plus Vercel functions for lead forms.
 - **Palette:** ink `#0B0B0F`, white `#FFFFFF`, soft `#F4F5F8`, mist `#E4E7EE`, slate `#5E6272`, Bloom Blue `#3355FF`. Glow edge `#FFB8E6` / halo `#A591FF`.
 - **Fonts:** Geist (UI and headings), Geist Mono (labels)
 - **Logo:** `bloom` wordmark plus glowing light
-- **Hero:** Get a free snapshot of how you show up in AI and Google search
+- **Hero:** Turn your call data into content
 - **Primary CTA:** Get your free snapshot → `#snapshot` or `/snapshot/`
 - **Secondary CTA:** Book a call → https://calendar.app.google/zw5FN51UGRgyidLv7
 - **Public email:** caleb@runbloom.ai (only address allowed on the public site / committed front-end)
