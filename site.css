@@ -103,7 +103,15 @@ nav.top .nav-links a:not(.btn) {
   font-weight: 500;
 }
 nav.top .nav-links a:not(.btn):hover { color: var(--ink); }
-nav.top .nav-actions { display: flex; align-items: center; gap: 12px; }
+nav.top .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: flex-end; }
+nav.top .nav-actions .nav-page {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+nav.top .nav-actions .nav-page:hover { color: var(--ink); }
 nav.top .nav-toggle {
   display: none;
   background: none;
@@ -249,52 +257,109 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  padding: 56px 0 64px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  padding: 72px 0;
   border-top: 0;
+  background: var(--accent);
+  color: #fff;
+  width: 100%;
 }
 .site-hero::before {
   content: "";
   position: absolute;
   pointer-events: none;
   z-index: 0;
-  width: min(640px, 80vw);
-  height: min(640px, 80vw);
-  right: -10%;
-  top: -30%;
+  width: min(720px, 90vw);
+  height: min(720px, 90vw);
+  right: -18%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
   background: radial-gradient(circle at 50% 50%,
-    rgba(51,85,255,.12) 0%,
-    rgba(165,145,255,.08) 40%,
-    transparent 70%);
+    rgba(255,255,255,.22) 0%,
+    rgba(255,184,230,.18) 28%,
+    transparent 68%);
 }
-.site-hero .inner {
+.site-hero .inner,
+.site-hero-copy {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: 1.05fr .95fr;
-  gap: 40px;
-  align-items: start;
+  display: block;
+  max-width: 42rem;
 }
+.site-hero .kicker { color: rgba(255,255,255,.72); }
 .site-hero h1 {
   margin: 0;
-  font-size: clamp(34px, 5vw, 52px);
+  font-size: clamp(34px, 5vw, 56px);
   font-weight: 600;
   letter-spacing: -.05em;
   line-height: 1.05;
   max-width: 14em;
+  color: #fff;
 }
 .site-hero .lede {
   margin: 16px 0 0;
   font-size: 17px;
   line-height: 1.55;
-  color: var(--muted);
+  color: rgba(255,255,255,.88);
   max-width: 36em;
+}
+.site-hero .qualifier {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: rgba(255,255,255,.7);
+}
+.site-hero .hero-links {
+  margin: 14px 0 0;
+  font-size: 14px;
+  color: rgba(255,255,255,.7);
+}
+.site-hero .text-link,
+.site-hero .text-link.quiet {
+  color: rgba(255,255,255,.88);
+  border-bottom-color: rgba(255,255,255,.35);
+}
+.site-hero .text-link:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.site-hero .btn-primary {
+  background: #fff !important;
+  color: var(--accent) !important;
+}
+.site-hero .btn-primary:hover {
+  background: rgba(255,255,255,.9) !important;
+  color: var(--accent) !important;
+}
+.site-hero .btn-secondary {
+  color: #fff !important;
+  border-color: rgba(255,255,255,.45) !important;
+}
+.site-hero .on-light {
+  background: #fff;
+  box-shadow:
+    0 0 10px 4px rgba(255,255,255,.55),
+    0 0 28px 12px rgba(255,184,230,.45),
+    0 0 48px 20px rgba(165,145,255,.35);
 }
 .qualifier {
   margin: 14px 0 0;
   font-size: 13px;
   color: var(--muted);
 }
-.hero-visuals { display: grid; gap: 16px; }
+.hero-follow {
+  padding: 56px 0 24px;
+  border-top: 1px solid rgba(11,11,15,.08);
+}
+.hero-visuals {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  max-width: 640px;
+}
 .ai-mock {
   background: var(--ink);
   border: 1px solid rgba(255,255,255,.08);
@@ -831,8 +896,10 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   .inner, nav.top { padding-left: 24px; padding-right: 24px; }
   nav.top .nav-links { display: none; }
   nav.top .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
-  nav.top .nav-actions .btn-secondary { display: none; }
+  nav.top .nav-actions .btn-secondary,
+  nav.top .nav-actions .nav-page { display: none; }
   .site-hero .inner,
+  .site-hero-copy,
   .gap-grid,
   .steps-flow,
   .days,
@@ -845,5 +912,5 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   .why-grid,
   .pillar-grid,
   .compare-grid { grid-template-columns: 1fr; }
-  .site-hero { padding-top: 36px; }
+  .site-hero { padding-top: 48px; padding-bottom: 48px; }
 }
