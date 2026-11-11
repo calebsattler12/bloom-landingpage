@@ -119,53 +119,58 @@
 <section class="section search-shift-section" aria-labelledby="search-shift-title" data-reveal>
   <div class="inner">
     <p class="kicker">The shift</p>
-    <h2 id="search-shift-title">AI search is taking share from Google.</h2>
-    <p class="section-lede">Buyers ask models first. Classic search volume and ad revenue follow later. The graphic is illustrative of the direction, not a published Google forecast.</p>
+    <h2 id="search-shift-title">Classic search is flat. AI chat search is climbing fast.</h2>
+    <p class="section-lede">Across top search engines and top AI chatbots, visits tell two different stories: search barely moved, AI chat traffic nearly doubled year over year.</p>
     <figure class="search-shift" data-search-shift>
-      <div class="search-shift-frame" aria-hidden="true">
-        <svg class="search-shift-chart" viewBox="0 0 640 320" role="presentation">
-          <defs>
-            <linearGradient id="googleFill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#5E6272" stop-opacity=".35"/>
-              <stop offset="100%" stop-color="#5E6272" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="aiFill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#3355FF" stop-opacity=".45"/>
-              <stop offset="100%" stop-color="#3355FF" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
+      <div class="search-shift-stats" role="list">
+        <div class="stat" role="listitem">
+          <p class="stat-kicker">Traditional search engines</p>
+          <p class="stat-value google">−0.51%</p>
+          <p class="stat-note">Year-over-year visits · 1.86T total</p>
+        </div>
+        <div class="stat" role="listitem">
+          <p class="stat-kicker">AI chatbots</p>
+          <p class="stat-value ai">+80.92%</p>
+          <p class="stat-note">Year-over-year visits · 55.2B total</p>
+        </div>
+        <div class="stat" role="listitem">
+          <p class="stat-kicker">AI vs search volume</p>
+          <p class="stat-value">2.96%</p>
+          <p class="stat-note">AI chatbot visits as a share of search traffic in 2024</p>
+        </div>
+      </div>
+      <div class="search-shift-frame">
+        <p class="chart-title">Year-over-year visit growth</p>
+        <svg class="search-shift-chart" viewBox="0 0 640 280" role="img" aria-labelledby="shift-chart-title shift-chart-desc">
+          <title id="shift-chart-title">Year-over-year visit growth for traditional search engines versus AI chatbots</title>
+          <desc id="shift-chart-desc">Traditional search engines declined 0.51 percent. AI chatbots grew 80.92 percent.</desc>
           <g class="grid" stroke="rgba(11,11,15,.08)" stroke-width="1">
-            <line x1="56" y1="40" x2="600" y2="40"/>
-            <line x1="56" y1="100" x2="600" y2="100"/>
-            <line x1="56" y1="160" x2="600" y2="160"/>
-            <line x1="56" y1="220" x2="600" y2="220"/>
-            <line x1="56" y1="280" x2="600" y2="280"/>
+            <line x1="72" y1="36" x2="600" y2="36"/>
+            <line x1="72" y1="96" x2="600" y2="96"/>
+            <line x1="72" y1="156" x2="600" y2="156"/>
+            <line x1="72" y1="216" x2="600" y2="216"/>
           </g>
-          <text x="56" y="28" class="axis-label">Relative share</text>
-          <text x="56" y="308" class="axis-label">Earlier</text>
-          <text x="540" y="308" class="axis-label">Now</text>
-          <path class="area google-area" d="M56 70 C140 72, 220 88, 300 120 C380 152, 460 190, 600 240 L600 280 L56 280 Z" fill="url(#googleFill)"/>
-          <path class="area ai-area" d="M56 250 C140 245, 220 230, 300 190 C380 145, 460 95, 600 55 L600 280 L56 280 Z" fill="url(#aiFill)"/>
-          <path class="line google-line" d="M56 70 C140 72, 220 88, 300 120 C380 152, 460 190, 600 240" fill="none" stroke="#5E6272" stroke-width="3.5" stroke-linecap="round"/>
-          <path class="line ai-line" d="M56 250 C140 245, 220 230, 300 190 C380 145, 460 95, 600 55" fill="none" stroke="#3355FF" stroke-width="3.5" stroke-linecap="round"/>
-          <circle class="dot google-dot" cx="600" cy="240" r="5" fill="#5E6272"/>
-          <circle class="dot ai-dot" cx="600" cy="55" r="5" fill="#3355FF"/>
+          <text x="64" y="40" class="axis-label" text-anchor="end">+80%</text>
+          <text x="64" y="100" class="axis-label" text-anchor="end">+40%</text>
+          <text x="64" y="160" class="axis-label" text-anchor="end">0%</text>
+          <text x="64" y="220" class="axis-label" text-anchor="end">−1%</text>
+          <!-- Zero line -->
+          <line x1="72" y1="156" x2="600" y2="156" stroke="rgba(11,11,15,.2)" stroke-width="1.5"/>
+          <!-- 0% at y=156; +80% ≈ y=35. Google −0.51% sits just below zero. -->
+          <rect class="growth-bar google-bar" x="160" y="156" width="120" height="8" rx="6" fill="#5E6272"/>
+          <text x="220" y="248" class="bar-caption" text-anchor="middle">Search engines</text>
+          <text class="bar-value google-value" x="220" y="148" text-anchor="middle">−0.51%</text>
+          <rect class="growth-bar ai-bar" x="360" y="35" width="120" height="121" rx="6" fill="#3355FF"/>
+          <text x="420" y="248" class="bar-caption" text-anchor="middle">AI chatbots</text>
+          <text class="bar-value ai-value" x="420" y="28" text-anchor="middle">+80.92%</text>
         </svg>
-        <div class="search-shift-bars" aria-hidden="true">
-          <div class="bar-col">
-            <span class="bar-label">Google search</span>
-            <div class="bar-track"><span class="bar-fill google-bar"></span></div>
-          </div>
-          <div class="bar-col">
-            <span class="bar-label">AI search</span>
-            <div class="bar-track"><span class="bar-fill ai-bar"></span></div>
-          </div>
+        <div class="search-shift-context">
+          <p><strong>March 2025 daily visits:</strong> search engines 5.5B · AI chatbots 233.1M · about a 24× gap.</p>
+          <p><strong>Site organic share:</strong> average organic traffic fell from 58.11% in 2024 to 52.19% in early 2025, while ChatGPT + Perplexity referral share rose from 0.02% to 0.13%.</p>
         </div>
       </div>
       <figcaption class="search-shift-legend">
-        <span><i class="swatch google"></i> Google search volume / ad revenue</span>
-        <span><i class="swatch ai"></i> AI search usage</span>
-        <span class="note">Illustrative motion graphic</span>
+        <span class="note">Sources: OneLittleWeb analysis of Semrush / aitools.xyz (Apr 2023–Mar 2025); SE Ranking Google Analytics sample (2024 vs Jan–Apr 2025)</span>
       </figcaption>
     </figure>
   </div>
