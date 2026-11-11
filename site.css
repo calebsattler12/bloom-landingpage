@@ -1063,5 +1063,5 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   .why-grid,
   .pillar-grid,
   .compare-grid { grid-template-columns: 1fr; }
-  .site-hero { padding-top: 48px; padding-bottom: 48px; }
+  .site-hero { padding-top: 96px; padding-bottom: 56px; }
 }
