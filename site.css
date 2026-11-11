@@ -161,9 +161,51 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   gap: 12px;
   margin-top: 20px;
 }
-.snap-form.hero-form {
+.snap-form.hero-form,
+.snap-form.panel-form {
   grid-template-columns: 1fr 1fr;
   align-items: end;
+}
+.snap-panel-section {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+.snap-panel {
+  max-width: 640px;
+  margin: 0 auto;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 16px;
+  padding: 28px 28px 32px;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.snap-panel h2 {
+  margin: 0;
+  font-size: clamp(24px, 3vw, 32px) !important;
+  letter-spacing: -.04em;
+  color: #fff;
+}
+.snap-panel-lede {
+  margin: 8px 0 0;
+  font-size: 15px;
+  line-height: 1.45;
+  color: rgba(255,255,255,.65);
+}
+.snap-panel .snap-form {
+  margin-top: 20px;
+}
+.snap-panel .field-label {
+  color: rgba(255,255,255,.55);
+}
+.snap-panel input {
+  color: #fff;
+  border-bottom-color: rgba(255,255,255,.22);
+}
+.snap-panel input::placeholder {
+  color: rgba(255,255,255,.35);
+}
+.snap-panel input:focus {
+  border-bottom-color: #9db0ff;
 }
 .snap-form .field-wide { grid-column: 1 / -1; }
 .snap-form .field-submit { grid-column: 1 / -1; }
@@ -376,25 +418,51 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
 .days p { margin: 8px 0 0; font-size: 15px; line-height: 1.5; color: var(--muted); }
 
 /* Quotes + logos */
-.logo-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 28px 36px;
+.logo-marquee {
   margin-top: 28px;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
-.logo-row img {
+.logo-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: max-content;
+  animation: logo-marquee 28s linear infinite;
+}
+.logo-marquee:hover .logo-marquee-track {
+  animation-play-state: paused;
+}
+.logo-marquee-track img {
   height: 36px;
   width: auto;
-  max-width: 140px;
+  max-width: 160px;
   object-fit: contain;
-  filter: grayscale(1);
-  opacity: .72;
-  transition: filter .2s ease, opacity .2s ease;
+  flex: 0 0 auto;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  filter: grayscale(1) contrast(1.15) brightness(0.15);
+  opacity: .78;
 }
-.logo-row img:hover { filter: none; opacity: 1; }
+@keyframes logo-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
 @media (prefers-reduced-motion: reduce) {
-  .logo-row img { filter: none; opacity: .9; }
+  .logo-marquee {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+  .logo-marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: auto;
+    max-width: 100%;
+    gap: 36px 48px;
+  }
 }
 .todo-note {
   margin: 0;
@@ -698,6 +766,7 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   .levels,
   .site-footer .foot-grid,
   .snap-form.hero-form,
+  .snap-form.panel-form,
   .loom-form { grid-template-columns: 1fr; }
   .site-hero { padding-top: 36px; }
 }

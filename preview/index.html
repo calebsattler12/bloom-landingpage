@@ -73,37 +73,18 @@
 </nav>
 
 <main id="main">
-<header class="site-hero" id="snapshot">
+<header class="site-hero">
   <div class="inner">
     <div>
       <p class="kicker">Free snapshot</p>
       <h1>Turn your call data into content<span class="on-light" aria-hidden="true"></span></h1>
-      <p class="lede">Enter your website. Bloom emails a free snapshot of how you perform in AI answers and Google search. If the gap is real, we interview your people and publish the pages that get you named.</p>
+      <p class="lede">Bloom emails a free snapshot of how you show up in AI answers and Google search. If the gap is real, we turn call data into the pages that get you named.</p>
       <p class="qualifier">Built for B2B software, SaaS, and professional services teams of about 10 to 25 people.</p>
-      <form class="snap-form hero-form" data-snapshot-form action="/api/snapshot" method="post">
-        <label>
-          <span class="field-label">Website URL</span>
-          <input type="url" name="url" required placeholder="https://yourcompany.com" autocomplete="url" inputmode="url">
-        </label>
-        <label>
-          <span class="field-label">Work email</span>
-          <input type="email" name="email" required placeholder="you@company.com" autocomplete="email">
-        </label>
-        <label class="field-wide">
-          <span class="field-label">Who are your top 2 competitors? <span style="font-weight:400;letter-spacing:0;text-transform:none">(optional)</span></span>
-          <input type="text" name="competitors" placeholder="Competitor A, Competitor B" autocomplete="off">
-        </label>
-        <label class="hp" aria-hidden="true"><span>Company</span><input type="text" name="company" tabindex="-1" autocomplete="off"></label>
-        <div class="field-submit">
-          <button class="btn btn-primary" type="submit">Get your free snapshot</button>
-          <p class="form-error" data-snapshot-error hidden></p>
-        </div>
-      </form>
       <div class="section-cta">
+        <a class="btn btn-primary" href="#snapshot">Get your free snapshot</a>
         <a class="btn btn-secondary" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
-        <a class="text-link" href="/snapshot/sample/">See a sample snapshot</a>
       </div>
-      <p style="margin:14px 0 0;font-size:14px;color:var(--muted)"><a class="text-link quiet" href="#loom-teardown">Prefer a personal video? Get a free 15-minute Loom teardown.</a></p>
+      <p style="margin:14px 0 0;font-size:14px;color:var(--muted)"><a class="text-link quiet" href="/snapshot/sample/">See a sample</a> · <a class="text-link quiet" href="#loom-teardown">Or get a 15-minute Loom teardown</a></p>
     </div>
     <div class="hero-visuals" aria-hidden="false">
       <div class="ai-mock" role="img" aria-label="Example AI answer that names a competitor instead of your company">
@@ -146,9 +127,33 @@
         <p>robots.txt can quietly block the bots that read your site.</p>
       </li>
     </ul>
-    <div class="section-cta">
-      <a class="btn btn-primary" href="#snapshot">Get your free snapshot</a>
-      <a class="btn btn-secondary" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
+  </div>
+</section>
+
+<section class="section snap-panel-section" id="snapshot" aria-labelledby="snapshot-title" data-reveal>
+  <div class="inner">
+    <div class="snap-panel">
+      <h2 id="snapshot-title">Get your free snapshot</h2>
+      <p class="snap-panel-lede">Website and work email. We email the report.</p>
+      <form class="snap-form panel-form" data-snapshot-form action="/api/snapshot" method="post">
+        <label>
+          <span class="field-label">Website URL</span>
+          <input type="url" name="url" required placeholder="https://yourcompany.com" autocomplete="url" inputmode="url">
+        </label>
+        <label>
+          <span class="field-label">Work email</span>
+          <input type="email" name="email" required placeholder="you@company.com" autocomplete="email">
+        </label>
+        <label class="field-wide">
+          <span class="field-label">Top 2 competitors <span style="font-weight:400;letter-spacing:0;text-transform:none">(optional)</span></span>
+          <input type="text" name="competitors" placeholder="Competitor A, Competitor B" autocomplete="off">
+        </label>
+        <label class="hp" aria-hidden="true"><span>Company</span><input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+        <div class="field-submit">
+          <button class="btn btn-primary" type="submit">Get your free snapshot</button>
+          <p class="form-error" data-snapshot-error hidden></p>
+        </div>
+      </form>
     </div>
   </div>
 </section>
@@ -158,7 +163,9 @@
     <p class="kicker">Social proof</p>
     <h2 id="proof-title">From the work</h2>
     <p class="section-lede">Teams we work with</p>
-    <div class="logo-row" data-logo-row></div>
+    <div class="logo-marquee" data-logo-marquee aria-label="Client logos">
+      <div class="logo-marquee-track" data-logo-row></div>
+    </div>
     <div class="quote-grid">
       <figure class="quote-card">
         <p>“I love that. I want that. I just want that for my company. I actually love what you're doing here.”</p>

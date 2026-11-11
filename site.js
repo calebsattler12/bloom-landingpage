@@ -36,15 +36,22 @@
   if (logoRows.length && Array.isArray(window.BLOOM_CLIENT_LOGOS) && window.BLOOM_CLIENT_LOGOS.length) {
     logoRows.forEach(function (row) {
       row.innerHTML = "";
-      window.BLOOM_CLIENT_LOGOS.forEach(function (logo) {
-        const img = document.createElement("img");
-        img.src = logo.src;
-        img.alt = logo.alt || "";
-        img.loading = "lazy";
-        img.width = 140;
-        img.height = 48;
-        row.appendChild(img);
-      });
+      function appendSet(ariaHidden) {
+        window.BLOOM_CLIENT_LOGOS.forEach(function (logo) {
+          const img = document.createElement("img");
+          img.src = logo.src;
+          img.alt = ariaHidden ? "" : (logo.alt || "");
+          if (ariaHidden) img.setAttribute("aria-hidden", "true");
+          img.loading = "lazy";
+          img.decoding = "async";
+          img.width = 140;
+          img.height = 48;
+          row.appendChild(img);
+        });
+      }
+      appendSet(false);
+      // Duplicate set for a seamless marquee loop
+      appendSet(true);
     });
   } else {
     document.querySelectorAll("[data-logo-row]").forEach(function (row) {
