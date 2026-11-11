@@ -398,7 +398,7 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   grid-template-columns: minmax(0, 640px);
   align-items: stretch;
   max-width: none;
-  justify-content: start;
+  justify-content: center;
 }
 
 /* AI vs Google search shift graphic */
