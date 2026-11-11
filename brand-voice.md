@@ -37,14 +37,16 @@ the point. End on the result or the next step, not hype.
 
 ## Product framing (locked)
 
-1. **Outcome first.** Hero: Get a free snapshot of how you show up in AI
-   and Google search. Supporting frame: free snapshot first, then interviews,
-   Slack-approved pages, and measurement so AI names you.
-2. **Pain.** When buyers ask AI for the best tool in a category, a competitor
-   usually gets named. Usual causes: missing buyer-question pages, no industry
-   or comparison pages, few pages indexed, AI crawlers blocked.
-3. **How.** Snapshot → plan → voice-agent interviews → Slack approval →
-   publish to Webflow or WordPress → weekly report and dashboard.
+1. **Outcome first.** Hero: Turn your call data into content. Supporting
+   frame: get named in AI search; free snapshot first, then the pitch-deck
+   story (problem, gap, why competitors win, three strengths, content
+   pipeline, comparison, pick your pace).
+2. **Pain.** AI names your competitors, not you. Usual causes: missing
+   buyer-question pages, no industry or comparison pages, few pages indexed,
+   AI crawlers blocked.
+3. **How.** Technical health + performance visibility + interview-backed
+   content. Pipeline: inputs → foundation → briefs → interviews → Slack
+   approval → you publish.
 4. **Say agent, not bot.** Prefer concrete work over hiring metaphors on the
    homepage. Do not lead with Mac mini, marketing roster seats, or no-token
    charges.

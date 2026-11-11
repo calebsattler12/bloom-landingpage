@@ -52,9 +52,10 @@ no build step, plus Vercel functions for lead forms.
 
 ## Positioning (locked)
 
-**Thesis:** Bloom gets B2B companies inbound leads by making them visible in
-AI answers and Google search. High-intent content from interviews, Slack
-approval, Webflow or WordPress, weekly measurement.
+**Thesis:** Get named in AI search. Call data becomes citeable pages through
+technical health, visibility reporting, and interview-backed content with
+Slack approval. Homepage story follows the Figma pitch template
+(`Bloom-pitch-template--AI-search-plan`).
 
 **Lead magnet:** Free snapshot (website URL + email; optional competitors).
 No call recordings required for the snapshot.
