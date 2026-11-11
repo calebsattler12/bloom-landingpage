@@ -289,6 +289,10 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   width: 100%;
   text-align: left;
 }
+.site-hero-inner {
+  display: flex;
+  justify-content: flex-end;
+}
 .hero-card {
   position: relative;
   isolation: isolate;
@@ -299,6 +303,8 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   padding: 48px 48px 44px;
   text-align: left;
   box-shadow: 0 18px 48px rgba(51,85,255,.18);
+  width: min(100%, 560px);
+  margin-left: auto;
 }
 .hero-card::before {
   content: "";
@@ -384,8 +390,8 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   color: var(--muted);
 }
 .hero-follow {
-  padding: 56px 0 24px;
-  border-top: 1px solid rgba(11,11,15,.08);
+  padding: 24px 0 40px;
+  border-top: 0;
 }
 .hero-visuals {
   display: grid;
@@ -393,6 +399,7 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   grid-template-columns: minmax(0, 640px);
   align-items: stretch;
   max-width: none;
+  justify-content: start;
 }
 
 /* AI vs Google search shift graphic */
@@ -1320,5 +1327,11 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   .compare-grid { grid-template-columns: 1fr; }
   .report-preview img { min-height: 200px; }
   .site-hero { padding-top: 16px; padding-bottom: 0; }
-  .hero-card { padding: 32px 24px 28px; border-radius: 20px; }
+  .site-hero-inner { justify-content: stretch; }
+  .hero-card {
+    width: 100%;
+    margin-left: 0;
+    padding: 32px 24px 28px;
+    border-radius: 20px;
+  }
 }
