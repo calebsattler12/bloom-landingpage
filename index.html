@@ -95,11 +95,35 @@
 
 <section class="hero-follow" aria-label="Example buyer question">
   <div class="inner hero-visuals">
-    <div class="ai-mock" role="img" aria-label="Example AI answer that names a competitor instead of your company">
-      <p class="q">Buyer question</p>
-      <p class="a">“What’s the best tool for [your category]?”</p>
-      <p class="a" style="margin-top:12px">AI answers with a shortlist. It names <strong>a competitor</strong>, cites their comparison page, and skips you.<span class="typing" aria-hidden="true"></span></p>
-      <p class="cite">Example mock · not a real product UI</p>
+    <div class="ai-mock" role="img" aria-label="Example ChatGPT-style answer that names a competitor instead of your company">
+      <div class="ai-mock-chrome">
+        <span class="ai-mock-brand" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5c1.2 1.8 3.2 2.7 5.5 1.8 1.4-.5 2.4-1.5 3-2.8"/><path d="M9 9.2c.6-.9 1.5-1.5 2.6-1.6 1.8-.2 3.4.9 4 2.5"/></svg>
+          ChatGPT
+        </span>
+        <span class="ai-mock-model">Example mock</span>
+      </div>
+      <div class="ai-mock-thread">
+        <div class="ai-msg ai-msg-user">
+          <p>What’s the best tool for [your category]?</p>
+        </div>
+        <div class="ai-msg ai-msg-assistant">
+          <span class="ai-avatar" aria-hidden="true"></span>
+          <div class="ai-bubble">
+            <p>Here are a few strong options teams use:</p>
+            <ol>
+              <li><strong>A competitor</strong> — often cited for comparison pages and category roundups.</li>
+              <li>Another vendor with public docs AI can cite.</li>
+              <li>A third option with recent reviews.</li>
+            </ol>
+            <p>Your company is missing from the shortlist<span class="typing" aria-hidden="true"></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="ai-mock-composer" aria-hidden="true">
+        <span>Ask anything</span>
+        <span class="ai-send"></span>
+      </div>
     </div>
     <a class="report-preview" href="/snapshot/sample/">
       <img src="/snapshot/sample-report-preview.jpg" width="1000" height="1286" alt="Preview of a Bloom free snapshot with company names blurred">
