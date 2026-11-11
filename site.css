@@ -360,6 +360,148 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   grid-template-columns: 1fr;
   max-width: 640px;
 }
+
+/* AI vs Google search shift graphic */
+.search-shift {
+  margin: 28px 0 0;
+}
+.search-shift-frame {
+  background: var(--soft);
+  border: 1px solid rgba(11,11,15,.08);
+  border-radius: 16px;
+  padding: 20px 20px 18px;
+  display: grid;
+  gap: 18px;
+}
+.search-shift-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.search-shift-chart .axis-label {
+  fill: var(--muted);
+  font-size: 12px;
+  font-family: "Geist Mono", ui-monospace, monospace;
+}
+.search-shift-chart .line {
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+}
+.search-shift-chart .area {
+  opacity: 0;
+}
+.search-shift-chart .dot {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(0);
+}
+.search-shift-section.is-visible .google-line {
+  animation: shift-draw 1.4s ease forwards .15s;
+}
+.search-shift-section.is-visible .ai-line {
+  animation: shift-draw 1.4s ease forwards .35s;
+}
+.search-shift-section.is-visible .google-area {
+  animation: shift-fade 1s ease forwards .55s;
+}
+.search-shift-section.is-visible .ai-area {
+  animation: shift-fade 1s ease forwards .75s;
+}
+.search-shift-section.is-visible .google-dot,
+.search-shift-section.is-visible .ai-dot {
+  animation: shift-dot .45s ease forwards 1.35s;
+}
+@keyframes shift-draw {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes shift-fade {
+  to { opacity: 1; }
+}
+@keyframes shift-dot {
+  to { opacity: 1; transform: scale(1); }
+}
+.search-shift-bars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.search-shift-bars .bar-label {
+  display: block;
+  font-size: 12px;
+  font-family: "Geist Mono", ui-monospace, monospace;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.search-shift-bars .bar-track {
+  height: 10px;
+  border-radius: 99px;
+  background: rgba(11,11,15,.08);
+  overflow: hidden;
+}
+.search-shift-bars .bar-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+}
+.search-shift-bars .google-bar { background: #5E6272; }
+.search-shift-bars .ai-bar { background: var(--accent); }
+.search-shift-section.is-visible .google-bar {
+  animation: bar-google 1.2s ease forwards .9s;
+}
+.search-shift-section.is-visible .ai-bar {
+  animation: bar-ai 1.2s ease forwards 1s;
+}
+@keyframes bar-google {
+  from { width: 92%; }
+  to { width: 48%; }
+}
+@keyframes bar-ai {
+  from { width: 12%; }
+  to { width: 78%; }
+}
+.search-shift-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.search-shift-legend .swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: -1px;
+}
+.search-shift-legend .swatch.google { background: #5E6272; }
+.search-shift-legend .swatch.ai { background: var(--accent); }
+.search-shift-legend .note {
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+@media (prefers-reduced-motion: reduce) {
+  .search-shift-chart .line,
+  .search-shift-chart .area,
+  .search-shift-chart .dot,
+  .search-shift-bars .bar-fill {
+    animation: none !important;
+  }
+  .search-shift-chart .line { stroke-dashoffset: 0; }
+  .search-shift-chart .area { opacity: 1; }
+  .search-shift-chart .dot { opacity: 1; transform: none; }
+  .search-shift-bars .google-bar { width: 48%; }
+  .search-shift-bars .ai-bar { width: 78%; }
+}
+@media (max-width: 700px) {
+  .search-shift-bars { grid-template-columns: 1fr; }
+}
+
 .ai-mock {
   background: var(--ink);
   border: 1px solid rgba(255,255,255,.08);
