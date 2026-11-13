@@ -13,7 +13,8 @@ no build step, plus Vercel functions for lead forms.
 - `snapshot/sample/` — blurred sample free snapshot
 - `privacy/index.html` — privacy policy
 - `404.html` — branded not-found
-- `llms.txt` — plain-text summary for language models
+- `ai-info/index.html` — structured AI crawler / assistant page (`/ai-info/`), Tally-style
+- `llms.txt` — plain-text summary for language models (points at `/ai-info/`)
 - `api/snapshot.js` — emails free snapshot requests via Formsubmit using
   server env `NOTIFY_EMAIL` (set to `caleb@runbloom.ai` in Vercel)
 - `api/loom-teardown.js` — Loom teardown requests, same `NOTIFY_EMAIL`

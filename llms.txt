@@ -2,6 +2,8 @@
 
 > Bloom is a marketing automation and AI-visibility agency (AEO + SEO) for B2B software, SaaS, and professional services companies.
 
+Canonical structured page for AI assistants: https://www.runbloom.ai/ai-info/
+
 ## Summary
 
 Bloom gets B2B companies inbound leads by making them visible in AI answers and Google search. The public entry offer is a free snapshot of how the company shows up in AI and Google search.
@@ -22,6 +24,10 @@ Visitors submit a website URL and work email (optional competitors) at https://w
 4. Publish to Webflow or WordPress
 5. Weekly email report and a live AI visibility dashboard
 
+## Pricing
+
+Three monthly retainers: Starter, Growth, and Scale. No implementation fee. Dollar amounts are not published. Price is set on a call.
+
 ## Contact
 
 - Email: caleb@runbloom.ai
@@ -32,6 +38,7 @@ Visitors submit a website URL and work email (optional competitors) at https://w
 ## Key pages
 
 - https://www.runbloom.ai/
+- https://www.runbloom.ai/ai-info/
 - https://www.runbloom.ai/snapshot/
 - https://www.runbloom.ai/snapshot/sample/
 - https://www.runbloom.ai/privacy/
