@@ -692,7 +692,7 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   margin: 28px 0 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
 }
 .gap-grid li {
