@@ -72,6 +72,11 @@ h1, h2, h3,
   font-size: 16px !important;
   padding: 15px 26px !important;
 }
+.btn-primary {
+  background: var(--ink) !important;
+  color: #fff !important;
+}
+.btn-primary:hover { color: #fff !important; }
 .btn-accent {
   background: var(--accent) !important;
   color: #fff !important;
