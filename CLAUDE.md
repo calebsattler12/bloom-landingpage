@@ -14,6 +14,8 @@ no build step, plus Vercel functions for lead forms.
 - `privacy/index.html` — privacy policy
 - `404.html` — branded not-found
 - `ai-info/index.html` — structured AI crawler / assistant page (`/ai-info/`), Tally-style
+- `knowledge/index.html` — Knowledge hub (`/knowledge/`)
+- `knowledge/b2b-content-library/` — first published article; `/blog/b2b-content-library` 301s here
 - `llms.txt` — plain-text summary for language models (points at `/ai-info/`)
 - `api/snapshot.js` — emails free snapshot requests via Formsubmit using
   server env `NOTIFY_EMAIL` (set to `caleb@runbloom.ai` in Vercel)

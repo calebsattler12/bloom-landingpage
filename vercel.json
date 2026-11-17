@@ -32,6 +32,9 @@
     { "source": "/gsc/:path*", "destination": "/", "permanent": true },
     { "source": "/ga4", "destination": "/", "permanent": true },
     { "source": "/ga4/", "destination": "/", "permanent": true },
-    { "source": "/ga4/:path*", "destination": "/", "permanent": true }
+    { "source": "/ga4/:path*", "destination": "/", "permanent": true },
+
+    { "source": "/blog/b2b-content-library", "destination": "/knowledge/b2b-content-library/", "permanent": true },
+    { "source": "/blog/b2b-content-library/", "destination": "/knowledge/b2b-content-library/", "permanent": true }
   ]
 }
