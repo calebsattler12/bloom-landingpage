@@ -74,6 +74,13 @@ director seats, or “no token charges.”
 Follow `brand-voice.md`: zero em dashes; no "it's not X, it's Y"; banned AI
 diction; no fabricated proof.
 
+## Public pricing (locked)
+
+- Starter: $2,485/mo · 3 pillar pages · 15 content pieces / mo
+- Growth: $4,950/mo · 6 pillar pages · 35 content pieces / mo · all website formats
+- Scale: $9,885/mo · 10 pillar pages · 50 content pieces / mo · LinkedIn, X, performance management
+- No implementation fee
+
 ## Editing
 
 - Prefer targeted edits unless repositioning the whole narrative

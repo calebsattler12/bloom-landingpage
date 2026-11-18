@@ -1268,16 +1268,20 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   color: var(--muted);
 }
 .level-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
   margin: 0;
-  align-self: flex-start;
   font-family: "Geist Mono", ui-monospace, monospace;
   font-size: 11px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,.85);
-  border: 1px solid rgba(255,255,255,.35);
+  letter-spacing: .04em;
+  text-transform: none;
+  background: #fff;
+  color: var(--accent);
+  border: 0;
   border-radius: 999px;
-  padding: 4px 8px;
+  padding: 6px 10px;
+  font-weight: 500;
 }
 
 /* Pricing */
@@ -1288,61 +1292,77 @@ nav.top .nav-panel a { text-decoration: none; color: var(--ink); font-weight: 50
   margin-top: 28px;
 }
 .level-card {
+  position: relative;
   border: 1px solid rgba(11,11,15,.1);
-  border-radius: 12px;
-  padding: 22px 20px;
+  border-radius: 16px;
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-.level-card h3 { margin: 0; font-size: 20px; }
-.level-card .price {
-  font-size: 13px;
-  color: var(--muted);
-  font-family: "Geist Mono", ui-monospace, monospace;
-}
-.level-card ul {
-  margin: 8px 0 0;
-  padding-left: 1.1em;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.5;
-  flex: 1;
-}
-.level-card .actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 10px; }
-.level-card--ink {
-  background: var(--ink);
-  border-color: rgba(255,255,255,.08);
-  color: #fff;
-}
-.level-card--ink h3 { color: #fff; }
-.level-card--ink .price { color: rgba(255,255,255,.55); }
-.level-card--ink ul { color: rgba(255,255,255,.72); }
-.level-card--ink .btn-secondary {
-  color: #fff !important;
-  border-color: rgba(255,255,255,.35) !important;
-}
-.level-card--accent {
   background: #fff;
-  border-color: var(--ink);
-  box-shadow: 0 0 0 1px var(--ink);
-  color: var(--ink);
 }
-.level-card--accent .level-badge {
-  background: color-mix(in srgb, var(--accent) 14%, #fff);
+.level-card h3 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: -.03em;
   color: var(--accent);
 }
-.level-card--ink .btn-primary {
-  background: #fff !important;
-  color: var(--ink) !important;
+.level-card .price {
+  margin: 4px 0 0;
+  color: var(--ink);
+  font-family: Geist, system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -.04em;
+  line-height: 1;
 }
-.level-card--ink .btn-primary:hover {
-  background: rgba(255,255,255,.9) !important;
-  color: var(--ink) !important;
+.level-card .price-amount {
+  font-size: clamp(36px, 4vw, 44px);
+}
+.level-card .price-period {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -.02em;
+  margin-left: 2px;
+}
+.level-card ul {
+  margin: 14px 0 0;
+  padding-left: 1.1em;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.55;
+  flex: 1;
+}
+.level-card .price-note {
+  margin: 4px 0 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.level-card .actions { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px; }
+.level-card--accent {
+  background: var(--accent);
+  border-color: transparent;
+  color: #fff;
+}
+.level-card--accent h3 { color: #fff; }
+.level-card--accent .price { color: #fff; }
+.level-card--accent ul { color: rgba(255,255,255,.92); }
+.level-card--accent .price-note { color: rgba(255,255,255,.78); }
+.level-card--accent .btn-primary {
+  background: #fff !important;
+  color: var(--accent) !important;
+}
+.level-card--accent .btn-primary:hover {
+  background: rgba(255,255,255,.92) !important;
+  color: var(--accent) !important;
+}
+.level-card--accent .btn-secondary {
+  color: #fff !important;
+  border-color: rgba(255,255,255,.45) !important;
 }
 .level-card--paper {
   background: #fff;
-  border-color: rgba(11,11,15,.12);
+  border-color: rgba(11,11,15,.1);
 }
 
 /* FAQ */

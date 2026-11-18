@@ -3,7 +3,7 @@
 ## Owner actions required
 
 1. **Set Vercel env var** `NOTIFY_EMAIL=caleb@runbloom.ai` on the `bloom-landing` project (used by `/api/snapshot` and `/api/loom-teardown`). Confirm Formsubmit accepts that address if this is the first send.
-2. Confirm public pricing: replace `TODO_STARTING_PRICE`, `TODO_LEVEL_1_VOLUME`, `TODO_LEVEL_2_VOLUME`, `TODO_LEVEL_3_VOLUME`.
+2. ~~Confirm public pricing~~ Done: Starter $2,485 / Growth $4,950 / Scale $9,885.
 3. Confirm case study: replace `TODO_CASE_STUDY` / `TODO_CASE_METRIC`.
 4. Confirm chart data or keep “Example” labels (`TODO_CHART_DATA` if replacing sample-shaped charts).
 5. Fill resource article `TODO_CONTENT` bodies and featured images, then remove `noindex` and add them to `sitemap.xml` / `llms.txt` / nav.

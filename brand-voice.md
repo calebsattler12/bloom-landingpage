@@ -58,6 +58,10 @@ the point. End on the result or the next step, not hype.
 
 ## Pricing in public drafts
 
-Do **not** publish dollar amounts, retainers, or install fees in
-`index.html`, `pitch-deck.html`, or `linkedin-content.md`. Prefer Book a Call
-over a price list.
+Public retainers on the homepage (keep in sync everywhere prices appear):
+
+- Starter: $2,485/mo · 3 pillar pages · 15 content pieces / mo
+- Growth: $4,950/mo · 6 pillar pages · 35 content pieces / mo · all website content formats
+- Scale: $9,885/mo · 10 pillar pages · 50 content pieces / mo · LinkedIn, X, and performance management from day one
+
+No implementation fee. Prefer Book a Call alongside the price list.
