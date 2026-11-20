@@ -127,7 +127,7 @@ nav.topnav {
     0 0 16px 6px rgba(51, 85, 255, 0.75),
     0 0 32px 12px rgba(165, 145, 255, 0.55),
     0 0 52px 20px rgba(255, 184, 230, 0.4);
-  animation: light-breathe 4s ease-in-out infinite;
+  animation: light-breathe 8s ease-in-out infinite;
 }
 .wordmark .light::before {
   content: "";
@@ -147,8 +147,8 @@ nav.topnav {
   pointer-events: none;
 }
 @keyframes light-breathe {
-  0%, 100% { opacity: 1; filter: brightness(1); }
-  50% { opacity: 0.82; filter: brightness(1.25); }
+  0%, 100% { opacity: 0.78; }
+  50% { opacity: 1; }
 }
 .logo.sm .wordmark,
 .wordmark.sm { font-size: 26px; }
@@ -228,5 +228,8 @@ header.hero > * { position: relative; z-index: 1; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .wordmark .light { animation: none; }
+  .wordmark .light {
+    animation: none;
+    opacity: 1;
+  }
 }

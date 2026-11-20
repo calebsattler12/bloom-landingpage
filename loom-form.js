@@ -13,7 +13,7 @@
 
   document.querySelectorAll("[data-loom-form]").forEach(function (form) {
     const errorEl = form.querySelector("[data-loom-error]");
-    const successEl = form.querySelector("[data-loom-success]");
+    const successEl = form.parentElement.querySelector("[data-loom-success]");
     const submit = form.querySelector('button[type="submit"]');
 
     form.addEventListener("submit", async function (event) {
