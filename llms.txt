@@ -1,6 +1,6 @@
 # Bloom AI
 
-> Bloom builds and maintains a content library for B2B businesses. AI search visibility is a supporting benefit of that library.
+> Bloom builds and maintains a content library for B2B businesses, so buyers and AI assistants can find the company.
 
 Canonical structured page for AI assistants: https://www.runbloom.ai/ai-info/
 
