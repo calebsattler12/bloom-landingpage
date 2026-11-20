@@ -69,19 +69,11 @@
     });
   });
 
-  document.querySelectorAll("[data-logo-marquee]").forEach(function (marquee) {
-    var button = marquee.querySelector("[data-marquee-toggle]");
-    if (!button) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      button.hidden = true;
-      return;
-    }
-    button.addEventListener("click", function () {
-      var paused = marquee.classList.toggle("is-paused");
-      button.setAttribute("aria-pressed", paused ? "true" : "false");
-      button.textContent = paused ? "Play logos" : "Pause logos";
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll("[data-logo-marquee]").forEach(function (marquee) {
+      marquee.removeAttribute("tabindex");
     });
-  });
+  }
 
   initReveals();
 })();
