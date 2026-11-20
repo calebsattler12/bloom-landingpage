@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#3355FF">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="apple-touch-icon" href="/logo-mark.png">
 <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MHTDNN3G"></script>
 <script src="/gtag-init.js"></script>
@@ -35,7 +35,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHTDNN3G" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
 <nav class="top" aria-label="Primary">
-  <a href="/" aria-label="Bloom"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></a>
+  <a href="/" aria-label="Bloom"><span class="wordmark" translate="no">bloom<span class="light" aria-hidden="true"></span></span></a>
   <div class="nav-links">
     <a href="/#how">How it works</a>
     <a href="/snapshot/sample/">Sample</a>
@@ -66,20 +66,22 @@
       <form class="snap-form hero-form" data-snapshot-form action="/api/snapshot" method="post">
         <label>
           <span class="field-label">Website URL</span>
-          <input type="url" name="url" required placeholder="https://yourcompany.com" autocomplete="url" inputmode="url">
+          <input type="url" name="url" required placeholder="https://yourcompany.com" autocomplete="url" inputmode="url" spellcheck="false" aria-describedby="snapshot-error">
         </label>
         <label>
           <span class="field-label">Work email</span>
-          <input type="email" name="email" required placeholder="you@company.com" autocomplete="email">
+          <input type="email" name="email" required placeholder="you@company.com" autocomplete="email" inputmode="email" spellcheck="false" aria-describedby="snapshot-error">
         </label>
         <label class="field-wide">
           <span class="field-label">Who are your top 2 competitors? <span style="font-weight:400">(optional)</span></span>
-          <input type="text" name="competitors" placeholder="Competitor A, Competitor B" autocomplete="off">
+          <input type="text" name="competitors" placeholder="Competitor A, Competitor B" autocomplete="off" aria-describedby="snapshot-error">
         </label>
         <label class="hp" aria-hidden="true"><span>Company</span><input type="text" name="company" tabindex="-1" autocomplete="off"></label>
         <div class="field-submit">
           <button class="btn btn-primary" type="submit">Get your free snapshot</button>
-          <p class="form-error" data-snapshot-error hidden></p>
+          <div class="form-live" aria-live="polite">
+            <p class="form-error" id="snapshot-error" data-snapshot-error tabindex="-1" hidden></p>
+          </div>
         </div>
       </form>
       <div class="section-cta">
@@ -111,7 +113,7 @@
   <div class="inner">
     <div class="foot-grid">
       <div>
-        <a href="/" aria-label="Bloom"><span class="wordmark sm">bloom<span class="light" aria-hidden="true"></span></span></a>
+        <a href="/" aria-label="Bloom"><span class="wordmark sm" translate="no">bloom<span class="light" aria-hidden="true"></span></span></a>
         <p style="margin:12px 0 0"><a class="mail" href="mailto:caleb@runbloom.ai">caleb@runbloom.ai</a></p>
       </div>
       <div class="foot-links">

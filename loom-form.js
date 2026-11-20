@@ -32,6 +32,7 @@
 
       if (submit) {
         submit.disabled = true;
+        submit.setAttribute("aria-busy", "true");
         submit.dataset.label = submit.dataset.label || submit.textContent;
         submit.textContent = "Sending…";
       }
@@ -50,16 +51,21 @@
         }
         track("loom_teardown_request");
         form.reset();
-        if (successEl) successEl.hidden = false;
+        if (successEl) {
+          successEl.hidden = false;
+          successEl.focus();
+        }
         form.hidden = true;
       } catch (error) {
         if (errorEl) {
           errorEl.hidden = false;
           errorEl.textContent = error.message || "Could not send the request. Try again.";
+          errorEl.focus();
         }
       } finally {
         if (submit) {
           submit.disabled = false;
+          submit.removeAttribute("aria-busy");
           submit.textContent = submit.dataset.label;
         }
       }
