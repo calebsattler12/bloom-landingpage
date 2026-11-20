@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#3355FF">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="apple-touch-icon" href="/logo-mark.png">
 <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MHTDNN3G"></script>
 <script src="/gtag-init.js"></script>
@@ -51,7 +51,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHTDNN3G" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
 
 <nav class="top" aria-label="Primary">
-  <a href="/" aria-label="Bloom"><span class="wordmark">bloom<span class="light" aria-hidden="true"></span></span></a>
+  <a href="/" aria-label="Bloom"><span class="wordmark" translate="no">bloom<span class="light" aria-hidden="true"></span></span></a>
   <div class="nav-links">
     <a href="#problem">The problem</a>
     <a href="#how">How it works</a>
@@ -85,7 +85,7 @@
       <a class="cta-link" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call ›</a>
     </div>
   </div>
-  <div class="hero-stage" aria-label="Bloom visibility dashboard">
+  <div class="hero-stage">
     <div class="hero-dashboard" role="img" aria-label="Sample Bloom dashboard showing AI visibility, citations, and buyer questions">
       <aside class="dash-side" aria-hidden="true">
         <div class="dash-brand"><span class="dot"></span>bloom</div>
@@ -105,7 +105,7 @@
         <div class="dash-top">
           <div>
             <p class="when">Monday, Nov 16 · Sample workspace</p>
-            <h3>Good morning.</h3>
+            <p class="dash-hello">Good morning.</p>
           </div>
           <p class="dash-sync">SYNCED 5 MIN AGO</p>
         </div>
@@ -151,25 +151,25 @@
     <div class="pillar-grid-coa">
       <a class="pillar-coa" href="#snapshot">
         <p class="eyebrow">See it</p>
-        <h3>Free snapshot</h3>
+        <p class="pillar-title">Free snapshot</p>
         <p>Know where you stand in AI answers and Google search for your buyer questions.</p>
         <span class="more">Get the report ›</span>
       </a>
       <a class="pillar-coa" href="#how">
         <p class="eyebrow">Fix it</p>
-        <h3>Technical health</h3>
+        <p class="pillar-title">Technical health</p>
         <p>Unblock crawlers, grow the indexed set, and make pages AI can actually cite.</p>
         <span class="more">How it works ›</span>
       </a>
       <a class="pillar-coa" href="#pipeline-title">
         <p class="eyebrow">Write it</p>
-        <h3>Interview content</h3>
+        <p class="pillar-title">Interview content</p>
         <p>Turn call data and expert interviews into answer-first pages with Slack approval.</p>
         <span class="more">See the pipeline ›</span>
       </a>
       <a class="pillar-coa" href="#pricing">
         <p class="eyebrow">Measure it</p>
-        <h3>Visibility reporting</h3>
+        <p class="pillar-title">Visibility reporting</p>
         <p>Track citations, shortlists, and pipeline influence on a live dashboard.</p>
         <span class="more">Pick your pace ›</span>
       </a>
@@ -338,25 +338,27 @@
       <form class="snap-form panel-form" data-snapshot-form action="/api/snapshot" method="post">
         <label>
           <span class="field-label">Website URL</span>
-          <input type="url" name="url" required placeholder="https://yourcompany.com" autocomplete="url" inputmode="url">
+          <input type="url" name="url" required placeholder="https://yourcompany.com" autocomplete="url" inputmode="url" spellcheck="false" aria-describedby="snapshot-error">
         </label>
         <label>
           <span class="field-label">Work email</span>
-          <input type="email" name="email" required placeholder="you@company.com" autocomplete="email">
+          <input type="email" name="email" required placeholder="you@company.com" autocomplete="email" inputmode="email" spellcheck="false" aria-describedby="snapshot-error">
         </label>
         <label class="field-wide">
           <span class="field-label">Top 2 competitors <span style="font-weight:400;letter-spacing:0;text-transform:none">(optional)</span></span>
-          <input type="text" name="competitors" placeholder="Competitor A, Competitor B" autocomplete="off">
+          <input type="text" name="competitors" placeholder="Competitor A, Competitor B" autocomplete="off" aria-describedby="snapshot-error">
         </label>
         <label class="hp" aria-hidden="true"><span>Company</span><input type="text" name="company" tabindex="-1" autocomplete="off"></label>
         <div class="field-submit">
           <button class="btn btn-primary" type="submit">Get your free snapshot</button>
-          <p class="form-error" data-snapshot-error hidden></p>
+          <div class="form-live" aria-live="polite">
+            <p class="form-error" id="snapshot-error" data-snapshot-error tabindex="-1" hidden></p>
+          </div>
         </div>
       </form>
     </div>
     <a class="report-preview" href="/snapshot/sample/">
-      <img src="/snapshot/sample-report-preview.jpg" width="1000" height="1286" alt="Preview of a Bloom free snapshot with company names blurred">
+      <img src="/snapshot/sample-report-preview.jpg" width="1000" height="1286" alt="Preview of a Bloom free snapshot with company names blurred" loading="lazy" decoding="async">
       <span>Sample snapshot · company names hidden</span>
     </a>
   </div>
@@ -502,7 +504,7 @@
   <div class="inner">
     <p class="kicker">From the work</p>
     <h2 id="proof-title">Teams already in the loop</h2>
-    <div class="logo-marquee" data-logo-marquee aria-label="Client logos">
+    <div class="logo-marquee" data-logo-marquee role="group" aria-label="Client logos">
       <div class="logo-marquee-track" data-logo-row></div>
     </div>
     <div class="quote-grid">
@@ -607,24 +609,28 @@
       <form class="loom-form" data-loom-form action="/api/loom-teardown" method="post">
         <label>
           <span class="field-label">Name</span>
-          <input type="text" name="name" required autocomplete="name">
+          <input type="text" name="name" required autocomplete="name" aria-describedby="loom-error">
         </label>
         <label>
           <span class="field-label">Work email</span>
-          <input type="email" name="email" required autocomplete="email">
+          <input type="email" name="email" required autocomplete="email" inputmode="email" spellcheck="false" aria-describedby="loom-error">
         </label>
         <label class="field-wide">
           <span class="field-label">Website URL</span>
-          <input type="url" name="url" required placeholder="https://yourcompany.com" autocomplete="url">
+          <input type="url" name="url" required placeholder="https://yourcompany.com" autocomplete="url" inputmode="url" spellcheck="false" aria-describedby="loom-error">
         </label>
         <label class="hp" aria-hidden="true"><span>Company</span><input type="text" name="company" tabindex="-1" autocomplete="off"></label>
         <div class="field-wide">
           <button class="btn btn-secondary" type="submit">Get a free 15-minute Loom teardown</button>
-          <p class="form-error" data-loom-error hidden></p>
+          <div class="form-live" aria-live="polite">
+            <p class="form-error" id="loom-error" data-loom-error tabindex="-1" hidden></p>
+          </div>
         </div>
       </form>
-      <div class="form-success" data-loom-success hidden>
+      <div class="form-live" aria-live="polite">
+      <div class="form-success" id="loom-success" data-loom-success tabindex="-1" hidden>
         Got it. Caleb will send the Loom to your email. Questions? <a href="mailto:caleb@runbloom.ai">caleb@runbloom.ai</a>
+      </div>
       </div>
     </div>
   </div>
@@ -689,7 +695,7 @@
   <div class="inner">
     <div class="foot-grid">
       <div>
-        <a href="/" aria-label="Bloom"><span class="wordmark sm">bloom<span class="light" aria-hidden="true"></span></span></a>
+        <a href="/" aria-label="Bloom"><span class="wordmark sm" translate="no">bloom<span class="light" aria-hidden="true"></span></span></a>
         <p style="margin:12px 0 0;color:var(--muted);font-size:14px;max-width:22em">AI visibility and inbound content for B2B teams.</p>
         <p style="margin:12px 0 0"><a class="mail" href="mailto:caleb@runbloom.ai">caleb@runbloom.ai</a></p>
       </div>
@@ -710,7 +716,7 @@
     </div>
     <div class="founder-row">
       <a class="person" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">
-        <img src="/preview/caleb-96.jpg" width="48" height="48" alt="Caleb Sattler">
+        <img src="/preview/caleb-96.jpg" width="48" height="48" alt="Caleb Sattler" loading="lazy" decoding="async">
         <span>
           <span class="label">Talk with the founder</span>
           <span class="name">Caleb Sattler</span>

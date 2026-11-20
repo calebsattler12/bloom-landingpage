@@ -26,9 +26,32 @@
   const toggle = document.querySelector("[data-nav-toggle]");
   const panel = document.querySelector("[data-nav-panel]");
   if (toggle && panel) {
-    toggle.addEventListener("click", function () {
-      const open = panel.classList.toggle("is-open");
+    function setOpen(open) {
+      panel.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Menu");
+    }
+
+    toggle.addEventListener("click", function () {
+      const open = !panel.classList.contains("is-open");
+      setOpen(open);
+      if (open) {
+        const first = panel.querySelector("a");
+        if (first) first.focus();
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && panel.classList.contains("is-open")) {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+
+    panel.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        setOpen(false);
+      });
     });
   }
 
