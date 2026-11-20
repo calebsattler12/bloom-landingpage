@@ -9,6 +9,14 @@
 5. Fill resource article `TODO_CONTENT` bodies and featured images, then remove `noindex` and add them to `sitemap.xml` / `llms.txt` / nav.
 6. Optional legal review of Privacy / Terms (`TODO_LEGAL_REVIEW` if adding Terms).
 
+## Canonical trailing-slash redirects
+
+`vercel.json` uses `permanent: true` (Vercel responds 308), the same pattern as `/get-started.html` → `/snapshot/`.
+
+Each directory index redirects its slashless path and its `/index.html` path to the trailing-slash canonical. That includes the noindex `/resources/` drafts. `/api/snapshot` and `/api/loom-teardown` are left alone: a global `trailingSlash: true` would 308 every extensionless path, including those form posts, before the function runs.
+
+`npm run generate:sitemap` checks that every `index.html` directory still has those two permanent redirects.
+
 ## Deleted URLs → 301 targets
 
 | Old URL | Redirect |

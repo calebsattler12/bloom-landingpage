@@ -35,6 +35,28 @@
     { "source": "/ga4/:path*", "destination": "/", "permanent": true },
 
     { "source": "/blog/b2b-content-library", "destination": "/knowledge/b2b-content-library/", "permanent": true },
-    { "source": "/blog/b2b-content-library/", "destination": "/knowledge/b2b-content-library/", "permanent": true }
+    { "source": "/blog/b2b-content-library/", "destination": "/knowledge/b2b-content-library/", "permanent": true },
+
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/ai-info", "destination": "/ai-info/", "permanent": true },
+    { "source": "/ai-info/index.html", "destination": "/ai-info/", "permanent": true },
+    { "source": "/snapshot", "destination": "/snapshot/", "permanent": true },
+    { "source": "/snapshot/index.html", "destination": "/snapshot/", "permanent": true },
+    { "source": "/snapshot/sample", "destination": "/snapshot/sample/", "permanent": true },
+    { "source": "/snapshot/sample/index.html", "destination": "/snapshot/sample/", "permanent": true },
+    { "source": "/knowledge", "destination": "/knowledge/", "permanent": true },
+    { "source": "/knowledge/index.html", "destination": "/knowledge/", "permanent": true },
+    { "source": "/knowledge/b2b-content-library", "destination": "/knowledge/b2b-content-library/", "permanent": true },
+    { "source": "/knowledge/b2b-content-library/index.html", "destination": "/knowledge/b2b-content-library/", "permanent": true },
+    { "source": "/privacy", "destination": "/privacy/", "permanent": true },
+    { "source": "/privacy/index.html", "destination": "/privacy/", "permanent": true },
+    { "source": "/resources", "destination": "/resources/", "permanent": true },
+    { "source": "/resources/index.html", "destination": "/resources/", "permanent": true },
+    { "source": "/resources/are-keywords-still-important-to-improve-my-websites-seo", "destination": "/resources/are-keywords-still-important-to-improve-my-websites-seo/", "permanent": true },
+    { "source": "/resources/are-keywords-still-important-to-improve-my-websites-seo/index.html", "destination": "/resources/are-keywords-still-important-to-improve-my-websites-seo/", "permanent": true },
+    { "source": "/resources/how-many-pages-does-a-20-person-b2b-company-need-to-show-up-in-ai-search", "destination": "/resources/how-many-pages-does-a-20-person-b2b-company-need-to-show-up-in-ai-search/", "permanent": true },
+    { "source": "/resources/how-many-pages-does-a-20-person-b2b-company-need-to-show-up-in-ai-search/index.html", "destination": "/resources/how-many-pages-does-a-20-person-b2b-company-need-to-show-up-in-ai-search/", "permanent": true },
+    { "source": "/resources/what-is-zero-click-search", "destination": "/resources/what-is-zero-click-search/", "permanent": true },
+    { "source": "/resources/what-is-zero-click-search/index.html", "destination": "/resources/what-is-zero-click-search/", "permanent": true }
   ]
 }
