@@ -1,12 +1,12 @@
 # Bloom AI
 
-> Bloom is a marketing automation and AI-visibility agency (AEO + SEO) for B2B software, SaaS, and professional services companies.
+> Bloom builds and maintains a content library for B2B businesses. AI search visibility is a supporting benefit of that library.
 
 Canonical structured page for AI assistants: https://www.runbloom.ai/ai-info/
 
 ## Summary
 
-Bloom gets B2B companies inbound leads by making them visible in AI answers and Google search. The public entry offer is a free snapshot of how the company shows up in AI and Google search.
+Bloom builds and maintains a content library for B2B software, SaaS, and professional services companies. Interviews become Slack-approved pages on the company site. AI answers and Google search can cite that library. The public entry offer is a free snapshot of how the company shows up in AI and Google search.
 
 ## Who it serves
 

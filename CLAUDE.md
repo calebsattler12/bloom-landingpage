@@ -22,7 +22,7 @@ no build step, plus Vercel functions for lead forms.
 - `api/loom-teardown.js` — Loom teardown requests, same `NOTIFY_EMAIL`
 - `resources/*` — scaffolded articles, **noindex**, not in sitemap until filled
 - `preview/index.html` — mirror of homepage; `/preview/` 301s to `/`
-- `robots.txt` / `sitemap.xml` — discoverability; font lab and resources disallowed/noindex
+- `robots.txt` / `sitemap.xml` — discoverability; font lab and resources disallowed/noindex. Rebuild the sitemap with `npm run generate:sitemap` after a public page changes.
 - `site.css` / `site.js` / `brand.css` — shared layout and brand
 - `logos/clients/` — client marks + `manifest.js` for the logo row
 - Nav/footer lockup: CSS wordmark `bloom` plus the always-on light (`brand.css`)
@@ -56,10 +56,11 @@ no build step, plus Vercel functions for lead forms.
 
 ## Positioning (locked)
 
-**Thesis:** Get named in AI search. Call data becomes citeable pages through
+**Thesis:** Build and maintain a content library for B2B businesses. AI search
+visibility is a supporting benefit. Call data becomes citeable pages through
 technical health, visibility reporting, and interview-backed content with
-Slack approval. Homepage story follows the Figma pitch template
-(`Bloom-pitch-template--AI-search-plan`).
+Slack approval. Homepage story still follows the Figma pitch template
+(`Bloom-pitch-template--AI-search-plan`) until the body copy is updated.
 
 **Lead magnet:** Free snapshot (website URL + email; optional competitors).
 No call recordings required for the snapshot.

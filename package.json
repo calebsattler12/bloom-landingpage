@@ -1,4 +1,7 @@
 {
   "private": true,
-  "name": "bloom-landingpage"
+  "name": "bloom-landingpage",
+  "scripts": {
+    "generate:sitemap": "node scripts/generate-sitemap.mjs"
+  }
 }
