@@ -468,32 +468,120 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="compare-title" data-reveal>
+<section class="section compare-section" id="content-comparison" aria-labelledby="compare-title" data-reveal>
   <div class="inner">
-    <p class="kicker">Content comparison</p>
-    <h2 id="compare-title">Same topic. Four ways to write it.</h2>
-    <p class="section-lede">How a Bloom article differs from Claude alone, a virtual assistant, and an in-house writer. We score AEO and lead-gen quality in your plan, not with invented numbers here.</p>
-    <div class="compare-grid">
-      <article class="compare-card compare-card--ours">
-        <p class="compare-tag">Ours</p>
-        <h3>Bloom</h3>
-        <p>Interview-backed, answer-first, built for AI citation and buyer intent.</p>
-      </article>
-      <article class="compare-card">
-        <p class="compare-tag">AI only</p>
-        <h3>Claude</h3>
-        <p>Prompted once, unedited. Fast, thin on your real experience.</p>
-      </article>
-      <article class="compare-card">
-        <p class="compare-tag">Outsourced</p>
-        <h3>Virtual assistant</h3>
-        <p>Hired writing help without your call vault or citation plan.</p>
-      </article>
-      <article class="compare-card">
-        <p class="compare-tag">In-house</p>
-        <h3>Internal employee</h3>
-        <p>Staff marketer bandwidth, usually slower and harder to keep consistent.</p>
-      </article>
+    <div class="compare-panel">
+      <p class="compare-eyebrow" data-reveal-copy>Content comparison</p>
+      <h2 id="compare-title" data-reveal-copy>Quality Content, at scale</h2>
+      <p class="section-lede" data-reveal-copy>How a Bloom article stacks up against an in-house writer and Claude alone.</p>
+      <div class="compare-grid">
+        <article class="compare-card compare-card--ours" data-reveal-item>
+          <p class="compare-tag">Ours</p>
+          <h3>Bloom</h3>
+          <p class="compare-byline">Written by the Bloom system</p>
+          <p class="compare-score">
+            <span class="compare-score-value">93</span>
+            <span class="compare-score-max"><span aria-hidden="true">/100</span><span class="visually-hidden"> out of 100</span></span>
+          </p>
+          <div class="compare-bar" aria-hidden="true"><span class="compare-bar-fill" style="--fill:93%"></span></div>
+          <p class="compare-breakdown-label">Illustrative breakdown</p>
+          <ul class="compare-metrics">
+            <li class="compare-metric">
+              <div class="compare-metric-row">
+                <span class="compare-metric-name">GRAAF</span>
+                <span class="compare-metric-value"><span aria-hidden="true">47 / 50</span><span class="visually-hidden">47 out of 50</span></span>
+              </div>
+              <div class="compare-bar compare-bar--thin" aria-hidden="true"><span class="compare-bar-fill" style="--fill:94%"></span></div>
+            </li>
+            <li class="compare-metric">
+              <div class="compare-metric-row">
+                <span class="compare-metric-name">CRAFT</span>
+                <span class="compare-metric-value"><span aria-hidden="true">28 / 30</span><span class="visually-hidden">28 out of 30</span></span>
+              </div>
+              <div class="compare-bar compare-bar--thin" aria-hidden="true"><span class="compare-bar-fill" style="--fill:93.33%"></span></div>
+            </li>
+            <li class="compare-metric">
+              <div class="compare-metric-row">
+                <span class="compare-metric-name">Technical SEO</span>
+                <span class="compare-metric-value"><span aria-hidden="true">18 / 20</span><span class="visually-hidden">18 out of 20</span></span>
+              </div>
+              <div class="compare-bar compare-bar--thin" aria-hidden="true"><span class="compare-bar-fill" style="--fill:90%"></span></div>
+            </li>
+          </ul>
+          <p class="compare-sample"><span class="visually-hidden">Sample article: </span>When to Hire a RevOps Consultant and What to Look For</p>
+        </article>
+        <article class="compare-card" data-reveal-item>
+          <p class="compare-tag">In-house</p>
+          <h3>Internal employee</h3>
+          <p class="compare-byline">Written by a staff marketer</p>
+          <p class="compare-score">
+            <span class="compare-score-value">79</span>
+            <span class="compare-score-max"><span aria-hidden="true">/100</span><span class="visually-hidden"> out of 100</span></span>
+          </p>
+          <div class="compare-bar" aria-hidden="true"><span class="compare-bar-fill" style="--fill:79%"></span></div>
+          <p class="compare-breakdown-label">Illustrative breakdown</p>
+          <ul class="compare-metrics">
+            <li class="compare-metric">
+              <div class="compare-metric-row">
+                <span class="compare-metric-name">GRAAF</span>
+                <span class="compare-metric-value"><span aria-hidden="true">41 / 50</span><span class="visually-hidden">41 out of 50</span></span>
+              </div>
+              <div class="compare-bar compare-bar--thin" aria-hidden="true"><span class="compare-bar-fill" style="--fill:82%"></span></div>
+            </li>
+            <li class="compare-metric">
+              <div class="compare-metric-row">
+                <span class="compare-metric-name">CRAFT</span>
+                <span class="compare-metric-value"><span aria-hidden="true">24 / 30</span><span class="visually-hidden">24 out of 30</span></span>
+              </div>
+              <div class="compare-bar compare-bar--thin" aria-hidden="true"><span class="compare-bar-fill" style="--fill:80%"></span></div>
+            </li>
+            <li class="compare-metric">
+              <div class="compare-metric-row">
+                <span class="compare-metric-name">Technical SEO</span>
+                <span class="compare-metric-value"><span aria-hidden="true">14 / 20</span><span class="visually-hidden">14 out of 20</span></span>
+              </div>
+              <div class="compare-bar compare-bar--thin" aria-hidden="true"><span class="compare-bar-fill" style="--fill:70%"></span></div>
+            </li>
+          </ul>
+          <p class="compare-sample"><span class="visually-hidden">Sample article: </span>Speed to Lead in HubSpot: How to Measure and Report</p>
+        </article>
+        <article class="compare-card" data-reveal-item>
+          <p class="compare-tag">AI only</p>
+          <h3>Claude</h3>
+          <p class="compare-byline">Prompted in Claude, unedited</p>
+          <p class="compare-score">
+            <span class="compare-score-value">53</span>
+            <span class="compare-score-max"><span aria-hidden="true">/100</span><span class="visually-hidden"> out of 100</span></span>
+          </p>
+          <div class="compare-bar" aria-hidden="true"><span class="compare-bar-fill" style="--fill:53%"></span></div>
+          <p class="compare-breakdown-label">Illustrative breakdown</p>
+          <ul class="compare-metrics">
+            <li class="compare-metric">
+              <div class="compare-metric-row">
+                <span class="compare-metric-name">GRAAF</span>
+                <span class="compare-metric-value"><span aria-hidden="true">30 / 50</span><span class="visually-hidden">30 out of 50</span></span>
+              </div>
+              <div class="compare-bar compare-bar--thin" aria-hidden="true"><span class="compare-bar-fill" style="--fill:60%"></span></div>
+            </li>
+            <li class="compare-metric">
+              <div class="compare-metric-row">
+                <span class="compare-metric-name">CRAFT</span>
+                <span class="compare-metric-value"><span aria-hidden="true">17 / 30</span><span class="visually-hidden">17 out of 30</span></span>
+              </div>
+              <div class="compare-bar compare-bar--thin" aria-hidden="true"><span class="compare-bar-fill" style="--fill:56.67%"></span></div>
+            </li>
+            <li class="compare-metric">
+              <div class="compare-metric-row">
+                <span class="compare-metric-name">Technical SEO</span>
+                <span class="compare-metric-value"><span aria-hidden="true">6 / 20</span><span class="visually-hidden">6 out of 20</span></span>
+              </div>
+              <div class="compare-bar compare-bar--thin" aria-hidden="true"><span class="compare-bar-fill" style="--fill:30%"></span></div>
+            </li>
+          </ul>
+          <p class="compare-sample"><span class="visually-hidden">Sample article: </span>When to Hire a RevOps Consultant (and What to Look For)</p>
+        </article>
+      </div>
+      <p class="compare-note" data-reveal-copy>Scored out of 100 by ContentScale: GRAAF (50) for credible, relevant, accurate, actionable, fresh content · CRAFT (30) for structure, readability and E-E-A-T · Technical SEO (20) for schema, canonicals and crawlability.</p>
     </div>
   </div>
 </section>
