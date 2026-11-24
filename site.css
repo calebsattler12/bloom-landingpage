@@ -900,8 +900,9 @@ nav.top .nav-panel a {
 }
 .flow-card h3 {
   margin: 8px 0 0;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: -.02em;
+  line-height: 1.25;
 }
 .flow-card p {
   margin: 8px 0 0;

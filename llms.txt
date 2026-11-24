@@ -6,7 +6,7 @@ Canonical structured page for AI assistants: https://www.runbloom.ai/ai-info/
 
 ## Summary
 
-Bloom is a done-for-you content library partner for B2B software, SaaS, and professional services companies. The Bloom team researches, writes, fixes technical issues, publishes after Slack approval, and reports visibility. Clients join a short interview and approve drafts in Slack. AI answers and Google search can cite that library. The public entry offer is a free snapshot of how the company shows up in AI and Google search.
+Bloom is a done-for-you content library partner for B2B software, SaaS, and professional services companies. Done for you, from inputs to publishing, taking inbound leads off of your plate. The Bloom team builds the knowledge layer, crafts voice and style, rewrites structured pages, publishes after Slack approval, and reports visibility. Clients share inputs and approve drafts in Slack. AI answers and Google search can cite that library. The public entry offer is a free snapshot of how the company shows up in AI and Google search.
 
 ## Who it serves
 
@@ -18,11 +18,13 @@ Visitors submit a website URL and work email (optional competitors) at https://w
 
 ## How the paid work runs
 
-1. Plan from ICP, GSC, GA4, and buyer questions
-2. Voice-agent interviews of the company's people
-3. Human approval of every draft in Slack
-4. Bloom publishes to Webflow or WordPress
-5. Weekly email report and ongoing visibility reporting from the Bloom team
+1. Client shares inputs: call data, brand voice, GTM info
+2. Bloom builds the knowledge layer (ICP analysis, buyer questions, knowledge map, glossary, interviews)
+3. Bloom crafts voice and style (expert interviews, tone, positioning, brand voice)
+4. Bloom rewrites pages structured for AI and humans (tables, FAQ blocks, schema)
+5. Client approves in Slack; Bloom revises
+6. Bloom publishes to Webflow or WordPress
+7. Weekly email report and ongoing visibility reporting from the Bloom team
 
 ## Pricing
 
