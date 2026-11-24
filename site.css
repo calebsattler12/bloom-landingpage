@@ -1547,12 +1547,16 @@ nav.top .nav-panel a {
   flex: 1;
 }
 .level-card .price-note {
-  margin: 4px 0 0;
+  margin: 14px 0 0;
   font-size: 14px;
   line-height: 1.45;
-  color: var(--muted);
+  font-weight: 600;
+  color: var(--ink);
 }
-.level-card .actions { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px; }
+.level-card .price-note + ul {
+  margin-top: 8px;
+}
+.level-card .actions { margin-top: auto; padding-top: 16px; display: flex; flex-wrap: wrap; gap: 10px; }
 .level-card--accent {
   background: var(--accent);
   border-color: transparent;

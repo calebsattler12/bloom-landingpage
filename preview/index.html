@@ -36,7 +36,7 @@
 {"@type":"Question","name":"How do pages get published?","acceptedAnswer":{"@type":"Answer","text":"Your team approves every draft in Slack. Then it goes to Webflow or WordPress. Nothing ships to the live site without a human yes."}},
 {"@type":"Question","name":"Who is this for?","acceptedAnswer":{"@type":"Answer","text":"US founders and CEOs of B2B software, SaaS, or professional services companies, about 10 to 25 employees, with a salesperson but weak inbound."}},
 {"@type":"Question","name":"How long until the first draft?","acceptedAnswer":{"@type":"Answer","text":"After onboarding access on day 0, foundation work lands around day 7, the first calibration draft around day 9, and weekly reporting at day 14."}},
-{"@type":"Question","name":"How does pricing work?","acceptedAnswer":{"@type":"Answer","text":"Three monthly retainers with no implementation fee: Starter at $2,485/mo (3 pillar pages, 15 content pieces), Growth at $4,950/mo (6 pillar pages, 35 content pieces, all website content formats), and Scale at $9,885/mo (10 pillar pages, 50 content pieces, plus LinkedIn, X, and performance management from day one)."}},
+{"@type":"Question","name":"How does pricing work?","acceptedAnswer":{"@type":"Answer","text":"Three monthly retainers with no implementation fee: Starter at $2,485/mo (3 pillar pages, 15 content pieces, buyer-question pages, industry and comparison pages, indexing, AI crawler access, AI info page and llms.txt, tables graphics and FAQ blocks), Growth at $4,950/mo (everything in Starter, plus 2x content volume with 6 pillar pages and 35 content pieces, implementation 2x as fast, lead magnets and conversion assets, direct publishing), and Scale at $9,885/mo (everything in Growth, plus 10 pillar pages, 50 content pieces, offsite SEO management, LinkedIn, X, and performance management)."}},
 {"@type":"Question","name":"Will you post to our LinkedIn or site without approval?","acceptedAnswer":{"@type":"Answer","text":"No. Site drafts need a human yes in Slack before publish. LinkedIn is paste-only and never auto-posted."}},
 {"@type":"Question","name":"How do I get in touch?","acceptedAnswer":{"@type":"Answer","text":"Email caleb@runbloom.ai, or book a call on the calendar linked from the site."}}
 ]}
@@ -283,8 +283,8 @@
 <section class="section" aria-labelledby="gap-title" data-reveal>
   <div class="inner">
     <p class="kicker">Where the gap is</p>
-    <h2 id="gap-title">Why you're not showing up.</h2>
-    <p class="section-lede">Competitors get named when your site has nothing clear to cite.</p>
+    <h2 id="gap-title">Why you're not showing up or converting.</h2>
+    <p class="section-lede">Competitors get named and convert that traffic when your site lacks clear answers, comparison pages, and bottom-of-funnel capture.</p>
     <ul class="gap-grid">
       <li>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h5M8 13h8"/></svg>
@@ -308,8 +308,8 @@
       </li>
       <li>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
-        <h3>No AI info page</h3>
-        <p>Assistants need a clear, structured page that states who you are and what to cite.</p>
+        <h3>No AI info page or llms.txt</h3>
+        <p>Assistants need a structured AI info page and llms.txt that state who you are and what to cite.</p>
       </li>
       <li>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="12" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M9.7 10.5l4.6-2.3M9.7 13.5l4.6 2.3"/></svg>
@@ -319,12 +319,12 @@
       <li>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h7v7H4zM13 5h7v4h-7zM13 11h7v8h-7zM4 14h7v5H4z"/></svg>
         <h3>Unorganized information</h3>
-        <p>Tables and graphics organize information clearly so AI and buyers can scan it fast.</p>
+        <p>Tables, graphics, and FAQ blocks organize answers so AI and buyers can scan and quote them.</p>
       </li>
       <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M9.5 9.5a2.5 2.5 0 0 1 5 0c0 1.5-2.5 2-2.5 3.5"/><path d="M12 17h.01"/></svg>
-        <h3>No FAQ sections</h3>
-        <p>FAQ blocks answer buyer questions in a form AI can quote without guessing.</p>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16l-5 7v5l-6 3v-8L4 4z"/></svg>
+        <h3>No bottom-of-funnel conversion path</h3>
+        <p>Traffic from AI answers and comparison pages bounces without high-intent lead magnets or a clear next step.</p>
       </li>
     </ul>
   </div>
@@ -622,6 +622,12 @@
         <ul>
           <li>3 pillar pages</li>
           <li>15 content pieces / mo</li>
+          <li>Pages for exact buyer questions</li>
+          <li>Industry and comparison pages</li>
+          <li>More pages indexed</li>
+          <li>AI crawler access (robots.txt)</li>
+          <li>AI info page and llms.txt</li>
+          <li>Tables, graphics, and FAQ blocks</li>
         </ul>
         <div class="actions">
           <a class="btn btn-primary btn-sm" href="#snapshot">Get your free snapshot</a>
@@ -632,11 +638,15 @@
         <p class="level-badge">Most popular</p>
         <h3>Growth</h3>
         <p class="price"><span class="price-amount">$4,950</span><span class="price-period">/mo</span></p>
+        <p class="price-note">Everything in Starter, plus:</p>
         <ul>
+          <li>2x Starter content volume</li>
           <li>6 pillar pages</li>
           <li>35 content pieces / mo</li>
+          <li>Implementation 2x as fast</li>
+          <li>Lead magnets and conversion assets</li>
+          <li>Direct publishing to your website</li>
         </ul>
-        <p class="price-note">+ All website content formats covered</p>
         <div class="actions">
           <a class="btn btn-primary btn-sm" href="#snapshot">Get your free snapshot</a>
           <a class="btn btn-secondary btn-sm" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
@@ -645,11 +655,13 @@
       <article class="level-card level-card--paper">
         <h3>Scale</h3>
         <p class="price"><span class="price-amount">$9,885</span><span class="price-period">/mo</span></p>
+        <p class="price-note">Everything in Growth, plus:</p>
         <ul>
           <li>10 pillar pages</li>
           <li>50 content pieces / mo</li>
+          <li>Offsite SEO management</li>
+          <li>LinkedIn, X, and performance management</li>
         </ul>
-        <p class="price-note">+ LinkedIn, X and performance management from day one</p>
         <div class="actions">
           <a class="btn btn-primary btn-sm" href="#snapshot">Get your free snapshot</a>
           <a class="btn btn-secondary btn-sm" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>

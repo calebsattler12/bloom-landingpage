@@ -77,9 +77,9 @@ diction; no fabricated proof.
 
 ## Public pricing (locked)
 
-- Starter: $2,485/mo · 3 pillar pages · 15 content pieces / mo
-- Growth: $4,950/mo · 6 pillar pages · 35 content pieces / mo · all website formats
-- Scale: $9,885/mo · 10 pillar pages · 50 content pieces / mo · LinkedIn, X, performance management
+- Starter: $2,485/mo · 3 pillar pages · 15 content pieces / mo · pages for exact buyer questions · industry and comparison pages · more pages indexed · AI crawler access · AI info page and llms.txt · tables, graphics, and FAQ blocks
+- Growth: $4,950/mo · everything in Starter, plus · 2x content volume (6 pillar pages, 35 pieces / mo) · implementation 2x as fast · lead magnets and conversion assets · direct publishing
+- Scale: $9,885/mo · everything in Growth, plus · 10 pillar pages · 50 content pieces / mo · offsite SEO management · LinkedIn, X, performance management
 - No implementation fee
 
 ## Editing
