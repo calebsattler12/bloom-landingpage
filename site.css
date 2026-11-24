@@ -666,143 +666,6 @@ nav.top .nav-panel a {
   justify-content: center;
 }
 
-/* AI vs Google search shift graphic */
-.search-shift {
-  margin: 28px 0 0;
-}
-.search-shift-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin-bottom: 16px;
-}
-.search-shift-stats .stat {
-  background: #fff;
-  border: 1px solid rgba(11,11,15,.08);
-  border-radius: 12px;
-  padding: 18px 16px;
-}
-.search-shift-stats .stat-kicker {
-  margin: 0;
-  font-family: "Geist Mono", ui-monospace, monospace;
-  font-size: 11px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.search-shift-stats .stat-value {
-  margin: 10px 0 0;
-  font-size: clamp(28px, 4vw, 40px);
-  font-weight: 600;
-  letter-spacing: -.04em;
-  line-height: 1;
-}
-.search-shift-stats .stat-value.google { color: #5E6272; }
-.search-shift-stats .stat-value.ai { color: var(--accent); }
-.search-shift-stats .stat-note {
-  margin: 10px 0 0;
-  font-size: 13px;
-  line-height: 1.4;
-  color: var(--muted);
-}
-.search-shift-frame {
-  background: var(--soft);
-  border: 1px solid rgba(11,11,15,.08);
-  border-radius: 16px;
-  padding: 20px 20px 18px;
-}
-.search-shift-frame .chart-title {
-  margin: 0 0 8px;
-  font-family: "Geist Mono", ui-monospace, monospace;
-  font-size: 12px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.search-shift-chart {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.search-shift-chart .axis-label,
-.search-shift-chart .bar-caption,
-.search-shift-chart .bar-value {
-  fill: var(--muted);
-  font-size: 12px;
-  font-family: "Geist Mono", ui-monospace, monospace;
-}
-.search-shift-chart .bar-value {
-  font-size: 14px;
-  font-weight: 600;
-}
-.search-shift-chart .bar-value.ai-value { fill: var(--accent); }
-.search-shift-chart .bar-value.google-value { fill: #5E6272; }
-.search-shift-chart .growth-bar {
-  transform-box: fill-box;
-  transform-origin: center bottom;
-}
-.search-shift-chart .google-bar {
-  transform-origin: center top;
-}
-@media (prefers-reduced-motion: no-preference) {
-  html.js-motion .search-shift-section:not(.is-visible) .growth-bar {
-    transform: scaleY(0);
-  }
-  html.js-motion .search-shift-section:not(.is-visible) .bar-value {
-    opacity: 0;
-  }
-  html.js-motion .search-shift-section.is-visible .google-bar {
-    animation: grow-bar 520ms var(--ease-out) forwards 80ms;
-  }
-  html.js-motion .search-shift-section.is-visible .ai-bar {
-    animation: grow-bar 560ms var(--ease-out) forwards 140ms;
-  }
-  html.js-motion .search-shift-section.is-visible .google-value,
-  html.js-motion .search-shift-section.is-visible .ai-value {
-    animation: shift-fade 360ms var(--ease-out) forwards 280ms;
-  }
-}
-@keyframes grow-bar {
-  to { transform: scaleY(1); }
-}
-@keyframes shift-fade {
-  to { opacity: 1; }
-}
-.search-shift-context {
-  display: grid;
-  gap: 10px;
-  margin-top: 8px;
-}
-.search-shift-context p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--muted);
-}
-.search-shift-context strong { color: var(--ink); font-weight: 600; }
-.search-shift-legend {
-  margin-top: 14px;
-  font-size: 12px;
-  line-height: 1.45;
-  color: var(--muted);
-}
-.search-shift-legend .note {
-  font-family: "Geist Mono", ui-monospace, monospace;
-  font-size: 11px;
-  letter-spacing: .02em;
-}
-@media (prefers-reduced-motion: reduce) {
-  .search-shift-chart .growth-bar,
-  .search-shift-chart .bar-value {
-    animation: none;
-    transform: none;
-    opacity: 1;
-  }
-}
-@media (max-width: 800px) {
-  .search-shift-stats { grid-template-columns: 1fr; }
-}
-
 .ai-mock {
   display: flex;
   flex-direction: column;
@@ -1080,6 +943,7 @@ nav.top .nav-panel a {
 }
 .flow-card-publish .n { color: #9db0ff; }
 .flow-card-publish h3 { color: #fff; }
+.flow-card-publish p { color: rgba(255,255,255,.72); }
 .flow-arrow {
   flex: 0 0 18px;
   align-self: center;
@@ -1532,7 +1396,6 @@ nav.top .nav-panel a {
   margin-left: 2px;
 }
 .level-card .price,
-.search-shift-stats .stat-value,
 .dash-card .value,
 .dash-list .score,
 .article-body td {
