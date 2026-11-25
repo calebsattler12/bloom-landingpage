@@ -16,6 +16,11 @@
     const successEl = form.parentElement.querySelector("[data-loom-success]");
     const submit = form.querySelector('button[type="submit"]');
 
+    if (window.BloomAttribution) {
+      window.BloomAttribution.applyHiddenFields(form);
+      window.BloomAttribution.bindHeardAbout(form);
+    }
+
     form.addEventListener("submit", async function (event) {
       event.preventDefault();
       if (errorEl) {
@@ -23,12 +28,20 @@
         errorEl.textContent = "";
       }
 
-      const payload = {
-        name: ((form.querySelector('[name="name"]') || {}).value || "").trim(),
-        email: ((form.querySelector('[name="email"]') || {}).value || "").trim(),
-        url: ((form.querySelector('[name="url"]') || {}).value || "").trim(),
-        company: ((form.querySelector('[name="company"]') || {}).value || "").trim(),
-      };
+      const attr =
+        window.BloomAttribution && typeof window.BloomAttribution.attributionPayload === "function"
+          ? window.BloomAttribution.attributionPayload(form)
+          : {};
+
+      const payload = Object.assign(
+        {
+          name: ((form.querySelector('[name="name"]') || {}).value || "").trim(),
+          email: ((form.querySelector('[name="email"]') || {}).value || "").trim(),
+          url: ((form.querySelector('[name="url"]') || {}).value || "").trim(),
+          company: ((form.querySelector('[name="company"]') || {}).value || "").trim(),
+        },
+        attr
+      );
 
       if (submit) {
         submit.disabled = true;
@@ -49,8 +62,16 @@
         if (!response.ok || !data.ok) {
           throw new Error(data.error || "Could not send the request. Try again.");
         }
-        track("loom_teardown_request");
+        track("loom_request", {
+          landing_page: payload.landing_page || "",
+          utm_source: payload.utm_source || "",
+          heard_about: payload.heard_about || "",
+        });
         form.reset();
+        if (window.BloomAttribution) {
+          window.BloomAttribution.applyHiddenFields(form);
+          window.BloomAttribution.bindHeardAbout(form);
+        }
         if (successEl) {
           successEl.hidden = false;
           successEl.focus();

@@ -304,15 +304,27 @@ nav.top .nav-panel a {
 .snap-panel .field-label {
   color: rgba(255,255,255,.55);
 }
-.snap-panel input {
+.snap-panel input,
+.snap-panel select,
+.snap-panel textarea {
   color: #fff;
   background-color: transparent;
   border-bottom-color: rgba(255,255,255,.22);
 }
-.snap-panel input::placeholder {
+.snap-panel select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23ffffff' d='M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2z'/%3E%3C/svg%3E");
+}
+.snap-panel select option {
+  color: var(--ink);
+  background: #fff;
+}
+.snap-panel input::placeholder,
+.snap-panel textarea::placeholder {
   color: rgba(255,255,255,.35);
 }
-.snap-panel input:focus {
+.snap-panel input:focus,
+.snap-panel select:focus,
+.snap-panel textarea:focus {
   border-bottom-color: #9db0ff;
 }
 .snap-form .field-wide { grid-column: 1 / -1; }
@@ -326,7 +338,9 @@ nav.top .nav-panel a {
   color: var(--muted);
   margin-bottom: 8px;
 }
-.snap-form input {
+.snap-form input,
+.snap-form select,
+.snap-form textarea {
   width: 100%;
   border: 0;
   border-bottom: 1px solid rgba(11,11,15,.18);
@@ -337,11 +351,31 @@ nav.top .nav-panel a {
   color: var(--ink);
   background-color: transparent;
 }
-.snap-form input:focus {
+.snap-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235E6272' d='M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  padding-right: 24px;
+}
+.snap-form textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+.snap-form input:focus,
+.snap-form select:focus,
+.snap-form textarea:focus {
   border-bottom-color: var(--accent);
+  outline: none;
+}
+.field-optional {
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
 }
 .snap-form .hp,
-.loom-form .hp {
+.loom-form .hp,
+.book-call-form .hp {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -351,6 +385,12 @@ nav.top .nav-panel a {
   clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
+}
+.snap-form [hidden],
+.loom-form [hidden],
+.book-call-form [hidden],
+label[hidden] {
+  display: none !important;
 }
 .form-error { margin: 4px 0 0; color: #b42318; font-size: 14px; }
 .form-success {
@@ -1499,7 +1539,9 @@ nav.top .nav-panel a {
   color: var(--muted);
   margin-bottom: 6px;
 }
-.loom-form input {
+.loom-form input,
+.loom-form select,
+.loom-form textarea {
   width: 100%;
   border: 1px solid rgba(11,11,15,.14);
   border-radius: var(--radius);
@@ -1508,6 +1550,20 @@ nav.top .nav-panel a {
   font-size: 15px;
   color: var(--ink);
   background-color: #fff;
+}
+.loom-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235E6272' d='M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+}
+.loom-form input:focus,
+.loom-form select:focus,
+.loom-form textarea:focus {
+  outline: 2px solid rgba(51,85,255,.35);
+  outline-offset: 1px;
+  border-color: rgba(51,85,255,.45);
 }
 
 /* Footer */
@@ -1593,6 +1649,87 @@ body.modal-open { overflow: hidden; }
 }
 .snapshot-modal-card p { margin: 12px 0 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
 .snapshot-modal-card .actions { margin-top: 20px; justify-content: center; }
+
+.book-call-card {
+  max-width: 480px;
+  text-align: left;
+  position: relative;
+  max-height: min(92vh, 720px);
+  overflow: auto;
+}
+.book-call-card h2 { text-align: left; }
+.book-call-lede {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.book-call-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+.book-call-close:hover,
+.book-call-close:focus-visible {
+  color: var(--ink);
+  background: var(--soft);
+  outline: none;
+}
+.book-call-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+  position: relative;
+}
+.book-call-form label { display: block; }
+.book-call-form .field-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.book-call-form input,
+.book-call-form select,
+.book-call-form textarea {
+  width: 100%;
+  border: 1px solid rgba(11,11,15,.14);
+  border-radius: var(--radius);
+  padding: 11px 12px;
+  font: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  background-color: #fff;
+}
+.book-call-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235E6272' d='M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+}
+.book-call-form textarea {
+  resize: vertical;
+  min-height: 84px;
+}
+.book-call-form input:focus,
+.book-call-form select:focus,
+.book-call-form textarea:focus {
+  outline: 2px solid rgba(51,85,255,.35);
+  outline-offset: 1px;
+  border-color: rgba(51,85,255,.45);
+}
+.book-call-form .field-submit { margin-top: 4px; }
+.book-call-form .field-submit .btn { width: 100%; }
 
 @media (prefers-reduced-motion: no-preference) {
   html.js-motion [data-reveal]:not(.is-visible):not(:has([data-reveal-item])),
