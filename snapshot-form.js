@@ -155,7 +155,8 @@
         setLinkedInUserData(payload.email);
         track("snapshot_submit_success");
         form.reset();
-        showDone();
+        window.location.assign("/thanks/");
+        return;
       } catch (error) {
         track("snapshot_submit_error");
         if (errorEl) {
