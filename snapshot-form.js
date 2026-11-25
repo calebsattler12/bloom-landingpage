@@ -129,6 +129,11 @@
     const errorEl = form.querySelector("[data-snapshot-error]");
     const submit = form.querySelector('button[type="submit"]');
 
+    if (window.BloomAttribution) {
+      window.BloomAttribution.applyHiddenFields(form);
+      window.BloomAttribution.bindHeardAbout(form);
+    }
+
     form.addEventListener("submit", async function (event) {
       event.preventDefault();
       if (errorEl) {
@@ -136,12 +141,20 @@
         errorEl.textContent = "";
       }
 
-      const payload = {
-        url: ((form.querySelector('[name="url"]') || {}).value || "").trim(),
-        email: ((form.querySelector('[name="email"]') || {}).value || "").trim(),
-        competitors: ((form.querySelector('[name="competitors"]') || {}).value || "").trim(),
-        company: ((form.querySelector('[name="company"]') || {}).value || "").trim(),
-      };
+      const attr =
+        window.BloomAttribution && typeof window.BloomAttribution.attributionPayload === "function"
+          ? window.BloomAttribution.attributionPayload(form)
+          : {};
+
+      const payload = Object.assign(
+        {
+          url: ((form.querySelector('[name="url"]') || {}).value || "").trim(),
+          email: ((form.querySelector('[name="email"]') || {}).value || "").trim(),
+          competitors: ((form.querySelector('[name="competitors"]') || {}).value || "").trim(),
+          company: ((form.querySelector('[name="company"]') || {}).value || "").trim(),
+        },
+        attr
+      );
 
       if (submit) {
         submit.disabled = true;
@@ -153,8 +166,16 @@
       try {
         await send(payload);
         setLinkedInUserData(payload.email);
-        track("snapshot_submit_success");
+        track("snapshot_submit", {
+          landing_page: payload.landing_page || "",
+          utm_source: payload.utm_source || "",
+          heard_about: payload.heard_about || "",
+        });
         form.reset();
+        if (window.BloomAttribution) {
+          window.BloomAttribution.applyHiddenFields(form);
+          window.BloomAttribution.bindHeardAbout(form);
+        }
         showDone();
       } catch (error) {
         track("snapshot_submit_error");

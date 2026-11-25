@@ -288,6 +288,31 @@
           <span class="field-label">Top 2 competitors <span style="font-weight:400;letter-spacing:0;text-transform:none">(optional)</span></span>
           <input type="text" name="competitors" placeholder="Competitor A, Competitor B" autocomplete="off" aria-describedby="snapshot-error">
         </label>
+        <label class="field-wide">
+          <span class="field-label">How did you hear about us? <span style="font-weight:400;letter-spacing:0;text-transform:none">(optional)</span></span>
+          <select name="heard_about" data-heard-about aria-describedby="snapshot-error">
+            <option value="">Select one</option>
+            <option value="Google search">Google search</option>
+            <option value="ChatGPT / AI assistant">ChatGPT / AI assistant</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="X">X</option>
+            <option value="Referral">Referral</option>
+            <option value="Podcast or event">Podcast or event</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <label class="field-wide" data-heard-other-wrap hidden>
+          <span class="field-label">Please tell us more</span>
+          <input type="text" name="heard_about_other" autocomplete="off" aria-describedby="snapshot-error">
+        </label>
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value="">
+        <input type="hidden" name="utm_term" value="">
+        <input type="hidden" name="utm_content" value="">
+        <input type="hidden" name="gclid" value="">
+        <input type="hidden" name="referrer" value="">
+        <input type="hidden" name="landing_page" value="">
         <label class="hp" aria-hidden="true"><span>Company</span><input type="text" name="company" tabindex="-1" autocomplete="off"></label>
         <div class="field-submit">
           <button class="btn btn-primary" type="submit">Get your free snapshot</button>
@@ -670,6 +695,31 @@
           <span class="field-label">Website URL</span>
           <input type="url" name="url" required placeholder="https://yourcompany.com" autocomplete="url" inputmode="url" spellcheck="false" aria-describedby="loom-error">
         </label>
+        <label class="field-wide">
+          <span class="field-label">How did you hear about us? <span style="font-weight:400">(optional)</span></span>
+          <select name="heard_about" data-heard-about aria-describedby="loom-error">
+            <option value="">Select one</option>
+            <option value="Google search">Google search</option>
+            <option value="ChatGPT / AI assistant">ChatGPT / AI assistant</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="X">X</option>
+            <option value="Referral">Referral</option>
+            <option value="Podcast or event">Podcast or event</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <label class="field-wide" data-heard-other-wrap hidden>
+          <span class="field-label">Please tell us more</span>
+          <input type="text" name="heard_about_other" autocomplete="off" aria-describedby="loom-error">
+        </label>
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value="">
+        <input type="hidden" name="utm_term" value="">
+        <input type="hidden" name="utm_content" value="">
+        <input type="hidden" name="gclid" value="">
+        <input type="hidden" name="referrer" value="">
+        <input type="hidden" name="landing_page" value="">
         <label class="hp" aria-hidden="true"><span>Company</span><input type="text" name="company" tabindex="-1" autocomplete="off"></label>
         <div class="field-wide">
           <button class="btn btn-secondary" type="submit">Get a free 15-minute Loom teardown</button>
@@ -785,7 +835,7 @@
 
 <div class="snapshot-modal" id="snapshot-done" hidden>
   <div class="snapshot-modal-card" tabindex="-1" role="dialog" aria-labelledby="snapshot-done-title" aria-modal="true">
-    <h2 id="snapshot-done-title">Great, we'll email your free snapshot shortly.</h2>
+    <h2 id="snapshot-done-title">Great, we'll email your free snapshot in about 5 minutes.</h2>
     <p>Questions? <a href="mailto:caleb@runbloom.ai">caleb@runbloom.ai</a></p>
     <div class="actions section-cta">
       <a class="btn btn-secondary" href="https://calendar.app.google/zw5FN51UGRgyidLv7" target="_blank" rel="noopener">Book a call</a>
@@ -796,7 +846,9 @@
 </div>
 
 <script src="/logos/clients/manifest.js"></script>
+<script src="/attribution.js"></script>
 <script src="/site.js"></script>
+<script src="/book-call.js"></script>
 <script src="/snapshot-form.js"></script>
 <script src="/loom-form.js"></script>
 <script src="/linkedin-insight.js"></script>

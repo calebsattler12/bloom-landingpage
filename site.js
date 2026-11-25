@@ -1,6 +1,4 @@
 (function () {
-  const BOOK = "https://calendar.app.google/zw5FN51UGRgyidLv7";
-
   function track(eventName, detail) {
     try {
       window.dataLayer = window.dataLayer || [];
@@ -12,12 +10,6 @@
       console.warn("Analytics event failed", error);
     }
   }
-
-  document.querySelectorAll('a[href="' + BOOK + '"]').forEach(function (link) {
-    link.addEventListener("click", function () {
-      track("book_call_click");
-    });
-  });
 
   if (location.pathname.indexOf("/snapshot/sample") === 0) {
     track("sample_report_view");
