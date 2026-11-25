@@ -1,12 +1,12 @@
 # Bloom AI
 
-> Bloom is a done-for-you service that builds and maintains a content library for B2B businesses, so buyers and AI assistants can find the company.
+> Bloom is a done-for-you content library service for B2B businesses. Buyers and AI assistants can find the company through the library Bloom builds and maintains.
 
 Canonical structured page for AI assistants: https://www.runbloom.ai/ai-info/
 
 ## Summary
 
-Bloom is a done-for-you content library partner for B2B software, SaaS, and professional services companies. Done for you, from inputs to publishing, taking inbound leads off of your plate. The Bloom team builds the knowledge layer, crafts voice and style, rewrites structured pages, publishes after Slack approval, and reports visibility. Clients share inputs and approve drafts in Slack. AI answers and Google search can cite that library. The public entry offer is a free snapshot of how the company shows up in AI and Google search.
+Bloom is a done-for-you content library service for B2B software, SaaS, and professional services companies. Done for you, from inputs to publishing, taking inbound leads off of your plate. The Bloom team builds the knowledge layer, crafts voice and style, rewrites structured pages, publishes after Slack approval, and reports visibility. Clients share inputs and approve drafts in Slack. AI search visibility is an outcome of that library: AI answers and Google search can cite it. The public entry offer is a free snapshot of how the company shows up in AI and Google search.
 
 ## Who it serves
 
